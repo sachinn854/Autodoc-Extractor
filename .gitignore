@@ -51,13 +51,6 @@ debug_vis/
 runs/
 
 # Model files
-*.pt
-*.pth
-*.onnx
-*.pkl
-*.h5
-*.joblib
-yolov8n.pt
 
 # Data folder (user data & history)
 backend/data/
