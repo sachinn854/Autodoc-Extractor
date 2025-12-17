@@ -1,0 +1,552 @@
+[
+  {
+    "bbox": [
+      379,
+      265,
+      582,
+      303
+    ],
+    "text": "A PIE THING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      172,
+      310,
+      757,
+      351
+    ],
+    "text": "FOUR QUARTERS SDN BHD (1079369-P)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      288,
+      354,
+      643,
+      396
+    ],
+    "text": "NO.128G JLN SS21/35",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      209,
+      400,
+      727,
+      438
+    ],
+    "text": "DAMANSARA UTAMA PETALING JAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      336,
+      442,
+      598,
+      482
+    ],
+    "text": "47400 SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      277,
+      488,
+      665,
+      525
+    ],
+    "text": "GST NO : 001716617216",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      362,
+      533,
+      560,
+      572
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      37,
+      622,
+      320,
+      659
+    ],
+    "text": "ORDERNO#1106368",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      41,
+      666,
+      295,
+      704
+    ],
+    "text": "CASHIER : ALEX",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      605,
+      619,
+      754,
+      659
+    ],
+    "text": "06/07/16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      46,
+      755,
+      66,
+      790
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      47,
+      801,
+      65,
+      839
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      45,
+      844,
+      64,
+      880
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      133,
+      755,
+      313,
+      793
+    ],
+    "text": "SMORES PIE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      121,
+      796,
+      464,
+      838
+    ],
+    "text": "CHOCOLATE MINT PIE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      132,
+      841,
+      473,
+      881
+    ],
+    "text": "THE MASHACRE + SODA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      131,
+      889,
+      541,
+      926
+    ],
+    "text": "SET: CHICKEN+MUSHROOM P",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      131,
+      932,
+      487,
+      972
+    ],
+    "text": "SET: LEMON LIME SODA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      597,
+      757,
+      683,
+      791
+    ],
+    "text": "10.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      589,
+      799,
+      687,
+      841
+    ],
+    "text": "12.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      590,
+      844,
+      684,
+      882
+    ],
+    "text": "20.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      713,
+      752,
+      762,
+      792
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      708,
+      801,
+      762,
+      836
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      716,
+      843,
+      754,
+      882
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      680,
+      889,
+      719,
+      924
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      677,
+      932,
+      718,
+      971
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      40,
+      1020,
+      204,
+      1058
+    ],
+    "text": "SUBTOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      43,
+      1109,
+      248,
+      1176
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      39,
+      1178,
+      416,
+      1220
+    ],
+    "text": "TOTAL (EXCLUDING GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      41,
+      1221,
+      132,
+      1259
+    ],
+    "text": "6%GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      658,
+      1021,
+      761,
+      1058
+    ],
+    "text": "43.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      569,
+      1110,
+      758,
+      1175
+    ],
+    "text": "43.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      659,
+      1180,
+      755,
+      1220
+    ],
+    "text": "41.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      673,
+      1224,
+      757,
+      1261
+    ],
+    "text": "2.48",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      235,
+      1355,
+      504,
+      1391
+    ],
+    "text": "PAYMENT DETAILS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      1398,
+      116,
+      1436
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      40,
+      1441,
+      246,
+      1485
+    ],
+    "text": "CASH CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      645,
+      1400,
+      757,
+      1437
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      661,
+      1442,
+      757,
+      1482
+    ],
+    "text": "56.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      37,
+      1526,
+      542,
+      1570
+    ],
+    "text": "06/07/16 13:54 #001-1105624#",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      37,
+      1575,
+      119,
+      1612
+    ],
+    "text": "ALEX",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      36,
+      1708,
+      244,
+      1745
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      339,
+      1707,
+      521,
+      1744
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      624,
+      1705,
+      750,
+      1746
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      40,
+      1752,
+      84,
+      1789
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      220,
+      1751,
+      309,
+      1792
+    ],
+    "text": "(@6%)",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      428,
+      1751,
+      525,
+      1788
+    ],
+    "text": "41.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      676,
+      1750,
+      754,
+      1789
+    ],
+    "text": "2.48",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      182,
+      1921,
+      752,
+      1968
+    ],
+    "text": "FOLLOW US ON FACEBOOK, INSTAGRAM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      290,
+      1970,
+      648,
+      2011
+    ],
+    "text": "& TWITTER @APIETHING",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

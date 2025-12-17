@@ -1,0 +1,662 @@
+[
+  {
+    "bbox": [
+      163,
+      343,
+      728,
+      383
+    ],
+    "text": "MR. D.I.Y. (KUCHAI) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      294,
+      385,
+      612,
+      422
+    ],
+    "text": "CO-REG: 750441-W",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      103,
+      430,
+      792,
+      467
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      124,
+      472,
+      762,
+      507
+    ],
+    "text": "KWANSAN PERINDUSTRIAN BALANKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      147,
+      514,
+      775,
+      556
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      187,
+      549,
+      713,
+      598
+    ],
+    "text": "(GST ID NO :000473792512)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      250,
+      593,
+      670,
+      637
+    ],
+    "text": "(TESCO EXTRA KAJANG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      311,
+      638,
+      584,
+      682
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      37,
+      719,
+      483,
+      759
+    ],
+    "text": "BOOSTER CABLE XH-500A",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      831,
+      729,
+      868,
+      762
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      768,
+      233,
+      808
+    ],
+    "text": "CE72 - 10",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      42,
+      813,
+      191,
+      843
+    ],
+    "text": "9001620",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      493,
+      813,
+      526,
+      848
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      537,
+      808,
+      563,
+      852
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      582,
+      815,
+      692,
+      855
+    ],
+    "text": "29.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      731,
+      813,
+      836,
+      850
+    ],
+    "text": "29.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      42,
+      855,
+      359,
+      890
+    ],
+    "text": "MOTH BALLS 150G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      835,
+      857,
+      877,
+      894
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      50,
+      895,
+      435,
+      935
+    ],
+    "text": "EC21-41-71 - 10/100",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      42,
+      937,
+      191,
+      977
+    ],
+    "text": "9063977",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      500,
+      941,
+      523,
+      976
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      533,
+      941,
+      566,
+      974
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      600,
+      937,
+      693,
+      979
+    ],
+    "text": "2.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      740,
+      934,
+      836,
+      978
+    ],
+    "text": "2.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      981,
+      551,
+      1018
+    ],
+    "text": "DIY GOLD TWIST DRILL 3MM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      831,
+      983,
+      873,
+      1025
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      40,
+      1028,
+      339,
+      1063
+    ],
+    "text": "LB22 - 20/1500",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      1065,
+      200,
+      1107
+    ],
+    "text": "9071246",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      502,
+      1072,
+      523,
+      1107
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      537,
+      1072,
+      560,
+      1102
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      605,
+      1070,
+      698,
+      1110
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      743,
+      1067,
+      836,
+      1111
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      42,
+      1109,
+      549,
+      1149
+    ],
+    "text": "HSS TWIST DRILL 6*160MM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      822,
+      1116,
+      873,
+      1149
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      1157,
+      377,
+      1192
+    ],
+    "text": "LG32-42 - 10/400",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      1193,
+      320,
+      1235
+    ],
+    "text": "6909906163107",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      502,
+      1193,
+      523,
+      1233
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      540,
+      1198,
+      563,
+      1235
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      603,
+      1198,
+      699,
+      1235
+    ],
+    "text": "3.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      747,
+      1196,
+      836,
+      1236
+    ],
+    "text": "3.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      42,
+      1280,
+      283,
+      1317
+    ],
+    "text": "ITEM(S) : 4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      654,
+      1278,
+      878,
+      1325
+    ],
+    "text": "QTY(S) : 4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      44,
+      1359,
+      404,
+      1408
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      705,
+      1371,
+      875,
+      1401
+    ],
+    "text": "RM 37.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      42,
+      1406,
+      135,
+      1441
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      701,
+      1406,
+      879,
+      1450
+    ],
+    "text": "RM 40.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      40,
+      1448,
+      171,
+      1488
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      729,
+      1453,
+      876,
+      1490
+    ],
+    "text": "RM 2.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1534,
+      278,
+      1576
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      420,
+      1532,
+      565,
+      1576
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      624,
+      1530,
+      771,
+      1572
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      47,
+      1574,
+      217,
+      1618
+    ],
+    "text": "GST S@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      455,
+      1574,
+      569,
+      1616
+    ],
+    "text": "35.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      682,
+      1577,
+      775,
+      1621
+    ],
+    "text": "2.14",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1703,
+      551,
+      1745
+    ],
+    "text": "08-03-17 13:42 SH01 B028",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      600,
+      1700,
+      873,
+      1744
+    ],
+    "text": "T2 R000017473",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      47,
+      1742,
+      379,
+      1784
+    ],
+    "text": "OPERATOR TRAINEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      168,
+      1831,
+      736,
+      1871
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      252,
+      1873,
+      647,
+      1913
+    ],
+    "text": "7 DAY WITH RECEIPT,",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      210,
+      1913,
+      712,
+      1960
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

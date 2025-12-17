@@ -1,0 +1,354 @@
+[
+  {
+    "bbox": [
+      10,
+      14,
+      151,
+      47
+    ],
+    "text": "3180404",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      120,
+      95,
+      356,
+      120
+    ],
+    "text": "WESTERN EASTERN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      87,
+      121,
+      373,
+      149
+    ],
+    "text": "STATIONERY SDN. BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      72,
+      152,
+      385,
+      176
+    ],
+    "text": "CO REG NO : 210038-K",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      71,
+      179,
+      401,
+      205
+    ],
+    "text": "GST ID : 000517095424",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      41,
+      234,
+      405,
+      260
+    ],
+    "text": "42-46, JLN SULTAN AZLAN",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      38,
+      262,
+      404,
+      287
+    ],
+    "text": "SHAH 51200 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      87,
+      289,
+      369,
+      314
+    ],
+    "text": "TEL : 03-4043 7678",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      315,
+      399,
+      345
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      39,
+      371,
+      87,
+      392
+    ],
+    "text": "REG",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      116,
+      372,
+      273,
+      395
+    ],
+    "text": "30-04-2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      293,
+      373,
+      367,
+      396
+    ],
+    "text": "15:57",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      38,
+      397,
+      99,
+      422
+    ],
+    "text": "C01",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      179,
+      399,
+      274,
+      424
+    ],
+    "text": "KL 001",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      318,
+      401,
+      415,
+      425
+    ],
+    "text": "038354",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      34,
+      453,
+      243,
+      480
+    ],
+    "text": "B/W P.S A4/A3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      162,
+      485,
+      180,
+      506
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      320,
+      487,
+      413,
+      509
+    ],
+    "text": "RM1.38",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      243,
+      512,
+      304,
+      534
+    ],
+    "text": "1 NO",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      83,
+      564,
+      238,
+      587
+    ],
+    "text": "GST TA AMT",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      317,
+      568,
+      415,
+      588
+    ],
+    "text": "RM1.30",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      82,
+      588,
+      179,
+      613
+    ],
+    "text": "GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      318,
+      592,
+      414,
+      615
+    ],
+    "text": "RM0.08",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      82,
+      642,
+      160,
+      665
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      221,
+      643,
+      410,
+      668
+    ],
+    "text": "RM1.38",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      79,
+      670,
+      210,
+      694
+    ],
+    "text": "ROUNDING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      317,
+      673,
+      411,
+      696
+    ],
+    "text": "RM0.02",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      79,
+      697,
+      146,
+      720
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      315,
+      700,
+      411,
+      723
+    ],
+    "text": "RM1.40",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      67,
+      749,
+      348,
+      777
+    ],
+    "text": "TAX INVOICE OF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      64,
+      805,
+      346,
+      829
+    ],
+    "text": "GOODS SOLD ARE NOT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      126,
+      832,
+      285,
+      856
+    ],
+    "text": "RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

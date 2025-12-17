@@ -1,0 +1,530 @@
+[
+  {
+    "bbox": [
+      378,
+      233,
+      663,
+      249
+    ],
+    "text": "WARAKUYA PERMAS CITY SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      452,
+      277,
+      592,
+      294
+    ],
+    "text": "REG NO: 1203194-W",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      429,
+      298,
+      612,
+      314
+    ],
+    "text": "JALAN PERMAS UTARA 1.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      392,
+      320,
+      646,
+      335
+    ],
+    "text": "PERMAS JAYA 81750 MASAI JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      454,
+      356,
+      588,
+      371
+    ],
+    "text": "TEL : 0111-558 0000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      423,
+      400,
+      631,
+      417
+    ],
+    "text": "GST ID: 0016 6993 5104",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      356,
+      466,
+      505,
+      482
+    ],
+    "text": "TAX INVOICE NO",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      356,
+      495,
+      409,
+      512
+    ],
+    "text": "58244",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      577,
+      463,
+      616,
+      492
+    ],
+    "text": "42",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      353,
+      524,
+      528,
+      539
+    ],
+    "text": "DATE: 10/03/2018 5:41:06",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      586,
+      517,
+      667,
+      533
+    ],
+    "text": "PAX NO:4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      352,
+      547,
+      497,
+      562
+    ],
+    "text": "CASHIER: CASHIER3",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      352,
+      570,
+      473,
+      585
+    ],
+    "text": "WAITER: HANYIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      359,
+      594,
+      475,
+      613
+    ],
+    "text": "QTY CODE/DESC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      389,
+      1075,
+      627,
+      1091
+    ],
+    "text": "THANK YOU ! PLEASE COME AGAIN !",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      611,
+      594,
+      673,
+      609
+    ],
+    "text": "TOTAL RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      364,
+      629,
+      376,
+      642
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      389,
+      630,
+      538,
+      644
+    ],
+    "text": "SABA SHIO YAKI SEY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      630,
+      677,
+      645
+    ],
+    "text": "53.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      365,
+      651,
+      374,
+      664
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      388,
+      651,
+      526,
+      667
+    ],
+    "text": "SALMON SHIO SET",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      652,
+      677,
+      666
+    ],
+    "text": "21.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      363,
+      672,
+      375,
+      685
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      387,
+      672,
+      516,
+      687
+    ],
+    "text": "ICED GREEN TEA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      642,
+      673,
+      676,
+      688
+    ],
+    "text": "4.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      482,
+      702,
+      551,
+      718
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      631,
+      704,
+      672,
+      719
+    ],
+    "text": "79.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      478,
+      726,
+      552,
+      742
+    ],
+    "text": "DISCOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      619,
+      729,
+      674,
+      743
+    ],
+    "text": "-30.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      350,
+      756,
+      468,
+      772
+    ],
+    "text": "TOTAL AMOUNT :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      631,
+      759,
+      674,
+      773
+    ],
+    "text": "49.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      348,
+      784,
+      478,
+      800
+    ],
+    "text": "SERV CHARGE 10%",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      637,
+      787,
+      674,
+      801
+    ],
+    "text": "4.96",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      348,
+      805,
+      419,
+      820
+    ],
+    "text": "GST @ 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      637,
+      807,
+      673,
+      822
+    ],
+    "text": "3.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      349,
+      832,
+      466,
+      848
+    ],
+    "text": "ROUNDING ADJ :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      631,
+      835,
+      673,
+      849
+    ],
+    "text": "-0.03",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      348,
+      864,
+      457,
+      880
+    ],
+    "text": "TOTAL AMOUNT:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      629,
+      866,
+      672,
+      881
+    ],
+    "text": "57.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      348,
+      920,
+      416,
+      937
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      577,
+      921,
+      671,
+      942
+    ],
+    "text": "RM 57.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      346,
+      964,
+      401,
+      983
+    ],
+    "text": "TYPE 3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      350,
+      1002,
+      444,
+      1018
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      486,
+      1003,
+      565,
+      1017
+    ],
+    "text": "AMOUNT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      619,
+      1003,
+      673,
+      1019
+    ],
+    "text": "TAX RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      348,
+      1023,
+      394,
+      1038
+    ],
+    "text": "SR 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      518,
+      1024,
+      562,
+      1039
+    ],
+    "text": "54.56",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      636,
+      1026,
+      671,
+      1039
+    ],
+    "text": "3.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

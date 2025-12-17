@@ -1,0 +1,673 @@
+[
+  {
+    "bbox": [
+      201,
+      60,
+      515,
+      98
+    ],
+    "text": "ADVANCO COMPANY",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      151,
+      86,
+      563,
+      131
+    ],
+    "text": "COMPANY REG. NO. : 725186-V",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      122,
+      121,
+      590,
+      170
+    ],
+    "text": "NO 1&3, JALAN WANGSA DELIMA 12,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      160,
+      157,
+      549,
+      204
+    ],
+    "text": "WANGSA LINK, WANGSA MAJU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      218,
+      194,
+      498,
+      235
+    ],
+    "text": "53300 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      267,
+      232,
+      445,
+      263
+    ],
+    "text": "03-41318972",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      198,
+      271,
+      508,
+      308
+    ],
+    "text": "GST REG : 001658445824",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      249,
+      315,
+      463,
+      353
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      355,
+      267,
+      387
+    ],
+    "text": "CB# : 389720",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      92,
+      394,
+      147,
+      418
+    ],
+    "text": "M# :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      177,
+      397,
+      254,
+      421
+    ],
+    "text": "M2 - 0",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      91,
+      434,
+      199,
+      460
+    ],
+    "text": "CASHIER :",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      226,
+      441,
+      314,
+      464
+    ],
+    "text": "C2000-",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      405,
+      368,
+      629,
+      399
+    ],
+    "text": "17/01/2018 4:21:53",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      101,
+      474,
+      146,
+      503
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      165,
+      476,
+      298,
+      507
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      427,
+      486,
+      488,
+      512
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      570,
+      490,
+      629,
+      516
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      91,
+      526,
+      557,
+      564
+    ],
+    "text": "UNICORN-20CM HALF WHITE RULER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      574,
+      542,
+      610,
+      567
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      124,
+      567,
+      142,
+      592
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      154,
+      568,
+      248,
+      592
+    ],
+    "text": "A15961",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      435,
+      580,
+      486,
+      604
+    ],
+    "text": "0.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      575,
+      584,
+      628,
+      609
+    ],
+    "text": "0.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      612,
+      554,
+      655
+    ],
+    "text": "CBE-S217 CBE 7\" SCISSORS (2.0MM",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      125,
+      654,
+      138,
+      680
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      154,
+      654,
+      249,
+      679
+    ],
+    "text": "A27269",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      434,
+      664,
+      485,
+      690
+    ],
+    "text": "6.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      574,
+      669,
+      625,
+      695
+    ],
+    "text": "6.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      572,
+      627,
+      611,
+      655
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      117,
+      704,
+      138,
+      734
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      160,
+      706,
+      221,
+      736
+    ],
+    "text": "TYPE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      263,
+      709,
+      279,
+      733
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      333,
+      712,
+      396,
+      738
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      574,
+      719,
+      627,
+      744
+    ],
+    "text": "7.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      98,
+      747,
+      259,
+      781
+    ],
+    "text": "ROUNDING ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      573,
+      760,
+      624,
+      784
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      95,
+      789,
+      354,
+      821
+    ],
+    "text": "TOTAL INCLUSIVE GST:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      830,
+      172,
+      858
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      95,
+      866,
+      194,
+      898
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      571,
+      802,
+      622,
+      828
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      555,
+      845,
+      622,
+      869
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      553,
+      880,
+      621,
+      904
+    ],
+    "text": "43.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      94,
+      917,
+      301,
+      952
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      958,
+      158,
+      984
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      1003,
+      130,
+      1030
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      88,
+      1047,
+      150,
+      1072
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      197,
+      960,
+      219,
+      986
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      177,
+      1003,
+      220,
+      1031
+    ],
+    "text": "6%",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      273,
+      962,
+      372,
+      988
+    ],
+    "text": "NET AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      317,
+      1008,
+      371,
+      1033
+    ],
+    "text": "6.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      317,
+      1052,
+      368,
+      1076
+    ],
+    "text": "6.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      447,
+      966,
+      502,
+      991
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      449,
+      1012,
+      500,
+      1037
+    ],
+    "text": "0.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      447,
+      1055,
+      501,
+      1079
+    ],
+    "text": "0.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      563,
+      967,
+      622,
+      993
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      570,
+      1013,
+      619,
+      1039
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      570,
+      1056,
+      620,
+      1081
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      70,
+      1097,
+      608,
+      1143
+    ],
+    "text": "THANK YOU & PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      87,
+      1151,
+      595,
+      1182
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE FOR REFUND OR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      270,
+      1187,
+      408,
+      1219
+    ],
+    "text": "EXCHANGE !!",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

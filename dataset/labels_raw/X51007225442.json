@@ -1,0 +1,541 @@
+[
+  {
+    "bbox": [
+      138,
+      227,
+      444,
+      253
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      180,
+      257,
+      394,
+      282
+    ],
+    "text": "CO-REG:860671-D",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      58,
+      282,
+      511,
+      310
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      312,
+      496,
+      338
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      85,
+      342,
+      501,
+      364
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      114,
+      368,
+      457,
+      394
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      101,
+      394,
+      471,
+      425
+    ],
+    "text": "(TESCO EXTRA ARA DAMANSARA)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      197,
+      425,
+      377,
+      453
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      17,
+      480,
+      251,
+      507
+    ],
+    "text": "SUS304 HOOK 48804",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      539,
+      481,
+      571,
+      507
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      510,
+      197,
+      534
+    ],
+    "text": "TZ11 - 12/120",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      538,
+      116,
+      562
+    ],
+    "text": "9073805",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      322,
+      537,
+      362,
+      563
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      386,
+      538,
+      444,
+      562
+    ],
+    "text": "9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      486,
+      537,
+      541,
+      563
+    ],
+    "text": "9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      566,
+      294,
+      593
+    ],
+    "text": "WOODEN SHEET 60*20CM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      540,
+      567,
+      568,
+      590
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      595,
+      195,
+      620
+    ],
+    "text": "AR11 - 12/192",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      625,
+      115,
+      648
+    ],
+    "text": "9064189",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      320,
+      623,
+      361,
+      647
+    ],
+    "text": "4 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      392,
+      624,
+      445,
+      648
+    ],
+    "text": "1.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      485,
+      621,
+      542,
+      648
+    ],
+    "text": "7.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      652,
+      350,
+      677
+    ],
+    "text": "LAVA PAIL PL623 3 GALLON",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      540,
+      650,
+      568,
+      678
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      16,
+      679,
+      182,
+      704
+    ],
+    "text": "WA53 - 12/48",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      707,
+      196,
+      733
+    ],
+    "text": "9555047308370",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      322,
+      707,
+      362,
+      734
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      388,
+      706,
+      443,
+      731
+    ],
+    "text": "5.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      484,
+      707,
+      542,
+      733
+    ],
+    "text": "5.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      17,
+      763,
+      172,
+      790
+    ],
+    "text": "ITEM(S) : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      427,
+      763,
+      570,
+      793
+    ],
+    "text": "QTY(S) : 6",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      16,
+      818,
+      266,
+      844
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      16,
+      847,
+      74,
+      873
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      16,
+      875,
+      100,
+      900
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      457,
+      820,
+      566,
+      843
+    ],
+    "text": "RM 23.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      458,
+      847,
+      567,
+      872
+    ],
+    "text": "RM 50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      458,
+      875,
+      567,
+      900
+    ],
+    "text": "RM 27.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      932,
+      168,
+      957
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      17,
+      960,
+      128,
+      984
+    ],
+    "text": "GST S@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      265,
+      932,
+      360,
+      958
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      320,
+      959,
+      390,
+      985
+    ],
+    "text": "21.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      403,
+      931,
+      498,
+      957
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      475,
+      959,
+      526,
+      983
+    ],
+    "text": "1.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      1043,
+      348,
+      1069
+    ],
+    "text": "27-04-18 16:40 SH01 ZJ42",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      388,
+      1043,
+      569,
+      1068
+    ],
+    "text": "T1 R000235438",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      17,
+      1072,
+      444,
+      1098
+    ],
+    "text": "OPERATOR TADT - MUHAMMAD HAFIDZ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      99,
+      1127,
+      472,
+      1153
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      155,
+      1154,
+      408,
+      1181
+    ],
+    "text": "7 DAY WITH RECEIPT,",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      127,
+      1183,
+      454,
+      1209
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

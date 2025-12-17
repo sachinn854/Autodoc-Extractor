@@ -1,0 +1,794 @@
+[
+  {
+    "bbox": [
+      34,
+      124,
+      590,
+      147
+    ],
+    "text": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      173,
+      146,
+      453,
+      169
+    ],
+    "text": "LOT 3, JALAN PELABUR 23/1,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      159,
+      171,
+      462,
+      193
+    ],
+    "text": "40300 SHAH ALAM, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      119,
+      193,
+      307,
+      214
+    ],
+    "text": "TEL: 03- 55423228",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      193,
+      216,
+      433,
+      238
+    ],
+    "text": "GST ID: 000381399040",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      136,
+      257,
+      486,
+      296
+    ],
+    "text": "TAX INVOICE / ADJUSTMENT NOTE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      245,
+      316,
+      513,
+      353
+    ],
+    "text": "CASH INV NO.: 7014F714",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      25,
+      351,
+      114,
+      378
+    ],
+    "text": "VE0514",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      321,
+      357,
+      516,
+      379
+    ],
+    "text": "DATE: 14/10/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      24,
+      386,
+      373,
+      420
+    ],
+    "text": "MAKASSAR FRESH MARKET SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      28,
+      428,
+      313,
+      450
+    ],
+    "text": "GROUND FLOOR, NO. 4 & 6,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      28,
+      450,
+      207,
+      473
+    ],
+    "text": "JALAN SS 15/4B,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      25,
+      473,
+      349,
+      495
+    ],
+    "text": "47500 SUBANG JAYA, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      28,
+      495,
+      271,
+      518
+    ],
+    "text": "VE05: RIDZUAN (11900)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      254,
+      518,
+      415,
+      540
+    ],
+    "text": "DD: 14/10/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      23,
+      548,
+      157,
+      567
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      177,
+      546,
+      217,
+      567
+    ],
+    "text": "U.P",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      226,
+      548,
+      262,
+      566
+    ],
+    "text": "ISS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      271,
+      548,
+      311,
+      566
+    ],
+    "text": "EXC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      329,
+      549,
+      346,
+      566
+    ],
+    "text": "D",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      355,
+      547,
+      405,
+      567
+    ],
+    "text": "SALE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      424,
+      547,
+      509,
+      568
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      20,
+      583,
+      148,
+      604
+    ],
+    "text": "O.C. WHITE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      164,
+      584,
+      214,
+      604
+    ],
+    "text": "2.13",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      247,
+      584,
+      262,
+      604
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      296,
+      584,
+      310,
+      603
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      330,
+      584,
+      347,
+      603
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      389,
+      585,
+      405,
+      603
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      459,
+      585,
+      510,
+      604
+    ],
+    "text": "4.26",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      21,
+      607,
+      133,
+      628
+    ],
+    "text": "WHOLEMEAL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      163,
+      608,
+      215,
+      627
+    ],
+    "text": "2.78",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      248,
+      607,
+      263,
+      628
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      294,
+      607,
+      310,
+      627
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      330,
+      607,
+      346,
+      627
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      388,
+      607,
+      402,
+      627
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      459,
+      607,
+      511,
+      627
+    ],
+    "text": "8.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      23,
+      632,
+      134,
+      651
+    ],
+    "text": "O.C JUMBO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      164,
+      631,
+      214,
+      651
+    ],
+    "text": "2.97",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      248,
+      631,
+      262,
+      650
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      296,
+      631,
+      310,
+      650
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      329,
+      632,
+      346,
+      649
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      389,
+      631,
+      405,
+      650
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      460,
+      631,
+      510,
+      649
+    ],
+    "text": "5.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      189,
+      663,
+      409,
+      704
+    ],
+    "text": "TOTAL 0% SUPPLIES:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      449,
+      663,
+      512,
+      698
+    ],
+    "text": "18.54",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      24,
+      712,
+      159,
+      735
+    ],
+    "text": "CR-B'SCOTCH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      166,
+      713,
+      216,
+      735
+    ],
+    "text": "0.72",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      236,
+      714,
+      263,
+      733
+    ],
+    "text": "20",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      295,
+      714,
+      310,
+      733
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      330,
+      714,
+      346,
+      733
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      378,
+      714,
+      405,
+      733
+    ],
+    "text": "20",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      450,
+      714,
+      511,
+      733
+    ],
+    "text": "14.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      744,
+      402,
+      786
+    ],
+    "text": "TOTAL 6% SUPPLIES (EXCL. GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      449,
+      745,
+      512,
+      779
+    ],
+    "text": "14.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      354,
+      792,
+      402,
+      825
+    ],
+    "text": "GST:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      458,
+      793,
+      511,
+      827
+    ],
+    "text": "0.86",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      61,
+      840,
+      403,
+      883
+    ],
+    "text": "TOTAL 6% SUPPLIES (INC. GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      449,
+      843,
+      511,
+      877
+    ],
+    "text": "15.26",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      186,
+      888,
+      409,
+      931
+    ],
+    "text": "TOTAL 0% SUPPLIES:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      448,
+      888,
+      510,
+      925
+    ],
+    "text": "18.54",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      230,
+      941,
+      402,
+      982
+    ],
+    "text": "TOTAL PAYABLE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      447,
+      940,
+      512,
+      974
+    ],
+    "text": "33.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      28,
+      1003,
+      124,
+      1025
+    ],
+    "text": "E.&.0.E.",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      28,
+      1027,
+      558,
+      1050
+    ],
+    "text": "RECEIVED ABOVE GOODS IN GOOD ORDER CONDITION.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      27,
+      1051,
+      496,
+      1073
+    ],
+    "text": "THE RECIPIENT OF GARDENIA'S PRODUCTS IS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      29,
+      1074,
+      563,
+      1097
+    ],
+    "text": "REQUIRED TO MAKE NECESSARY ADJUSTMENTS TO ITS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      29,
+      1098,
+      467,
+      1120
+    ],
+    "text": "INPUT TAX CLAIMS, ON THE BASIC OF THE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      26,
+      1121,
+      497,
+      1143
+    ],
+    "text": "ADJUSTMENTS SHOWN IN THIS TAX INVOICE /",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      27,
+      1145,
+      210,
+      1167
+    ],
+    "text": "ADJUSTMENT NOTE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      195,
+      1170,
+      432,
+      1193
+    ],
+    "text": "CUSTOMER'S COPY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      320,
+      194,
+      503,
+      215
+    ],
+    "text": "FAX:03- 55423213",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      437,
+      518,
+      493,
+      539
+    ],
+    "text": "11:11",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

@@ -1,0 +1,695 @@
+[
+  {
+    "bbox": [
+      126,
+      185,
+      826,
+      233
+    ],
+    "text": "PASARAYA BORONG PINTAR",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      357,
+      245,
+      592,
+      291
+    ],
+    "text": "SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      308,
+      304,
+      651,
+      348
+    ],
+    "text": "BR NO. :(124525-H)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      118,
+      346,
+      836,
+      387
+    ],
+    "text": "NO 19-G& 19-1& 19-2 JALAN TASIK UTAMA 4,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      248,
+      386,
+      707,
+      428
+    ],
+    "text": "MEDAN NIAGA TASIK DAMAI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      361,
+      448,
+      577,
+      476
+    ],
+    "text": "016-5498845",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      403,
+      497,
+      562,
+      535
+    ],
+    "text": "GST NO.:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      280,
+      581,
+      673,
+      616
+    ],
+    "text": "14/03/2018 5:57:07PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      267,
+      637,
+      693,
+      693
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      92,
+      701,
+      499,
+      753
+    ],
+    "text": "TRN: CR0008964",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      88,
+      779,
+      341,
+      819
+    ],
+    "text": "COUNTER 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      628,
+      781,
+      854,
+      816
+    ],
+    "text": "CASHIER: 1",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      92,
+      860,
+      273,
+      898
+    ],
+    "text": "QTY UOM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      355,
+      864,
+      861,
+      899
+    ],
+    "text": "UNIT AMT EXC. AMT INC. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      350,
+      903,
+      447,
+      941
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      546,
+      906,
+      607,
+      945
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      706,
+      904,
+      865,
+      941
+    ],
+    "text": "TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      85,
+      969,
+      771,
+      1005
+    ],
+    "text": "WALL'S TOPTEN CHOCOLATE 73ML",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      102,
+      1018,
+      125,
+      1052
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      174,
+      1017,
+      284,
+      1052
+    ],
+    "text": "WALK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      367,
+      1022,
+      440,
+      1053
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      526,
+      1020,
+      609,
+      1056
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      692,
+      1020,
+      762,
+      1055
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      789,
+      1022,
+      859,
+      1053
+    ],
+    "text": "ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      1079,
+      766,
+      1121
+    ],
+    "text": "WALL'S TOPTEN CHOCOLATE 73ML",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      107,
+      1132,
+      124,
+      1166
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      175,
+      1130,
+      286,
+      1165
+    ],
+    "text": "WALK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      367,
+      1135,
+      442,
+      1167
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      528,
+      1133,
+      601,
+      1165
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      689,
+      1130,
+      767,
+      1169
+    ],
+    "text": "1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      791,
+      1132,
+      862,
+      1167
+    ],
+    "text": "ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      91,
+      1195,
+      562,
+      1229
+    ],
+    "text": "MAGNUM ALMOND 90ML",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      107,
+      1242,
+      125,
+      1278
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      169,
+      1242,
+      281,
+      1278
+    ],
+    "text": "WALK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      364,
+      1245,
+      445,
+      1283
+    ],
+    "text": "4.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      528,
+      1245,
+      604,
+      1279
+    ],
+    "text": "4.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      689,
+      1244,
+      766,
+      1278
+    ],
+    "text": "4.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      791,
+      1247,
+      862,
+      1282
+    ],
+    "text": "ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      91,
+      1304,
+      405,
+      1352
+    ],
+    "text": "CLOUD 9 PLUS 22G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      102,
+      1360,
+      124,
+      1391
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      172,
+      1357,
+      290,
+      1393
+    ],
+    "text": "WALK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      364,
+      1356,
+      449,
+      1391
+    ],
+    "text": "0.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      525,
+      1360,
+      605,
+      1389
+    ],
+    "text": "0.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      686,
+      1357,
+      763,
+      1391
+    ],
+    "text": "0.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      793,
+      1356,
+      859,
+      1393
+    ],
+    "text": "ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      83,
+      1444,
+      376,
+      1489
+    ],
+    "text": "*TOTAL QTY: 4.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      781,
+      1443,
+      862,
+      1484
+    ],
+    "text": "8.20",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      93,
+      1509,
+      541,
+      1555
+    ],
+    "text": "TOTAL INCLUDES GST 0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      777,
+      1514,
+      863,
+      1550
+    ],
+    "text": "8.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      89,
+      1572,
+      469,
+      1616
+    ],
+    "text": "CUSTOMER'S PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      93,
+      1637,
+      187,
+      1671
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      757,
+      1638,
+      860,
+      1673
+    ],
+    "text": "20.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1690,
+      240,
+      1733
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      759,
+      1695,
+      862,
+      1731
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      93,
+      1781,
+      345,
+      1819
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      426,
+      1779,
+      655,
+      1824
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      704,
+      1776,
+      855,
+      1824
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      91,
+      1838,
+      252,
+      1875
+    ],
+    "text": "ZRL = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      581,
+      1843,
+      657,
+      1874
+    ],
+    "text": "8.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      785,
+      1844,
+      852,
+      1874
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      195,
+      1919,
+      765,
+      1957
+    ],
+    "text": "*GOODS SOLD ARE NOT RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      116,
+      1964,
+      844,
+      2012
+    ],
+    "text": "THANK YOU FOR SHOPPING AT PASARAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      201,
+      2015,
+      751,
+      2053
+    ],
+    "text": "BORONG PINTAR SDN BHD",
+    "class": "ADDRESS",
+    "class_id": 1
+  }
+]

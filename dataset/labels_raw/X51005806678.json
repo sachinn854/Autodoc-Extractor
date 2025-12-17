@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      333,
+      214,
+      698,
+      252
+    ],
+    "text": "KAISON FURNISHING SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      378,
+      279,
+      652,
+      318
+    ],
+    "text": "L4-17 (B), LEVEL 4,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      361,
+      342,
+      679,
+      380
+    ],
+    "text": "UP2-01, MELAWATI MALL,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      318,
+      406,
+      706,
+      444
+    ],
+    "text": "355, JALAN BANDAR MELAWATI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      361,
+      470,
+      676,
+      507
+    ],
+    "text": "PUSAT BANDAR MELAWATI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      373,
+      532,
+      646,
+      567
+    ],
+    "text": "53100 KUALA LUMPUR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      359,
+      595,
+      675,
+      632
+    ],
+    "text": "CO. REG NO. (761834-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      342,
+      657,
+      690,
+      689
+    ],
+    "text": "GST REG NO. 001813975040",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      385,
+      718,
+      646,
+      749
+    ],
+    "text": "TEL : 03 - 41019864",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      222,
+      839,
+      284,
+      873
+    ],
+    "text": "SLIP",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      325,
+      843,
+      602,
+      873
+    ],
+    "text": "0000MLW-P3000024348",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      223,
+      900,
+      312,
+      931
+    ],
+    "text": "STAFF:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      328,
+      902,
+      529,
+      936
+    ],
+    "text": "1799 SITI IZZA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      555,
+      904,
+      641,
+      936
+    ],
+    "text": "TRANS:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      658,
+      908,
+      798,
+      936
+    ],
+    "text": "1603029175",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      221,
+      962,
+      294,
+      991
+    ],
+    "text": "DATE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      325,
+      965,
+      526,
+      996
+    ],
+    "text": "29-01-18 20:38",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      220,
+      1087,
+      382,
+      1119
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      606,
+      1090,
+      751,
+      1125
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      220,
+      1209,
+      331,
+      1238
+    ],
+    "text": "BARCODE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      393,
+      1211,
+      506,
+      1239
+    ],
+    "text": "10182079",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      217,
+      1270,
+      419,
+      1298
+    ],
+    "text": "FLOWER BUNCH -",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      448,
+      1273,
+      504,
+      1299
+    ],
+    "text": "ROSE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      262,
+      1332,
+      477,
+      1362
+    ],
+    "text": "122 PCS @ 18.90",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      630,
+      1334,
+      792,
+      1366
+    ],
+    "text": "2,305.80 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      217,
+      1392,
+      344,
+      1420
+    ],
+    "text": "ITEM NO. :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      387,
+      1393,
+      504,
+      1422
+    ],
+    "text": "30001640",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      216,
+      1452,
+      501,
+      1483
+    ],
+    "text": "FLOWER BUNCH - CRYST",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      256,
+      1512,
+      474,
+      1544
+    ],
+    "text": "240 PCS @ 13.90",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      629,
+      1518,
+      788,
+      1549
+    ],
+    "text": "3,336.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      214,
+      1573,
+      340,
+      1604
+    ],
+    "text": "ITEM NO. :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      385,
+      1575,
+      499,
+      1603
+    ],
+    "text": "30001635",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      213,
+      1634,
+      500,
+      1666
+    ],
+    "text": "FLOWER BUNCH - 7HD P",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      256,
+      1694,
+      472,
+      1727
+    ],
+    "text": "130 PCS @ 16.90",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      625,
+      1702,
+      787,
+      1731
+    ],
+    "text": "2,197.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      210,
+      1815,
+      329,
+      1847
+    ],
+    "text": "TOTAL RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      208,
+      1877,
+      351,
+      1911
+    ],
+    "text": "CASH (MYR)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      209,
+      1935,
+      297,
+      1969
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      624,
+      1823,
+      740,
+      1855
+    ],
+    "text": "7,838.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      609,
+      1884,
+      741,
+      1916
+    ],
+    "text": "-7,840.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      681,
+      1947,
+      740,
+      1979
+    ],
+    "text": "1.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      248,
+      2058,
+      309,
+      2088
+    ],
+    "text": "GST%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      360,
+      2062,
+      464,
+      2096
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      519,
+      2064,
+      623,
+      2099
+    ],
+    "text": "GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      647,
+      2068,
+      777,
+      2105
+    ],
+    "text": "TOTAL(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      204,
+      2117,
+      242,
+      2141
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      289,
+      2119,
+      309,
+      2150
+    ],
+    "text": "6",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      347,
+      2119,
+      463,
+      2154
+    ],
+    "text": "7,395.09",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      530,
+      2127,
+      619,
+      2159
+    ],
+    "text": "443.71",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      659,
+      2131,
+      777,
+      2163
+    ],
+    "text": "7,838.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      231,
+      2241,
+      731,
+      2287
+    ],
+    "text": "GOODS SOLD ARE NON-CASH REFUNDABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      2304,
+      717,
+      2346
+    ],
+    "text": "EXCHANGE OF GOODS WITHIN 14 DAYS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      255,
+      2365,
+      713,
+      2409
+    ],
+    "text": "ACCOMPANIED BY ORIGINAL RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

@@ -1,0 +1,365 @@
+[
+  {
+    "bbox": [
+      135,
+      281,
+      553,
+      324
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      145,
+      327,
+      547,
+      370
+    ],
+    "text": "LOP P.T. 2811, JALAN ANGSA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      234,
+      368,
+      450,
+      406
+    ],
+    "text": "TAMAN BERKELEY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      192,
+      412,
+      505,
+      456
+    ],
+    "text": "41150 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      174,
+      457,
+      514,
+      501
+    ],
+    "text": "1237-TMN INDAH PERDANA.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      157,
+      500,
+      535,
+      538
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      146,
+      543,
+      564,
+      583
+    ],
+    "text": "INVOICE NO : 18396/102/T0362",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      55,
+      627,
+      166,
+      661
+    ],
+    "text": "03:46PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      306,
+      627,
+      399,
+      662
+    ],
+    "text": "568268",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      534,
+      631,
+      654,
+      668
+    ],
+    "text": "13-05-18",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      55,
+      711,
+      459,
+      749
+    ],
+    "text": "0715 KNORR CHICKEN STOCK 1K",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      513,
+      717,
+      653,
+      755
+    ],
+    "text": "RM16.85 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      53,
+      757,
+      460,
+      797
+    ],
+    "text": "5596 HYGIENIC 7.5 INCH COLO",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      531,
+      761,
+      654,
+      799
+    ],
+    "text": "RM6.06 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      84,
+      801,
+      260,
+      838
+    ],
+    "text": "@6 X RM 1.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      49,
+      886,
+      504,
+      921
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      546,
+      891,
+      618,
+      925
+    ],
+    "text": "22.91",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      169,
+      928,
+      502,
+      968
+    ],
+    "text": "ROUNDING ADJUSTMENT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      559,
+      931,
+      620,
+      965
+    ],
+    "text": "-.01",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      333,
+      971,
+      500,
+      1009
+    ],
+    "text": "ROUNDING RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      546,
+      974,
+      618,
+      1009
+    ],
+    "text": "22.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      393,
+      1013,
+      504,
+      1048
+    ],
+    "text": "CASH RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      544,
+      1019,
+      622,
+      1050
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      364,
+      1056,
+      503,
+      1089
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      543,
+      1057,
+      621,
+      1091
+    ],
+    "text": "27.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1140,
+      219,
+      1180
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      288,
+      1140,
+      439,
+      1174
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      526,
+      1143,
+      635,
+      1177
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      49,
+      1183,
+      145,
+      1216
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      361,
+      1184,
+      442,
+      1217
+    ],
+    "text": "21.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      572,
+      1187,
+      633,
+      1220
+    ],
+    "text": "1.31",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      123,
+      1308,
+      547,
+      1348
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      49,
+      1353,
+      636,
+      1390
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "bbox": [
+      247,
+      239,
+      529,
+      271
+    ],
+    "text": "IKANO HANDEL SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      320,
+      277,
+      456,
+      313
+    ],
+    "text": "(1074617K)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      237,
+      358,
+      540,
+      390
+    ],
+    "text": "IKEA CHERAS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      247,
+      400,
+      531,
+      430
+    ],
+    "text": "NO 2A JALAN COCHRANE",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      304,
+      439,
+      474,
+      471
+    ],
+    "text": "TAMAN MALURI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      261,
+      479,
+      517,
+      509
+    ],
+    "text": "55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      246,
+      520,
+      544,
+      549
+    ],
+    "text": "GST NO.: 000115154944",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      320,
+      603,
+      478,
+      655
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      118,
+      700,
+      490,
+      732
+    ],
+    "text": "SLIP: 0000000111000395667",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      434,
+      738,
+      632,
+      771
+    ],
+    "text": "DATE: 23/12/17",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      432,
+      781,
+      591,
+      812
+    ],
+    "text": "TIME: 7:13",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      120,
+      821,
+      350,
+      852
+    ],
+    "text": "TRANS: 411395668",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      434,
+      820,
+      521,
+      852
+    ],
+    "text": "STAFF:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      605,
+      821,
+      675,
+      851
+    ],
+    "text": "95651",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      120,
+      899,
+      279,
+      934
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      537,
+      898,
+      666,
+      929
+    ],
+    "text": "AMOUNT TX",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      120,
+      1015,
+      408,
+      1051
+    ],
+    "text": "910347623 ALMOND CAK",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      549,
+      1018,
+      665,
+      1048
+    ],
+    "text": "22.50 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      121,
+      1102,
+      406,
+      1133
+    ],
+    "text": "999900245 IKEA RETAI",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      551,
+      1097,
+      667,
+      1129
+    ],
+    "text": "36.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      124,
+      1179,
+      414,
+      1214
+    ],
+    "text": "599937000 IKEA DRINK",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      567,
+      1178,
+      664,
+      1213
+    ],
+    "text": "1.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      120,
+      1261,
+      555,
+      1292
+    ],
+    "text": "999900701 DARK CHOCOLATE 70% U",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      165,
+      1299,
+      322,
+      1332
+    ],
+    "text": "2 PC @ 6.90",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      557,
+      1301,
+      625,
+      1332
+    ],
+    "text": "13.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      666,
+      1296,
+      695,
+      1329
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      126,
+      1417,
+      484,
+      1452
+    ],
+    "text": "TOTAL RM INCLUDING GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      551,
+      1421,
+      626,
+      1452
+    ],
+    "text": "73.30",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      121,
+      1461,
+      307,
+      1494
+    ],
+    "text": "ROUNDING ADJ.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      567,
+      1459,
+      626,
+      1490
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      124,
+      1503,
+      311,
+      1534
+    ],
+    "text": "TOTAL ROUNDED",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      554,
+      1499,
+      624,
+      1531
+    ],
+    "text": "73.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      124,
+      1584,
+      184,
+      1616
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      542,
+      1579,
+      629,
+      1614
+    ],
+    "text": "-73.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1705,
+      166,
+      1740
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      311,
+      1706,
+      340,
+      1735
+    ],
+    "text": "6%",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      427,
+      1701,
+      497,
+      1733
+    ],
+    "text": "73.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      569,
+      1703,
+      626,
+      1739
+    ],
+    "text": "4.15",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1745,
+      322,
+      1774
+    ],
+    "text": "AMT. EXCL. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      556,
+      1743,
+      626,
+      1772
+    ],
+    "text": "69.15",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      125,
+      1823,
+      298,
+      1858
+    ],
+    "text": "NO. OF ITEMS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      611,
+      1822,
+      628,
+      1855
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      199,
+      1986,
+      613,
+      2021
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      196,
+      1705,
+      224,
+      1736
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

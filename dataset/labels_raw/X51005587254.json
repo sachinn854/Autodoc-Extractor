@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      288,
+      204,
+      738,
+      262
+    ],
+    "text": "TRI SHAAS SDN BHD (728515-M)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      363,
+      251,
+      677,
+      295
+    ],
+    "text": "MYDIN MART SRI MUDA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      219,
+      279,
+      806,
+      341
+    ],
+    "text": "4-20, JALAN RIA 25/62 TAMAN SRI MUDA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      215,
+      319,
+      800,
+      378
+    ],
+    "text": "SEKSYEN 25, 40400 SHAH ALAM SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      217,
+      360,
+      795,
+      416
+    ],
+    "text": "TEL: 03-51217970 FAX: 03-51218059",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      344,
+      407,
+      671,
+      449
+    ],
+    "text": "GST ID: 000429166592",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      455,
+      487,
+      569,
+      521
+    ],
+    "text": "RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      163,
+      555,
+      580,
+      602
+    ],
+    "text": "TERMINAL: 188 - 5505POS004",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      158,
+      594,
+      416,
+      635
+    ],
+    "text": "TRANS #: 255018",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      148,
+      629,
+      658,
+      681
+    ],
+    "text": "DATE: 13/03/2017 03:00:42PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      153,
+      673,
+      448,
+      709
+    ],
+    "text": "CASHIER: CH110137",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      314,
+      714,
+      511,
+      755
+    ],
+    "text": "MSM - ROHINI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      151,
+      787,
+      601,
+      840
+    ],
+    "text": "EVEREADY BAT H/D 1015 SW4 AA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      680,
+      806,
+      719,
+      841
+    ],
+    "text": "EA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      795,
+      809,
+      830,
+      846
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      145,
+      826,
+      361,
+      872
+    ],
+    "text": "8999002310564",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      463,
+      841,
+      490,
+      870
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      755,
+      845,
+      826,
+      882
+    ],
+    "text": "5.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      142,
+      902,
+      307,
+      943
+    ],
+    "text": "ITEM COUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      799,
+      923,
+      829,
+      965
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      144,
+      941,
+      225,
+      977
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      750,
+      961,
+      822,
+      1000
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      136,
+      980,
+      445,
+      1032
+    ],
+    "text": "ROUNDING ADJUSTEMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      751,
+      1002,
+      822,
+      1041
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      136,
+      1021,
+      462,
+      1068
+    ],
+    "text": "TOTAL AFTER ROUNDING",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      747,
+      1039,
+      823,
+      1078
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      131,
+      1097,
+      203,
+      1136
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      735,
+      1121,
+      815,
+      1152
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      130,
+      1175,
+      231,
+      1214
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      738,
+      1196,
+      809,
+      1228
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      129,
+      1254,
+      263,
+      1288
+    ],
+    "text": "GST RATE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      336,
+      1262,
+      594,
+      1304
+    ],
+    "text": "AMT EXCL GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      674,
+      1272,
+      793,
+      1313
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      121,
+      1289,
+      227,
+      1327
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      525,
+      1303,
+      600,
+      1341
+    ],
+    "text": "4.72",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      722,
+      1312,
+      790,
+      1349
+    ],
+    "text": "0.28",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      124,
+      1332,
+      224,
+      1366
+    ],
+    "text": "Z = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      527,
+      1342,
+      599,
+      1381
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      718,
+      1348,
+      790,
+      1387
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      115,
+      1482,
+      346,
+      1528
+    ],
+    "text": "POINTS MISSED:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      385,
+      1491,
+      410,
+      1525
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      128,
+      1527,
+      777,
+      1581
+    ],
+    "text": "JOIN OUR MARIAN LOYALTY PROGRAMME TODAY!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      173,
+      1618,
+      738,
+      1677
+    ],
+    "text": "6605505001880000255018",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      102,
+      1688,
+      640,
+      1737
+    ],
+    "text": "PRINT DATE: 13/03/2017 03:00:44PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      118,
+      1727,
+      771,
+      1783
+    ],
+    "text": "NOTE: ANY REQUEST FOR PRODUCTION OF FULL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      1768,
+      763,
+      1819
+    ],
+    "text": "TAX INVOICE MUST BE MADE WITHIN 3 MONTHS",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      103,
+      1803,
+      765,
+      1864
+    ],
+    "text": "FROM THE DATE OF PURCHASE, IF THE REQUEST",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      165,
+      1844,
+      699,
+      1900
+    ],
+    "text": "IS NOT MADE WITHIN THE PRESCRIBED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      96,
+      1878,
+      779,
+      1938
+    ],
+    "text": "TIME FRAME, MYDIN MAY BASED ON ITS ABSOLUTE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      190,
+      1921,
+      679,
+      1976
+    ],
+    "text": "DISCRETION REJECT THE REQUEST.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      190,
+      1959,
+      700,
+      2021
+    ],
+    "text": "THANK YOU AND PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      531,
+      840,
+      555,
+      869
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      612,
+      845,
+      683,
+      876
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

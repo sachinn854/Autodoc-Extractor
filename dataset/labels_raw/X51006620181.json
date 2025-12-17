@@ -1,0 +1,310 @@
+[
+  {
+    "bbox": [
+      196,
+      164,
+      654,
+      210
+    ],
+    "text": "NADEJE PLATINUM SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      43,
+      216,
+      792,
+      256
+    ],
+    "text": "GK101,GND FLR,ONE UTAMA SHOPPING CENTRE",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      175,
+      262,
+      659,
+      301
+    ],
+    "text": "NO.1,LEBUH BANDAR UTAMA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      142,
+      305,
+      713,
+      345
+    ],
+    "text": "47800 PETALING JAYA, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      274,
+      348,
+      584,
+      389
+    ],
+    "text": "TEL:03-7710 0302",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      233,
+      393,
+      608,
+      436
+    ],
+    "text": "GST ID:001151160320",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      39,
+      570,
+      433,
+      609
+    ],
+    "text": "BILL NO.: 000-049909",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      43,
+      616,
+      530,
+      656
+    ],
+    "text": "DATE: 2016/05/01 14:11:20",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      654,
+      570,
+      815,
+      610
+    ],
+    "text": "TAKE OUT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      44,
+      703,
+      353,
+      742
+    ],
+    "text": "DOUBLECOCO SLICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      37,
+      746,
+      333,
+      789
+    ],
+    "text": "MOTHER'S SLICES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      43,
+      791,
+      313,
+      828
+    ],
+    "text": "TIRAMISU SLICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      39,
+      831,
+      276,
+      873
+    ],
+    "text": "CHEESE SLICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      603,
+      705,
+      627,
+      744
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      602,
+      751,
+      624,
+      781
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      603,
+      797,
+      622,
+      830
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      604,
+      838,
+      620,
+      874
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      676,
+      706,
+      812,
+      739
+    ],
+    "text": "RM12.60",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      673,
+      749,
+      813,
+      787
+    ],
+    "text": "RM13.50",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      672,
+      794,
+      812,
+      828
+    ],
+    "text": "RM12.60",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      675,
+      836,
+      818,
+      872
+    ],
+    "text": "RM12.60",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      346,
+      923,
+      812,
+      995
+    ],
+    "text": "GRAND TOTAL RM51.30",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      44,
+      1035,
+      716,
+      1078
+    ],
+    "text": "(BILL INCLUSIVE OF 6% GST : RM2.90)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      478,
+      1124,
+      569,
+      1167
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      673,
+      1127,
+      812,
+      1166
+    ],
+    "text": "RM51.30",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      43,
+      1211,
+      353,
+      1247
+    ],
+    "text": "002-2016/05/01 14:13:10",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      375,
+      1214,
+      483,
+      1248
+    ],
+    "text": "ELIN (1)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      534,
+      1212,
+      723,
+      1247
+    ],
+    "text": "000-049909 [1]",
+    "class": "ADDRESS",
+    "class_id": 1
+  }
+]

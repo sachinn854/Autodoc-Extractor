@@ -1,0 +1,552 @@
+[
+  {
+    "bbox": [
+      34,
+      205,
+      187,
+      238
+    ],
+    "text": "CASH SALE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      32,
+      278,
+      459,
+      316
+    ],
+    "text": "KT WONG TRADING (001904043-H)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      25,
+      325,
+      342,
+      358
+    ],
+    "text": "22, JALAN PERINDUSTRIAN HIJAU 5,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      31,
+      367,
+      303,
+      396
+    ],
+    "text": "TAMAN PERINDUSTRIAN HIJAU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      28,
+      397,
+      98,
+      420
+    ],
+    "text": "PHONE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      229,
+      401,
+      403,
+      424
+    ],
+    "text": "+603-6093-9078",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      24,
+      427,
+      208,
+      450
+    ],
+    "text": "GST REGISTRATION NO.:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      228,
+      434,
+      353,
+      452
+    ],
+    "text": "000613294080",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      26,
+      469,
+      186,
+      493
+    ],
+    "text": "DOCUMENT NO. :",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      229,
+      472,
+      355,
+      495
+    ],
+    "text": "KTW031475",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      25,
+      503,
+      92,
+      526
+    ],
+    "text": "DATE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      228,
+      508,
+      486,
+      533
+    ],
+    "text": "09/06/2018 12:17:20 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      27,
+      554,
+      86,
+      577
+    ],
+    "text": "DESC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      58,
+      585,
+      101,
+      614
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      202,
+      555,
+      269,
+      580
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      339,
+      559,
+      382,
+      580
+    ],
+    "text": "DISC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      414,
+      560,
+      510,
+      580
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      541,
+      558,
+      584,
+      581
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      535,
+      585,
+      593,
+      609
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      25,
+      639,
+      254,
+      663
+    ],
+    "text": "BERAS ASAS 10KG***",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      84,
+      671,
+      193,
+      694
+    ],
+    "text": "15*BAG *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      266,
+      673,
+      327,
+      695
+    ],
+    "text": "24.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      445,
+      676,
+      517,
+      699
+    ],
+    "text": "373.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      539,
+      677,
+      568,
+      700
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      23,
+      715,
+      242,
+      739
+    ],
+    "text": "SUN SOS TIRAM 6KG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      95,
+      751,
+      193,
+      773
+    ],
+    "text": "4BOTOL *",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      267,
+      750,
+      326,
+      774
+    ],
+    "text": "15.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      454,
+      751,
+      518,
+      775
+    ],
+    "text": "63.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      536,
+      750,
+      569,
+      774
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      25,
+      790,
+      211,
+      812
+    ],
+    "text": "COKE 24 X 325ML",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      825,
+      196,
+      847
+    ],
+    "text": "2PETI *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      263,
+      825,
+      328,
+      847
+    ],
+    "text": "26.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      460,
+      823,
+      522,
+      847
+    ],
+    "text": "52.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      540,
+      826,
+      573,
+      846
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      109,
+      934,
+      363,
+      960
+    ],
+    "text": "SUB TOTAL INCLUSIVE GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      490,
+      937,
+      562,
+      960
+    ],
+    "text": "489.30",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      204,
+      973,
+      361,
+      999
+    ],
+    "text": "ROUNDING ADJ. :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      516,
+      972,
+      563,
+      994
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      80,
+      1014,
+      361,
+      1047
+    ],
+    "text": "ROUNDED TOTAL (RM):",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      471,
+      1014,
+      564,
+      1042
+    ],
+    "text": "489.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      1086,
+      196,
+      1112
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      53,
+      1124,
+      151,
+      1146
+    ],
+    "text": "SR @ 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      297,
+      1086,
+      381,
+      1108
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      309,
+      1120,
+      380,
+      1144
+    ],
+    "text": "489.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      508,
+      1085,
+      549,
+      1106
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      499,
+      1123,
+      550,
+      1143
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      1164,
+      200,
+      1189
+    ],
+    "text": "PAYMENT DETAIL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      23,
+      1209,
+      148,
+      1233
+    ],
+    "text": "09/06/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      170,
+      1210,
+      221,
+      1231
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      460,
+      1209,
+      538,
+      1232
+    ],
+    "text": "489.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "bbox": [
+      147,
+      153,
+      549,
+      193
+    ],
+    "text": "#000002 BAIFU (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      195,
+      193,
+      514,
+      226
+    ],
+    "text": "COMPANY NO(814198-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      179,
+      230,
+      515,
+      263
+    ],
+    "text": "DAISO JAPAN, IOI MALL",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      210,
+      265,
+      484,
+      297
+    ],
+    "text": "PHONE 03-80763806",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      177,
+      301,
+      516,
+      332
+    ],
+    "text": "GST ID : 001389649920",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      290,
+      372,
+      404,
+      403
+    ],
+    "text": "WELCOME",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      442,
+      436,
+      473
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      100,
+      548,
+      598,
+      585
+    ],
+    "text": "20/03/2018 7:07PM RCPT NO.18252",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      101,
+      584,
+      404,
+      613
+    ],
+    "text": "REG:01 CSH:00000008",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      103,
+      655,
+      309,
+      686
+    ],
+    "text": "4997642045475",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      102,
+      691,
+      405,
+      723
+    ],
+    "text": "PLASTIC SPOONS 8PCS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      211,
+      726,
+      358,
+      757
+    ],
+    "text": "5.90 X 3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      487,
+      725,
+      614,
+      756
+    ],
+    "text": "17.70 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      102,
+      762,
+      308,
+      793
+    ],
+    "text": "4997642045482",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      102,
+      797,
+      389,
+      829
+    ],
+    "text": "PLASTIC FORKS 8PCS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      212,
+      831,
+      357,
+      861
+    ],
+    "text": "5.90 X 3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      486,
+      829,
+      613,
+      862
+    ],
+    "text": "17.70 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      103,
+      901,
+      434,
+      935
+    ],
+    "text": "SUB TOTAL (INCL. GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      499,
+      900,
+      582,
+      932
+    ],
+    "text": "35.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      103,
+      975,
+      182,
+      1031
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      452,
+      973,
+      581,
+      1029
+    ],
+    "text": "RM35.40",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      167,
+      1035,
+      230,
+      1064
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      500,
+      1035,
+      580,
+      1065
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      167,
+      1108,
+      263,
+      1164
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      501,
+      1105,
+      580,
+      1164
+    ],
+    "text": "14.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      168,
+      1203,
+      406,
+      1262
+    ],
+    "text": "# ITEMS SOLD 6",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      104,
+      1371,
+      234,
+      1404
+    ],
+    "text": "TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      326,
+      1370,
+      435,
+      1406
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      469,
+      1368,
+      578,
+      1406
+    ],
+    "text": "GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      106,
+      1443,
+      296,
+      1479
+    ],
+    "text": "GST (6.000%)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      359,
+      1476,
+      440,
+      1509
+    ],
+    "text": "33.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      518,
+      1476,
+      586,
+      1507
+    ],
+    "text": "2.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      281,
+      1615,
+      455,
+      1649
+    ],
+    "text": "~THANK YOU~",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      202,
+      1653,
+      506,
+      1685
+    ],
+    "text": "~PLEASE COME AGAIN~",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

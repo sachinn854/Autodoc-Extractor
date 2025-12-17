@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      86,
+      329,
+      698,
+      368
+    ],
+    "text": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      299,
+      365,
+      466,
+      404
+    ],
+    "text": "(1120908-M)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      90,
+      408,
+      694,
+      447
+    ],
+    "text": "NO.1, TAMAN SRI DENGKIL, JALAN AIR HITAM",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      210,
+      446,
+      566,
+      486
+    ],
+    "text": "43800 DENGKIL, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      178,
+      481,
+      600,
+      520
+    ],
+    "text": "(GST REG. NO : 000670224384)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      205,
+      515,
+      538,
+      560
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      83,
+      551,
+      324,
+      598
+    ],
+    "text": "TABLE 37",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      114,
+      599,
+      377,
+      632
+    ],
+    "text": "BILL#:V001-540417",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      449,
+      602,
+      664,
+      637
+    ],
+    "text": "ORDER#: 140523",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      83,
+      636,
+      150,
+      669
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      194,
+      643,
+      511,
+      671
+    ],
+    "text": ": 15-06-2018 11:35:35",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      84,
+      676,
+      390,
+      709
+    ],
+    "text": "CASHIER: 113 CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      522,
+      680,
+      629,
+      713
+    ],
+    "text": "PAX(S):",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      668,
+      679,
+      701,
+      711
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      90,
+      750,
+      134,
+      786
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      175,
+      747,
+      343,
+      787
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      552,
+      750,
+      691,
+      786
+    ],
+    "text": "TOTAL TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      130,
+      825,
+      150,
+      860
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      475,
+      826,
+      646,
+      862
+    ],
+    "text": "D 120.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      861,
+      288,
+      898
+    ],
+    "text": "CAT FISH ITEM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      126,
+      893,
+      153,
+      934
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      473,
+      892,
+      497,
+      936
+    ],
+    "text": "D",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      528,
+      898,
+      645,
+      933
+    ],
+    "text": "18.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      87,
+      937,
+      231,
+      972
+    ],
+    "text": "VAGE ITEM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      132,
+      975,
+      153,
+      1007
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      473,
+      976,
+      502,
+      1011
+    ],
+    "text": "D",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      536,
+      976,
+      647,
+      1007
+    ],
+    "text": "5.50 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      83,
+      1012,
+      241,
+      1047
+    ],
+    "text": "WHITE RICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      131,
+      1047,
+      154,
+      1082
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      472,
+      1051,
+      500,
+      1082
+    ],
+    "text": "D",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      535,
+      1047,
+      643,
+      1088
+    ],
+    "text": "5.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      83,
+      1081,
+      210,
+      1125
+    ],
+    "text": "BEVERAGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      87,
+      1159,
+      417,
+      1194
+    ],
+    "text": "TOTAL (EXCLUDING GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      600,
+      1163,
+      692,
+      1192
+    ],
+    "text": "148.50",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      83,
+      1198,
+      463,
+      1234
+    ],
+    "text": "TOTAL (INCLUSIVE OF GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      599,
+      1202,
+      690,
+      1234
+    ],
+    "text": "148.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      87,
+      1230,
+      259,
+      1278
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      512,
+      1234,
+      688,
+      1271
+    ],
+    "text": "148.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      82,
+      1307,
+      226,
+      1340
+    ],
+    "text": "CLOSED: 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      376,
+      1311,
+      523,
+      1339
+    ],
+    "text": "15-06-2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      583,
+      1310,
+      690,
+      1343
+    ],
+    "text": "2:08:44",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      86,
+      1345,
+      373,
+      1378
+    ],
+    "text": "SERVER: 113 CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      87,
+      1382,
+      175,
+      1421
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      598,
+      1385,
+      693,
+      1416
+    ],
+    "text": "148.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      83,
+      1452,
+      253,
+      1489
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      388,
+      1453,
+      536,
+      1497
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      580,
+      1457,
+      687,
+      1493
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      235,
+      1496,
+      327,
+      1532
+    ],
+    "text": "(@ 0%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      448,
+      1497,
+      539,
+      1529
+    ],
+    "text": "148.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      624,
+      1492,
+      688,
+      1529
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      234,
+      1609,
+      528,
+      1642
+    ],
+    "text": "**** THANK YOU ****",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      262,
+      1639,
+      523,
+      1678
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      84,
+      1491,
+      118,
+      1525
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

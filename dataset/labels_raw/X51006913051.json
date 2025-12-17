@@ -1,0 +1,695 @@
+[
+  {
+    "bbox": [
+      1575,
+      447,
+      3042,
+      557
+    ],
+    "text": "THE TOAST F&B SDN BHD (965752-T)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      1672,
+      556,
+      2952,
+      645
+    ],
+    "text": "LOT 2110&2111 JALAN PERMAS UTARA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1916,
+      637,
+      2711,
+      719
+    ],
+    "text": "BANDAR BARU PERMAS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1827,
+      717,
+      2795,
+      800
+    ],
+    "text": "81750.JOHOR BAHRU JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2065,
+      794,
+      2566,
+      870
+    ],
+    "text": "TEL: 07-3886880",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1898,
+      877,
+      2724,
+      957
+    ],
+    "text": "GST ID NO 002069884928",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1988,
+      971,
+      2620,
+      1070
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1603,
+      1133,
+      2194,
+      1211
+    ],
+    "text": "PS8418053885",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      2610,
+      1111,
+      3025,
+      1191
+    ],
+    "text": "11/05/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      1609,
+      1232,
+      1994,
+      1312
+    ],
+    "text": "S/P: POS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2400,
+      1207,
+      2760,
+      1296
+    ],
+    "text": "LOC: PMS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1609,
+      1330,
+      1865,
+      1403
+    ],
+    "text": "WALK IN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1612,
+      1447,
+      1901,
+      1546
+    ],
+    "text": "TABLE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2159,
+      1447,
+      2306,
+      1561
+    ],
+    "text": "27",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1607,
+      1628,
+      1756,
+      1699
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1937,
+      1619,
+      2051,
+      1697
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2104,
+      1609,
+      2335,
+      1687
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2425,
+      1605,
+      2576,
+      1678
+    ],
+    "text": "DISC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2766,
+      1598,
+      3036,
+      1665
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1614,
+      1715,
+      1737,
+      1791
+    ],
+    "text": "711",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2060,
+      1699,
+      2420,
+      1775
+    ],
+    "text": "WM TUNA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2022,
+      1804,
+      2065,
+      1879
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2218,
+      1797,
+      2372,
+      1868
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2434,
+      1790,
+      2587,
+      1857
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2807,
+      1781,
+      3036,
+      1857
+    ],
+    "text": "5.00 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1616,
+      1917,
+      1746,
+      1983
+    ],
+    "text": "224",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2061,
+      1896,
+      2523,
+      1967
+    ],
+    "text": "CANTONESE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2031,
+      2004,
+      2063,
+      2070
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2186,
+      1997,
+      2374,
+      2061
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2436,
+      1987,
+      2590,
+      2054
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2773,
+      1974,
+      3046,
+      2050
+    ],
+    "text": "10.00 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1617,
+      2111,
+      1798,
+      2184
+    ],
+    "text": "220Z",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2060,
+      2089,
+      2577,
+      2162
+    ],
+    "text": "T/A KAMPUNG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2033,
+      2200,
+      2074,
+      2271
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2187,
+      2196,
+      2375,
+      2260
+    ],
+    "text": "10.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2441,
+      2184,
+      2595,
+      2253
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2775,
+      2175,
+      3040,
+      2242
+    ],
+    "text": "10.40 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1621,
+      2306,
+      1747,
+      2377
+    ],
+    "text": "301",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2068,
+      2283,
+      2464,
+      2360
+    ],
+    "text": "KOPI - HOT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2031,
+      2395,
+      2079,
+      2468
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2225,
+      2393,
+      2381,
+      2459
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2441,
+      2381,
+      2594,
+      2454
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2803,
+      2367,
+      3044,
+      2443
+    ],
+    "text": "5.60 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1623,
+      2498,
+      2030,
+      2569
+    ],
+    "text": "TOTAL ITEMS:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2070,
+      2495,
+      2120,
+      2564
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1655,
+      2613,
+      2005,
+      2693
+    ],
+    "text": "SUB TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2853,
+      2599,
+      3038,
+      2675
+    ],
+    "text": "31.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      1658,
+      2715,
+      2184,
+      2788
+    ],
+    "text": "LESS DISCOUNT:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2890,
+      2699,
+      3048,
+      2768
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1658,
+      2821,
+      1914,
+      2890
+    ],
+    "text": "ROUND:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2898,
+      2795,
+      3045,
+      2864
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1644,
+      2928,
+      2519,
+      3027
+    ],
+    "text": "TOTAL DUE (GST INC):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2814,
+      2919,
+      3048,
+      3002
+    ],
+    "text": "31.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1660,
+      3096,
+      1901,
+      3192
+    ],
+    "text": "PAID:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1949,
+      3077,
+      2125,
+      3141
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2816,
+      3070,
+      3050,
+      3155
+    ],
+    "text": "51.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1653,
+      3270,
+      2065,
+      3371
+    ],
+    "text": "CHANGE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2818,
+      3238,
+      3052,
+      3321
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1704,
+      3450,
+      2091,
+      3528
+    ],
+    "text": "S:GST(6%)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2463,
+      3437,
+      2660,
+      3510
+    ],
+    "text": "29.24",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2899,
+      3425,
+      3059,
+      3508
+    ],
+    "text": "1.76",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1685,
+      3746,
+      2347,
+      3824
+    ],
+    "text": "PLEASE COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1648,
+      4030,
+      2372,
+      4110
+    ],
+    "text": "11/05/2018 08:35:58 PM",
+    "class": "DATE",
+    "class_id": 2
+  }
+]

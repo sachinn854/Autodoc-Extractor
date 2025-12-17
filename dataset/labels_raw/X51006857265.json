@@ -1,0 +1,486 @@
+[
+  {
+    "bbox": [
+      166,
+      311,
+      697,
+      350
+    ],
+    "text": "MPH BOOKSTORES",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      90,
+      362,
+      354,
+      405
+    ],
+    "text": "SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      240,
+      416,
+      621,
+      452
+    ],
+    "text": "GST NO: 000542572544",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      220,
+      464,
+      625,
+      504
+    ],
+    "text": "MPH ONE UTAMA PHASE 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      240,
+      517,
+      625,
+      561
+    ],
+    "text": "LOT S319, 2ND FLOOR,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      204,
+      565,
+      658,
+      611
+    ],
+    "text": "1 UTAMA SHOPPING CENTRE,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      86,
+      613,
+      774,
+      660
+    ],
+    "text": "NO1, LEBUH BANDAR UTAMA,47800 P.JAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      107,
+      662,
+      398,
+      706
+    ],
+    "text": "TEL:03-77259003",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      462,
+      664,
+      753,
+      707
+    ],
+    "text": "FAX:03-77224003",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      50,
+      765,
+      453,
+      805
+    ],
+    "text": "STICKERS & OTHER GIFT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      818,
+      302,
+      857
+    ],
+    "text": "2312475009906",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      353,
+      820,
+      487,
+      856
+    ],
+    "text": "3X10.49",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      674,
+      819,
+      811,
+      857
+    ],
+    "text": "31.47 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      128,
+      918,
+      562,
+      964
+    ],
+    "text": "TOTAL AMOUNT(INCL. GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      708,
+      918,
+      807,
+      956
+    ],
+    "text": "31.47",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      408,
+      969,
+      564,
+      1015
+    ],
+    "text": "ROUNDING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      710,
+      973,
+      805,
+      1009
+    ],
+    "text": "-0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      466,
+      1067,
+      564,
+      1135
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      707,
+      1068,
+      806,
+      1136
+    ],
+    "text": "31.45",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      486,
+      1157,
+      565,
+      1195
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      709,
+      1158,
+      808,
+      1194
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      448,
+      1208,
+      563,
+      1243
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      715,
+      1208,
+      810,
+      1247
+    ],
+    "text": "18.55",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1308,
+      242,
+      1346
+    ],
+    "text": "Z - 0% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      521,
+      1307,
+      603,
+      1350
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      726,
+      1308,
+      808,
+      1348
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1359,
+      224,
+      1399
+    ],
+    "text": "S- 6% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      505,
+      1358,
+      606,
+      1402
+    ],
+    "text": "29.69",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      733,
+      1358,
+      808,
+      1400
+    ],
+    "text": "1.78",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1459,
+      205,
+      1497
+    ],
+    "text": "ITEMS: 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      1457,
+      809,
+      1496
+    ],
+    "text": "CASHIER: TRAIN2 TRAINEE STAFF",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      55,
+      1507,
+      394,
+      1546
+    ],
+    "text": "INVOICE NO: 008558",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      562,
+      1507,
+      808,
+      1549
+    ],
+    "text": "TRANS: 009628",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      51,
+      1559,
+      149,
+      1597
+    ],
+    "text": "SHF:1",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      181,
+      1557,
+      300,
+      1596
+    ],
+    "text": "POS:12",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      334,
+      1559,
+      805,
+      1594
+    ],
+    "text": "04BFRTL 11/12/2017 21:42:",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      52,
+      1608,
+      99,
+      1648
+    ],
+    "text": "10",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      145,
+      1659,
+      695,
+      1698
+    ],
+    "text": "GOODS SOLD ARE NON-RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      126,
+      1708,
+      715,
+      1754
+    ],
+    "text": "EXCHANGES MAY BE MADE FOR BOOKS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      91,
+      1758,
+      762,
+      1801
+    ],
+    "text": "ONLY WITHIN 7 DAYS FROM THE DATE OF",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      184,
+      1813,
+      679,
+      1856
+    ],
+    "text": "PURCHASE WITH THIS RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      260,
+      1859,
+      601,
+      1907
+    ],
+    "text": "(CONDITIONS APPLY)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      188,
+      1908,
+      658,
+      1955
+    ],
+    "text": "THANK YOU FOR SHOPPING AT",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      278,
+      1959,
+      585,
+      1999
+    ],
+    "text": "MPH AT ONE UTAMA",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

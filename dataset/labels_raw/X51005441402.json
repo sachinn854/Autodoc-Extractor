@@ -1,0 +1,453 @@
+[
+  {
+    "bbox": [
+      64,
+      172,
+      370,
+      197
+    ],
+    "text": "THREE STOOGES",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      170,
+      201,
+      325,
+      224
+    ],
+    "text": "BISTRO & CAFE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      172,
+      227,
+      323,
+      254
+    ],
+    "text": "109, SS21/1A,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      160,
+      257,
+      338,
+      280
+    ],
+    "text": "DAMANSARA UTAMA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      124,
+      285,
+      373,
+      309
+    ],
+    "text": "GST ID : 001661886464",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      182,
+      341,
+      315,
+      366
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      18,
+      369,
+      78,
+      392
+    ],
+    "text": "TABLE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      103,
+      369,
+      171,
+      394
+    ],
+    "text": ": G7",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      426,
+      444,
+      452
+    ],
+    "text": "INV NO: POS01/00012379",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      20,
+      453,
+      256,
+      477
+    ],
+    "text": "INV DATE: 03/03/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      17,
+      480,
+      207,
+      504
+    ],
+    "text": "CASHIER: CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      17,
+      506,
+      375,
+      533
+    ],
+    "text": "INV DT: 03/03/2018 10:58:51 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      464,
+      509,
+      490,
+      533
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      18,
+      564,
+      114,
+      588
+    ],
+    "text": "QTY ITEM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      417,
+      566,
+      490,
+      589
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      18,
+      620,
+      30,
+      644
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      52,
+      619,
+      303,
+      644
+    ],
+    "text": "HH GUINESS 12 GLASSES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      372,
+      620,
+      491,
+      645
+    ],
+    "text": "150.00 SVC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      18,
+      678,
+      29,
+      698
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      52,
+      676,
+      161,
+      699
+    ],
+    "text": "SUB TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      419,
+      679,
+      491,
+      701
+    ],
+    "text": "150.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      704,
+      267,
+      729
+    ],
+    "text": "SERVICE CHARGE 10%",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      430,
+      706,
+      491,
+      729
+    ],
+    "text": "15.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      732,
+      125,
+      756
+    ],
+    "text": "GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      54,
+      807,
+      162,
+      831
+    ],
+    "text": "NET TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      419,
+      791,
+      491,
+      833
+    ],
+    "text": "174.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      52,
+      834,
+      103,
+      858
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      418,
+      836,
+      491,
+      858
+    ],
+    "text": "200.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      879,
+      126,
+      905
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      429,
+      864,
+      492,
+      906
+    ],
+    "text": "25.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      962,
+      150,
+      988
+    ],
+    "text": "TAX SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      311,
+      963,
+      384,
+      987
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      453,
+      963,
+      491,
+      987
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      18,
+      990,
+      267,
+      1014
+    ],
+    "text": "SVC SERVICE CHARGE 10",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      315,
+      992,
+      385,
+      1014
+    ],
+    "text": "150.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      433,
+      992,
+      492,
+      1015
+    ],
+    "text": "15.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      1018,
+      43,
+      1043
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      315,
+      1018,
+      385,
+      1043
+    ],
+    "text": "165.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      442,
+      1021,
+      492,
+      1043
+    ],
+    "text": "9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      1073,
+      398,
+      1099
+    ],
+    "text": "THANK YOU. PLZ COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      65,
+      1018,
+      139,
+      1042
+    ],
+    "text": "GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  }
+]

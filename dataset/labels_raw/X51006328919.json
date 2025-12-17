@@ -1,0 +1,343 @@
+[
+  {
+    "bbox": [
+      104,
+      268,
+      643,
+      302
+    ],
+    "text": "B & BEST RESTAURANT",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      261,
+      307,
+      445,
+      340
+    ],
+    "text": "(001610235-P)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      203,
+      345,
+      521,
+      373
+    ],
+    "text": "GST NO. : 001800839168",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      133,
+      380,
+      597,
+      412
+    ],
+    "text": "NO.12,JALAN SS4C/5,PETALING JAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      216,
+      414,
+      507,
+      443
+    ],
+    "text": "SELANGOR DARUL EHSAN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      236,
+      449,
+      491,
+      478
+    ],
+    "text": "TEL : 012-2060 778",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      250,
+      481,
+      468,
+      517
+    ],
+    "text": "**TAX INVOICE**",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      22,
+      555,
+      376,
+      586
+    ],
+    "text": "BILL NO: 00118887 / POS01",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      20,
+      588,
+      291,
+      623
+    ],
+    "text": "BIZDATE: 10/02/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      19,
+      622,
+      254,
+      658
+    ],
+    "text": "CASHIER: MANAGER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      20,
+      658,
+      463,
+      691
+    ],
+    "text": "PRINTED: 10/02/2017 01:09:47 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      669,
+      653,
+      706,
+      687
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      23,
+      728,
+      38,
+      763
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      161,
+      727,
+      378,
+      759
+    ],
+    "text": "FISHBALL NOODLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      643,
+      722,
+      706,
+      756
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      24,
+      799,
+      37,
+      833
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      63,
+      797,
+      198,
+      830
+    ],
+    "text": "SUB TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      642,
+      794,
+      707,
+      826
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      64,
+      833,
+      157,
+      866
+    ],
+    "text": "GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      644,
+      832,
+      705,
+      861
+    ],
+    "text": "0.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      60,
+      867,
+      236,
+      898
+    ],
+    "text": "ROUNDING ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      628,
+      865,
+      707,
+      899
+    ],
+    "text": "-0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      63,
+      963,
+      193,
+      993
+    ],
+    "text": "NET TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      642,
+      938,
+      706,
+      990
+    ],
+    "text": "7.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      60,
+      995,
+      124,
+      1025
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      646,
+      991,
+      708,
+      1022
+    ],
+    "text": "7.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      62,
+      1054,
+      154,
+      1087
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      642,
+      1030,
+      707,
+      1082
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      132,
+      1155,
+      592,
+      1186
+    ],
+    "text": "THANK YOU...PLEASE COME AGAIN...",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      76,
+      1190,
+      653,
+      1221
+    ],
+    "text": "HTTPS://M.FACEBOOK.COM/B-BEST-RESTAURANT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      163,
+      1223,
+      563,
+      1257
+    ],
+    "text": "ALL ITEM WILL BE CHARGES GST",
+    "class": "TAX",
+    "class_id": 4
+  }
+]

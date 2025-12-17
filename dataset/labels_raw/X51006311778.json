@@ -1,0 +1,530 @@
+[
+  {
+    "bbox": [
+      368,
+      277,
+      632,
+      343
+    ],
+    "text": "EXPRINT'",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      155,
+      400,
+      692,
+      434
+    ],
+    "text": "ANZEL ADVERTISING (M) SDN BHD (759765-H)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      165,
+      434,
+      684,
+      467
+    ],
+    "text": "UNIT G-5B, GROUND FLOOR, WISMA UOA II,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      288,
+      467,
+      557,
+      502
+    ],
+    "text": "NO 21, JALAN PINANG,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      222,
+      499,
+      618,
+      533
+    ],
+    "text": "50450 KUALA LUMPUR, MALAYSIA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      204,
+      536,
+      641,
+      563
+    ],
+    "text": "TEL: 03-2163 2766 / 03-2181 6766",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      264,
+      571,
+      580,
+      599
+    ],
+    "text": "GST NO: 002121732096",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      315,
+      654,
+      522,
+      681
+    ],
+    "text": "TAX CASH SALES",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      414,
+      700,
+      643,
+      721
+    ],
+    "text": "NO.:UOA-CB18-01575",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      421,
+      761,
+      463,
+      790
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      524,
+      758,
+      565,
+      786
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      586,
+      759,
+      632,
+      785
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      147,
+      816,
+      407,
+      848
+    ],
+    "text": "A4 BW SIMILI 80GSM @",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      490,
+      819,
+      544,
+      845
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      598,
+      821,
+      648,
+      845
+    ],
+    "text": "7.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      670,
+      822,
+      684,
+      841
+    ],
+    "text": "8F",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      150,
+      848,
+      200,
+      870
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      142,
+      906,
+      464,
+      936
+    ],
+    "text": "TOTAL AMT INCL GST @ 6% :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      597,
+      910,
+      646,
+      933
+    ],
+    "text": "7.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      212,
+      944,
+      467,
+      972
+    ],
+    "text": "ROUNDING ADJUSTMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      583,
+      945,
+      650,
+      976
+    ],
+    "text": "(0.01)",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      243,
+      986,
+      471,
+      1016
+    ],
+    "text": "TOTAL AMT PAYABLE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      600,
+      988,
+      654,
+      1012
+    ],
+    "text": "7.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      313,
+      1023,
+      474,
+      1049
+    ],
+    "text": "PAID AMOUNT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      591,
+      1024,
+      658,
+      1049
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      366,
+      1063,
+      474,
+      1094
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      606,
+      1065,
+      656,
+      1089
+    ],
+    "text": "2.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      260,
+      1103,
+      473,
+      1134
+    ],
+    "text": "TOTAL QTY TENDER :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      642,
+      1105,
+      655,
+      1127
+    ],
+    "text": "7",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      326,
+      1245,
+      508,
+      1273
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      181,
+      1281,
+      650,
+      1313
+    ],
+    "text": "FOR ANY ENQUIRY, PLEASE E-MAIL US:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      257,
+      1318,
+      567,
+      1349
+    ],
+    "text": "WWW.EXPRINTSHOP.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      215,
+      1360,
+      600,
+      1392
+    ],
+    "text": "E: EXPRINTUOAKL@GMAIL.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      238,
+      1411,
+      584,
+      1442
+    ],
+    "text": "09:13 AM, 21 MARCH, 2018",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      166,
+      1533,
+      337,
+      1563
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      402,
+      1537,
+      498,
+      1559
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      616,
+      1537,
+      661,
+      1558
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      437,
+      1566,
+      495,
+      1596
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      602,
+      1565,
+      658,
+      1595
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      166,
+      1603,
+      260,
+      1630
+    ],
+    "text": "SR @ A",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      442,
+      1606,
+      495,
+      1629
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      607,
+      1606,
+      659,
+      1629
+    ],
+    "text": "0.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      163,
+      1641,
+      222,
+      1663
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      443,
+      1645,
+      492,
+      1667
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      607,
+      1645,
+      658,
+      1665
+    ],
+    "text": "0.42",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      377,
+      1802,
+      531,
+      1827
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      263,
+      1842,
+      646,
+      1873
+    ],
+    "text": "FOR ANY ENQUIRY, PLEASE E-MAIL US.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      341,
+      1900,
+      575,
+      1926
+    ],
+    "text": "21/03/2018 09:13:31",
+    "class": "DATE",
+    "class_id": 2
+  }
+]

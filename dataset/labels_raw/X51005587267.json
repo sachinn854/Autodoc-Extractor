@@ -1,0 +1,959 @@
+[
+  {
+    "bbox": [
+      218,
+      103,
+      544,
+      184
+    ],
+    "text": "MYDIN",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      155,
+      199,
+      605,
+      237
+    ],
+    "text": "TRI SHAAS SDN BHD (728515-N)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      234,
+      243,
+      544,
+      278
+    ],
+    "text": "MYDIN MART SRI MUDA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      91,
+      280,
+      668,
+      319
+    ],
+    "text": "4-20, JALAN RIA 25/62 TAMAN SRI MUDA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      92,
+      319,
+      667,
+      357
+    ],
+    "text": "SEKSYEN 25, 40400 SHAH ALAM SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      88,
+      359,
+      667,
+      393
+    ],
+    "text": "TEL: 03-51217970 FAX: 03-51218059",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      217,
+      399,
+      541,
+      434
+    ],
+    "text": "GST ID: 000429166592",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      325,
+      474,
+      445,
+      512
+    ],
+    "text": "RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      38,
+      555,
+      452,
+      584
+    ],
+    "text": "TERMINAL: 195 - 5505POS011",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      36,
+      591,
+      291,
+      625
+    ],
+    "text": "TRANS #: 261172",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      34,
+      632,
+      519,
+      665
+    ],
+    "text": "DATE: 4/02/2017 03:30:27PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      30,
+      670,
+      325,
+      703
+    ],
+    "text": "CASHIER: CH107691",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      194,
+      708,
+      388,
+      744
+    ],
+    "text": "MSM - WERNIE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      30,
+      786,
+      531,
+      819
+    ],
+    "text": "MYCLIP BINDER CLIP 12S 25MM 12S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      674,
+      787,
+      708,
+      821
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      33,
+      826,
+      244,
+      855
+    ],
+    "text": "2901060611145",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      356,
+      826,
+      369,
+      857
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      640,
+      830,
+      706,
+      859
+    ],
+    "text": "2.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      864,
+      465,
+      899
+    ],
+    "text": "MYCLIP BINDER CLIP 15MM 12S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      554,
+      862,
+      595,
+      897
+    ],
+    "text": "CS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      674,
+      863,
+      712,
+      897
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      24,
+      901,
+      243,
+      936
+    ],
+    "text": "2901060611213",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      352,
+      905,
+      369,
+      935
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      621,
+      903,
+      704,
+      938
+    ],
+    "text": "24.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      29,
+      940,
+      464,
+      974
+    ],
+    "text": "MYCLIP BINDER CLIP 15MM 12S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      557,
+      940,
+      598,
+      975
+    ],
+    "text": "EA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      672,
+      942,
+      705,
+      977
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      24,
+      975,
+      240,
+      1014
+    ],
+    "text": "2901060611206",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      351,
+      981,
+      384,
+      1011
+    ],
+    "text": "10",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      628,
+      985,
+      702,
+      1012
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      22,
+      1015,
+      541,
+      1050
+    ],
+    "text": "PARTNER E/LOPE 4.51NX9.5IN W4292",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      670,
+      1022,
+      706,
+      1054
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      24,
+      1053,
+      237,
+      1092
+    ],
+    "text": "9555023304655",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      345,
+      1061,
+      366,
+      1087
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      637,
+      1057,
+      698,
+      1088
+    ],
+    "text": "4.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      26,
+      1095,
+      523,
+      1126
+    ],
+    "text": "GUALITY LFTIER TRAY IT-1196-MIX",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      667,
+      1097,
+      703,
+      1129
+    ],
+    "text": ".S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      19,
+      1132,
+      235,
+      1167
+    ],
+    "text": "9555052401196",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      342,
+      1133,
+      371,
+      1168
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      622,
+      1135,
+      700,
+      1166
+    ],
+    "text": "44.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      1208,
+      188,
+      1242
+    ],
+    "text": "ITEM COUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      661,
+      1213,
+      700,
+      1245
+    ],
+    "text": "18",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      18,
+      1245,
+      101,
+      1280
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      612,
+      1249,
+      700,
+      1288
+    ],
+    "text": "85.10",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      12,
+      1284,
+      326,
+      1322
+    ],
+    "text": "ROUNDING ADJUSTMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      626,
+      1285,
+      697,
+      1325
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      18,
+      1322,
+      346,
+      1365
+    ],
+    "text": "TOTAL AFTER ROUNDING",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      610,
+      1325,
+      700,
+      1361
+    ],
+    "text": "85.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      13,
+      1404,
+      87,
+      1437
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      598,
+      1410,
+      694,
+      1440
+    ],
+    "text": "100.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      15,
+      1477,
+      117,
+      1517
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      614,
+      1484,
+      691,
+      1514
+    ],
+    "text": "15.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      11,
+      1555,
+      147,
+      1593
+    ],
+    "text": "GST RATE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      220,
+      1559,
+      485,
+      1597
+    ],
+    "text": "AMT EXCL GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      563,
+      1562,
+      672,
+      1595
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      11,
+      1594,
+      117,
+      1632
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      395,
+      1596,
+      483,
+      1634
+    ],
+    "text": "80.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      609,
+      1602,
+      673,
+      1632
+    ],
+    "text": "4.83",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      14,
+      1635,
+      115,
+      1668
+    ],
+    "text": "Z = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      411,
+      1635,
+      483,
+      1670
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      607,
+      1641,
+      673,
+      1675
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      135,
+      1790,
+      580,
+      1833
+    ],
+    "text": "* YOUR TOTAL SAVINGS 8.00 *",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      8,
+      1868,
+      232,
+      1901
+    ],
+    "text": "POINTS MISSED:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      278,
+      1869,
+      319,
+      1903
+    ],
+    "text": "85",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      22,
+      1902,
+      667,
+      1948
+    ],
+    "text": "JOIN MERLAH POYALTY PROGRAMME TODAY!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      70,
+      2000,
+      625,
+      2040
+    ],
+    "text": "6605505001950000261172",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      0,
+      2072,
+      522,
+      2111
+    ],
+    "text": "PRINT DATE: 4/02/2017 03:30;29PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      17,
+      2109,
+      664,
+      2154
+    ],
+    "text": "NOTE: ANY REQUEST FOR PRODUCTION OF FULL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      17,
+      2151,
+      666,
+      2195
+    ],
+    "text": "TAX INVOICE MUST BE MADE WITHIN 3 MONTHS",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      3,
+      2189,
+      661,
+      2229
+    ],
+    "text": "FROM THE DATE OF PURCHASE. IF THE REQUEST",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      65,
+      2228,
+      601,
+      2268
+    ],
+    "text": "IS NOT MADE WITHIN THE PRESCRIBED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2,
+      2266,
+      682,
+      2310
+    ],
+    "text": "TIME FRAME, MYDIN MAY BASED ON ITS ABSOLUTE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      95,
+      2307,
+      576,
+      2347
+    ],
+    "text": "DISCRETION REJECT THE REQUEST.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      94,
+      2346,
+      597,
+      2390
+    ],
+    "text": "THANK YOU AND PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      563,
+      783,
+      598,
+      818
+    ],
+    "text": "EA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      410,
+      831,
+      435,
+      851
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      497,
+      827,
+      565,
+      853
+    ],
+    "text": "2.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      411,
+      908,
+      432,
+      928
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      484,
+      907,
+      563,
+      932
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      412,
+      986,
+      433,
+      1007
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      494,
+      978,
+      560,
+      1013
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      554,
+      1024,
+      596,
+      1049
+    ],
+    "text": "EA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      406,
+      1058,
+      432,
+      1084
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      490,
+      1061,
+      556,
+      1088
+    ],
+    "text": "2.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      558,
+      1094,
+      588,
+      1125
+    ],
+    "text": "EA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      408,
+      1137,
+      428,
+      1159
+    ],
+    "text": "*",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      477,
+      1137,
+      555,
+      1166
+    ],
+    "text": "14.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

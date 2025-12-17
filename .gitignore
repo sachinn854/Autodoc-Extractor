@@ -1,0 +1,141 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files and processing data
+backend/tmp/
+tmp/
+*.tmp
+
+# Dataset files (large)
+dataset/raw/
+dataset/images/
+dataset/intermediate/
+debug_vis/
+runs/
+
+# Model files
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.h5
+*.joblib
+yolov8n.pt
+
+# Data folder (user data & history)
+backend/data/
+data/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+backend/data/autodoc.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+
+# Next.js
+.next/
+out/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+secrets.json
+credentials.json
+
+# Logs
+*.log
+logs/
+backend/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Uploaded files
+uploads/
+uploaded_files/
+backend/tmp/uploads/
+backend/tmp/preprocessed/
+backend/tmp/results/
+
+# Processing outputs
+*.json.tmp
+job_status.json
+processing_summary.json
+phase9_evaluation_report.json
+
+# Backup files
+*.bak
+*.swp
+*~
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Documentation build
+docs/_build/
+site/
+
+# Large compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Jupyter Notebook
+.ipynb_checkpoints

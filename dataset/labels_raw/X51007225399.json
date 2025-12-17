@@ -1,0 +1,684 @@
+[
+  {
+    "bbox": [
+      86,
+      127,
+      512,
+      150
+    ],
+    "text": "ENW HARDWARE CENTRE (M) SDN. BHD.",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      178,
+      162,
+      395,
+      181
+    ],
+    "text": "CO. REG. NO.: 795225-A",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      156,
+      187,
+      441,
+      207
+    ],
+    "text": "GST REG. NO. : 000155453440",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      152,
+      214,
+      436,
+      237
+    ],
+    "text": "NO: G3, BLK G, JLN PJU 1A/3,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      179,
+      240,
+      415,
+      262
+    ],
+    "text": "ARA DAMANSARA, 47301",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      113,
+      266,
+      482,
+      291
+    ],
+    "text": "PETALING JAYA, SELANGOR DARUL EHSAN.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      102,
+      319,
+      460,
+      343
+    ],
+    "text": "TEL: 03-7832 6929 , 012-659 9829",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      65,
+      353,
+      179,
+      373
+    ],
+    "text": "14/04/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      246,
+      354,
+      386,
+      378
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      361,
+      382,
+      544,
+      405
+    ],
+    "text": "NO. :CS00233521",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      63,
+      420,
+      330,
+      445
+    ],
+    "text": "CASH SALE (ARA D'SARA)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      464,
+      272,
+      488
+    ],
+    "text": "TEL: 03-7832 6929",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      493,
+      273,
+      517
+    ],
+    "text": "H/P: 012-659 9829",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      523,
+      107,
+      544
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      243,
+      524,
+      280,
+      548
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      305,
+      522,
+      382,
+      546
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      495,
+      523,
+      533,
+      544
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      559,
+      142,
+      580
+    ],
+    "text": "VEWT5",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      243,
+      560,
+      289,
+      580
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      321,
+      559,
+      381,
+      581
+    ],
+    "text": "99.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      472,
+      559,
+      564,
+      580
+    ],
+    "text": "99.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      590,
+      350,
+      613
+    ],
+    "text": "5L. T_'NIPPON' VINILEX EASYWASH.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      614,
+      170,
+      635
+    ],
+    "text": "NP N 1882T",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      661,
+      140,
+      682
+    ],
+    "text": "000605",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      243,
+      662,
+      288,
+      683
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      322,
+      663,
+      382,
+      683
+    ],
+    "text": "30.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      472,
+      661,
+      563,
+      684
+    ],
+    "text": "30.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      694,
+      348,
+      717
+    ],
+    "text": "CRISTIN 4\" BLUE STRIPE ROLLER REFILL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      62,
+      741,
+      141,
+      763
+    ],
+    "text": "002882",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      243,
+      742,
+      289,
+      763
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      336,
+      742,
+      384,
+      762
+    ],
+    "text": "3.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      486,
+      742,
+      561,
+      762
+    ],
+    "text": "3.50 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      63,
+      774,
+      245,
+      794
+    ],
+    "text": "1\" NYLON PAINT BRUSH.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      62,
+      807,
+      141,
+      828
+    ],
+    "text": "001065",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      245,
+      807,
+      287,
+      828
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      336,
+      805,
+      383,
+      828
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      486,
+      805,
+      563,
+      829
+    ],
+    "text": "2.50 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      839,
+      259,
+      862
+    ],
+    "text": "4\" X 24\" ROLLER HANDLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      62,
+      885,
+      139,
+      908
+    ],
+    "text": "001741",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      244,
+      886,
+      291,
+      909
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      322,
+      886,
+      384,
+      909
+    ],
+    "text": "21.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      474,
+      886,
+      565,
+      909
+    ],
+    "text": "21.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      62,
+      918,
+      251,
+      940
+    ],
+    "text": "'CLIPSAL' 4G 1W SWITCH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      79,
+      971,
+      372,
+      995
+    ],
+    "text": "TOTAL AMT INCL. GST @ 6 % :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      464,
+      970,
+      535,
+      992
+    ],
+    "text": "156.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      158,
+      1000,
+      373,
+      1025
+    ],
+    "text": "ROUNDING ADJUSMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      487,
+      1001,
+      532,
+      1021
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      164,
+      1031,
+      374,
+      1056
+    ],
+    "text": "TOTAL AMT PAYABLE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      463,
+      1031,
+      533,
+      1054
+    ],
+    "text": "156.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      194,
+      1060,
+      373,
+      1082
+    ],
+    "text": "TOTAL QTY TENDER :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      517,
+      1060,
+      533,
+      1081
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      71,
+      1107,
+      219,
+      1131
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      247,
+      1108,
+      383,
+      1131
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      421,
+      1107,
+      528,
+      1130
+    ],
+    "text": "GST (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      72,
+      1137,
+      173,
+      1160
+    ],
+    "text": "SR = 6 %",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      313,
+      1140,
+      383,
+      1163
+    ],
+    "text": "147.17",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      482,
+      1136,
+      527,
+      1160
+    ],
+    "text": "8.83",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      194,
+      1195,
+      252,
+      1219
+    ],
+    "text": "POIN",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      285,
+      1197,
+      330,
+      1218
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      65,
+      1250,
+      404,
+      1274
+    ],
+    "text": "*GOODS SOLD ARE NOT RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      154,
+      1291,
+      444,
+      1318
+    ],
+    "text": "THANK YOU FOR SHOPPING AT",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      93,
+      1320,
+      506,
+      1346
+    ],
+    "text": "ENW HARDWARE CENTRE (M) SDN BHD.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

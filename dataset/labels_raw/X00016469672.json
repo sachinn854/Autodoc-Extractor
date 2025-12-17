@@ -1,0 +1,1025 @@
+[
+  {
+    "bbox": [
+      94,
+      40,
+      316,
+      79
+    ],
+    "text": "TAN CHAY YEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      23,
+      103,
+      431,
+      130
+    ],
+    "text": "SOON HUAT MACHINERY ENTERPRISE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      159,
+      128,
+      291,
+      149
+    ],
+    "text": "(JM0352019-K)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      127,
+      154,
+      321,
+      177
+    ],
+    "text": "NO.53 JALAN PUTRA 1,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      143,
+      178,
+      305,
+      199
+    ],
+    "text": "TAMAN SRIPUTRA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      131,
+      201,
+      316,
+      225
+    ],
+    "text": "81200 JOHOR BAHRU",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      185,
+      225,
+      269,
+      248
+    ],
+    "text": "JOHOR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      17,
+      250,
+      271,
+      270
+    ],
+    "text": "TEL : 07-5547360 / 016-7993391",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      293,
+      251,
+      432,
+      267
+    ],
+    "text": "FAX : 07-5624059",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      90,
+      276,
+      362,
+      293
+    ],
+    "text": "SOONHUAT2000@HOTMAIL.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      128,
+      297,
+      322,
+      317
+    ],
+    "text": "GST ID : 002116837376",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      163,
+      329,
+      283,
+      346
+    ],
+    "text": "CASH SALES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      12,
+      356,
+      80,
+      380
+    ],
+    "text": "DOC NO.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      359,
+      239,
+      377
+    ],
+    "text": ": CS00004040",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      294,
+      356,
+      433,
+      375
+    ],
+    "text": "DATE: 11/01/2019",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      14,
+      385,
+      78,
+      401
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      123,
+      386,
+      189,
+      402
+    ],
+    "text": ": USER",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      296,
+      383,
+      414,
+      402
+    ],
+    "text": "TIME: 09:44:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      15,
+      413,
+      129,
+      429
+    ],
+    "text": "SALESPERSON :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      300,
+      410,
+      340,
+      429
+    ],
+    "text": "REF.:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      45,
+      1136,
+      410,
+      1160
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE, THANK YOU.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      11,
+      455,
+      54,
+      472
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      131,
+      451,
+      170,
+      475
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      187,
+      448,
+      240,
+      476
+    ],
+    "text": "S/PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      250,
+      451,
+      307,
+      474
+    ],
+    "text": "S/PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      328,
+      451,
+      390,
+      472
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      400,
+      448,
+      437,
+      471
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      11,
+      475,
+      60,
+      498
+    ],
+    "text": "1072",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      142,
+      476,
+      161,
+      493
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      185,
+      475,
+      236,
+      495
+    ],
+    "text": "80.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      253,
+      472,
+      300,
+      496
+    ],
+    "text": "80.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      345,
+      473,
+      397,
+      493
+    ],
+    "text": "80.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      16,
+      502,
+      321,
+      516
+    ],
+    "text": "REPAIR ENGINE POWER SPRAYER (1UNIT)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      13,
+      527,
+      167,
+      543
+    ],
+    "text": "WORKMANSHIP & SERVICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      15,
+      546,
+      66,
+      570
+    ],
+    "text": "70549",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      140,
+      547,
+      161,
+      568
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      186,
+      544,
+      243,
+      565
+    ],
+    "text": "160.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      255,
+      546,
+      308,
+      567
+    ],
+    "text": "160.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      341,
+      540,
+      398,
+      564
+    ],
+    "text": "160.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      15,
+      568,
+      228,
+      588
+    ],
+    "text": "GIANT 606 OVERFLOW ASSY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      13,
+      598,
+      57,
+      618
+    ],
+    "text": "1071",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      142,
+      596,
+      161,
+      613
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      195,
+      596,
+      239,
+      617
+    ],
+    "text": "17.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      259,
+      595,
+      304,
+      622
+    ],
+    "text": "17.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      344,
+      591,
+      403,
+      618
+    ],
+    "text": "17.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      13,
+      622,
+      108,
+      642
+    ],
+    "text": "ENGINE OIL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      11,
+      647,
+      63,
+      668
+    ],
+    "text": "70791",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      140,
+      649,
+      163,
+      669
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      194,
+      647,
+      239,
+      667
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      258,
+      649,
+      306,
+      669
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      346,
+      645,
+      393,
+      666
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      13,
+      675,
+      283,
+      694
+    ],
+    "text": "GREASE FOR TOOLS 40ML (AKODA)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      15,
+      699,
+      66,
+      720
+    ],
+    "text": "70637",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      142,
+      701,
+      169,
+      718
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      197,
+      698,
+      234,
+      718
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      261,
+      698,
+      302,
+      715
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      356,
+      695,
+      397,
+      716
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      11,
+      723,
+      183,
+      743
+    ],
+    "text": "EY20 PLUG CHAMPION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      15,
+      750,
+      60,
+      771
+    ],
+    "text": "1643",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      146,
+      753,
+      163,
+      770
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      193,
+      749,
+      234,
+      772
+    ],
+    "text": "8.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      261,
+      750,
+      302,
+      769
+    ],
+    "text": "8.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      354,
+      742,
+      397,
+      769
+    ],
+    "text": "8.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      22,
+      778,
+      128,
+      796
+    ],
+    "text": "STARTER TALI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      22,
+      802,
+      60,
+      822
+    ],
+    "text": "70197",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      143,
+      801,
+      166,
+      820
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      198,
+      802,
+      236,
+      817
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      263,
+      802,
+      303,
+      816
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      354,
+      802,
+      392,
+      817
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      828,
+      191,
+      844
+    ],
+    "text": "EY20 STARTER HANDLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      20,
+      853,
+      62,
+      874
+    ],
+    "text": "70561",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      142,
+      853,
+      169,
+      873
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      198,
+      854,
+      232,
+      868
+    ],
+    "text": "18.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      267,
+      852,
+      301,
+      869
+    ],
+    "text": "18.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      351,
+      854,
+      390,
+      870
+    ],
+    "text": "36.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      878,
+      128,
+      896
+    ],
+    "text": "HD40 1L COTIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      42,
+      903,
+      111,
+      924
+    ],
+    "text": "TOTAL QTY:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      142,
+      900,
+      163,
+      920
+    ],
+    "text": "9",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      339,
+      903,
+      392,
+      918
+    ],
+    "text": "327.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      208,
+      940,
+      306,
+      960
+    ],
+    "text": "TOTAL SALES :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      338,
+      940,
+      395,
+      958
+    ],
+    "text": "327.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      222,
+      972,
+      307,
+      990
+    ],
+    "text": "DISCOUNT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      358,
+      972,
+      396,
+      987
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      254,
+      1000,
+      307,
+      1018
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      360,
+      1001,
+      394,
+      1016
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      220,
+      1032,
+      306,
+      1049
+    ],
+    "text": "ROUNDING :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      361,
+      1032,
+      394,
+      1046
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      200,
+      1060,
+      309,
+      1081
+    ],
+    "text": "TOTAL SALES :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      343,
+      1062,
+      392,
+      1076
+    ],
+    "text": "327.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      241,
+      1091,
+      308,
+      1107
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      343,
+      1091,
+      394,
+      1108
+    ],
+    "text": "327.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      227,
+      1114,
+      308,
+      1132
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      359,
+      1114,
+      394,
+      1128
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

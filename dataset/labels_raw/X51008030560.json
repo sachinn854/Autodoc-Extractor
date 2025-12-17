@@ -1,0 +1,629 @@
+[
+  {
+    "bbox": [
+      132,
+      177,
+      671,
+      223
+    ],
+    "text": "RESTORAN DE COFFEE O",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      153,
+      243,
+      643,
+      274
+    ],
+    "text": "NO 33, 35, G F,JALAN TEMENGGUNG 3/9,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      222,
+      278,
+      571,
+      303
+    ],
+    "text": "BANDAR MAHKOTA CHERAS,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      233,
+      303,
+      565,
+      333
+    ],
+    "text": "43200 CHERAS, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      254,
+      335,
+      545,
+      364
+    ],
+    "text": "GST NO. : 002062008320",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      296,
+      368,
+      498,
+      400
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      448,
+      156,
+      475
+    ],
+    "text": "RECEIPT #",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      219,
+      447,
+      367,
+      475
+    ],
+    "text": "CS00119810",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      467,
+      447,
+      528,
+      473
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      597,
+      448,
+      722,
+      472
+    ],
+    "text": "03/04/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      51,
+      492,
+      112,
+      515
+    ],
+    "text": "TIME :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      178,
+      493,
+      274,
+      515
+    ],
+    "text": "12:32:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      529,
+      543,
+      604,
+      572
+    ],
+    "text": "(GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      673,
+      543,
+      748,
+      569
+    ],
+    "text": "(GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      572,
+      101,
+      596
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      434,
+      575,
+      479,
+      601
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      539,
+      571,
+      606,
+      596
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      637,
+      571,
+      749,
+      597
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      47,
+      604,
+      348,
+      632
+    ],
+    "text": "SR: COFFEE O (T.AWAY)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      463,
+      606,
+      474,
+      630
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      551,
+      606,
+      606,
+      629
+    ],
+    "text": "2.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      701,
+      606,
+      753,
+      632
+    ],
+    "text": "2.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      639,
+      265,
+      667
+    ],
+    "text": "SR: TEA (T.AWAY)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      464,
+      644,
+      475,
+      665
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      553,
+      642,
+      603,
+      664
+    ],
+    "text": "2.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      699,
+      640,
+      754,
+      668
+    ],
+    "text": "2.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      675,
+      319,
+      703
+    ],
+    "text": "SR: COFFEE (T.AWAY)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      463,
+      678,
+      479,
+      701
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      553,
+      679,
+      605,
+      699
+    ],
+    "text": "2.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      698,
+      679,
+      750,
+      700
+    ],
+    "text": "4.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      711,
+      362,
+      739
+    ],
+    "text": "SR: SOYA BEAN (T AWAY)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      464,
+      714,
+      476,
+      736
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      554,
+      713,
+      607,
+      738
+    ],
+    "text": "2.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      702,
+      714,
+      756,
+      738
+    ],
+    "text": "2.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      295,
+      749,
+      378,
+      776
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      459,
+      749,
+      483,
+      772
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      689,
+      751,
+      759,
+      774
+    ],
+    "text": "11.60",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      205,
+      804,
+      536,
+      832
+    ],
+    "text": "(EXCLUDED GST) SUB TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      689,
+      807,
+      759,
+      834
+    ],
+    "text": "10.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      403,
+      839,
+      532,
+      868
+    ],
+    "text": "TOTAL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      697,
+      840,
+      764,
+      867
+    ],
+    "text": "0.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      412,
+      880,
+      533,
+      915
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      669,
+      884,
+      758,
+      917
+    ],
+    "text": "11.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      49,
+      974,
+      339,
+      1016
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      70,
+      1049,
+      212,
+      1077
+    ],
+    "text": "TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      260,
+      1051,
+      295,
+      1085
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      411,
+      1051,
+      531,
+      1083
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      682,
+      1048,
+      757,
+      1082
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      108,
+      1090,
+      169,
+      1125
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      260,
+      1092,
+      292,
+      1121
+    ],
+    "text": "6",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      436,
+      1092,
+      527,
+      1121
+    ],
+    "text": "10.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      675,
+      1089,
+      760,
+      1124
+    ],
+    "text": "0.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      192,
+      1144,
+      302,
+      1180
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      439,
+      1146,
+      534,
+      1179
+    ],
+    "text": "10.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      675,
+      1147,
+      757,
+      1181
+    ],
+    "text": "0.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      129,
+      1224,
+      668,
+      1255
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      313,
+      1276,
+      483,
+      1304
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

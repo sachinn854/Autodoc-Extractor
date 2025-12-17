@@ -1,0 +1,475 @@
+[
+  {
+    "bbox": [
+      136,
+      183,
+      830,
+      234
+    ],
+    "text": "PASARAYA BORONG PINTAR",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      366,
+      248,
+      597,
+      292
+    ],
+    "text": "SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      321,
+      307,
+      657,
+      348
+    ],
+    "text": "BR NO.: (124525-H)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      128,
+      350,
+      844,
+      390
+    ],
+    "text": "NO 19-G& 19-1& 19-2 JALAN TASIK UTAMA 4,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      250,
+      388,
+      708,
+      424
+    ],
+    "text": "MEDAN NIAGA TASIK DAMAI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      370,
+      446,
+      600,
+      480
+    ],
+    "text": "016-5498845.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      409,
+      502,
+      560,
+      536
+    ],
+    "text": "GST NO.:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      309,
+      586,
+      657,
+      620
+    ],
+    "text": "04/03/2018 15:41:52",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      277,
+      636,
+      690,
+      695
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      96,
+      708,
+      506,
+      756
+    ],
+    "text": "TRN: CR0007636",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      97,
+      781,
+      341,
+      823
+    ],
+    "text": "COUNTER 4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      610,
+      780,
+      870,
+      822
+    ],
+    "text": "CASHIER: 11",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      98,
+      866,
+      268,
+      897
+    ],
+    "text": "QTY UOM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      360,
+      863,
+      766,
+      900
+    ],
+    "text": "UNIT AMT EXC. AMT INC.",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      794,
+      864,
+      867,
+      899
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      360,
+      909,
+      445,
+      943
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      554,
+      907,
+      610,
+      943
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      716,
+      907,
+      866,
+      944
+    ],
+    "text": "TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      973,
+      854,
+      1009
+    ],
+    "text": "POKKA COFFEE VANILLA MILK COFFEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      112,
+      1026,
+      129,
+      1054
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      180,
+      1023,
+      292,
+      1058
+    ],
+    "text": "WALK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      371,
+      1026,
+      447,
+      1056
+    ],
+    "text": "3.20",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      535,
+      1025,
+      606,
+      1056
+    ],
+    "text": "3.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      695,
+      1024,
+      769,
+      1055
+    ],
+    "text": "3.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      794,
+      1024,
+      865,
+      1055
+    ],
+    "text": "ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      96,
+      1107,
+      376,
+      1155
+    ],
+    "text": "*TOTAL QTY: 1.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      783,
+      1112,
+      869,
+      1146
+    ],
+    "text": "3.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      95,
+      1177,
+      551,
+      1217
+    ],
+    "text": "TOTAL INCLUDES GST 0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      782,
+      1178,
+      867,
+      1214
+    ],
+    "text": "3.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      92,
+      1239,
+      481,
+      1279
+    ],
+    "text": "CUSTOMER'S PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      95,
+      1299,
+      196,
+      1341
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      782,
+      1301,
+      865,
+      1337
+    ],
+    "text": "5.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      1359,
+      243,
+      1401
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      785,
+      1360,
+      868,
+      1395
+    ],
+    "text": "2.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      1425,
+      350,
+      1467
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      430,
+      1430,
+      658,
+      1470
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      706,
+      1427,
+      862,
+      1467
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      1487,
+      256,
+      1520
+    ],
+    "text": "ZRL = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      589,
+      1487,
+      659,
+      1521
+    ],
+    "text": "3.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      792,
+      1490,
+      862,
+      1519
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      192,
+      1545,
+      780,
+      1585
+    ],
+    "text": "*GOODS SOLD ARE NOT RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      123,
+      1592,
+      850,
+      1640
+    ],
+    "text": "THANK YOU FOR SHOPPING AT PASARAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      213,
+      1644,
+      754,
+      1678
+    ],
+    "text": "BORONG PINTAR SDN BHD",
+    "class": "ADDRESS",
+    "class_id": 1
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "bbox": [
+      174,
+      374,
+      670,
+      421
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      191,
+      423,
+      672,
+      468
+    ],
+    "text": "LOT P.T. 2811, JALAN ANGSA,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      297,
+      471,
+      551,
+      513
+    ],
+    "text": "TAMAN BERKELEY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      250,
+      519,
+      628,
+      569
+    ],
+    "text": "41150 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      315,
+      575,
+      558,
+      615
+    ],
+    "text": "1320-TMN BATU",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      215,
+      619,
+      663,
+      665
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      194,
+      722,
+      694,
+      767
+    ],
+    "text": "INVOICE NO : 17881/102/T0298",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      93,
+      821,
+      222,
+      863
+    ],
+    "text": "07:49PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      392,
+      825,
+      504,
+      865
+    ],
+    "text": "563094",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      658,
+      822,
+      802,
+      867
+    ],
+    "text": "14-12-16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      92,
+      922,
+      575,
+      964
+    ],
+    "text": "5422 MI SEDAAP MI GORENG AS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      90,
+      976,
+      572,
+      1013
+    ],
+    "text": "0155 TWISTIES CHIPSTER ORIG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      94,
+      1023,
+      555,
+      1065
+    ],
+    "text": "0954 MISTER POTATO BBQ (B)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      124,
+      1073,
+      344,
+      1113
+    ],
+    "text": "@2 X RM 2.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1123,
+      570,
+      1166
+    ],
+    "text": "5588 EAGLE FRIED DACE WT SA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      127,
+      1173,
+      343,
+      1213
+    ],
+    "text": "@2 X RM 6.99",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1224,
+      519,
+      1266
+    ],
+    "text": "183 PLANTA MARJERIN 240G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      655,
+      1228,
+      801,
+      1268
+    ],
+    "text": "RM5.20 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      1273,
+      328,
+      1314
+    ],
+    "text": "507 COKE 1.5L",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      659,
+      1279,
+      805,
+      1318
+    ],
+    "text": "RM5.98 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      122,
+      1325,
+      341,
+      1364
+    ],
+    "text": "@2 X RM 2.99",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      86,
+      1374,
+      571,
+      1416
+    ],
+    "text": "5725 CAP TAKRAW BERAS SUPER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      635,
+      1378,
+      800,
+      1416
+    ],
+    "text": "RM24.95 Z",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      88,
+      1473,
+      624,
+      1515
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      463,
+      1525,
+      627,
+      1565
+    ],
+    "text": "CREDIT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      455,
+      1575,
+      624,
+      1613
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      666,
+      1480,
+      767,
+      1517
+    ],
+    "text": "61.65",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      669,
+      1527,
+      771,
+      1562
+    ],
+    "text": "61.65",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      707,
+      1579,
+      765,
+      1613
+    ],
+    "text": ".00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      86,
+      1670,
+      288,
+      1717
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      367,
+      1674,
+      548,
+      1712
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      651,
+      1676,
+      779,
+      1714
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      89,
+      1726,
+      205,
+      1759
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      82,
+      1773,
+      204,
+      1809
+    ],
+    "text": "Z = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      461,
+      1723,
+      555,
+      1765
+    ],
+    "text": "34.62",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      456,
+      1774,
+      554,
+      1812
+    ],
+    "text": "24.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      707,
+      1725,
+      785,
+      1764
+    ],
+    "text": "2.08",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      725,
+      1777,
+      779,
+      1815
+    ],
+    "text": ".00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      178,
+      1920,
+      677,
+      1970
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      86,
+      1970,
+      779,
+      2019
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      656,
+      927,
+      804,
+      965
+    ],
+    "text": "RM3.79 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      655,
+      978,
+      801,
+      1016
+    ],
+    "text": "RM2.85 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      656,
+      1029,
+      804,
+      1067
+    ],
+    "text": "RM4.90 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      637,
+      1128,
+      803,
+      1166
+    ],
+    "text": "RM13.98 S",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

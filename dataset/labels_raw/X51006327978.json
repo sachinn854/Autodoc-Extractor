@@ -1,0 +1,717 @@
+[
+  {
+    "bbox": [
+      55,
+      249,
+      472,
+      286
+    ],
+    "text": "Y SOON FATT S/B (81497-P)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      54,
+      290,
+      641,
+      324
+    ],
+    "text": "LOT 1504, BATU 8 1/2, JALAN KLANG LAMA,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      54,
+      332,
+      502,
+      367
+    ],
+    "text": "46000 PETALING JAYA, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      55,
+      372,
+      312,
+      405
+    ],
+    "text": "TEL : 016-2014209",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      55,
+      414,
+      432,
+      445
+    ],
+    "text": "GST REG NO : 000788250624",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      56,
+      496,
+      224,
+      527
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      56,
+      616,
+      118,
+      649
+    ],
+    "text": "DESC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      234,
+      618,
+      283,
+      650
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      325,
+      617,
+      401,
+      649
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      414,
+      619,
+      502,
+      646
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      548,
+      618,
+      657,
+      647
+    ],
+    "text": "TAXCODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      341,
+      657,
+      396,
+      692
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      446,
+      656,
+      504,
+      695
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      53,
+      737,
+      177,
+      765
+    ],
+    "text": "51190030",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      249,
+      738,
+      570,
+      767
+    ],
+    "text": "A1 BIHUN ISTIMEWA 3KG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      234,
+      776,
+      299,
+      810
+    ],
+    "text": "10 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      341,
+      777,
+      416,
+      809
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      460,
+      778,
+      611,
+      806
+    ],
+    "text": "100.00 ZRL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      54,
+      856,
+      191,
+      887
+    ],
+    "text": "060400063",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      249,
+      858,
+      521,
+      886
+    ],
+    "text": "YSF BUAH KERAS 3KG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      235,
+      898,
+      283,
+      928
+    ],
+    "text": "1 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      339,
+      900,
+      417,
+      928
+    ],
+    "text": "36.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      474,
+      898,
+      598,
+      927
+    ],
+    "text": "36.80 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      54,
+      979,
+      192,
+      1009
+    ],
+    "text": "012700054",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      249,
+      979,
+      644,
+      1009
+    ],
+    "text": "HOBE RED KIDNEY BEAN 425GM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      232,
+      1017,
+      281,
+      1051
+    ],
+    "text": "1 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      339,
+      1019,
+      416,
+      1049
+    ],
+    "text": "58.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      474,
+      1018,
+      599,
+      1048
+    ],
+    "text": "58.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      53,
+      1101,
+      178,
+      1129
+    ],
+    "text": "51580020",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      247,
+      1098,
+      659,
+      1128
+    ],
+    "text": "CAP LANG JAGUNG MANIS 425GM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      235,
+      1136,
+      281,
+      1175
+    ],
+    "text": "1 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      337,
+      1140,
+      416,
+      1170
+    ],
+    "text": "53.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      471,
+      1138,
+      599,
+      1168
+    ],
+    "text": "53.80 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      51,
+      1220,
+      177,
+      1250
+    ],
+    "text": "50460020",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      247,
+      1218,
+      582,
+      1248
+    ],
+    "text": "DAIRY CHAMP EVAP 390GM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      232,
+      1260,
+      282,
+      1290
+    ],
+    "text": "1 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      323,
+      1259,
+      415,
+      1290
+    ],
+    "text": "113.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      460,
+      1260,
+      596,
+      1290
+    ],
+    "text": "113.90 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      52,
+      1378,
+      268,
+      1409
+    ],
+    "text": "TOTAL INC. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      308,
+      1380,
+      354,
+      1411
+    ],
+    "text": "6%:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      562,
+      1380,
+      658,
+      1410
+    ],
+    "text": "362.50",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      54,
+      1418,
+      351,
+      1452
+    ],
+    "text": "ROUNDING ADJUSTMENT:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      591,
+      1420,
+      655,
+      1452
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      54,
+      1459,
+      221,
+      1489
+    ],
+    "text": "FINAL TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      343,
+      1468,
+      358,
+      1490
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      561,
+      1461,
+      659,
+      1491
+    ],
+    "text": "362.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1540,
+      117,
+      1572
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      341,
+      1548,
+      358,
+      1574
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      564,
+      1542,
+      657,
+      1574
+    ],
+    "text": "400.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      1582,
+      148,
+      1616
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      339,
+      1587,
+      353,
+      1615
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      579,
+      1585,
+      658,
+      1617
+    ],
+    "text": "37.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      56,
+      1662,
+      221,
+      1697
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      306,
+      1663,
+      457,
+      1697
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      515,
+      1666,
+      623,
+      1702
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      54,
+      1742,
+      162,
+      1771
+    ],
+    "text": "ZRL 0 %",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      357,
+      1743,
+      445,
+      1775
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      550,
+      1746,
+      615,
+      1778
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      54,
+      1781,
+      146,
+      1813
+    ],
+    "text": "SR 6 %",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      350,
+      1783,
+      445,
+      1815
+    ],
+    "text": "247.64",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      532,
+      1787,
+      609,
+      1818
+    ],
+    "text": "14.86",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      50,
+      1860,
+      194,
+      1892
+    ],
+    "text": "C02102772",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      218,
+      1860,
+      477,
+      1894
+    ],
+    "text": "9/2/2017 12:00 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      52,
+      1900,
+      102,
+      1930
+    ],
+    "text": "T03",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      124,
+      1902,
+      191,
+      1934
+    ],
+    "text": "2006",
+    "class": "QTY",
+    "class_id": 6
+  }
+]

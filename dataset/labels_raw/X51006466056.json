@@ -1,0 +1,673 @@
+[
+  {
+    "bbox": [
+      10,
+      12,
+      147,
+      43
+    ],
+    "text": "3180404",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      38,
+      116,
+      255,
+      144
+    ],
+    "text": "BERRY'S CAKE HOUSE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      37,
+      150,
+      491,
+      178
+    ],
+    "text": "(CO NO. 315481-T) GST NO. 001287233536",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      37,
+      185,
+      98,
+      216
+    ],
+    "text": "NO.1,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      38,
+      219,
+      217,
+      249
+    ],
+    "text": "JLN PUTERI 1/6,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      40,
+      251,
+      203,
+      281
+    ],
+    "text": "BANDAR PUTERI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      285,
+      203,
+      315
+    ],
+    "text": "47100 PUCHONG,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      38,
+      317,
+      135,
+      346
+    ],
+    "text": "SELANGOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      346,
+      504,
+      375
+    ],
+    "text": "OUTLET:03-80626265 CARELINE:03-56381988",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      41,
+      413,
+      279,
+      441
+    ],
+    "text": "18/04/2018 5:18:08 P",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      358,
+      412,
+      517,
+      439
+    ],
+    "text": "SESSION:11444",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      38,
+      446,
+      110,
+      471
+    ],
+    "text": "USER:1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      181,
+      446,
+      418,
+      472
+    ],
+    "text": "TAX INVOICE NO:14551",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      451,
+      446,
+      514,
+      471
+    ],
+    "text": "POS:2",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      39,
+      511,
+      172,
+      538
+    ],
+    "text": "DESC & CODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      227,
+      511,
+      269,
+      544
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      321,
+      512,
+      384,
+      538
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      427,
+      512,
+      503,
+      538
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      579,
+      371,
+      604
+    ],
+    "text": "00014960 RAISIN ALMOND BREAD",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      40,
+      611,
+      89,
+      634
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      321,
+      611,
+      372,
+      634
+    ],
+    "text": "4.55",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      451,
+      611,
+      503,
+      634
+    ],
+    "text": "4.55",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      38,
+      643,
+      324,
+      668
+    ],
+    "text": "00002493 CHEESE ROLL (4)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      40,
+      674,
+      89,
+      698
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      322,
+      674,
+      372,
+      698
+    ],
+    "text": "3.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      451,
+      675,
+      502,
+      698
+    ],
+    "text": "3.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      38,
+      706,
+      323,
+      731
+    ],
+    "text": "00002479 BUTTER ROLL (4)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      40,
+      738,
+      89,
+      763
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      323,
+      736,
+      372,
+      763
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      452,
+      738,
+      503,
+      763
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      38,
+      803,
+      302,
+      831
+    ],
+    "text": "TOTAL INCLUSIVE OF TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      439,
+      804,
+      505,
+      831
+    ],
+    "text": "11.25",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      39,
+      838,
+      267,
+      868
+    ],
+    "text": "ROUNDING ADJUSTMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      450,
+      839,
+      503,
+      863
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      39,
+      871,
+      137,
+      897
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      439,
+      870,
+      505,
+      897
+    ],
+    "text": "11.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      37,
+      904,
+      196,
+      929
+    ],
+    "text": "RINGGIT M'SIA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      937,
+      125,
+      965
+    ],
+    "text": "PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      427,
+      937,
+      503,
+      960
+    ],
+    "text": "-20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      38,
+      999,
+      113,
+      1028
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      452,
+      1000,
+      503,
+      1026
+    ],
+    "text": "8.75",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      40,
+      1066,
+      161,
+      1091
+    ],
+    "text": "ITEM COUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      251,
+      1066,
+      268,
+      1090
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      40,
+      1098,
+      160,
+      1125
+    ],
+    "text": "ITEM TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      253,
+      1099,
+      268,
+      1123
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      38,
+      1163,
+      172,
+      1192
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      252,
+      1163,
+      326,
+      1187
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      476,
+      1163,
+      513,
+      1187
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      38,
+      1194,
+      136,
+      1220
+    ],
+    "text": "GST 0% *",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      252,
+      1195,
+      304,
+      1219
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      465,
+      1196,
+      514,
+      1218
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      39,
+      1228,
+      114,
+      1252
+    ],
+    "text": "GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      254,
+      1227,
+      313,
+      1251
+    ],
+    "text": "10.61",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      465,
+      1227,
+      515,
+      1250
+    ],
+    "text": "0.64",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      38,
+      1291,
+      209,
+      1320
+    ],
+    "text": "RECEIPT/TRX NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      346,
+      1291,
+      502,
+      1315
+    ],
+    "text": "14551/1582555",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      38,
+      1323,
+      445,
+      1352
+    ],
+    "text": "ALL BERRY'S PRODUCTS ARE AVAILABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      39,
+      1356,
+      310,
+      1386
+    ],
+    "text": "AT BERRY'S OUTLET ONLY.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      39,
+      1389,
+      385,
+      1419
+    ],
+    "text": "CUSTOMERSERVICE@BERRYS.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      39,
+      1422,
+      245,
+      1451
+    ],
+    "text": "WWW.BERRYS.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      252,
+      904,
+      314,
+      928
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

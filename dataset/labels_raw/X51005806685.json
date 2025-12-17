@@ -1,0 +1,607 @@
+[
+  {
+    "bbox": [
+      178,
+      67,
+      501,
+      99
+    ],
+    "text": "ADVANCO COMPANY",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      126,
+      95,
+      553,
+      130
+    ],
+    "text": "COMPANY REG. NO. : 725186-V",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      98,
+      131,
+      581,
+      171
+    ],
+    "text": "NO 1&3, JALAN WANGSA DELIMA 12,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      138,
+      167,
+      540,
+      205
+    ],
+    "text": "WANGSA LINK, WANGSA MAJU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      199,
+      204,
+      487,
+      239
+    ],
+    "text": "53300 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      249,
+      240,
+      435,
+      269
+    ],
+    "text": "03-41318972",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      177,
+      281,
+      501,
+      311
+    ],
+    "text": "GST REG : 001658445824",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      232,
+      322,
+      451,
+      352
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      71,
+      366,
+      141,
+      391
+    ],
+    "text": "CB# :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      72,
+      405,
+      126,
+      430
+    ],
+    "text": "M# :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      448,
+      185,
+      473
+    ],
+    "text": "CASHIER :",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      158,
+      369,
+      252,
+      392
+    ],
+    "text": "389772",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      161,
+      406,
+      239,
+      429
+    ],
+    "text": "M1 - 0",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      210,
+      449,
+      304,
+      473
+    ],
+    "text": "C1000-",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      395,
+      371,
+      628,
+      398
+    ],
+    "text": "17/01/2018 8:08:53",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      82,
+      486,
+      127,
+      517
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      149,
+      487,
+      287,
+      517
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      422,
+      488,
+      485,
+      515
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      568,
+      490,
+      629,
+      515
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      72,
+      539,
+      612,
+      567
+    ],
+    "text": "CANON PG-47BK E400 BLACK FINE ( SR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      109,
+      580,
+      124,
+      606
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      140,
+      580,
+      220,
+      602
+    ],
+    "text": "27736",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      415,
+      582,
+      485,
+      608
+    ],
+    "text": "29.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      560,
+      584,
+      629,
+      607
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      109,
+      631,
+      129,
+      657
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      147,
+      630,
+      216,
+      660
+    ],
+    "text": "TYPE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      258,
+      631,
+      272,
+      656
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      327,
+      631,
+      393,
+      657
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      561,
+      633,
+      630,
+      659
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      84,
+      671,
+      254,
+      704
+    ],
+    "text": "ROUNDING ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      577,
+      675,
+      629,
+      701
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      84,
+      716,
+      352,
+      741
+    ],
+    "text": "TOTAL INCLUSIVE GST:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      83,
+      762,
+      162,
+      785
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      84,
+      797,
+      185,
+      828
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      84,
+      846,
+      301,
+      875
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      83,
+      887,
+      149,
+      910
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      82,
+      933,
+      123,
+      956
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      190,
+      886,
+      216,
+      910
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      176,
+      931,
+      216,
+      957
+    ],
+    "text": "6%",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      271,
+      887,
+      375,
+      909
+    ],
+    "text": "NET AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      301,
+      930,
+      375,
+      955
+    ],
+    "text": "27.36",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      451,
+      885,
+      511,
+      908
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      457,
+      930,
+      510,
+      953
+    ],
+    "text": "1.64",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      80,
+      975,
+      143,
+      1001
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      302,
+      973,
+      372,
+      998
+    ],
+    "text": "27.36",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      459,
+      973,
+      508,
+      997
+    ],
+    "text": "1.64",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      562,
+      718,
+      629,
+      743
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      561,
+      761,
+      629,
+      786
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      560,
+      795,
+      629,
+      820
+    ],
+    "text": "21.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      570,
+      883,
+      630,
+      907
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      562,
+      930,
+      633,
+      953
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      563,
+      972,
+      633,
+      996
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      61,
+      1022,
+      621,
+      1067
+    ],
+    "text": "THANK YOU & PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      80,
+      1077,
+      607,
+      1107
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE FOR REFUND OR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      273,
+      1111,
+      418,
+      1141
+    ],
+    "text": "EXCHANGE !!",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

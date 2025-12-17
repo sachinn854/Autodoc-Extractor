@@ -1,0 +1,453 @@
+[
+  {
+    "bbox": [
+      227,
+      159,
+      457,
+      185
+    ],
+    "text": "GOLDEN KEY MAKER",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      242,
+      193,
+      426,
+      223
+    ],
+    "text": "(000760274-K)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      185,
+      229,
+      482,
+      262
+    ],
+    "text": "NO 5, JALAN KENARI 2,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      198,
+      267,
+      481,
+      299
+    ],
+    "text": "BANDAR PUCHONG JAYA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      170,
+      305,
+      499,
+      337
+    ],
+    "text": "47100 PUCHONG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      226,
+      343,
+      454,
+      372
+    ],
+    "text": "TEL: 03-58919941",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      228,
+      382,
+      455,
+      410
+    ],
+    "text": "FAX: 03-58919941",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      112,
+      419,
+      570,
+      451
+    ],
+    "text": "E-MAIL : GOLDENKEYMAKER@GMAIL.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      112,
+      455,
+      557,
+      487
+    ],
+    "text": "WEBSITE: WWW.GOLDENKEYMAKER.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      532,
+      186,
+      560
+    ],
+    "text": "S/P : HOE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      314,
+      533,
+      583,
+      559
+    ],
+    "text": "INV NO : CS-0014134",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      57,
+      570,
+      386,
+      598
+    ],
+    "text": "24-MAR-2018 03:44:22 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      287,
+      643,
+      384,
+      671
+    ],
+    "text": "INVOICE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      57,
+      717,
+      229,
+      749
+    ],
+    "text": "NO.DESC/CODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      257,
+      719,
+      300,
+      750
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      342,
+      719,
+      502,
+      746
+    ],
+    "text": "PRICE DISC%",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      540,
+      719,
+      627,
+      747
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      58,
+      793,
+      243,
+      821
+    ],
+    "text": "1 NORMAL KEY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      830,
+      130,
+      858
+    ],
+    "text": "33100",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      283,
+      830,
+      304,
+      859
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      353,
+      830,
+      415,
+      859
+    ],
+    "text": "4.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      441,
+      830,
+      500,
+      859
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      557,
+      829,
+      629,
+      859
+    ],
+    "text": "16.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      56,
+      868,
+      313,
+      897
+    ],
+    "text": "2 NORMAL KEY LONG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      905,
+      127,
+      932
+    ],
+    "text": "33101",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      287,
+      906,
+      298,
+      934
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      355,
+      905,
+      413,
+      935
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      441,
+      906,
+      498,
+      932
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      570,
+      905,
+      627,
+      934
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      57,
+      1017,
+      243,
+      1048
+    ],
+    "text": "TOTAL QTY : 5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      326,
+      1016,
+      482,
+      1047
+    ],
+    "text": "SUB-TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      555,
+      1018,
+      627,
+      1046
+    ],
+    "text": "21.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      340,
+      1055,
+      481,
+      1085
+    ],
+    "text": "DISCOUNT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      570,
+      1057,
+      626,
+      1083
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      327,
+      1091,
+      482,
+      1120
+    ],
+    "text": "NET TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      554,
+      1093,
+      627,
+      1121
+    ],
+    "text": "21.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      269,
+      1131,
+      483,
+      1160
+    ],
+    "text": "CASH RECEIVED :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      557,
+      1132,
+      629,
+      1158
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      369,
+      1168,
+      482,
+      1201
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      554,
+      1168,
+      626,
+      1197
+    ],
+    "text": "29.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      53,
+      1242,
+      628,
+      1275
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE/REFUNDABLE",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,409 @@
+[
+  {
+    "bbox": [
+      153,
+      253,
+      516,
+      286
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      190,
+      287,
+      482,
+      318
+    ],
+    "text": "(CO. REG :860671-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      56,
+      321,
+      596,
+      354
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6 ,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      355,
+      579,
+      388
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG ,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      88,
+      389,
+      583,
+      418
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      124,
+      424,
+      532,
+      455
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      222,
+      455,
+      432,
+      486
+    ],
+    "text": "(IOI PUCHONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      220,
+      490,
+      434,
+      518
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      8,
+      557,
+      583,
+      588
+    ],
+    "text": "TRAC DRY IRON TR-231IR - 1200W(SR) N",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      632,
+      559,
+      669,
+      586
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      6,
+      592,
+      154,
+      618
+    ],
+    "text": "WA10 - 12",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      7,
+      625,
+      218,
+      652
+    ],
+    "text": "9555493002853",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      371,
+      628,
+      385,
+      653
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      434,
+      626,
+      516,
+      654
+    ],
+    "text": "26.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      550,
+      627,
+      633,
+      655
+    ],
+    "text": "26.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      6,
+      659,
+      518,
+      689
+    ],
+    "text": "SINGLE BEDSHEET SET 90*188+20CM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      660,
+      667,
+      688
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      6,
+      692,
+      203,
+      720
+    ],
+    "text": "JD52-63 - 20",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      7,
+      726,
+      121,
+      753
+    ],
+    "text": "9034713",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      371,
+      725,
+      518,
+      754
+    ],
+    "text": "1 X 23.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      552,
+      728,
+      632,
+      755
+    ],
+    "text": "23.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      7,
+      794,
+      188,
+      819
+    ],
+    "text": "ITEM(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      502,
+      795,
+      666,
+      825
+    ],
+    "text": "QTY(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      7,
+      860,
+      303,
+      890
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      534,
+      862,
+      663,
+      890
+    ],
+    "text": "RM 50.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      6,
+      895,
+      73,
+      922
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      534,
+      895,
+      664,
+      923
+    ],
+    "text": "RM 51.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      6,
+      928,
+      104,
+      955
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      550,
+      929,
+      665,
+      958
+    ],
+    "text": "RM 0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      7,
+      995,
+      416,
+      1025
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      502,
+      997,
+      616,
+      1024
+    ],
+    "text": "RM 2.88",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      7,
+      1063,
+      402,
+      1092
+    ],
+    "text": "25-03-18 18:47 SHO1 ZJ86",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      453,
+      1064,
+      665,
+      1092
+    ],
+    "text": "T1 R000112415",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      6,
+      1096,
+      403,
+      1126
+    ],
+    "text": "OPERATOR TRAINEE CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      107,
+      1165,
+      552,
+      1194
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      171,
+      1198,
+      482,
+      1228
+    ],
+    "text": "7 DAY WITH RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      139,
+      1231,
+      531,
+      1262
+    ],
+    "text": "STRICTLY NO CASH REFUND .",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

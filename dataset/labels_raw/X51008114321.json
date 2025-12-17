@@ -1,0 +1,431 @@
+[
+  {
+    "bbox": [
+      135,
+      243,
+      481,
+      275
+    ],
+    "text": "FILL IN ENTERPRISE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      133,
+      282,
+      581,
+      316
+    ],
+    "text": "COMPANY NO: MA0057302-M",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      133,
+      319,
+      507,
+      356
+    ],
+    "text": "LOT 2407, JALAN DUA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      137,
+      357,
+      538,
+      394
+    ],
+    "text": "52100 KEPONG BARU, KL",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      136,
+      396,
+      329,
+      432
+    ],
+    "text": "SITE: 2076",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      136,
+      436,
+      560,
+      467
+    ],
+    "text": "TELEPHONE: 03-62587995",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      136,
+      475,
+      524,
+      510
+    ],
+    "text": "GST NO: 001229619200",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      286,
+      552,
+      616,
+      591
+    ],
+    "text": "PRE-AUTHORISATION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      137,
+      702,
+      672,
+      737
+    ],
+    "text": "PRE AUTH CODE A01A1527956635",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      214,
+      778,
+      615,
+      813
+    ],
+    "text": "45.45 LITRE PUMP # 12",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      135,
+      816,
+      349,
+      852
+    ],
+    "text": "FUELSAVE 95",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      615,
+      813,
+      655,
+      850
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      755,
+      817,
+      902,
+      856
+    ],
+    "text": "100.00 C",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      215,
+      856,
+      558,
+      890
+    ],
+    "text": "2.200 RM / LLITRE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      138,
+      930,
+      228,
+      967
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      615,
+      930,
+      655,
+      964
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      752,
+      930,
+      865,
+      964
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      132,
+      968,
+      217,
+      1001
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      613,
+      968,
+      661,
+      1000
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      748,
+      968,
+      870,
+      997
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      134,
+      1044,
+      331,
+      1080
+    ],
+    "text": "RELIEF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      404,
+      1044,
+      429,
+      1074
+    ],
+    "text": "C",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      613,
+      1045,
+      661,
+      1076
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      784,
+      1042,
+      868,
+      1072
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      135,
+      1081,
+      347,
+      1114
+    ],
+    "text": "TOTAL GROSS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      401,
+      1080,
+      432,
+      1113
+    ],
+    "text": "C",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      613,
+      1081,
+      657,
+      1113
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      757,
+      1079,
+      867,
+      1116
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      134,
+      1195,
+      287,
+      1232
+    ],
+    "text": "CASHIER:",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      136,
+      1232,
+      253,
+      1271
+    ],
+    "text": "BHASAN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      135,
+      1308,
+      831,
+      1348
+    ],
+    "text": "THIS IS NOT THE FINAL FISCAL RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      132,
+      1386,
+      215,
+      1421
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      312,
+      1383,
+      485,
+      1416
+    ],
+    "text": "TIME NUM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      539,
+      1382,
+      794,
+      1418
+    ],
+    "text": "POS CNO SHIFT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      138,
+      1424,
+      677,
+      1456
+    ],
+    "text": "03/06/18 00:23 34001 01 5093",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      712,
+      1424,
+      771,
+      1453
+    ],
+    "text": "868",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      133,
+      1499,
+      796,
+      1531
+    ],
+    "text": "DIESEL & PETROL RON95 GIVEN RELIEF",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      137,
+      1532,
+      851,
+      1568
+    ],
+    "text": "UNDER SECTION 56 (3) (B) GST ACT 2014",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      139,
+      1607,
+      734,
+      1648
+    ],
+    "text": "THANK YOU AND PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

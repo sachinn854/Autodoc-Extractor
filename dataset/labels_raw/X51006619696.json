@@ -1,0 +1,299 @@
+[
+  {
+    "bbox": [
+      181,
+      348,
+      679,
+      387
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      233,
+      395,
+      628,
+      439
+    ],
+    "text": "LOT P.T. 33198, BATU 4",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      214,
+      445,
+      646,
+      489
+    ],
+    "text": "JALAN KAPAR, MUKIM KAPAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      252,
+      494,
+      633,
+      541
+    ],
+    "text": "42100 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      322,
+      546,
+      568,
+      586
+    ],
+    "text": "1320-TMN BATU",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      213,
+      595,
+      669,
+      635
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      206,
+      693,
+      705,
+      739
+    ],
+    "text": "INVOICE NO : 17566/102/T0280",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      95,
+      795,
+      224,
+      836
+    ],
+    "text": "08:25PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      395,
+      799,
+      508,
+      835
+    ],
+    "text": "559843",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      662,
+      798,
+      809,
+      837
+    ],
+    "text": "03-02-16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      92,
+      893,
+      587,
+      935
+    ],
+    "text": "2838 YONGCHUN LOKAM MANDARI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      641,
+      897,
+      810,
+      935
+    ],
+    "text": "RM82.80 Z",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      132,
+      946,
+      363,
+      987
+    ],
+    "text": "@6 X RM 13.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      89,
+      1045,
+      633,
+      1087
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      457,
+      1094,
+      632,
+      1138
+    ],
+    "text": "CREDIT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      465,
+      1144,
+      631,
+      1184
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      710,
+      1151,
+      772,
+      1186
+    ],
+    "text": ".00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      1243,
+      294,
+      1289
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      94,
+      1298,
+      208,
+      1331
+    ],
+    "text": "Z = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      374,
+      1246,
+      558,
+      1284
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      466,
+      1296,
+      558,
+      1332
+    ],
+    "text": "82.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      662,
+      1246,
+      785,
+      1286
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      728,
+      1298,
+      792,
+      1338
+    ],
+    "text": ".00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      180,
+      1445,
+      692,
+      1489
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      91,
+      1495,
+      788,
+      1539
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      679,
+      1050,
+      771,
+      1086
+    ],
+    "text": "82.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      678,
+      1098,
+      770,
+      1135
+    ],
+    "text": "82.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "bbox": [
+      347,
+      124,
+      523,
+      163
+    ],
+    "text": "YAM FRESH",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      152,
+      167,
+      707,
+      210
+    ],
+    "text": "NO.145G, JALAN RIMBUNAN RAYA 1,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      227,
+      215,
+      616,
+      258
+    ],
+    "text": "LAMAN RIMBUNAN KEPONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      259,
+      585,
+      301
+    ],
+    "text": "52100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      246,
+      304,
+      604,
+      347
+    ],
+    "text": "TEL: (603) 6243 5520",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      263,
+      349,
+      605,
+      390
+    ],
+    "text": "GST ID=001817907200",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      19,
+      517,
+      461,
+      598
+    ],
+    "text": "INVOICE: 001-9822",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      13,
+      600,
+      470,
+      639
+    ],
+    "text": "DATE: 2016-07-31 13:48:37",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      722,
+      557,
+      851,
+      604
+    ],
+    "text": "DINE IN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      16,
+      688,
+      461,
+      727
+    ],
+    "text": "208 YAM FRESH SIGNATURE-C",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      42,
+      735,
+      71,
+      769
+    ],
+    "text": ":1",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      37,
+      778,
+      127,
+      817
+    ],
+    "text": ":MILK",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      657,
+      691,
+      675,
+      725
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      741,
+      690,
+      851,
+      728
+    ],
+    "text": "RM7.90",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      456,
+      866,
+      623,
+      902
+    ],
+    "text": "SUB-TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      508,
+      909,
+      624,
+      952
+    ],
+    "text": "6% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      475,
+      954,
+      621,
+      995
+    ],
+    "text": "ROUNDING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      740,
+      868,
+      849,
+      906
+    ],
+    "text": "RM7.90",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      740,
+      911,
+      850,
+      948
+    ],
+    "text": "RM0.47",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      723,
+      955,
+      852,
+      991
+    ],
+    "text": "-RM0.02",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      418,
+      1072,
+      630,
+      1109
+    ],
+    "text": "GRAND TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      671,
+      1043,
+      849,
+      1114
+    ],
+    "text": "RM8.35",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      549,
+      1200,
+      628,
+      1237
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      511,
+      1244,
+      621,
+      1287
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      723,
+      1197,
+      850,
+      1236
+    ],
+    "text": "RM10.50",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      739,
+      1245,
+      854,
+      1285
+    ],
+    "text": "RM2.15",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      337,
+      1332,
+      511,
+      1370
+    ],
+    "text": "THANK YOU.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      245,
+      1376,
+      604,
+      1415
+    ],
+    "text": "PLEASE VISIT US AT:-",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      265,
+      1422,
+      605,
+      1460
+    ],
+    "text": "FACEBOOK:-YAM FRESH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      16,
+      1508,
+      322,
+      1540
+    ],
+    "text": "001-2016-07-31 13:48:51",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      349,
+      1509,
+      419,
+      1539
+    ],
+    "text": "LIJIE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      508,
+      1509,
+      672,
+      1542
+    ],
+    "text": "001-9822 [1]",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

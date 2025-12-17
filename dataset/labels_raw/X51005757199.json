@@ -1,0 +1,442 @@
+[
+  {
+    "bbox": [
+      119,
+      84,
+      553,
+      137
+    ],
+    "text": "POPULAR BOOK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      90,
+      149,
+      619,
+      210
+    ],
+    "text": "CO. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      178,
+      213,
+      495,
+      247
+    ],
+    "text": "(CO. NO. 113825-W)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      106,
+      256,
+      567,
+      289
+    ],
+    "text": "(GST REG NO. 001492992000)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      32,
+      294,
+      639,
+      326
+    ],
+    "text": "NO 8, JALAN 7/118B, DESA TUN RAZAK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      88,
+      336,
+      588,
+      366
+    ],
+    "text": "56000 KUALA LUMPUR , MALAYSIA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      250,
+      378,
+      394,
+      408
+    ],
+    "text": "IOI MALL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      88,
+      456,
+      586,
+      488
+    ],
+    "text": "TEL : 03-80709188 / 80757830",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      18,
+      538,
+      268,
+      570
+    ],
+    "text": "01/03/18 12:36",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      318,
+      536,
+      678,
+      565
+    ],
+    "text": "SLIP NO. : 9070058756",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      16,
+      580,
+      86,
+      608
+    ],
+    "text": "SITI",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      372,
+      574,
+      588,
+      607
+    ],
+    "text": "TRANS: 21396",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      19,
+      658,
+      213,
+      690
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      516,
+      656,
+      621,
+      685
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      14,
+      737,
+      232,
+      766
+    ],
+    "text": "W/ENV4.5*9.5",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      16,
+      779,
+      373,
+      808
+    ],
+    "text": "UNI P&S ENV 4.5X9.75",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      571,
+      734,
+      679,
+      764
+    ],
+    "text": "1.90 T",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      568,
+      775,
+      678,
+      803
+    ],
+    "text": "2.10 T",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      15,
+      858,
+      393,
+      891
+    ],
+    "text": "TOTAL RM INCL. OF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      16,
+      901,
+      88,
+      930
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      15,
+      940,
+      125,
+      973
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      571,
+      857,
+      641,
+      885
+    ],
+    "text": "4.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      535,
+      896,
+      643,
+      926
+    ],
+    "text": "-10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      571,
+      935,
+      643,
+      967
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      17,
+      1020,
+      198,
+      1050
+    ],
+    "text": "ITEM COUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      18,
+      1060,
+      216,
+      1089
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      18,
+      1098,
+      129,
+      1128
+    ],
+    "text": "T @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      252,
+      1057,
+      444,
+      1089
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      378,
+      1088,
+      445,
+      1130
+    ],
+    "text": "3.77",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      500,
+      1055,
+      640,
+      1084
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      571,
+      1095,
+      643,
+      1126
+    ],
+    "text": "0.23",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      624,
+      1014,
+      643,
+      1044
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      17,
+      1180,
+      251,
+      1208
+    ],
+    "text": "TOTAL SAVINGS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      569,
+      1177,
+      643,
+      1206
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1259,
+      552,
+      1294
+    ],
+    "text": "BE A POPULAR CARD MEMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      103,
+      1300,
+      588,
+      1333
+    ],
+    "text": "AND ENJOY SPECIAL DISCOUNTS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      82,
+      1339,
+      599,
+      1373
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      176,
+      1383,
+      497,
+      1415
+    ],
+    "text": "WWW. POPULAR. COM. MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      123,
+      1422,
+      552,
+      1454
+    ],
+    "text": "BUY CHINESE BOOKS ONLINE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      121,
+      1464,
+      553,
+      1493
+    ],
+    "text": "WWW. POPULARONLINE. COM. MY",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

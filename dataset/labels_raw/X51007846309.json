@@ -1,0 +1,442 @@
+[
+  {
+    "bbox": [
+      1579,
+      2010,
+      2920,
+      2081
+    ],
+    "text": "UNIHAKKA INTERNATIONAL SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      2011,
+      2089,
+      2500,
+      2149
+    ],
+    "text": "11 JUN 2018 18:32",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2101,
+      2173,
+      2411,
+      2249
+    ],
+    "text": "(867388-U)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1680,
+      2261,
+      2834,
+      2319
+    ],
+    "text": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1809,
+      2345,
+      2688,
+      2403
+    ],
+    "text": "TAMPOI,81200 JOHOR BAHRU,JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2055,
+      2424,
+      2436,
+      2482
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1522,
+      2504,
+      2351,
+      2558
+    ],
+    "text": "INVOICE # : OR18061102170340",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1528,
+      2622,
+      1644,
+      2674
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1991,
+      2620,
+      2085,
+      2684
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2848,
+      2612,
+      2992,
+      2676
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1528,
+      2718,
+      1614,
+      2768
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1526,
+      2930,
+      1616,
+      2984
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1634,
+      2712,
+      2307,
+      2776
+    ],
+    "text": "I00100000015- VEGETABLE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1524,
+      2806,
+      1748,
+      2868
+    ],
+    "text": "RM1.03",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1630,
+      2924,
+      2457,
+      2992
+    ],
+    "text": "I00100000056-FRIED NOODLE (S)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1524,
+      3022,
+      1730,
+      3086
+    ],
+    "text": "RM1.88",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1983,
+      2808,
+      2031,
+      2864
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1991,
+      3022,
+      2019,
+      3080
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2774,
+      2802,
+      2986,
+      2860
+    ],
+    "text": "RM4.12",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2770,
+      3016,
+      2976,
+      3076
+    ],
+    "text": "RM1.88",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2387,
+      3163,
+      2982,
+      3221
+    ],
+    "text": "TOTAL AMOUNT: RM6.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      2460,
+      3241,
+      2977,
+      3309
+    ],
+    "text": "GST @0%: RM0.00",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2488,
+      3327,
+      2977,
+      3389
+    ],
+    "text": "NETT TOTAL: RM6.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1520,
+      3449,
+      1923,
+      3515
+    ],
+    "text": "PAYMENT MODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2762,
+      3447,
+      2988,
+      3503
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1524,
+      3545,
+      1698,
+      3599
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1524,
+      3625,
+      1734,
+      3693
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2772,
+      3539,
+      2976,
+      3593
+    ],
+    "text": "RM6.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2770,
+      3623,
+      2974,
+      3681
+    ],
+    "text": "RM0.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1520,
+      3830,
+      1854,
+      3886
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2225,
+      3830,
+      2503,
+      3884
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2786,
+      3822,
+      2982,
+      3884
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1520,
+      3920,
+      1869,
+      3978
+    ],
+    "text": "SR = GST @0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2403,
+      3920,
+      2507,
+      3974
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2880,
+      3918,
+      2988,
+      3974
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1899,
+      4044,
+      2596,
+      4102
+    ],
+    "text": "GST REG #000656195584",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1773,
+      4126,
+      2724,
+      4190
+    ],
+    "text": "BAR WANG RICE@PERMAS JAYA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1891,
+      4204,
+      2588,
+      4274
+    ],
+    "text": "THANK YOU & COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1811,
+      4292,
+      2672,
+      4348
+    ],
+    "text": "LIKE AND FOLLOW US ON FACEBOOK!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1861,
+      4372,
+      2624,
+      4442
+    ],
+    "text": "FACEBOOK.COM/BARWANGRICE",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

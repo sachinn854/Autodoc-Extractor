@@ -1,0 +1,387 @@
+[
+  {
+    "bbox": [
+      8,
+      209,
+      480,
+      244
+    ],
+    "text": "AMANO MALAYSIA SDN BHD (682288-V)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      69,
+      246,
+      407,
+      275
+    ],
+    "text": "12 JALAN PENGACARA U1/48",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      67,
+      277,
+      395,
+      308
+    ],
+    "text": "TEMASYA INDUSTRIAL PARK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      66,
+      311,
+      408,
+      341
+    ],
+    "text": "40150 SHAH ALAM SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      125,
+      349,
+      380,
+      376
+    ],
+    "text": ": 03-55695002/5003",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      111,
+      380,
+      393,
+      408
+    ],
+    "text": "ST ID: 001137704960)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      96,
+      476,
+      407,
+      506
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      9,
+      539,
+      110,
+      567
+    ],
+    "text": "P/S #02",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      300,
+      451,
+      522,
+      499
+    ],
+    "text": "POSTED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      137,
+      547,
+      153,
+      569
+    ],
+    "text": "A",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      166,
+      545,
+      494,
+      571
+    ],
+    "text": "INV-NO.0002300417000116",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      11,
+      572,
+      110,
+      600
+    ],
+    "text": "T/D #11",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      362,
+      872,
+      488,
+      897
+    ],
+    "text": "RM1.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      265,
+      579,
+      493,
+      604
+    ],
+    "text": "TICKET NO.029332",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      9,
+      605,
+      153,
+      635
+    ],
+    "text": "ENTRY TIME",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      7,
+      640,
+      138,
+      666
+    ],
+    "text": "PAID TIME",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      8,
+      671,
+      182,
+      702
+    ],
+    "text": "PARKING TIME",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      10,
+      703,
+      69,
+      732
+    ],
+    "text": "TYPE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      178,
+      611,
+      495,
+      636
+    ],
+    "text": "30/04/2017 (SUN) 20:22",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      180,
+      643,
+      491,
+      668
+    ],
+    "text": "30/04/2017 (SUN) 21:51",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      362,
+      906,
+      487,
+      929
+    ],
+    "text": "RM1.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      363,
+      939,
+      488,
+      964
+    ],
+    "text": "RM0.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      209,
+      970,
+      338,
+      997
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      168,
+      1004,
+      391,
+      1027
+    ],
+    "text": "INCLUSIVE 6% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      439,
+      678,
+      493,
+      701
+    ],
+    "text": "1:29",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      405,
+      709,
+      493,
+      733
+    ],
+    "text": "RM1.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      236,
+      710,
+      322,
+      735
+    ],
+    "text": "RATE A",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      8,
+      769,
+      168,
+      801
+    ],
+    "text": "PARKING FEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      9,
+      803,
+      196,
+      833
+    ],
+    "text": "GST(INCLUDED)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      236,
+      808,
+      324,
+      833
+    ],
+    "text": "6.00 %",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      405,
+      775,
+      491,
+      799
+    ],
+    "text": "RM0.94",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      405,
+      809,
+      493,
+      832
+    ],
+    "text": "RM0.06",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      11,
+      867,
+      143,
+      896
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      10,
+      901,
+      127,
+      928
+    ],
+    "text": "PAID",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      9,
+      935,
+      182,
+      964
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

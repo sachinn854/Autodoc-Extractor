@@ -1,0 +1,1157 @@
+[
+  {
+    "bbox": [
+      1938,
+      364,
+      2515,
+      457
+    ],
+    "text": "AEON CO. (M) BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      2548,
+      349,
+      2897,
+      446
+    ],
+    "text": "(126926-H)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1911,
+      453,
+      2946,
+      561
+    ],
+    "text": "3RD FLR, AEON TAMAN MALURI SC",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1984,
+      551,
+      2832,
+      656
+    ],
+    "text": "JLN JEJAKA, TAMAN MALURI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1949,
+      648,
+      2874,
+      758
+    ],
+    "text": "CHERAS, 55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2058,
+      745,
+      2803,
+      855
+    ],
+    "text": "GST ID : 002017394688",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2201,
+      852,
+      2711,
+      944
+    ],
+    "text": "SHOPPING HOURS",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1960,
+      947,
+      2918,
+      1050
+    ],
+    "text": "SUN-THU:1000 HRS - 2230 HRS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1962,
+      1039,
+      2920,
+      1151
+    ],
+    "text": "FRI-SAT:1000 HRS - 2300 HRS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1760,
+      1272,
+      1832,
+      1351
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1766,
+      1571,
+      1841,
+      1650
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1768,
+      1766,
+      1849,
+      1843
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1771,
+      1962,
+      1857,
+      2045
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1779,
+      2168,
+      1851,
+      2240
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1779,
+      2357,
+      1862,
+      2434
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1788,
+      2548,
+      1867,
+      2634
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1793,
+      2851,
+      1870,
+      2930
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1799,
+      3047,
+      1871,
+      3130
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1799,
+      3249,
+      1880,
+      3328
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1804,
+      3438,
+      1879,
+      3526
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1812,
+      3739,
+      1889,
+      3811
+    ],
+    "text": "1X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1853,
+      1254,
+      2288,
+      1354
+    ],
+    "text": "000001038556",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1858,
+      1356,
+      2321,
+      1454
+    ],
+    "text": "CHEK-HUP 2IN1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1869,
+      1449,
+      2470,
+      1547
+    ],
+    "text": "ITEM PROMO @12.99",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1866,
+      1552,
+      2291,
+      1642
+    ],
+    "text": "000006429720",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1866,
+      1651,
+      2374,
+      1747
+    ],
+    "text": "MS SWM ENZO RT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1863,
+      1749,
+      2296,
+      1834
+    ],
+    "text": "000005457342",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1874,
+      1842,
+      2416,
+      1938
+    ],
+    "text": "VALENCIA ORANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1879,
+      1948,
+      2299,
+      2033
+    ],
+    "text": "000000812627",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1874,
+      2041,
+      2305,
+      2134
+    ],
+    "text": "US RED GLOBE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1877,
+      2153,
+      2313,
+      2233
+    ],
+    "text": "000006454333",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1882,
+      2246,
+      2137,
+      2336
+    ],
+    "text": "CN PEAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1882,
+      2339,
+      2313,
+      2427
+    ],
+    "text": "000004023432",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1879,
+      2440,
+      2381,
+      2525
+    ],
+    "text": "CHN FUJI AP 4S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1887,
+      2536,
+      2310,
+      2624
+    ],
+    "text": "000008626349",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1890,
+      2629,
+      2390,
+      2727
+    ],
+    "text": "AUS SEEKA KIWI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1887,
+      2735,
+      2466,
+      2828
+    ],
+    "text": "ITEM PROMO @9.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1895,
+      2836,
+      2320,
+      2929
+    ],
+    "text": "000007773877",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1893,
+      2935,
+      2398,
+      3023
+    ],
+    "text": "CHILE ANGELENO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1903,
+      3033,
+      2326,
+      3121
+    ],
+    "text": "000000388658",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1895,
+      3123,
+      2435,
+      3232
+    ],
+    "text": "CUT FRUITS 1.99",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1903,
+      3235,
+      2336,
+      3323
+    ],
+    "text": "000004291022",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1898,
+      3325,
+      2411,
+      3410
+    ],
+    "text": "CHERRY SUNGOLD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1906,
+      3426,
+      2331,
+      3511
+    ],
+    "text": "0000007802317",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1906,
+      3525,
+      2448,
+      3613
+    ],
+    "text": "TURKEY CHERRY 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1906,
+      3618,
+      2509,
+      3716
+    ],
+    "text": "ITEM PROMO @11.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1911,
+      3724,
+      2339,
+      3812
+    ],
+    "text": "000000135412",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1911,
+      3814,
+      2379,
+      3907
+    ],
+    "text": "SUSHI SET-PTC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2812,
+      1236,
+      3078,
+      1308
+    ],
+    "text": "15.56SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2810,
+      1435,
+      2996,
+      1509
+    ],
+    "text": "-2.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2823,
+      1520,
+      3073,
+      1610
+    ],
+    "text": "10.28SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2826,
+      1717,
+      3079,
+      1815
+    ],
+    "text": "18.50SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2828,
+      1922,
+      3073,
+      2007
+    ],
+    "text": "10.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2834,
+      2124,
+      3089,
+      2201
+    ],
+    "text": "10.50SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2839,
+      2315,
+      3086,
+      2403
+    ],
+    "text": "14.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2844,
+      2509,
+      3094,
+      2597
+    ],
+    "text": "10.90SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2834,
+      2709,
+      3025,
+      2799
+    ],
+    "text": "-1.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2871,
+      2807,
+      3097,
+      2897
+    ],
+    "text": "7.90SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2879,
+      3009,
+      3094,
+      3099
+    ],
+    "text": "2.50SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2884,
+      3208,
+      3107,
+      3296
+    ],
+    "text": "4.80SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2865,
+      3394,
+      3099,
+      3487
+    ],
+    "text": "18.90SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2855,
+      3596,
+      3041,
+      3684
+    ],
+    "text": "-7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2865,
+      3698,
+      3110,
+      3794
+    ],
+    "text": "15.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2685,
+      5411,
+      2716,
+      5469
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2692,
+      5502,
+      2716,
+      5562
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1698,
+      4024,
+      2029,
+      4108
+    ],
+    "text": "SUB-TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1708,
+      4114,
+      2422,
+      4214
+    ],
+    "text": "TOTAL SALES INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1705,
+      4213,
+      2136,
+      4316
+    ],
+    "text": "ROUNDING ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1711,
+      4304,
+      2573,
+      4397
+    ],
+    "text": "TOTAL AFTER ADJ INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1708,
+      4423,
+      1866,
+      4516
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1721,
+      4522,
+      2184,
+      4609
+    ],
+    "text": "ITEM COUNT 12",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2345,
+      4509,
+      2705,
+      4589
+    ],
+    "text": "CHANGE AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2911,
+      3988,
+      3126,
+      4081
+    ],
+    "text": "127.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2908,
+      4094,
+      3120,
+      4178
+    ],
+    "text": "127.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2933,
+      4197,
+      3126,
+      4277
+    ],
+    "text": "-0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2908,
+      4287,
+      3123,
+      4380
+    ],
+    "text": "127.35",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      2908,
+      4387,
+      3123,
+      4480
+    ],
+    "text": "150.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2933,
+      4490,
+      3129,
+      4574
+    ],
+    "text": "22.65",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1863,
+      4594,
+      2953,
+      4703
+    ],
+    "text": "INVOICE NO : 2018061010100170023",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1721,
+      4727,
+      2120,
+      4807
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1721,
+      4819,
+      1980,
+      4906
+    ],
+    "text": "SR @ 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1718,
+      4918,
+      1904,
+      5000
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2417,
+      4705,
+      2642,
+      4785
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2426,
+      4797,
+      2648,
+      4884
+    ],
+    "text": "127.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2429,
+      4893,
+      2644,
+      4978
+    ],
+    "text": "127.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      3016,
+      4683,
+      3130,
+      4765
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2984,
+      4790,
+      3131,
+      4862
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2984,
+      4886,
+      3136,
+      4963
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1735,
+      5014,
+      2083,
+      5101
+    ],
+    "text": "10/06/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2117,
+      5007,
+      2293,
+      5092
+    ],
+    "text": "13:04",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2569,
+      4985,
+      3139,
+      5077
+    ],
+    "text": "1010 017 0170023",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1721,
+      5101,
+      2436,
+      5200
+    ],
+    "text": "0252828 PJ CST ZAHIR",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      2067,
+      5281,
+      2717,
+      5381
+    ],
+    "text": "REGULAR STAMP(S) :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2815,
+      5282,
+      2858,
+      5357
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2078,
+      5391,
+      2571,
+      5488
+    ],
+    "text": "BONUS STAMP(S)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2813,
+      5391,
+      2859,
+      5463
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2085,
+      5488,
+      2576,
+      5573
+    ],
+    "text": "TOTAL STAMP(S)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2825,
+      5485,
+      2864,
+      5557
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1735,
+      5672,
+      3153,
+      5798
+    ],
+    "text": "AEON STAMPS LOYALTY PROGRAM \"PRODUCT(S)\"",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1880,
+      5778,
+      3059,
+      5882
+    ],
+    "text": "SOLD ARE NEITHER EXCHANGEABLE NOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2264,
+      5879,
+      2626,
+      5973
+    ],
+    "text": "REFUNDABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2122,
+      6075,
+      2697,
+      6176
+    ],
+    "text": "AEON PERMAS JAYA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2052,
+      6165,
+      2905,
+      6269
+    ],
+    "text": "TEL 1-300-80-AEON (2366)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1994,
+      6268,
+      2990,
+      6379
+    ],
+    "text": "THANK YOU FOR YOUR PATRONAGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2131,
+      6368,
+      2745,
+      6462
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

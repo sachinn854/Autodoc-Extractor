@@ -1,0 +1,750 @@
+[
+  {
+    "bbox": [
+      30,
+      135,
+      485,
+      165
+    ],
+    "text": "SUPER SEVEN CASH & CARRY SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      32,
+      169,
+      171,
+      200
+    ],
+    "text": "(590150-A)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      28,
+      206,
+      415,
+      239
+    ],
+    "text": "FASARAYA BORONG SUPER SEVEN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      30,
+      242,
+      286,
+      270
+    ],
+    "text": "NO. 1 JALAN EURO 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      31,
+      277,
+      301,
+      309
+    ],
+    "text": "OFF JALAN BATU TIGA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      30,
+      312,
+      587,
+      345
+    ],
+    "text": "SUNGAI BULOH SEKSYEN U3 SHAH ALAM, 40150",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      29,
+      348,
+      371,
+      380
+    ],
+    "text": "HTTP://WWW.SUPER7.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      29,
+      383,
+      270,
+      413
+    ],
+    "text": "TEL : 03-78590861",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      30,
+      418,
+      274,
+      447
+    ],
+    "text": "FAX : 03-78590864",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      30,
+      489,
+      331,
+      516
+    ],
+    "text": "GST ID : 000639090688",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      244,
+      558,
+      400,
+      588
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      29,
+      626,
+      327,
+      658
+    ],
+    "text": "CUSTOMER : [77853745]",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      31,
+      663,
+      288,
+      691
+    ],
+    "text": "MRS. ONG GUAT CHYE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      30,
+      733,
+      359,
+      760
+    ],
+    "text": "TAX INVOICE NO : 195147",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      430,
+      732,
+      601,
+      761
+    ],
+    "text": "COUNTER :002",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      29,
+      766,
+      599,
+      798
+    ],
+    "text": "OPERATOR : [SYUNADAH BT FAIZAL A-CASHIER]",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      31,
+      803,
+      172,
+      831
+    ],
+    "text": "12-02-2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      445,
+      802,
+      603,
+      829
+    ],
+    "text": "11:34:45 AM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      517,
+      835,
+      570,
+      867
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      29,
+      908,
+      486,
+      938
+    ],
+    "text": "BORY FLTTLET 300UP(3)6KG @63.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      45,
+      943,
+      203,
+      971
+    ],
+    "text": "FM411000055",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      270,
+      943,
+      303,
+      970
+    ],
+    "text": "*4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      472,
+      943,
+      601,
+      969
+    ],
+    "text": "252.00 ZR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      31,
+      977,
+      492,
+      1006
+    ],
+    "text": "BERAS BIRI-BIRI 10KG 5% ISTIMEWA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      516,
+      978,
+      602,
+      1008
+    ],
+    "text": "@53.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      1013,
+      232,
+      1040
+    ],
+    "text": "9556606389892",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      270,
+      1015,
+      300,
+      1040
+    ],
+    "text": "*1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      484,
+      1010,
+      602,
+      1039
+    ],
+    "text": "53.50 ZR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      29,
+      1049,
+      532,
+      1076
+    ],
+    "text": "BAWANG BESAR INDIA/CINA GUNI @8.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1084,
+      204,
+      1109
+    ],
+    "text": "FM429000000",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      273,
+      1085,
+      304,
+      1110
+    ],
+    "text": "*2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      490,
+      1079,
+      602,
+      1108
+    ],
+    "text": "17.00 ZR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      1118,
+      344,
+      1145
+    ],
+    "text": "BAHAS CILI 1KG @19.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      45,
+      1154,
+      230,
+      1181
+    ],
+    "text": "9556065000352",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      277,
+      1152,
+      302,
+      1177
+    ],
+    "text": "*1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      489,
+      1151,
+      603,
+      1179
+    ],
+    "text": "19.50 ZR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      1187,
+      445,
+      1215
+    ],
+    "text": "BABAS KARI DAGING 1KG @17.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      1221,
+      232,
+      1250
+    ],
+    "text": "9556065000345",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      273,
+      1223,
+      298,
+      1249
+    ],
+    "text": "*1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      487,
+      1219,
+      602,
+      1248
+    ],
+    "text": "17.20 ZR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      1258,
+      361,
+      1288
+    ],
+    "text": "CILI BOH 3KG KCK @7.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      45,
+      1293,
+      230,
+      1320
+    ],
+    "text": "9554100157801",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      273,
+      1293,
+      303,
+      1319
+    ],
+    "text": "*1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      499,
+      1291,
+      603,
+      1318
+    ],
+    "text": "7.90 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      1364,
+      303,
+      1392
+    ],
+    "text": "QUANTITY : 10 UNITS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      28,
+      1434,
+      417,
+      1463
+    ],
+    "text": "TOTAL SALES (INCL. GST @6%)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      488,
+      1431,
+      604,
+      1458
+    ],
+    "text": "RM367.10",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      33,
+      1469,
+      305,
+      1499
+    ],
+    "text": "ROUNDING ADJUSTMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      517,
+      1468,
+      605,
+      1495
+    ],
+    "text": "RM0.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      34,
+      1502,
+      157,
+      1534
+    ],
+    "text": "NET TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      487,
+      1503,
+      605,
+      1531
+    ],
+    "text": "RM367.10",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      34,
+      1539,
+      233,
+      1569
+    ],
+    "text": "PAYMENT METHOD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      472,
+      1537,
+      605,
+      1566
+    ],
+    "text": "VISA CARD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      1609,
+      207,
+      1640
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      319,
+      1607,
+      445,
+      1636
+    ],
+    "text": "SALES AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      501,
+      1606,
+      604,
+      1636
+    ],
+    "text": "TAX AMT",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      391,
+      1641,
+      447,
+      1672
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      533,
+      1642,
+      588,
+      1672
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      48,
+      1679,
+      146,
+      1710
+    ],
+    "text": "ZR (0%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      360,
+      1680,
+      448,
+      1705
+    ],
+    "text": "359.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      547,
+      1679,
+      608,
+      1706
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      50,
+      1716,
+      147,
+      1745
+    ],
+    "text": "SR (6%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      391,
+      1714,
+      449,
+      1741
+    ],
+    "text": "7.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      547,
+      1713,
+      609,
+      1742
+    ],
+    "text": "0.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      33,
+      1784,
+      407,
+      1814
+    ],
+    "text": "PLEASE VERIFY YOUR RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      36,
+      1819,
+      418,
+      1849
+    ],
+    "text": "BEFORE LEAVING THE COUNTER.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      37,
+      1854,
+      462,
+      1884
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      41,
+      1928,
+      164,
+      1955
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "bbox": [
+      138,
+      53,
+      576,
+      88
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      140,
+      94,
+      588,
+      124
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      65,
+      138,
+      650,
+      169
+    ],
+    "text": "FOR FEEDBACK OR COMPLAINT, PLEASE CALL:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      261,
+      182,
+      453,
+      207
+    ],
+    "text": "011-3194 0284",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      79,
+      218,
+      652,
+      246
+    ],
+    "text": "*REDEEM VOUCHER BEFORE POINTS EXPIRY!*",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      168,
+      659,
+      546,
+      690
+    ],
+    "text": "SEGI CASH & CARRY SDN.BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      294,
+      698,
+      436,
+      729
+    ],
+    "text": "(317041-W)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      213,
+      739,
+      515,
+      770
+    ],
+    "text": "PT17920, SEKSYEN U9,",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      245,
+      778,
+      482,
+      809
+    ],
+    "text": "40150 SHAH ALAM,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      198,
+      817,
+      512,
+      843
+    ],
+    "text": "SELANGOR DARUL EHSAN.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      154,
+      856,
+      562,
+      889
+    ],
+    "text": "GST REG. NO. : 001951645696",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      65,
+      974,
+      216,
+      1004
+    ],
+    "text": "INVOICE NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      261,
+      977,
+      363,
+      1003
+    ],
+    "text": ": 45691",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      64,
+      1014,
+      125,
+      1041
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      261,
+      1017,
+      575,
+      1045
+    ],
+    "text": ": 05 JAN 2017 12:41PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      64,
+      1055,
+      169,
+      1081
+    ],
+    "text": "COUNTER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      261,
+      1056,
+      322,
+      1081
+    ],
+    "text": ": 07",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      184,
+      1809,
+      529,
+      1838
+    ],
+    "text": "** 00600716214045691 **",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      139,
+      1889,
+      571,
+      1922
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      139,
+      1929,
+      587,
+      1958
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      64,
+      1133,
+      408,
+      1161
+    ],
+    "text": "BUDGET TOILET ROLL 20'S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      66,
+      1175,
+      196,
+      1200
+    ],
+    "text": "1 X 12.61",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      559,
+      1173,
+      663,
+      1199
+    ],
+    "text": "12.61 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      62,
+      1970,
+      647,
+      1998
+    ],
+    "text": "FOR FEEDBACK OR COMPLAINT, PLEASE CALL:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      258,
+      2009,
+      453,
+      2035
+    ],
+    "text": "011-3194 0284",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      65,
+      1254,
+      276,
+      1281
+    ],
+    "text": "NO OF ITEMS: 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      199,
+      1295,
+      513,
+      1321
+    ],
+    "text": "SUBTOTAL INCL. GST:RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      590,
+      1296,
+      661,
+      1321
+    ],
+    "text": "12.61",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      348,
+      1336,
+      514,
+      1365
+    ],
+    "text": "ROUNDING:RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      589,
+      1336,
+      659,
+      1361
+    ],
+    "text": "-0.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      244,
+      1373,
+      512,
+      1399
+    ],
+    "text": "TOTAL INCL. GST:RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      590,
+      1375,
+      663,
+      1400
+    ],
+    "text": "12.60",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      406,
+      1414,
+      513,
+      1438
+    ],
+    "text": "CASH:RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      589,
+      1415,
+      663,
+      1440
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      376,
+      1453,
+      512,
+      1484
+    ],
+    "text": "CHANGE:RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      589,
+      1454,
+      664,
+      1482
+    ],
+    "text": "37.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      66,
+      1491,
+      390,
+      1518
+    ],
+    "text": "MISSED POINT TODAY: 11",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      66,
+      1532,
+      526,
+      1562
+    ],
+    "text": "SERVED BY WINDA FRISKANA MAYESI",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      292,
+      1613,
+      450,
+      1642
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      66,
+      1650,
+      184,
+      1675
+    ],
+    "text": "GST CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      378,
+      1651,
+      523,
+      1680
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      560,
+      1650,
+      658,
+      1680
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      64,
+      1691,
+      170,
+      1716
+    ],
+    "text": "S @6.0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      453,
+      1691,
+      528,
+      1717
+    ],
+    "text": "11.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      603,
+      1691,
+      660,
+      1718
+    ],
+    "text": "0.71",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      80,
+      2049,
+      648,
+      2076
+    ],
+    "text": "*REDEEM VOUCHER BEFORE POINTS EXPIRY!*",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "bbox": [
+      155,
+      338,
+      649,
+      386
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      209,
+      389,
+      600,
+      434
+    ],
+    "text": "LOT P.T. 33198, BATU 4",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      189,
+      439,
+      626,
+      485
+    ],
+    "text": "JALAN KAPAR, MUKIM KAPAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      228,
+      491,
+      599,
+      536
+    ],
+    "text": "42100 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      240,
+      542,
+      562,
+      584
+    ],
+    "text": "1181-TMN SRI SINAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      189,
+      592,
+      633,
+      638
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      169,
+      692,
+      665,
+      736
+    ],
+    "text": "INVOICE NO : 17556/103/T0503",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      61,
+      790,
+      190,
+      830
+    ],
+    "text": "09:23PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      360,
+      790,
+      473,
+      840
+    ],
+    "text": "559412",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      626,
+      792,
+      773,
+      843
+    ],
+    "text": "24-01-16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      61,
+      888,
+      486,
+      934
+    ],
+    "text": "8019 MARIGOLD HL MILK 1L",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      92,
+      940,
+      311,
+      984
+    ],
+    "text": "@2 X RM 6.79",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      607,
+      898,
+      771,
+      935
+    ],
+    "text": "RM13.58 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      1043,
+      595,
+      1083
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      195,
+      1096,
+      593,
+      1138
+    ],
+    "text": "ROUNDING ADJUSTMENT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      394,
+      1146,
+      592,
+      1189
+    ],
+    "text": "ROUNDING RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      463,
+      1197,
+      591,
+      1236
+    ],
+    "text": "CASH RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      429,
+      1246,
+      595,
+      1282
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      1345,
+      258,
+      1391
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      57,
+      1398,
+      172,
+      1434
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      338,
+      1341,
+      521,
+      1389
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      423,
+      1392,
+      524,
+      1436
+    ],
+    "text": "12.82",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      616,
+      1337,
+      753,
+      1387
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      690,
+      1389,
+      749,
+      1431
+    ],
+    "text": ".76",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      151,
+      1547,
+      651,
+      1592
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      53,
+      1598,
+      749,
+      1640
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      646,
+      1047,
+      736,
+      1088
+    ],
+    "text": "13.58",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      677,
+      1097,
+      736,
+      1133
+    ],
+    "text": ".02",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      645,
+      1147,
+      736,
+      1183
+    ],
+    "text": "13.60",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      641,
+      1196,
+      735,
+      1235
+    ],
+    "text": "14.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      678,
+      1246,
+      735,
+      1283
+    ],
+    "text": ".40",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

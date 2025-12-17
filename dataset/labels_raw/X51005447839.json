@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      257,
+      166,
+      683,
+      215
+    ],
+    "text": "RESTAURANT JIAWEI",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      316,
+      219,
+      613,
+      259
+    ],
+    "text": "JIAWEI HOUSE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      337,
+      264,
+      616,
+      313
+    ],
+    "text": "002693074-K",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      235,
+      314,
+      677,
+      353
+    ],
+    "text": "13, JLN TASIK UTAMA 8",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      193,
+      355,
+      714,
+      396
+    ],
+    "text": "MEDAN NIAGA DAMAI SG BESI",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      365,
+      401,
+      535,
+      440
+    ],
+    "text": "57000 KL",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      390,
+      467,
+      568,
+      508
+    ],
+    "text": "INVOICE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      41,
+      588,
+      305,
+      626
+    ],
+    "text": "INVOICE :9820",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      689,
+      1607,
+      878,
+      1664
+    ],
+    "text": "65.20",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      448,
+      588,
+      716,
+      631
+    ],
+    "text": "CASHIER : ADMIN",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      32,
+      627,
+      202,
+      663
+    ],
+    "text": "POS NO : 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      34,
+      669,
+      543,
+      710
+    ],
+    "text": "DATE : 9/3/2018 20:54:50",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      34,
+      718,
+      243,
+      781
+    ],
+    "text": "TABLE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      336,
+      739,
+      357,
+      783
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      414,
+      722,
+      493,
+      783
+    ],
+    "text": "16",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      78,
+      839,
+      154,
+      869
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      282,
+      837,
+      345,
+      873
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      401,
+      839,
+      527,
+      871
+    ],
+    "text": "U/P (RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      572,
+      835,
+      704,
+      874
+    ],
+    "text": "DISC (%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      740,
+      836,
+      875,
+      872
+    ],
+    "text": "AMT (RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      75,
+      915,
+      758,
+      954
+    ],
+    "text": "B. BEAN BITTERGROUND FISH HEAD (S)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      470,
+      959,
+      492,
+      993
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      570,
+      959,
+      676,
+      992
+    ],
+    "text": "35.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      777,
+      959,
+      861,
+      993
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      75,
+      998,
+      547,
+      1034
+    ],
+    "text": "F. HONG KONG SAUTEED (S)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      472,
+      1043,
+      489,
+      1073
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      574,
+      1043,
+      675,
+      1073
+    ],
+    "text": "16.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      780,
+      1042,
+      861,
+      1073
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      75,
+      1081,
+      364,
+      1119
+    ],
+    "text": "STEAMED EGG (S)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      430,
+      1125,
+      447,
+      1155
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      537,
+      1121,
+      644,
+      1155
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      736,
+      1124,
+      821,
+      1156
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      77,
+      1165,
+      305,
+      1201
+    ],
+    "text": "CHINESE TEA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      325,
+      1203,
+      346,
+      1239
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      447,
+      1208,
+      534,
+      1240
+    ],
+    "text": "0.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      634,
+      1206,
+      717,
+      1239
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      801,
+      1208,
+      884,
+      1244
+    ],
+    "text": "1.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      138,
+      1247,
+      219,
+      1278
+    ],
+    "text": "COLD",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      75,
+      1285,
+      235,
+      1325
+    ],
+    "text": "RICE (B)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      388,
+      1329,
+      410,
+      1364
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      511,
+      1330,
+      596,
+      1362
+    ],
+    "text": "1.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      692,
+      1330,
+      781,
+      1363
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      860,
+      1330,
+      883,
+      1363
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      115,
+      1408,
+      638,
+      1448
+    ],
+    "text": "SUB TOTAL BEFORE DISCOUNT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      691,
+      1407,
+      865,
+      1446
+    ],
+    "text": "RM 65.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      120,
+      1454,
+      410,
+      1491
+    ],
+    "text": "SERVICE CHARGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      714,
+      1454,
+      860,
+      1486
+    ],
+    "text": "RM 0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1494,
+      351,
+      1530
+    ],
+    "text": "TOTAL SALES",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      695,
+      1494,
+      863,
+      1529
+    ],
+    "text": "RM 65.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      116,
+      1532,
+      551,
+      1572
+    ],
+    "text": "ROUNDING ADJUSTMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      714,
+      1534,
+      862,
+      1568
+    ],
+    "text": "RM 0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      115,
+      1606,
+      304,
+      1659
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      572,
+      1604,
+      648,
+      1660
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

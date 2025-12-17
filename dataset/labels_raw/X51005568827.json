@@ -1,0 +1,574 @@
+[
+  {
+    "bbox": [
+      373,
+      393,
+      585,
+      433
+    ],
+    "text": "BANH MI CAFE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      119,
+      442,
+      835,
+      482
+    ],
+    "text": "DIMILIKI: BANH MI CAFE SDN BHD 1110644-W",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      266,
+      490,
+      679,
+      532
+    ],
+    "text": "NO. 1 JALAN PUTERI 7/10",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      228,
+      535,
+      728,
+      581
+    ],
+    "text": "BANDAR PUTERI, 47100 PUCHONG",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      318,
+      586,
+      641,
+      624
+    ],
+    "text": "SELANGOR, MALAYSIA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      232,
+      630,
+      724,
+      671
+    ],
+    "text": "(GST REG. NO : 000306700288)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      263,
+      677,
+      653,
+      715
+    ],
+    "text": "GUEST CHECK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      126,
+      724,
+      373,
+      765
+    ],
+    "text": "TABLE A",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      120,
+      771,
+      391,
+      807
+    ],
+    "text": "INV NO.: 153887",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      582,
+      773,
+      746,
+      811
+    ],
+    "text": "PAX(S): 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      120,
+      822,
+      202,
+      856
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      122,
+      864,
+      443,
+      904
+    ],
+    "text": "CASHIER: CASHIER A",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      120,
+      957,
+      173,
+      1001
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      224,
+      961,
+      429,
+      1001
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      675,
+      961,
+      836,
+      998
+    ],
+    "text": "TOTAL TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      123,
+      1056,
+      139,
+      1090
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      187,
+      1053,
+      589,
+      1092
+    ],
+    "text": "205 SUONG NON RAM CHUA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      691,
+      1057,
+      761,
+      1095
+    ],
+    "text": "9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      796,
+      1056,
+      834,
+      1092
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      188,
+      1101,
+      638,
+      1139
+    ],
+    "text": "205 SWEET &SOUR PORK RIBS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      1148,
+      144,
+      1186
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      187,
+      1150,
+      606,
+      1185
+    ],
+    "text": "217 TAU HU DON THIT CHI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      691,
+      1152,
+      762,
+      1184
+    ],
+    "text": "9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      794,
+      1152,
+      835,
+      1185
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      192,
+      1197,
+      569,
+      1234
+    ],
+    "text": "217 STUFF MEAT TAU FU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      1244,
+      143,
+      1280
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      191,
+      1245,
+      371,
+      1279
+    ],
+    "text": "605 TRA DA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      695,
+      1245,
+      762,
+      1279
+    ],
+    "text": "1.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      794,
+      1248,
+      835,
+      1281
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      193,
+      1291,
+      606,
+      1329
+    ],
+    "text": "605 VIETNAMESE ICED TEA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      1383,
+      511,
+      1423
+    ],
+    "text": "TOTAL (EXCLUDING GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      741,
+      1385,
+      835,
+      1422
+    ],
+    "text": "21.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      118,
+      1432,
+      442,
+      1472
+    ],
+    "text": "SERV. CHARGE (3%):",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      759,
+      1433,
+      832,
+      1470
+    ],
+    "text": "0.65",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      120,
+      1478,
+      423,
+      1518
+    ],
+    "text": "GST PAYABLE (6%):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      765,
+      1483,
+      832,
+      1516
+    ],
+    "text": "1.31",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      119,
+      1525,
+      565,
+      1567
+    ],
+    "text": "TOTAL (INCLUSIVE OF GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      742,
+      1528,
+      832,
+      1562
+    ],
+    "text": "23.26",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      118,
+      1573,
+      355,
+      1613
+    ],
+    "text": "ROUNDING ADJ:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      748,
+      1574,
+      830,
+      1608
+    ],
+    "text": "-0.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1621,
+      327,
+      1690
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      655,
+      1621,
+      830,
+      1692
+    ],
+    "text": "23.25",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      119,
+      1735,
+      246,
+      1775
+    ],
+    "text": "CLOSED:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      456,
+      1737,
+      635,
+      1774
+    ],
+    "text": "29-10-2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      123,
+      1783,
+      429,
+      1823
+    ],
+    "text": "SERVER: CASHIER A",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      116,
+      1969,
+      318,
+      2009
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      476,
+      1970,
+      651,
+      2010
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      707,
+      1970,
+      830,
+      2008
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      298,
+      2204,
+      672,
+      2241
+    ],
+    "text": "INQURIES: 012-3225548",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      224,
+      2250,
+      723,
+      2290
+    ],
+    "text": "LIKE US @ FACEBOOK: BANHMIKL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      225,
+      2298,
+      742,
+      2338
+    ],
+    "text": "EMAIL : BANHMICAFE1@GMAIL.COM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      246,
+      823,
+      626,
+      857
+    ],
+    "text": ": 29-10-2017 18:31:45",
+    "class": "DATE",
+    "class_id": 2
+  }
+]

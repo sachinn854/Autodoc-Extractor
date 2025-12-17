@@ -1,0 +1,431 @@
+[
+  {
+    "bbox": [
+      210,
+      134,
+      594,
+      164
+    ],
+    "text": "AEON CO. (M) BHD (126926-H)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      195,
+      171,
+      605,
+      203
+    ],
+    "text": "3RD FLR, AEON TAMAN MALURI SC",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      222,
+      210,
+      565,
+      242
+    ],
+    "text": "JLN JEJAKA, TAMAN MALURI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      207,
+      248,
+      580,
+      278
+    ],
+    "text": "CHERAS, 55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      237,
+      288,
+      540,
+      321
+    ],
+    "text": "GST ID: 002017394688",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      276,
+      321,
+      479,
+      359
+    ],
+    "text": "SHOPPING HOURS",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      199,
+      361,
+      588,
+      400
+    ],
+    "text": "MON-SUN: 1000 HRS - 2200 HRS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      162,
+      442,
+      336,
+      473
+    ],
+    "text": "000008190901",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      559,
+      442,
+      656,
+      476
+    ],
+    "text": "5.90SR",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      162,
+      481,
+      379,
+      515
+    ],
+    "text": "STERILE FILTRAT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      77,
+      554,
+      213,
+      593
+    ],
+    "text": "SUB-TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      587,
+      556,
+      652,
+      594
+    ],
+    "text": "5.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      75,
+      595,
+      367,
+      633
+    ],
+    "text": "TOTAL SALES INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      583,
+      597,
+      649,
+      629
+    ],
+    "text": "5.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      78,
+      634,
+      428,
+      670
+    ],
+    "text": "TOTAL AFTER ADJ INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      585,
+      634,
+      650,
+      670
+    ],
+    "text": "5.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      73,
+      672,
+      145,
+      710
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      575,
+      679,
+      657,
+      710
+    ],
+    "text": "10.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      75,
+      714,
+      252,
+      752
+    ],
+    "text": "ITEM COUNT 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      329,
+      711,
+      477,
+      750
+    ],
+    "text": "CHANGE AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      587,
+      711,
+      655,
+      750
+    ],
+    "text": "4.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      131,
+      754,
+      583,
+      788
+    ],
+    "text": "INVOICE NO: 2018020951320023885",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      75,
+      789,
+      242,
+      827
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      365,
+      798,
+      453,
+      824
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      603,
+      788,
+      654,
+      824
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      79,
+      833,
+      183,
+      860
+    ],
+    "text": "SR @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      393,
+      832,
+      449,
+      865
+    ],
+    "text": "5.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      592,
+      836,
+      650,
+      861
+    ],
+    "text": "0.33",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      80,
+      868,
+      152,
+      907
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      389,
+      868,
+      450,
+      904
+    ],
+    "text": "5.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      588,
+      868,
+      653,
+      904
+    ],
+    "text": "0.33",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      78,
+      907,
+      226,
+      943
+    ],
+    "text": "09/02/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      239,
+      910,
+      312,
+      942
+    ],
+    "text": "12:53",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      423,
+      913,
+      651,
+      943
+    ],
+    "text": "5132 002 0023885",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      73,
+      946,
+      540,
+      984
+    ],
+    "text": "0301371 NORSHAM BINTI AHAMED SHA",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      246,
+      1062,
+      553,
+      1101
+    ],
+    "text": "DAISO SUNWAY VELOCITY",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      220,
+      1101,
+      568,
+      1140
+    ],
+    "text": "TEL 1-300-80-AEON (2366)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      188,
+      1137,
+      599,
+      1181
+    ],
+    "text": "THANK YOU FOR YOUR PATRONAGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      1178,
+      515,
+      1214
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

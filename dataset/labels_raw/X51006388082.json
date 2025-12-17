@@ -1,0 +1,508 @@
+[
+  {
+    "bbox": [
+      54,
+      242,
+      617,
+      281
+    ],
+    "text": "BROADVIEW MARKETING SDN BHD(728384-M)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      150,
+      284,
+      528,
+      311
+    ],
+    "text": "NO. 9-G, JALAN DINAR D U3/D",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      117,
+      315,
+      565,
+      346
+    ],
+    "text": "TAMAN SUBANG PERDANA, SEK,U3,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      120,
+      347,
+      555,
+      383
+    ],
+    "text": "40150 SHAH ALAM,SELANGOR D.E.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      254,
+      384,
+      428,
+      412
+    ],
+    "text": "03-78459183",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      151,
+      420,
+      529,
+      454
+    ],
+    "text": "GST REG NO: 000203587584",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      270,
+      477,
+      449,
+      506
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      53,
+      518,
+      130,
+      542
+    ],
+    "text": "BILL NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      53,
+      557,
+      108,
+      583
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      52,
+      594,
+      139,
+      616
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      166,
+      521,
+      177,
+      541
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      166,
+      563,
+      175,
+      582
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      167,
+      598,
+      176,
+      620
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      202,
+      519,
+      343,
+      542
+    ],
+    "text": "BM-159572",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      206,
+      555,
+      509,
+      580
+    ],
+    "text": "15/05/2017 10:49:40 AM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      204,
+      593,
+      277,
+      616
+    ],
+    "text": "MERLIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      89,
+      646,
+      228,
+      672
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      320,
+      649,
+      363,
+      672
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      413,
+      639,
+      592,
+      672
+    ],
+    "text": "PRICE AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      428,
+      435,
+      661,
+      509
+    ],
+    "text": "POSTED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      50,
+      691,
+      62,
+      711
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      90,
+      686,
+      294,
+      713
+    ],
+    "text": "SR* HM BAG 10 X",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      147,
+      713,
+      262,
+      737
+    ],
+    "text": "16 (500GM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      348,
+      689,
+      361,
+      713
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      420,
+      689,
+      479,
+      711
+    ],
+    "text": "4.70",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      535,
+      687,
+      587,
+      711
+    ],
+    "text": "4.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      303,
+      762,
+      382,
+      787
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      134,
+      803,
+      379,
+      828
+    ],
+    "text": "TOTAL ITEM DISCOUNT:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      859,
+      378,
+      885
+    ],
+    "text": "TOTAL SALES INCLUSIVE GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      192,
+      915,
+      380,
+      941
+    ],
+    "text": "CASH RECEIVED :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      555,
+      759,
+      609,
+      784
+    ],
+    "text": "4.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      556,
+      799,
+      611,
+      824
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      555,
+      859,
+      609,
+      880
+    ],
+    "text": "4.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      557,
+      914,
+      609,
+      939
+    ],
+    "text": "4.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      986,
+      224,
+      1015
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      49,
+      1028,
+      212,
+      1053
+    ],
+    "text": "TAX CODE %",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      280,
+      1028,
+      475,
+      1053
+    ],
+    "text": "TAXABLE AMOUNT",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      506,
+      1028,
+      555,
+      1050
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      73,
+      1065,
+      104,
+      1091
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      182,
+      1065,
+      238,
+      1092
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      386,
+      1065,
+      440,
+      1091
+    ],
+    "text": "4.43",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      500,
+      1064,
+      553,
+      1087
+    ],
+    "text": "0.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1122,
+      118,
+      1148
+    ],
+    "text": "GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      197,
+      1122,
+      252,
+      1148
+    ],
+    "text": "0.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1160,
+      287,
+      1185
+    ],
+    "text": "* GST INCLUDE ITEM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      178,
+      1271,
+      557,
+      1304
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

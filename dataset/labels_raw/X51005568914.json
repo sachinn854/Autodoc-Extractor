@@ -1,0 +1,442 @@
+[
+  {
+    "bbox": [
+      288,
+      159,
+      646,
+      201
+    ],
+    "text": "IKANO HANDEL SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      377,
+      201,
+      555,
+      250
+    ],
+    "text": "(1074617K)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      271,
+      281,
+      659,
+      327
+    ],
+    "text": "IKEA CHERAS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      285,
+      324,
+      646,
+      367
+    ],
+    "text": "NO 2A JALAN COCHRANE",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      357,
+      362,
+      576,
+      406
+    ],
+    "text": "TAMAN MALURI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      302,
+      404,
+      630,
+      447
+    ],
+    "text": "55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      281,
+      443,
+      663,
+      492
+    ],
+    "text": "GST NO.: 000115154944",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      372,
+      527,
+      578,
+      607
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      126,
+      643,
+      596,
+      687
+    ],
+    "text": "SLIP: 0000000011000140428",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      511,
+      686,
+      769,
+      729
+    ],
+    "text": "DATE: 09/08/17",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      513,
+      729,
+      718,
+      771
+    ],
+    "text": "TIME: 1:06",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      127,
+      765,
+      415,
+      812
+    ],
+    "text": "TRANS: 311140123",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      513,
+      765,
+      626,
+      809
+    ],
+    "text": "STAFF:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      726,
+      766,
+      825,
+      810
+    ],
+    "text": "96728",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      131,
+      845,
+      323,
+      888
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      640,
+      847,
+      809,
+      894
+    ],
+    "text": "AMOUNT TX",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      125,
+      966,
+      648,
+      1013
+    ],
+    "text": "30169728 BAGIS COAT-HANGER CH",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      173,
+      1009,
+      379,
+      1052
+    ],
+    "text": "2 PC @ 4.90",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      673,
+      1009,
+      841,
+      1056
+    ],
+    "text": "9.80 SRM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      126,
+      1086,
+      488,
+      1130
+    ],
+    "text": "70350938 TEODORES CH",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      658,
+      1089,
+      841,
+      1131
+    ],
+    "text": "90.00 SR S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      126,
+      1208,
+      575,
+      1253
+    ],
+    "text": "TOTAL RM INCLUDING GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      659,
+      1212,
+      749,
+      1251
+    ],
+    "text": "99.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      126,
+      1250,
+      352,
+      1293
+    ],
+    "text": "ROUNDING ADJ.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      672,
+      1251,
+      751,
+      1291
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      127,
+      1286,
+      363,
+      1332
+    ],
+    "text": "TOTAL ROUNDED",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      658,
+      1289,
+      754,
+      1333
+    ],
+    "text": "99.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      126,
+      1377,
+      308,
+      1414
+    ],
+    "text": "MASTERCARD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      642,
+      1371,
+      755,
+      1417
+    ],
+    "text": "-99.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      129,
+      1491,
+      185,
+      1533
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      212,
+      1486,
+      259,
+      1532
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      352,
+      1491,
+      402,
+      1533
+    ],
+    "text": "6%",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      499,
+      1491,
+      594,
+      1531
+    ],
+    "text": "99.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      670,
+      1491,
+      749,
+      1533
+    ],
+    "text": "5.64",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1529,
+      378,
+      1578
+    ],
+    "text": "AMT. EXCL. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      659,
+      1532,
+      751,
+      1571
+    ],
+    "text": "94.16",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      122,
+      1607,
+      341,
+      1654
+    ],
+    "text": "NO. OF ITEMS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      726,
+      1614,
+      753,
+      1655
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      216,
+      1769,
+      728,
+      1820
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      218,
+      2063,
+      741,
+      2109
+    ],
+    "text": "*T3620000011000140428*",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

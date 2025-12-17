@@ -1,0 +1,453 @@
+[
+  {
+    "bbox": [
+      254,
+      100,
+      721,
+      144
+    ],
+    "text": "FUYI MINI MARKET",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      330,
+      149,
+      659,
+      185
+    ],
+    "text": "BR NO.: 0195932-X",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      368,
+      191,
+      609,
+      226
+    ],
+    "text": "NO 43-45-47G,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      363,
+      230,
+      612,
+      269
+    ],
+    "text": "TAMAN SEJATI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      268,
+      269,
+      707,
+      303
+    ],
+    "text": "IJOK, 45600 BESTARI JAYA,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      326,
+      308,
+      648,
+      342
+    ],
+    "text": "KUALA SELANGOR.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      373,
+      361,
+      601,
+      398
+    ],
+    "text": "03-3279 1851,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      292,
+      421,
+      685,
+      453
+    ],
+    "text": "GST NO.:001601310720",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      292,
+      501,
+      686,
+      537
+    ],
+    "text": "25/01/2018 1:22:56PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      358,
+      566,
+      624,
+      604
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      105,
+      645,
+      537,
+      690
+    ],
+    "text": "TRN: 1CR0576494",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      100,
+      719,
+      339,
+      757
+    ],
+    "text": "COUNTER 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      547,
+      718,
+      876,
+      754
+    ],
+    "text": "CASHIER: HOCK",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      101,
+      797,
+      865,
+      842
+    ],
+    "text": "QTY UOM U.PRICE AMT AMT INC. TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      103,
+      857,
+      627,
+      892
+    ],
+    "text": "013 SUMMER CUP 48X230ML",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      117,
+      909,
+      139,
+      941
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      101,
+      963,
+      386,
+      994
+    ],
+    "text": "GST 6% + 0.51",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      105,
+      1043,
+      388,
+      1086
+    ],
+    "text": "*TOTAL QTY: 1.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      104,
+      1106,
+      558,
+      1150
+    ],
+    "text": "TOTAL INCLUDES GST 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      103,
+      1172,
+      488,
+      1210
+    ],
+    "text": "CUSTOMER'S PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      106,
+      1234,
+      207,
+      1272
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      108,
+      1292,
+      257,
+      1334
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      109,
+      1361,
+      363,
+      1401
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      793,
+      1042,
+      878,
+      1074
+    ],
+    "text": "9.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      793,
+      1105,
+      879,
+      1143
+    ],
+    "text": "9.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      770,
+      1231,
+      880,
+      1266
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      769,
+      1286,
+      880,
+      1325
+    ],
+    "text": "41.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      108,
+      1360,
+      363,
+      1402
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      109,
+      1424,
+      160,
+      1457
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      208,
+      1478,
+      788,
+      1517
+    ],
+    "text": "*GOODS SOLD ARE NOT RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      148,
+      1529,
+      849,
+      1573
+    ],
+    "text": "THANK YOU FOR SHOPPING AT FUYI MINI",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      408,
+      1575,
+      588,
+      1612
+    ],
+    "text": "MARKET",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      201,
+      907,
+      294,
+      938
+    ],
+    "text": "KOTA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      313,
+      908,
+      389,
+      939
+    ],
+    "text": "8.49",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      437,
+      907,
+      515,
+      939
+    ],
+    "text": "8.49",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      632,
+      906,
+      708,
+      937
+    ],
+    "text": "9.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      819,
+      906,
+      873,
+      937
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      531,
+      1358,
+      672,
+      1394
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      808,
+      1356,
+      873,
+      1392
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      601,
+      1419,
+      672,
+      1452
+    ],
+    "text": "8.49",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      801,
+      1418,
+      870,
+      1452
+    ],
+    "text": "0.51",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

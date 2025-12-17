@@ -1,0 +1,475 @@
+[
+  {
+    "bbox": [
+      196,
+      211,
+      576,
+      242
+    ],
+    "text": "BEMED (SP) SDN. BHD.",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      222,
+      253,
+      557,
+      283
+    ],
+    "text": "NO.49, JALAN DINAR G U3/G,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      282,
+      292,
+      499,
+      323
+    ],
+    "text": "SUBANG PERDANA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      189,
+      333,
+      590,
+      365
+    ],
+    "text": "40150 SHAH ALAM, SELANGOR D.E.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      302,
+      372,
+      474,
+      397
+    ],
+    "text": "03-7845 8155",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      229,
+      411,
+      542,
+      441
+    ],
+    "text": "GST REG : 001734164480",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      265,
+      459,
+      509,
+      487
+    ],
+    "text": "CASH RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      108,
+      506,
+      377,
+      534
+    ],
+    "text": "CB# : 78283158333",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      418,
+      504,
+      680,
+      528
+    ],
+    "text": "14/JUN/2017 08:34:22",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      107,
+      546,
+      342,
+      579
+    ],
+    "text": "CASHIER : PUTERI ()",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      105,
+      584,
+      154,
+      616
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      182,
+      585,
+      344,
+      612
+    ],
+    "text": "CODE&DESC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      465,
+      583,
+      536,
+      613
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      570,
+      582,
+      640,
+      612
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      103,
+      635,
+      437,
+      665
+    ],
+    "text": "ALPHA LIPID LIFE LINE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      564,
+      633,
+      602,
+      658
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      127,
+      674,
+      141,
+      701
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      165,
+      676,
+      265,
+      703
+    ],
+    "text": "184810",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      435,
+      676,
+      527,
+      706
+    ],
+    "text": "165.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      557,
+      674,
+      649,
+      703
+    ],
+    "text": "165.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      127,
+      725,
+      146,
+      753
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      185,
+      723,
+      261,
+      757
+    ],
+    "text": "TYPE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      303,
+      726,
+      315,
+      752
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      105,
+      771,
+      236,
+      802
+    ],
+    "text": "SUBTOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      538,
+      772,
+      630,
+      799
+    ],
+    "text": "165.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      106,
+      814,
+      306,
+      848
+    ],
+    "text": "ROUNDING ADJ :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      572,
+      816,
+      632,
+      843
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      109,
+      857,
+      470,
+      897
+    ],
+    "text": "TOTAL INCLUSIVE GST:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      510,
+      859,
+      633,
+      895
+    ],
+    "text": "165.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      103,
+      903,
+      180,
+      934
+    ],
+    "text": "VISA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      538,
+      902,
+      633,
+      930
+    ],
+    "text": "165.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      105,
+      971,
+      317,
+      1001
+    ],
+    "text": "GST SUMMARY:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      378,
+      967,
+      486,
+      996
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      582,
+      967,
+      632,
+      995
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      401,
+      1003,
+      486,
+      1036
+    ],
+    "text": "(MYR)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      546,
+      1002,
+      633,
+      1037
+    ],
+    "text": "(MYR)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      106,
+      1059,
+      151,
+      1088
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      396,
+      1060,
+      490,
+      1086
+    ],
+    "text": "155.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      577,
+      1058,
+      636,
+      1086
+    ],
+    "text": "9.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      104,
+      1157,
+      363,
+      1188
+    ],
+    "text": "ONG GUAT CHYE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      106,
+      1206,
+      295,
+      1236
+    ],
+    "text": "POINTS : 1,460",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      243,
+      1256,
+      426,
+      1297
+    ],
+    "text": "THANK YOU.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      176,
+      1299,
+      501,
+      1338
+    ],
+    "text": "PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

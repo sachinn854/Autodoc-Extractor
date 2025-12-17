@@ -1,0 +1,398 @@
+[
+  {
+    "bbox": [
+      116,
+      191,
+      591,
+      226
+    ],
+    "text": "FIVE STAR CASH & CARRY",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      255,
+      233,
+      417,
+      265
+    ],
+    "text": "(1365663-P)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      116,
+      272,
+      568,
+      306
+    ],
+    "text": "G.23 & G.22, PLAZA SERI SETIA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      311,
+      630,
+      346
+    ],
+    "text": "NO.1 JALAN SS 9/1, 47300 PJ, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      89,
+      354,
+      435,
+      382
+    ],
+    "text": "TEL/FAX : 603-7877 9712",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      497,
+      350,
+      600,
+      381
+    ],
+    "text": "(POS 3)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      164,
+      393,
+      508,
+      426
+    ],
+    "text": "(GST NO.: 000610435072)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      180,
+      475,
+      509,
+      503
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      44,
+      513,
+      357,
+      548
+    ],
+    "text": "RECEIPT NO.[00522899]",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      437,
+      515,
+      649,
+      543
+    ],
+    "text": "19/01/17 10:48",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      43,
+      553,
+      119,
+      580
+    ],
+    "text": "15755",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      316,
+      562,
+      331,
+      581
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      420,
+      556,
+      437,
+      583
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      543,
+      553,
+      646,
+      582
+    ],
+    "text": "19.80 S",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      44,
+      591,
+      406,
+      626
+    ],
+    "text": "[MAP]KISMIS 500GM @ 9.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      43,
+      670,
+      284,
+      705
+    ],
+    "text": "QUANTITY OUT : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      134,
+      752,
+      222,
+      782
+    ],
+    "text": "NET",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      256,
+      755,
+      434,
+      783
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      501,
+      755,
+      643,
+      783
+    ],
+    "text": "19.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      286,
+      797,
+      434,
+      824
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      494,
+      796,
+      645,
+      823
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      224,
+      834,
+      433,
+      864
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      495,
+      835,
+      646,
+      864
+    ],
+    "text": "30.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      41,
+      911,
+      209,
+      946
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      254,
+      915,
+      403,
+      948
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      497,
+      915,
+      600,
+      948
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      71,
+      950,
+      162,
+      979
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      330,
+      956,
+      405,
+      983
+    ],
+    "text": "18.68",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      543,
+      955,
+      602,
+      981
+    ],
+    "text": "1.12",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      73,
+      992,
+      165,
+      1020
+    ],
+    "text": "Z = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      346,
+      994,
+      406,
+      1022
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      541,
+      996,
+      601,
+      1022
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      88,
+      1031,
+      559,
+      1061
+    ],
+    "text": "THANK YOU AND DO VISIT US AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      43,
+      1111,
+      342,
+      1146
+    ],
+    "text": "CASHIER [P.NISANTHI]",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      450,
+      1115,
+      645,
+      1148
+    ],
+    "text": "MACHINE [003]",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      44,
+      1150,
+      313,
+      1190
+    ],
+    "text": "[19/01/17] [10:49]",
+    "class": "DATE",
+    "class_id": 2
+  }
+]

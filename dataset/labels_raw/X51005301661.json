@@ -1,0 +1,904 @@
+[
+  {
+    "bbox": [
+      174,
+      86,
+      679,
+      143
+    ],
+    "text": "LIGHTROOM GALLERY SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      236,
+      130,
+      609,
+      180
+    ],
+    "text": "NO: 28, JALAN ASTANA 1C,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      225,
+      161,
+      625,
+      208
+    ],
+    "text": "BANDAR BUKIT RAJA, 41050",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      192,
+      192,
+      658,
+      242
+    ],
+    "text": "KLANG SELANGOR D.E, MALAYSIA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      259,
+      229,
+      588,
+      271
+    ],
+    "text": "ROC NO. : (1072825-A)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      250,
+      261,
+      598,
+      303
+    ],
+    "text": "GST NO. : 000584089600",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      152,
+      288,
+      699,
+      338
+    ],
+    "text": "TEL:03-3362 4395 FAX:03-3362 4395",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      311,
+      362,
+      535,
+      403
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      79,
+      403,
+      351,
+      443
+    ],
+    "text": "STATION: CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      463,
+      419,
+      744,
+      456
+    ],
+    "text": "BILL NO: LCS03908",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      77,
+      436,
+      131,
+      466
+    ],
+    "text": "CAS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      461,
+      453,
+      547,
+      483
+    ],
+    "text": "COVER",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      78,
+      471,
+      448,
+      513
+    ],
+    "text": "BILL DATE : 20/12/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      77,
+      504,
+      646,
+      552
+    ],
+    "text": "BILL START: 20/12/2017 07:10:35 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      75,
+      569,
+      148,
+      599
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      247,
+      577,
+      430,
+      609
+    ],
+    "text": ": 300-C0001",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      75,
+      601,
+      146,
+      632
+    ],
+    "text": "NAME",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      246,
+      610,
+      348,
+      640
+    ],
+    "text": ": CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      75,
+      635,
+      196,
+      668
+    ],
+    "text": "ADDRESS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      72,
+      734,
+      185,
+      768
+    ],
+    "text": "GST NO.",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      70,
+      833,
+      192,
+      866
+    ],
+    "text": "CH50514",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      697,
+      849,
+      736,
+      879
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      869,
+      374,
+      901
+    ],
+    "text": "T5 JOINT 2PIN 2PCS",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      71,
+      900,
+      89,
+      930
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      138,
+      902,
+      209,
+      931
+    ],
+    "text": "* RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      468,
+      906,
+      606,
+      940
+    ],
+    "text": "0.17)=RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      253,
+      904,
+      426,
+      937
+    ],
+    "text": "2.83 UNI (",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      664,
+      912,
+      735,
+      942
+    ],
+    "text": "2.83",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      69,
+      933,
+      190,
+      965
+    ],
+    "text": "YT51874",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      697,
+      946,
+      734,
+      975
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      967,
+      555,
+      1002
+    ],
+    "text": "YE30 BK 7W WW LED TRACK LIGHT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      67,
+      1001,
+      89,
+      1031
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      132,
+      1000,
+      207,
+      1030
+    ],
+    "text": "* RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      647,
+      1010,
+      734,
+      1040
+    ],
+    "text": "66.04",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      65,
+      1064,
+      225,
+      1097
+    ],
+    "text": "SUB TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      564,
+      1071,
+      603,
+      1101
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      65,
+      1098,
+      307,
+      1134
+    ],
+    "text": "SERVICE CHARGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      564,
+      1105,
+      602,
+      1135
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      66,
+      1130,
+      238,
+      1162
+    ],
+    "text": "GST/TAX 6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      565,
+      1135,
+      601,
+      1166
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      1180,
+      108,
+      1214
+    ],
+    "text": "TO",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      411,
+      1187,
+      452,
+      1219
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      63,
+      1216,
+      108,
+      1249
+    ],
+    "text": "CA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      409,
+      1222,
+      453,
+      1253
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      1252,
+      204,
+      1288
+    ],
+    "text": "CHANGE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      409,
+      1257,
+      453,
+      1291
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      1337,
+      285,
+      1371
+    ],
+    "text": "ITEM COUNT: 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      61,
+      1373,
+      315,
+      1406
+    ],
+    "text": "QTY COUNT : 3.0",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      1436,
+      651,
+      1470
+    ],
+    "text": "CLOSED BILL: 20/12/2017 07:10:51 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      63,
+      1484,
+      538,
+      1522
+    ],
+    "text": "THANK YOU, PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      58,
+      1520,
+      729,
+      1552
+    ],
+    "text": "GOODS SOLD ARE NOT REFUNDABLE, RETURNABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      62,
+      1552,
+      512,
+      1582
+    ],
+    "text": "BANK ACC MBB 5128 4851 2118",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1584,
+      512,
+      1616
+    ],
+    "text": "BANK ACC MBB 5626 4732 1744",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      59,
+      1618,
+      592,
+      1647
+    ],
+    "text": "BANK ACC AMBANK 888 100 123 3706",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1667,
+      247,
+      1700
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      289,
+      1666,
+      457,
+      1699
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      504,
+      1666,
+      621,
+      1698
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      57,
+      1729,
+      179,
+      1763
+    ],
+    "text": "SR @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      374,
+      1734,
+      461,
+      1763
+    ],
+    "text": "68.87",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      552,
+      1732,
+      625,
+      1761
+    ],
+    "text": "4.13",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      57,
+      1763,
+      203,
+      1797
+    ],
+    "text": "ZR/OS/EZ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      388,
+      1767,
+      462,
+      1796
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      552,
+      1766,
+      623,
+      1793
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      182,
+      446,
+      331,
+      476
+    ],
+    "text": "R: ANGELA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      581,
+      460,
+      625,
+      488
+    ],
+    "text": ": 1",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      244,
+      647,
+      261,
+      671
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      243,
+      682,
+      258,
+      704
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      241,
+      712,
+      256,
+      736
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      241,
+      744,
+      255,
+      769
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      237,
+      1002,
+      423,
+      1036
+    ],
+    "text": "33.02 UNI (",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      469,
+      1006,
+      605,
+      1036
+    ],
+    "text": "3.96)=RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      354,
+      1074,
+      368,
+      1100
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      354,
+      1108,
+      367,
+      1132
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      353,
+      1141,
+      365,
+      1163
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      643,
+      1074,
+      732,
+      1103
+    ],
+    "text": "68.87",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      660,
+      1107,
+      731,
+      1135
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      661,
+      1139,
+      732,
+      1169
+    ],
+    "text": "4.13",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      192,
+      1188,
+      208,
+      1214
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      189,
+      1224,
+      206,
+      1250
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      511,
+      1186,
+      610,
+      1219
+    ],
+    "text": "73.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      510,
+      1224,
+      610,
+      1254
+    ],
+    "text": "73.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      528,
+      1260,
+      609,
+      1291
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

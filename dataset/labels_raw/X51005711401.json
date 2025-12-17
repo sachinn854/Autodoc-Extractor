@@ -1,0 +1,475 @@
+[
+  {
+    "bbox": [
+      247,
+      265,
+      628,
+      315
+    ],
+    "text": "RESTORAN WAN SHENG",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      307,
+      317,
+      546,
+      365
+    ],
+    "text": "002043319-W",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      153,
+      361,
+      713,
+      411
+    ],
+    "text": "NO.2, JALAN TEMENGGUNG 19/9,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      114,
+      420,
+      771,
+      468
+    ],
+    "text": "SEKSYEN 9, BANDAR MAHKOTA CHERAS,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      212,
+      462,
+      656,
+      515
+    ],
+    "text": "43200 CHERAS, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      194,
+      513,
+      684,
+      570
+    ],
+    "text": "GST REG NO: 001335787520",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      195,
+      606,
+      642,
+      661
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      35,
+      715,
+      362,
+      766
+    ],
+    "text": "INV NO.: 1053110",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      31,
+      764,
+      611,
+      806
+    ],
+    "text": "DATE : 19-03-2018 18:08:38",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      33,
+      865,
+      267,
+      913
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      326,
+      858,
+      400,
+      908
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      471,
+      859,
+      625,
+      910
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      33,
+      959,
+      202,
+      1022
+    ],
+    "text": "MILO (B)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      307,
+      1014,
+      392,
+      1067
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      484,
+      1005,
+      591,
+      1060
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      667,
+      1016,
+      766,
+      1054
+    ],
+    "text": "5.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      1062,
+      228,
+      1115
+    ],
+    "text": "TAKE AWAY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      304,
+      1108,
+      392,
+      1156
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      488,
+      1110,
+      589,
+      1163
+    ],
+    "text": "0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      670,
+      1112,
+      766,
+      1154
+    ],
+    "text": "0.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1204,
+      291,
+      1261
+    ],
+    "text": "TOTAL QTY: 4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      28,
+      1261,
+      490,
+      1307
+    ],
+    "text": "TOTAL (EXCLUDING GST) :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      749,
+      1261,
+      848,
+      1303
+    ],
+    "text": "5.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      753,
+      1309,
+      847,
+      1353
+    ],
+    "text": "0.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      1309,
+      399,
+      1355
+    ],
+    "text": "GST PAYABLE (6%):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      33,
+      1353,
+      541,
+      1403
+    ],
+    "text": "TOTAL (INCLUSIVE OF GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      744,
+      1357,
+      853,
+      1405
+    ],
+    "text": "6.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      37,
+      1401,
+      278,
+      1454
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      670,
+      1403,
+      850,
+      1456
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      33,
+      1500,
+      167,
+      1557
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      753,
+      1504,
+      854,
+      1550
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      28,
+      1651,
+      278,
+      1697
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      429,
+      1653,
+      644,
+      1703
+    ],
+    "text": "AMOUNT (RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      696,
+      1651,
+      847,
+      1708
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      28,
+      1697,
+      96,
+      1747
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      239,
+      1701,
+      370,
+      1751
+    ],
+    "text": "(@ 6%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      552,
+      1706,
+      640,
+      1748
+    ],
+    "text": "5.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      749,
+      1703,
+      852,
+      1753
+    ],
+    "text": "0.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      397,
+      721,
+      721,
+      759
+    ],
+    "text": "CASHIER: THANDAR",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      657,
+      869,
+      756,
+      914
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      769,
+      859,
+      846,
+      913
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      792,
+      1010,
+      840,
+      1052
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      792,
+      1109,
+      856,
+      1157
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

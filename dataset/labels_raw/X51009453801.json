@@ -1,0 +1,497 @@
+[
+  {
+    "bbox": [
+      16,
+      40,
+      131,
+      62
+    ],
+    "text": "3180303",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      104,
+      195,
+      475,
+      219
+    ],
+    "text": "GL HANDICRAFT & TAIL ORING",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      189,
+      232,
+      393,
+      254
+    ],
+    "text": "19, JALAN KANCIL,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      191,
+      265,
+      389,
+      289
+    ],
+    "text": "OFF JALAN PUDU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      165,
+      301,
+      415,
+      324
+    ],
+    "text": "55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      232,
+      336,
+      348,
+      357
+    ],
+    "text": "MALAYSIA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      146,
+      377,
+      436,
+      403
+    ],
+    "text": "COMPANY REG NO. :75495-W",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      142,
+      415,
+      443,
+      441
+    ],
+    "text": "GST REG NO. :001948532736",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      218,
+      461,
+      363,
+      483
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      39,
+      505,
+      162,
+      527
+    ],
+    "text": "INVOICE NO.:",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      206,
+      504,
+      310,
+      525
+    ],
+    "text": "CS 10012",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      40,
+      540,
+      104,
+      562
+    ],
+    "text": "DATE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      204,
+      539,
+      380,
+      559
+    ],
+    "text": "20/03/2018 13:01",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      41,
+      576,
+      153,
+      596
+    ],
+    "text": "CASHIER #:",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      206,
+      575,
+      232,
+      595
+    ],
+    "text": "01",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      398,
+      612,
+      440,
+      634
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      478,
+      610,
+      543,
+      634
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      41,
+      651,
+      362,
+      673
+    ],
+    "text": "SAFETY PINS BUTTERFLY - S",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      64,
+      686,
+      180,
+      708
+    ],
+    "text": "6.00 BOXS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      212,
+      687,
+      226,
+      706
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      256,
+      685,
+      312,
+      704
+    ],
+    "text": "17.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      370,
+      686,
+      438,
+      705
+    ],
+    "text": "102.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      507,
+      684,
+      544,
+      706
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      152,
+      724,
+      251,
+      746
+    ],
+    "text": "SUBTOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      369,
+      724,
+      441,
+      745
+    ],
+    "text": "102.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      65,
+      767,
+      250,
+      789
+    ],
+    "text": "TOTAL EXCL. OF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      382,
+      768,
+      443,
+      786
+    ],
+    "text": "96.23",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      73,
+      803,
+      252,
+      826
+    ],
+    "text": "TOTAL INCL. OF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      371,
+      804,
+      440,
+      824
+    ],
+    "text": "102.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      55,
+      843,
+      250,
+      863
+    ],
+    "text": "TOTAL AMT ROUNDED",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      370,
+      842,
+      440,
+      860
+    ],
+    "text": "102.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      147,
+      875,
+      250,
+      899
+    ],
+    "text": "PAYMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      371,
+      874,
+      441,
+      894
+    ],
+    "text": "102.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      110,
+      908,
+      250,
+      932
+    ],
+    "text": "CHANGE DUE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      392,
+      906,
+      441,
+      925
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      947,
+      205,
+      974
+    ],
+    "text": "TOTAL ITEM(6) : 6",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      989,
+      197,
+      1016
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      232,
+      984,
+      363,
+      1009
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      417,
+      984,
+      510,
+      1009
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      51,
+      1028,
+      85,
+      1048
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      132,
+      1027,
+      199,
+      1053
+    ],
+    "text": "@ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      306,
+      1026,
+      361,
+      1046
+    ],
+    "text": "96.23",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      462,
+      1027,
+      509,
+      1046
+    ],
+    "text": "5.77",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      223,
+      1160,
+      354,
+      1181
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      170,
+      1191,
+      409,
+      1211
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

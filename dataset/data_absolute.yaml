@@ -1,0 +1,17 @@
+names:
+- COMPANY
+- ADDRESS
+- DATE
+- TOTAL
+- TAX
+- ITEM
+- QTY
+- UNIT_PRICE
+- LINE_TOTAL
+- DOCUMENT_NO
+- CASHIER
+- OTHER
+nc: 12
+path: C:\Users\sachi\OneDrive\Autodoc Extractor
+train: dataset/train.txt
+val: dataset/val.txt

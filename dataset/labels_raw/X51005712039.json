@@ -1,0 +1,541 @@
+[
+  {
+    "bbox": [
+      36,
+      155,
+      569,
+      184
+    ],
+    "text": "L TWO FLORIST & HANDICRAFT",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      223,
+      191,
+      375,
+      216
+    ],
+    "text": "002062543-P",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      110,
+      220,
+      483,
+      248
+    ],
+    "text": "NO.49, JALAN MAHAGONI 7/2,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      122,
+      255,
+      475,
+      280
+    ],
+    "text": "SEKSYEN 4 BANDAR UTAMA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      103,
+      286,
+      498,
+      311
+    ],
+    "text": "44300 BATANG KALI, SELANGOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      211,
+      335,
+      431,
+      364
+    ],
+    "text": "TEL: 012-3216447",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      16,
+      374,
+      112,
+      403
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      22,
+      417,
+      159,
+      447
+    ],
+    "text": "RECEIPT#:",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      346,
+      419,
+      435,
+      447
+    ],
+    "text": "DATE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      16,
+      447,
+      219,
+      477
+    ],
+    "text": "SALESPERSON:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      346,
+      451,
+      433,
+      475
+    ],
+    "text": "TIME:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      24,
+      477,
+      145,
+      509
+    ],
+    "text": "CASHIER:",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      19,
+      533,
+      87,
+      561
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      232,
+      536,
+      288,
+      563
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      373,
+      537,
+      424,
+      562
+    ],
+    "text": "U/P",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      477,
+      540,
+      592,
+      564
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      16,
+      572,
+      123,
+      593
+    ],
+    "text": "NE3555",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      248,
+      570,
+      277,
+      593
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      374,
+      573,
+      425,
+      596
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      604,
+      246,
+      625
+    ],
+    "text": "1 1/2\"SAFETY PIN",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      17,
+      637,
+      113,
+      661
+    ],
+    "text": "SB/01-3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      254,
+      638,
+      269,
+      659
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      363,
+      637,
+      430,
+      664
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      530,
+      636,
+      578,
+      663
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      668,
+      352,
+      696
+    ],
+    "text": "SATIN BIAS TAPE 12MMX3Y",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      15,
+      703,
+      165,
+      731
+    ],
+    "text": "TOTAL QTY:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      251,
+      707,
+      276,
+      732
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      200,
+      749,
+      372,
+      777
+    ],
+    "text": "SUB-TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      525,
+      751,
+      584,
+      778
+    ],
+    "text": "9.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      282,
+      787,
+      370,
+      819
+    ],
+    "text": "DISC:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      521,
+      795,
+      580,
+      816
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      288,
+      828,
+      368,
+      859
+    ],
+    "text": "TAX:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      517,
+      831,
+      582,
+      856
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      210,
+      872,
+      373,
+      899
+    ],
+    "text": "ROUNDING:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      524,
+      873,
+      585,
+      892
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      103,
+      910,
+      219,
+      942
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      510,
+      915,
+      578,
+      944
+    ],
+    "text": "9.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      104,
+      951,
+      199,
+      982
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      483,
+      952,
+      574,
+      981
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      995,
+      248,
+      1027
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      494,
+      999,
+      581,
+      1028
+    ],
+    "text": "11.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      96,
+      1078,
+      503,
+      1103
+    ],
+    "text": "BARANG YANG DIJUAL TIDAK BOLEH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      240,
+      1114,
+      359,
+      1137
+    ],
+    "text": "DITUKAR.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      528,
+      573,
+      581,
+      597
+    ],
+    "text": "2.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      175,
+      415,
+      332,
+      449
+    ],
+    "text": "CS00007203",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      449,
+      417,
+      586,
+      447
+    ],
+    "text": "21/03/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      226,
+      451,
+      282,
+      475
+    ],
+    "text": "001",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      451,
+      447,
+      556,
+      479
+    ],
+    "text": "11:01:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      179,
+      483,
+      256,
+      505
+    ],
+    "text": "USER",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

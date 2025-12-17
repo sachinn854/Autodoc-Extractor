@@ -1,0 +1,618 @@
+[
+  {
+    "bbox": [
+      1801,
+      1686,
+      3049,
+      1767
+    ],
+    "text": "LAVENDER CONFECTIONERY & BAKERY S/B",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      2059,
+      1764,
+      2792,
+      1851
+    ],
+    "text": "COMPANY NO: 499702-V",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      1783,
+      1848,
+      3081,
+      1935
+    ],
+    "text": "LOT G29 & G30, AEON MALL TEBRAU CITY,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1993,
+      1938,
+      2868,
+      2021
+    ],
+    "text": "NO. 1, JALAN DESA TEBRAU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1775,
+      2024,
+      3079,
+      2104
+    ],
+    "text": "TAMAN DESA TEBRAU, 81100 JOHOR BAHRU.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2131,
+      2107,
+      2733,
+      2187
+    ],
+    "text": "TEL : 07-364 3785",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2025,
+      2193,
+      2836,
+      2271
+    ],
+    "text": "GST ID NO: 001872379904",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2022,
+      2267,
+      2805,
+      2354
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1755,
+      2450,
+      2314,
+      2525
+    ],
+    "text": "14/04/2018 16:14",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2652,
+      2441,
+      3155,
+      2525
+    ],
+    "text": "B999215",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1739,
+      2540,
+      1863,
+      2621
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1988,
+      2528,
+      2413,
+      2621
+    ],
+    "text": "DESCRIPTIONS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2922,
+      2531,
+      3155,
+      2606
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1739,
+      2708,
+      1789,
+      2786
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1989,
+      2706,
+      2522,
+      2779
+    ],
+    "text": "EUROPEAN WALNUT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2991,
+      2699,
+      3227,
+      2770
+    ],
+    "text": "6.50 T",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1736,
+      2786,
+      1786,
+      2864
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1989,
+      2789,
+      2729,
+      2869
+    ],
+    "text": "ORANGE PEEL CHOCOLATE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      3007,
+      2782,
+      3225,
+      2855
+    ],
+    "text": "5.80 T",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1740,
+      2965,
+      1782,
+      3041
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1982,
+      2951,
+      2331,
+      3031
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2807,
+      2951,
+      3149,
+      3026
+    ],
+    "text": "12.30",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      1984,
+      3037,
+      2145,
+      3115
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2966,
+      3037,
+      3159,
+      3102
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1984,
+      3124,
+      2409,
+      3195
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2866,
+      3112,
+      3158,
+      3199
+    ],
+    "text": "7.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1988,
+      3205,
+      2413,
+      3288
+    ],
+    "text": "INCL. 6% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      3003,
+      3199,
+      3147,
+      3277
+    ],
+    "text": "0.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2047,
+      3370,
+      2864,
+      3451
+    ],
+    "text": "PRICES INCLUSIVE 6% GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1737,
+      3556,
+      2142,
+      3640
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2578,
+      3550,
+      2805,
+      3625
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      3038,
+      3536,
+      3152,
+      3622
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1739,
+      3636,
+      1950,
+      3707
+    ],
+    "text": "T: GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2612,
+      3627,
+      2801,
+      3702
+    ],
+    "text": "11.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2991,
+      3627,
+      3152,
+      3705
+    ],
+    "text": "0.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1727,
+      3721,
+      2215,
+      3799
+    ],
+    "text": "Z: ZERO RATED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2650,
+      3716,
+      2799,
+      3796
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      3000,
+      3716,
+      3152,
+      3789
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1744,
+      3892,
+      1917,
+      3978
+    ],
+    "text": "SIGN:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2071,
+      3973,
+      2764,
+      4053
+    ],
+    "text": "WWW.LAVENDER.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2261,
+      4050,
+      2627,
+      4128
+    ],
+    "text": "THANK YOU.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1739,
+      4227,
+      2963,
+      4302
+    ],
+    "text": "1. ALL SALES ARE FINAL. GOODS SOLD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1848,
+      4304,
+      3106,
+      4388
+    ],
+    "text": "ARE NOT REFUNDABLE NOR EXCHANGEABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1714,
+      4394,
+      2875,
+      4472
+    ],
+    "text": "2. OUR PRODUCTS CONTAIN NO ADDED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1845,
+      4475,
+      3131,
+      4556
+    ],
+    "text": "PRESERVATIVES, PLEASE CONSUME WITHIN",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1829,
+      4568,
+      2764,
+      4639
+    ],
+    "text": "A DAY OR KEEP ACCORDING TO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1844,
+      4654,
+      2872,
+      4733
+    ],
+    "text": "RECOMMENDATIONS ON PACKAGING.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1730,
+      4730,
+      2966,
+      4814
+    ],
+    "text": "3. FOR FEEDBACK, PLEASE RETAIN THIS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1829,
+      4817,
+      2931,
+      4898
+    ],
+    "text": "TAX INVOICE, SEEK STORE MANAGER",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1841,
+      4903,
+      2931,
+      4983
+    ],
+    "text": "ASSISTANCE OR DROP US AN EMAIL.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1739,
+      4984,
+      2910,
+      5059
+    ],
+    "text": "4. TAX INVOICE CAN ONLY BE ISSUED",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1835,
+      5078,
+      3062,
+      5156
+    ],
+    "text": "ON THE PURCHASE DATE, AMENDMENT IS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1842,
+      5149,
+      2684,
+      5242
+    ],
+    "text": "NOT ALLOWED ONCE ISSUED.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1730,
+      5326,
+      2559,
+      5410
+    ],
+    "text": "CSH:C1337 LEE FING TING",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1727,
+      5404,
+      2513,
+      5488
+    ],
+    "text": "POS:TC12 SHF:201804141",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1868,
+      1090,
+      2823,
+      1581
+    ],
+    "text": "LAVENDER",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

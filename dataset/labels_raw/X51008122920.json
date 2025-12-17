@@ -1,0 +1,596 @@
+[
+  {
+    "bbox": [
+      445,
+      183,
+      618,
+      214
+    ],
+    "text": "(481500-M)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      113,
+      221,
+      661,
+      254
+    ],
+    "text": "C W KHOO HARDWARE SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      221,
+      255,
+      549,
+      289
+    ],
+    "text": "NO.50, JALAN PBS 14/11,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      104,
+      288,
+      667,
+      317
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BUKIT SERDANG,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      132,
+      320,
+      354,
+      350
+    ],
+    "text": "TEL : 03-89410243",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      200,
+      352,
+      568,
+      379
+    ],
+    "text": "GST REG NO.: 000549584896",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      277,
+      401,
+      454,
+      433
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      44,
+      455,
+      189,
+      483
+    ],
+    "text": "INVOICE NO.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      225,
+      455,
+      427,
+      482
+    ],
+    "text": ": CR 1805/0201",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      488,
+      113,
+      514
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      223,
+      490,
+      523,
+      514
+    ],
+    "text": ": 04-05-18 12:50:51 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      46,
+      524,
+      190,
+      552
+    ],
+    "text": "CASHIER NO.",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      230,
+      522,
+      306,
+      555
+    ],
+    "text": ": KHOO",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      557,
+      198,
+      586
+    ],
+    "text": "COUNTER NO.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      222,
+      557,
+      275,
+      584
+    ],
+    "text": ": C1",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      593,
+      205,
+      621
+    ],
+    "text": "PRINTED DATE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      225,
+      596,
+      523,
+      623
+    ],
+    "text": ": 04-05-18 12:50:53 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      49,
+      633,
+      186,
+      660
+    ],
+    "text": "ITEM NAME",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      246,
+      627,
+      294,
+      663
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      334,
+      629,
+      455,
+      658
+    ],
+    "text": "UNIT PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      528,
+      632,
+      628,
+      663
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      43,
+      671,
+      542,
+      697
+    ],
+    "text": "2032 'ENERGIZER' BATTERY (PC) @ PKT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      267,
+      710,
+      294,
+      738
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      395,
+      711,
+      455,
+      737
+    ],
+    "text": "6.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      565,
+      710,
+      665,
+      745
+    ],
+    "text": "6.40 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      52,
+      751,
+      582,
+      780
+    ],
+    "text": "9V 'ENERGIZER' BATTERY(522BP1G) @ PKT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      271,
+      789,
+      293,
+      816
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      384,
+      794,
+      451,
+      819
+    ],
+    "text": "11.53",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      551,
+      790,
+      661,
+      818
+    ],
+    "text": "11.53 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      41,
+      843,
+      175,
+      875
+    ],
+    "text": "2 ITEM(S)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      282,
+      843,
+      447,
+      869
+    ],
+    "text": "TOTAL(MYR) :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      547,
+      839,
+      625,
+      870
+    ],
+    "text": "17.93",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      289,
+      885,
+      445,
+      913
+    ],
+    "text": "GST @ 6% :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      560,
+      884,
+      625,
+      911
+    ],
+    "text": "1.08",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      228,
+      936,
+      445,
+      971
+    ],
+    "text": "NET TOTAL(MYR) :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      548,
+      939,
+      622,
+      965
+    ],
+    "text": "19.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      255,
+      979,
+      450,
+      1013
+    ],
+    "text": "ROUNDING ADJ. :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      547,
+      983,
+      629,
+      1010
+    ],
+    "text": "-0.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      117,
+      1030,
+      446,
+      1059
+    ],
+    "text": "NET TOTAL ROUNDED(MYR) :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      552,
+      1035,
+      622,
+      1058
+    ],
+    "text": "19.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      430,
+      1068,
+      450,
+      1096
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      549,
+      1070,
+      621,
+      1102
+    ],
+    "text": "19.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      1073,
+      116,
+      1098
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      1122,
+      144,
+      1148
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      437,
+      1124,
+      449,
+      1144
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      563,
+      1121,
+      625,
+      1152
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      1202,
+      202,
+      1235
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      325,
+      1201,
+      683,
+      1233
+    ],
+    "text": "ITEM AMOUNT (MYR) GST(MYR)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      48,
+      1249,
+      151,
+      1276
+    ],
+    "text": "SR@6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      363,
+      1248,
+      383,
+      1274
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      490,
+      1248,
+      550,
+      1274
+    ],
+    "text": "17.93",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      634,
+      1245,
+      685,
+      1271
+    ],
+    "text": "1.08",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      408,
+      316,
+      635,
+      350
+    ],
+    "text": "FAX : 03-89410243",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      156,
+      1359,
+      548,
+      1396
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN !",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

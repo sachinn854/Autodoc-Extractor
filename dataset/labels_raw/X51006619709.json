@@ -1,0 +1,860 @@
+[
+  {
+    "bbox": [
+      189,
+      318,
+      707,
+      365
+    ],
+    "text": "MR. D.I.Y. (KUCHAI) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      293,
+      370,
+      602,
+      415
+    ],
+    "text": "CO-REG:750441-W",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      131,
+      420,
+      756,
+      468
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      152,
+      473,
+      739,
+      517
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      172,
+      521,
+      740,
+      566
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      213,
+      571,
+      683,
+      619
+    ],
+    "text": "(GST ID NO :000473792512)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      377,
+      625,
+      531,
+      669
+    ],
+    "text": "(KEPONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      319,
+      676,
+      578,
+      714
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      80,
+      776,
+      495,
+      815
+    ],
+    "text": "TISSUE HOLDER Z-66#*VS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      75,
+      824,
+      382,
+      864
+    ],
+    "text": "MC22-32 - 10/120",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      77,
+      875,
+      215,
+      913
+    ],
+    "text": "9068477",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      75,
+      922,
+      271,
+      963
+    ],
+    "text": "HOOK 1526#",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      75,
+      975,
+      440,
+      1014
+    ],
+    "text": "MG12/3-32/ - 36/360",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      1023,
+      218,
+      1066
+    ],
+    "text": "9068722",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      72,
+      1070,
+      339,
+      1116
+    ],
+    "text": "PLACEMAT 145#",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      72,
+      1122,
+      324,
+      1168
+    ],
+    "text": "IF31 - 20/300",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      75,
+      1176,
+      223,
+      1214
+    ],
+    "text": "9062301",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      76,
+      1225,
+      570,
+      1268
+    ],
+    "text": "FURNITURE S/MAT 2PCS 3243#",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      75,
+      1270,
+      423,
+      1322
+    ],
+    "text": "MF13-22/3 - 24/360",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      76,
+      1328,
+      215,
+      1369
+    ],
+    "text": "9067630",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      76,
+      1378,
+      441,
+      1420
+    ],
+    "text": "PARTITION 1072 10CM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      78,
+      1429,
+      313,
+      1466
+    ],
+    "text": "IA12 - 12/72",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      78,
+      1478,
+      339,
+      1516
+    ],
+    "text": "4947989310729",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      76,
+      1527,
+      441,
+      1567
+    ],
+    "text": "CNY DECO A002# 26CM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      77,
+      1579,
+      312,
+      1620
+    ],
+    "text": "XE11-22 - 30",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      78,
+      1626,
+      226,
+      1667
+    ],
+    "text": "8711469",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      75,
+      1673,
+      449,
+      1722
+    ],
+    "text": "CNY DECO A003# 21CM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      78,
+      1731,
+      258,
+      1777
+    ],
+    "text": "IE21 - 60",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      1781,
+      218,
+      1820
+    ],
+    "text": "8711468",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      77,
+      1831,
+      529,
+      1870
+    ],
+    "text": "FREE 2016 CNY RED PACKET",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      70,
+      1876,
+      177,
+      1919
+    ],
+    "text": "99292",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      75,
+      1971,
+      290,
+      2032
+    ],
+    "text": "ITEM(S) : 8",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      491,
+      874,
+      555,
+      916
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      489,
+      1026,
+      555,
+      1067
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      488,
+      1180,
+      555,
+      1218
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      491,
+      1329,
+      550,
+      1369
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      488,
+      1481,
+      555,
+      1518
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      490,
+      1623,
+      662,
+      1675
+    ],
+    "text": "1 X 10.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      488,
+      1782,
+      555,
+      1822
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      488,
+      1881,
+      554,
+      1922
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      790,
+      778,
+      834,
+      814
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      787,
+      925,
+      834,
+      965
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      789,
+      1078,
+      834,
+      1116
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      788,
+      1231,
+      836,
+      1271
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      788,
+      1374,
+      833,
+      1423
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      788,
+      1530,
+      833,
+      1570
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      787,
+      1681,
+      834,
+      1722
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      789,
+      1834,
+      833,
+      1872
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      619,
+      1983,
+      831,
+      2029
+    ],
+    "text": "QTY(S) : 13",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      71,
+      2083,
+      420,
+      2122
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      75,
+      2132,
+      160,
+      2173
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      74,
+      2179,
+      196,
+      2220
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      70,
+      2276,
+      554,
+      2322
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      673,
+      2084,
+      838,
+      2119
+    ],
+    "text": "RM 57.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      655,
+      2133,
+      831,
+      2172
+    ],
+    "text": "RM 100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      669,
+      2184,
+      834,
+      2219
+    ],
+    "text": "RM 42.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      636,
+      2280,
+      777,
+      2321
+    ],
+    "text": "RM 3.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      75,
+      2376,
+      532,
+      2422
+    ],
+    "text": "24-01-16 11:44 SH01 B003",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      67,
+      2426,
+      661,
+      2472
+    ],
+    "text": "OPERATOR KPC - BASHUDEV NEUPANE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      188,
+      2529,
+      700,
+      2569
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      2580,
+      621,
+      2622
+    ],
+    "text": "3 DAY WITH RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      220,
+      2627,
+      692,
+      2672
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      583,
+      876,
+      666,
+      912
+    ],
+    "text": "5.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      698,
+      876,
+      796,
+      914
+    ],
+    "text": "10.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      585,
+      1026,
+      663,
+      1065
+    ],
+    "text": "2.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      714,
+      1028,
+      798,
+      1065
+    ],
+    "text": "4.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      586,
+      1178,
+      664,
+      1217
+    ],
+    "text": "1.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      713,
+      1181,
+      796,
+      1219
+    ],
+    "text": "3.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      582,
+      1329,
+      665,
+      1368
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      714,
+      1330,
+      797,
+      1367
+    ],
+    "text": "5.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      585,
+      1481,
+      663,
+      1517
+    ],
+    "text": "7.30",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      696,
+      1480,
+      797,
+      1519
+    ],
+    "text": "14.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      697,
+      1630,
+      794,
+      1671
+    ],
+    "text": "10.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      582,
+      1781,
+      665,
+      1820
+    ],
+    "text": "7.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      714,
+      1781,
+      796,
+      1821
+    ],
+    "text": "7.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      582,
+      1883,
+      662,
+      1923
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      715,
+      1883,
+      794,
+      1921
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      580,
+      2379,
+      830,
+      2419
+    ],
+    "text": "T1 R000379771",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

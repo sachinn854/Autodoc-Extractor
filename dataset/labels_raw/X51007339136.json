@@ -1,0 +1,717 @@
+[
+  {
+    "bbox": [
+      45,
+      131,
+      516,
+      169
+    ],
+    "text": "SANYU STATIONERY SHOP",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      49,
+      179,
+      512,
+      205
+    ],
+    "text": "NO. 31G&33G, JALAN SETIA INDAH X ,U13/X",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      46,
+      205,
+      246,
+      230
+    ],
+    "text": "40170 SETIA ALAM",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      45,
+      233,
+      439,
+      258
+    ],
+    "text": "MOBILE /WHATSAPPS : +6012-918 7937",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      265,
+      267,
+      287
+    ],
+    "text": "TEL: +603-3362 4137",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      48,
+      291,
+      327,
+      313
+    ],
+    "text": "GST ID NO: 001531760640",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      413,
+      300,
+      601,
+      328
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      39,
+      320,
+      143,
+      344
+    ],
+    "text": "OWNED BY :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      39,
+      344,
+      381,
+      368
+    ],
+    "text": "SANYU SUPPLY SDN BHD (1135772-K)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      43,
+      397,
+      305,
+      421
+    ],
+    "text": "CASH SALES COUNTER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      460,
+      198,
+      484
+    ],
+    "text": "1. 2008-0040",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      84,
+      522,
+      197,
+      544
+    ],
+    "text": "1 X 2.2000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      57,
+      553,
+      198,
+      576
+    ],
+    "text": "2. 2012-0029",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      83,
+      611,
+      197,
+      635
+    ],
+    "text": "3 X 2.9000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      57,
+      642,
+      196,
+      665
+    ],
+    "text": "3. 7002-0014",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      86,
+      728,
+      214,
+      752
+    ],
+    "text": "1 X 36.0000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      275,
+      460,
+      600,
+      488
+    ],
+    "text": "PRO ADHESIVE LABEL (WHITE)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      274,
+      489,
+      328,
+      510
+    ],
+    "text": "2585",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      276,
+      552,
+      600,
+      576
+    ],
+    "text": "RESTAURANT ORDER CHIT NCR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      274,
+      580,
+      348,
+      601
+    ],
+    "text": "3.5\"X6\"",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      277,
+      641,
+      588,
+      666
+    ],
+    "text": "SONOFAX - EC THERMAL ROLL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      277,
+      667,
+      591,
+      695
+    ],
+    "text": "(BLUE) - (57MMX60MMX12MM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      276,
+      696,
+      420,
+      724
+    ],
+    "text": "(10ROLL/PKT)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      484,
+      522,
+      534,
+      543
+    ],
+    "text": "2.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      484,
+      612,
+      533,
+      633
+    ],
+    "text": "8.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      471,
+      728,
+      533,
+      749
+    ],
+    "text": "36.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      560,
+      522,
+      587,
+      544
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      560,
+      611,
+      586,
+      634
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      558,
+      728,
+      589,
+      749
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      31,
+      764,
+      349,
+      787
+    ],
+    "text": "TOTAL SALES INCLUSIVE GST @6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      246,
+      794,
+      337,
+      818
+    ],
+    "text": "DISCOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      244,
+      836,
+      298,
+      859
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      245,
+      869,
+      354,
+      896
+    ],
+    "text": "ROUND ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      246,
+      910,
+      352,
+      933
+    ],
+    "text": "FINAL TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      247,
+      966,
+      307,
+      987
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      247,
+      998,
+      338,
+      1019
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      472,
+      766,
+      533,
+      787
+    ],
+    "text": "46.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      485,
+      798,
+      531,
+      819
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      474,
+      841,
+      537,
+      861
+    ],
+    "text": "46.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      488,
+      873,
+      535,
+      895
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      474,
+      913,
+      537,
+      934
+    ],
+    "text": "46.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      463,
+      968,
+      536,
+      992
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      475,
+      999,
+      537,
+      1022
+    ],
+    "text": "53.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1039,
+      179,
+      1065
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      260,
+      1038,
+      393,
+      1065
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      483,
+      1039,
+      575,
+      1065
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      35,
+      1070,
+      136,
+      1094
+    ],
+    "text": "SR @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      331,
+      1073,
+      393,
+      1094
+    ],
+    "text": "44.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      524,
+      1071,
+      574,
+      1094
+    ],
+    "text": "2.65",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1151,
+      122,
+      1176
+    ],
+    "text": "INV NO:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      35,
+      1185,
+      100,
+      1205
+    ],
+    "text": "DATE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      33,
+      1211,
+      135,
+      1238
+    ],
+    "text": "TOTAL QTY:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      36,
+      1254,
+      155,
+      1277
+    ],
+    "text": "PRINT TIME :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      136,
+      1151,
+      296,
+      1173
+    ],
+    "text": "CS-SA-0133215",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      176,
+      1181,
+      298,
+      1203
+    ],
+    "text": "28/12/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      178,
+      1215,
+      195,
+      1235
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      177,
+      1254,
+      606,
+      1276
+    ],
+    "text": "THURSDAY, 28 DECEMBER, 2017 5:26:39 PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      71,
+      1329,
+      579,
+      1353
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE & REFUNDABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      118,
+      1381,
+      531,
+      1404
+    ],
+    "text": "THANK YOU FOR YOUR PATRONAGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      203,
+      1413,
+      450,
+      1436
+    ],
+    "text": "PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      125,
+      1467,
+      526,
+      1491
+    ],
+    "text": "TERIMA KASIH SILA DATANG LAGI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      75,
+      1519,
+      579,
+      1540
+    ],
+    "text": "** PLEASE KEEP THIS RECEIPT FOR PROVE OF",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      59,
+      1548,
+      596,
+      1574
+    ],
+    "text": "PURCHASE DATE FOR I.T PRODUCT WARRANTY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      253,
+      1581,
+      401,
+      1602
+    ],
+    "text": "PURPOSE **",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      97,
+      1632,
+      557,
+      1660
+    ],
+    "text": "FOLLOW US IN FACEBOOK : SANYU.STATIONERY",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "bbox": [
+      141,
+      272,
+      503,
+      304
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      179,
+      306,
+      468,
+      339
+    ],
+    "text": "(CO.REG :860671-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      47,
+      339,
+      582,
+      372
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      62,
+      373,
+      567,
+      407
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      77,
+      409,
+      570,
+      436
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      113,
+      440,
+      518,
+      476
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      211,
+      475,
+      418,
+      508
+    ],
+    "text": "(IOI PUCHONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      211,
+      511,
+      422,
+      540
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      0,
+      577,
+      436,
+      610
+    ],
+    "text": "WHITE CABLE TIE 4*200MM(8')",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      623,
+      576,
+      656,
+      606
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1,
+      609,
+      209,
+      643
+    ],
+    "text": "UB52 - 20/250",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1,
+      643,
+      111,
+      673
+    ],
+    "text": "9072317",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      360,
+      645,
+      504,
+      676
+    ],
+    "text": "1 X 3.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      555,
+      645,
+      621,
+      674
+    ],
+    "text": "3.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1,
+      678,
+      342,
+      706
+    ],
+    "text": "WHITE CABLE TIE 5*250",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      620,
+      678,
+      657,
+      708
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2,
+      711,
+      211,
+      744
+    ],
+    "text": "UH32 - 10/150",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2,
+      744,
+      114,
+      774
+    ],
+    "text": "9072318",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      361,
+      747,
+      506,
+      777
+    ],
+    "text": "1 X 6.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      555,
+      746,
+      620,
+      774
+    ],
+    "text": "6.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1,
+      777,
+      276,
+      809
+    ],
+    "text": "HOSE PUMP C88351#",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      620,
+      780,
+      656,
+      810
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2,
+      811,
+      308,
+      843
+    ],
+    "text": "KE23-33-53 - 12/120",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      3,
+      845,
+      115,
+      873
+    ],
+    "text": "9074333",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      360,
+      845,
+      506,
+      875
+    ],
+    "text": "1 X 1.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      556,
+      846,
+      620,
+      876
+    ],
+    "text": "1.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      3,
+      911,
+      180,
+      944
+    ],
+    "text": "ITEM(S) : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      490,
+      913,
+      655,
+      945
+    ],
+    "text": "QTY(S) : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      4,
+      979,
+      293,
+      1009
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      523,
+      981,
+      655,
+      1010
+    ],
+    "text": "RM 12.30",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      6,
+      1014,
+      70,
+      1040
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      522,
+      1014,
+      655,
+      1042
+    ],
+    "text": "RM 50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      6,
+      1048,
+      100,
+      1074
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      523,
+      1048,
+      655,
+      1077
+    ],
+    "text": "RM 37.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      8,
+      1113,
+      405,
+      1142
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      490,
+      1114,
+      605,
+      1143
+    ],
+    "text": "RM 0.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      6,
+      1180,
+      393,
+      1209
+    ],
+    "text": "24-03-18 18:10 SH01 ZJ86",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      442,
+      1179,
+      655,
+      1211
+    ],
+    "text": "T1 R000112046",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      8,
+      1212,
+      392,
+      1243
+    ],
+    "text": "OPERATOR TRAINEE CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      105,
+      1280,
+      539,
+      1308
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      167,
+      1311,
+      471,
+      1342
+    ],
+    "text": "7 DAY WITH RECEIPT .",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      135,
+      1344,
+      520,
+      1375
+    ],
+    "text": "STRICTLY NO CASH REFUND .",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

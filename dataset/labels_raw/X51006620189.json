@@ -1,0 +1,629 @@
+[
+  {
+    "bbox": [
+      172,
+      475,
+      670,
+      516
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      226,
+      525,
+      621,
+      564
+    ],
+    "text": "LOT P.T. 33198, BATU 4",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      207,
+      579,
+      645,
+      619
+    ],
+    "text": "JALAN KAPAR, MUKIM KAPAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      241,
+      627,
+      624,
+      668
+    ],
+    "text": "42100 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      246,
+      674,
+      606,
+      715
+    ],
+    "text": "1605-TMN SRI BINTANG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      208,
+      724,
+      661,
+      763
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      193,
+      829,
+      693,
+      868
+    ],
+    "text": "INVOICE NO : 17664/103/T0027",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      90,
+      930,
+      218,
+      968
+    ],
+    "text": "10:12AM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      388,
+      930,
+      497,
+      966
+    ],
+    "text": "560272",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      657,
+      932,
+      801,
+      963
+    ],
+    "text": "11-05-16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      89,
+      1030,
+      555,
+      1066
+    ],
+    "text": "967 ANCHOR SERBUK CUCI 4KG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      635,
+      1028,
+      801,
+      1067
+    ],
+    "text": "RM18.80 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      124,
+      1078,
+      340,
+      1117
+    ],
+    "text": "@2 X RM 9.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      87,
+      1127,
+      572,
+      1168
+    ],
+    "text": "886 DOVE CREAM BAR SOAP 100",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      1130,
+      798,
+      1171
+    ],
+    "text": "RM26.50 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      123,
+      1181,
+      360,
+      1217
+    ],
+    "text": "@10 X RM 2.65",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1232,
+      568,
+      1268
+    ],
+    "text": "5551 FERNLEAF FULL CRM MILK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      635,
+      1234,
+      799,
+      1270
+    ],
+    "text": "RM40.95 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      89,
+      1281,
+      551,
+      1319
+    ],
+    "text": "2267 COLGATE GREAT REGULAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      637,
+      1284,
+      805,
+      1319
+    ],
+    "text": "RM15.98 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      123,
+      1330,
+      341,
+      1366
+    ],
+    "text": "@2 X RM 7.99",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      85,
+      1382,
+      568,
+      1420
+    ],
+    "text": "265 LEE KUM KEE SOS TIRAM C",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      637,
+      1384,
+      801,
+      1424
+    ],
+    "text": "RM22.80 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      126,
+      1433,
+      343,
+      1469
+    ],
+    "text": "@3 X RM 7.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      92,
+      1483,
+      570,
+      1522
+    ],
+    "text": "193 CHEONG CHAN SOS KARAMEL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      655,
+      1485,
+      801,
+      1520
+    ],
+    "text": "RM5.09 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      1532,
+      573,
+      1572
+    ],
+    "text": "2394 MISTER POTATO CHIPS BB",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      654,
+      1534,
+      798,
+      1573
+    ],
+    "text": "RM7.90 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      123,
+      1584,
+      341,
+      1623
+    ],
+    "text": "@2 X RM 3.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      87,
+      1635,
+      515,
+      1674
+    ],
+    "text": "8019 MARIGOLD HL MILK 1L",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      635,
+      1635,
+      799,
+      1675
+    ],
+    "text": "RM12.70 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      122,
+      1685,
+      345,
+      1720
+    ],
+    "text": "@2 X RM 6.35",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1735,
+      571,
+      1771
+    ],
+    "text": "706 BINTANG TEPUNG JAGUNG 4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      653,
+      1740,
+      797,
+      1775
+    ],
+    "text": "RM1.35 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      1783,
+      572,
+      1824
+    ],
+    "text": "2216 NUTELLA FERRERO HAZELN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      635,
+      1789,
+      797,
+      1824
+    ],
+    "text": "RM14.65 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      87,
+      1833,
+      570,
+      1876
+    ],
+    "text": "9547 NUTRIPLUS CHEESE CHICK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      1838,
+      800,
+      1878
+    ],
+    "text": "RM10.50 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      122,
+      1886,
+      340,
+      1922
+    ],
+    "text": "@2 X RM 5.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      85,
+      1984,
+      623,
+      2023
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      229,
+      2034,
+      625,
+      2079
+    ],
+    "text": "ROUNDING ADJUSTMENT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      422,
+      2086,
+      625,
+      2131
+    ],
+    "text": "ROUNDING RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      458,
+      2136,
+      623,
+      2173
+    ],
+    "text": "CREDIT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      458,
+      2183,
+      762,
+      2224
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      87,
+      2286,
+      288,
+      2331
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      367,
+      2286,
+      549,
+      2322
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      653,
+      2288,
+      776,
+      2324
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      87,
+      2337,
+      199,
+      2368
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      443,
+      2334,
+      551,
+      2374
+    ],
+    "text": "167.19",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      690,
+      2334,
+      780,
+      2373
+    ],
+    "text": "10.03",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      176,
+      2483,
+      673,
+      2529
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      85,
+      2535,
+      781,
+      2580
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      653,
+      1986,
+      769,
+      2022
+    ],
+    "text": "177.22",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      688,
+      2034,
+      763,
+      2076
+    ],
+    "text": "-.02",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      653,
+      2086,
+      764,
+      2124
+    ],
+    "text": "177.20",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      656,
+      2135,
+      766,
+      2173
+    ],
+    "text": "177.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      707,
+      2187,
+      765,
+      2227
+    ],
+    "text": ".00",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

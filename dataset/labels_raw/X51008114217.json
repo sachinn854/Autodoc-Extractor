@@ -1,0 +1,574 @@
+[
+  {
+    "bbox": [
+      165,
+      332,
+      731,
+      376
+    ],
+    "text": "MR. D.I.Y. (KUCHAI) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      254,
+      381,
+      643,
+      421
+    ],
+    "text": "(CO REG : 750441-W)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      105,
+      419,
+      788,
+      465
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      125,
+      461,
+      761,
+      505
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      151,
+      508,
+      765,
+      548
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      193,
+      548,
+      703,
+      590
+    ],
+    "text": "(GST ID NO :000473792512)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      379,
+      590,
+      538,
+      630
+    ],
+    "text": "(KEPONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      334,
+      630,
+      562,
+      676
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      44,
+      717,
+      251,
+      755
+    ],
+    "text": "KNIFE 7240",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      828,
+      715,
+      868,
+      757
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      761,
+      421,
+      801
+    ],
+    "text": "BB21-41-61 - 12/72",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      48,
+      802,
+      320,
+      840
+    ],
+    "text": "6926292571513",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      502,
+      802,
+      687,
+      846
+    ],
+    "text": "1 X 15.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      727,
+      802,
+      830,
+      842
+    ],
+    "text": "15.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      840,
+      517,
+      882
+    ],
+    "text": "M/FUNCTION SCISSORS K56",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      888,
+      318,
+      922
+    ],
+    "text": "GA07 - 12/144",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      928,
+      312,
+      966
+    ],
+    "text": "6926292592327",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      504,
+      928,
+      560,
+      968
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      600,
+      933,
+      687,
+      971
+    ],
+    "text": "7.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      743,
+      935,
+      830,
+      969
+    ],
+    "text": "7.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      826,
+      846,
+      872,
+      882
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      38,
+      969,
+      537,
+      1013
+    ],
+    "text": "KIWI S/S KNIFE NO.475 5'",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      828,
+      975,
+      870,
+      1017
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      1011,
+      314,
+      1051
+    ],
+    "text": "WA37 - 12/480",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      44,
+      1057,
+      189,
+      1093
+    ],
+    "text": "8910041",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      499,
+      1055,
+      561,
+      1093
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      606,
+      1055,
+      683,
+      1095
+    ],
+    "text": "4.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      745,
+      1057,
+      828,
+      1095
+    ],
+    "text": "4.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      1136,
+      278,
+      1180
+    ],
+    "text": "ITEM(S) : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      663,
+      1138,
+      872,
+      1184
+    ],
+    "text": "QTY(S) : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      44,
+      1225,
+      354,
+      1263
+    ],
+    "text": "TOTAL INCL. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      705,
+      1227,
+      870,
+      1267
+    ],
+    "text": "RM 27.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      1263,
+      435,
+      1301
+    ],
+    "text": "ROUNDING ADJUSTMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      705,
+      1269,
+      872,
+      1309
+    ],
+    "text": "-RM 0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      1305,
+      318,
+      1345
+    ],
+    "text": "TOTAL ROUNDED",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      701,
+      1311,
+      872,
+      1351
+    ],
+    "text": "RM 27.25",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      38,
+      1349,
+      131,
+      1387
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      705,
+      1353,
+      872,
+      1393
+    ],
+    "text": "RM 30.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      40,
+      1392,
+      165,
+      1430
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      727,
+      1394,
+      872,
+      1438
+    ],
+    "text": "RM 2.75",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      1476,
+      274,
+      1518
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      417,
+      1478,
+      558,
+      1514
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      622,
+      1476,
+      765,
+      1518
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      42,
+      1517,
+      237,
+      1555
+    ],
+    "text": "GST SR@0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      497,
+      1519,
+      602,
+      1559
+    ],
+    "text": "27.27",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      727,
+      1519,
+      814,
+      1559
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      42,
+      1643,
+      546,
+      1685
+    ],
+    "text": "30-06-18 13:27 SH01 B003",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      600,
+      1641,
+      874,
+      1689
+    ],
+    "text": "T1 R000639004",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      42,
+      1684,
+      580,
+      1726
+    ],
+    "text": "OPERATOR KPOT - ASYRAF ALI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      171,
+      1764,
+      729,
+      1808
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      248,
+      1811,
+      661,
+      1851
+    ],
+    "text": "7 DAYS WITH RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      211,
+      1853,
+      706,
+      1895
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

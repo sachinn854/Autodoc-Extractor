@@ -1,0 +1,805 @@
+[
+  {
+    "bbox": [
+      112,
+      234,
+      517,
+      264
+    ],
+    "text": "SUSHI MENTAI - PANDAN INDAH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      67,
+      271,
+      575,
+      308
+    ],
+    "text": "KMF FOODICIOUS SDN BHD (1132106-H)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      113,
+      311,
+      514,
+      346
+    ],
+    "text": "NO. 9-G, JALAN PERUBATAN 2,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      82,
+      347,
+      575,
+      382
+    ],
+    "text": "PANDAN INDAH, 55100 KUALA LUMPUR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      174,
+      383,
+      476,
+      416
+    ],
+    "text": "TEL : +603 2856 0385",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      127,
+      421,
+      519,
+      456
+    ],
+    "text": "GST REG. NO : 000897208320",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      147,
+      496,
+      472,
+      529
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      24,
+      567,
+      291,
+      633
+    ],
+    "text": "TABLE T13",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      22,
+      633,
+      235,
+      668
+    ],
+    "text": "ORDER#: 275705",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      23,
+      670,
+      111,
+      706
+    ],
+    "text": "BILL#:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      127,
+      672,
+      307,
+      706
+    ],
+    "text": "V015- 673381",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      427,
+      673,
+      563,
+      709
+    ],
+    "text": "PAX(S): 0",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      25,
+      712,
+      86,
+      741
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      133,
+      714,
+      443,
+      744
+    ],
+    "text": ": 09-04-2018 19:22:25",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      26,
+      748,
+      142,
+      781
+    ],
+    "text": "CASHIER:",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      158,
+      750,
+      264,
+      781
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      25,
+      824,
+      190,
+      860
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      249,
+      825,
+      295,
+      862
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      353,
+      828,
+      458,
+      862
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      489,
+      825,
+      562,
+      859
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      577,
+      827,
+      624,
+      861
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      22,
+      899,
+      279,
+      935
+    ],
+    "text": "TORI TERIYAKI DON",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      236,
+      939,
+      282,
+      971
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      356,
+      940,
+      429,
+      968
+    ],
+    "text": "12.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      489,
+      940,
+      562,
+      970
+    ],
+    "text": "12.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      592,
+      942,
+      623,
+      970
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      22,
+      975,
+      160,
+      1006
+    ],
+    "text": "TAKO BALL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      235,
+      1012,
+      280,
+      1042
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      366,
+      1013,
+      429,
+      1046
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      500,
+      1014,
+      563,
+      1044
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      21,
+      1047,
+      177,
+      1082
+    ],
+    "text": "SUSHI 1.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      234,
+      1087,
+      280,
+      1119
+    ],
+    "text": "4 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      370,
+      1087,
+      431,
+      1120
+    ],
+    "text": "1.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      502,
+      1089,
+      564,
+      1120
+    ],
+    "text": "7.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      593,
+      1090,
+      624,
+      1121
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      22,
+      1126,
+      174,
+      1159
+    ],
+    "text": "SUSHI 2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      232,
+      1165,
+      278,
+      1196
+    ],
+    "text": "2 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      368,
+      1166,
+      427,
+      1196
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      502,
+      1164,
+      563,
+      1196
+    ],
+    "text": "5.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      592,
+      1166,
+      626,
+      1200
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      22,
+      1202,
+      157,
+      1233
+    ],
+    "text": "GREEN TEA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      233,
+      1244,
+      281,
+      1276
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      369,
+      1245,
+      429,
+      1278
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      506,
+      1244,
+      564,
+      1277
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      592,
+      1243,
+      623,
+      1280
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      21,
+      1322,
+      352,
+      1356
+    ],
+    "text": "TOTAL (EXCLUDING GST) :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      547,
+      1326,
+      623,
+      1356
+    ],
+    "text": "26.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      24,
+      1359,
+      307,
+      1395
+    ],
+    "text": "SERV. CHARGE (10%) :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      563,
+      1363,
+      622,
+      1391
+    ],
+    "text": "2.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      25,
+      1396,
+      202,
+      1429
+    ],
+    "text": "GST PAYABLE:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      565,
+      1401,
+      625,
+      1431
+    ],
+    "text": "1.76",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      23,
+      1433,
+      397,
+      1469
+    ],
+    "text": "TOTAL (INCLUSIVE OF GST) :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      547,
+      1437,
+      623,
+      1467
+    ],
+    "text": "31.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      22,
+      1471,
+      215,
+      1505
+    ],
+    "text": "ROUNDING ADJ :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      548,
+      1476,
+      624,
+      1507
+    ],
+    "text": "-0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      22,
+      1546,
+      196,
+      1602
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      472,
+      1549,
+      621,
+      1602
+    ],
+    "text": "31.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      22,
+      1640,
+      158,
+      1670
+    ],
+    "text": "CLOSED: 0",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      304,
+      1642,
+      461,
+      1672
+    ],
+    "text": "09-04-2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      501,
+      1645,
+      621,
+      1673
+    ],
+    "text": "20:01:23",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      21,
+      1675,
+      249,
+      1708
+    ],
+    "text": "SERVER : CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      19,
+      1750,
+      108,
+      1778
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      547,
+      1751,
+      620,
+      1784
+    ],
+    "text": "31.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      21,
+      1859,
+      67,
+      1893
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      22,
+      1897,
+      54,
+      1931
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      81,
+      1862,
+      196,
+      1897
+    ],
+    "text": "SUMMARY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      170,
+      1899,
+      261,
+      1935
+    ],
+    "text": "(@ 6)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      317,
+      1862,
+      474,
+      1898
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      395,
+      1902,
+      470,
+      1937
+    ],
+    "text": "29.26",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      515,
+      1863,
+      623,
+      1903
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      561,
+      1903,
+      619,
+      1937
+    ],
+    "text": "1.76",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      228,
+      2083,
+      413,
+      2117
+    ],
+    "text": "THANK YOU !!!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      167,
+      2117,
+      470,
+      2153
+    ],
+    "text": "PLEASE COME AGAIN!!!",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

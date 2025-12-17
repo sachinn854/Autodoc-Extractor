@@ -1,0 +1,508 @@
+[
+  {
+    "bbox": [
+      31,
+      405,
+      659,
+      449
+    ],
+    "text": "GUARDIAN HEALTH AND BEAUTY SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      34,
+      450,
+      600,
+      499
+    ],
+    "text": "LOT B-005-006,BASEMENT LEVEL 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      35,
+      503,
+      349,
+      549
+    ],
+    "text": "THE STARLING MALL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      33,
+      555,
+      593,
+      603
+    ],
+    "text": "JALAN SS21/60,DAMANSARA UTAMA.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      34,
+      608,
+      352,
+      651
+    ],
+    "text": "TEL: 03-7662 5789",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      35,
+      658,
+      434,
+      703
+    ],
+    "text": "COMPANY REG #1101083-T",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      36,
+      710,
+      419,
+      753
+    ],
+    "text": "GST REG #000899874816",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      576,
+      820,
+      620,
+      860
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      38,
+      865,
+      203,
+      906
+    ],
+    "text": "121066051",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      218,
+      860,
+      512,
+      908
+    ],
+    "text": "\"\"OPTICARE 500X3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      540,
+      864,
+      566,
+      882
+    ],
+    "text": "^",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      613,
+      864,
+      711,
+      910
+    ],
+    "text": "13.78",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      739,
+      865,
+      765,
+      908
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      105,
+      913,
+      256,
+      959
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      613,
+      914,
+      707,
+      965
+    ],
+    "text": "13.78",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      36,
+      1015,
+      325,
+      1063
+    ],
+    "text": "TOTAL (GST INCL)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      614,
+      1020,
+      713,
+      1065
+    ],
+    "text": "13.78",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1066,
+      110,
+      1114
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      612,
+      1069,
+      710,
+      1117
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      34,
+      1120,
+      400,
+      1168
+    ],
+    "text": "ROUNDING ADJUSTMENTS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      634,
+      1124,
+      710,
+      1168
+    ],
+    "text": "0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      36,
+      1173,
+      222,
+      1219
+    ],
+    "text": "CHANGE DUE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      631,
+      1176,
+      710,
+      1219
+    ],
+    "text": "6.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      34,
+      1269,
+      434,
+      1319
+    ],
+    "text": "YOUR SAVINGS FOR TODAY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      633,
+      1276,
+      708,
+      1321
+    ],
+    "text": "3.49",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1375,
+      92,
+      1418
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      36,
+      1426,
+      61,
+      1467
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      161,
+      1425,
+      209,
+      1469
+    ],
+    "text": "6%",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      363,
+      1424,
+      459,
+      1473
+    ],
+    "text": "13.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      540,
+      1426,
+      619,
+      1474
+    ],
+    "text": "0.78",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1476,
+      54,
+      1496
+    ],
+    "text": "^",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      1478,
+      386,
+      1528
+    ],
+    "text": "PROMO PRICE ITEMS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      194,
+      1578,
+      604,
+      1627
+    ],
+    "text": "THANK YOU FOR SHOPPING",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      283,
+      1634,
+      496,
+      1678
+    ],
+    "text": "AT GUARDIAN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      191,
+      1683,
+      585,
+      1729
+    ],
+    "text": "ALL AMOUNTS ARE IN RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      123,
+      1735,
+      668,
+      1779
+    ],
+    "text": "GOODS SOLD ARE NON-REFUNDABLE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      69,
+      1785,
+      713,
+      1833
+    ],
+    "text": "ALL EXCHANGES AND RETURNS INCLUDING",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      70,
+      1835,
+      725,
+      1880
+    ],
+    "text": "GUARDIAN BRAND PRODUCTS MUST BE MADE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      30,
+      1883,
+      744,
+      1931
+    ],
+    "text": "WITHIN 7DAYS WITH ORIGINAL RECEIPTS AND",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      124,
+      1932,
+      672,
+      1983
+    ],
+    "text": "PRODUCT IN ORIGINAL CONDITION.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      88,
+      1986,
+      693,
+      2031
+    ],
+    "text": "ST:8541 CTR 3 ID:3003 TAXINV:11612",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      230,
+      2039,
+      334,
+      2083
+    ],
+    "text": "20:56",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      414,
+      2039,
+      567,
+      2083
+    ],
+    "text": "07/07/17",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      145,
+      1376,
+      220,
+      1422
+    ],
+    "text": "RATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      325,
+      1378,
+      473,
+      1422
+    ],
+    "text": "GST EXCL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      539,
+      1378,
+      672,
+      1422
+    ],
+    "text": "GST AMT",
+    "class": "TAX",
+    "class_id": 4
+  }
+]

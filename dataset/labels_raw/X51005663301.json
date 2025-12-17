@@ -1,0 +1,464 @@
+[
+  {
+    "bbox": [
+      113,
+      222,
+      795,
+      259
+    ],
+    "text": "LIM SENG THO HARDWARE TRADING",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      175,
+      275,
+      645,
+      314
+    ],
+    "text": "NO 7. SIMPANG OFF BATU VILLAGE.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      109,
+      321,
+      701,
+      358
+    ],
+    "text": "JALAN IPOH BATU 5. 51200 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      327,
+      358,
+      498,
+      393
+    ],
+    "text": "MALAYSIA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      193,
+      399,
+      629,
+      430
+    ],
+    "text": "TEL & FAX NO : 03-6258 7191",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      302,
+      438,
+      518,
+      469
+    ],
+    "text": "03-6258 7191",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      144,
+      491,
+      680,
+      530
+    ],
+    "text": "COMPANY REG NO. : (002231061-T)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      185,
+      547,
+      639,
+      584
+    ],
+    "text": "GST REG NO. : 001269075968",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      298,
+      600,
+      526,
+      639
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      33,
+      672,
+      214,
+      705
+    ],
+    "text": "INVOICE NO :",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      279,
+      672,
+      439,
+      705
+    ],
+    "text": "CS 24198",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      33,
+      723,
+      140,
+      756
+    ],
+    "text": "DATE :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      277,
+      721,
+      550,
+      754
+    ],
+    "text": "03/02/2018 15:28",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      33,
+      775,
+      197,
+      806
+    ],
+    "text": "CASHIER #",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      281,
+      773,
+      351,
+      810
+    ],
+    "text": "LST",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      35,
+      881,
+      210,
+      914
+    ],
+    "text": "BEG GUNI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      571,
+      840,
+      635,
+      875
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      696,
+      836,
+      793,
+      879
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      66,
+      931,
+      243,
+      968
+    ],
+    "text": "10.00 NOS",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      302,
+      937,
+      331,
+      964
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      376,
+      931,
+      448,
+      964
+    ],
+    "text": "0.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      565,
+      933,
+      641,
+      964
+    ],
+    "text": "7.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      736,
+      933,
+      789,
+      964
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      208,
+      984,
+      348,
+      1019
+    ],
+    "text": "SUBTOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      561,
+      984,
+      637,
+      1019
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      84,
+      1068,
+      351,
+      1107
+    ],
+    "text": "TOTAL INCL OF GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      567,
+      1072,
+      633,
+      1107
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      197,
+      1124,
+      347,
+      1161
+    ],
+    "text": "PAYMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      565,
+      1122,
+      637,
+      1157
+    ],
+    "text": "7.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      140,
+      1169,
+      350,
+      1208
+    ],
+    "text": "CHANGE DUE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      565,
+      1171,
+      639,
+      1204
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      41,
+      1227,
+      300,
+      1268
+    ],
+    "text": "TOTAL ITEM(S) : 10",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      45,
+      1284,
+      273,
+      1329
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      321,
+      1288,
+      522,
+      1327
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      594,
+      1286,
+      744,
+      1327
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      47,
+      1342,
+      100,
+      1383
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      171,
+      1344,
+      272,
+      1383
+    ],
+    "text": "@ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      448,
+      1346,
+      524,
+      1377
+    ],
+    "text": "6.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      666,
+      1346,
+      744,
+      1379
+    ],
+    "text": "0.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      303,
+      1491,
+      505,
+      1532
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      226,
+      1540,
+      584,
+      1579
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      74,
+      1582,
+      738,
+      1621
+    ],
+    "text": "*GOODS SOLD ARE NOT RETURNABLE*",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

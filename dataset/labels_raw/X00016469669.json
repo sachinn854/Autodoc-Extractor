@@ -1,0 +1,387 @@
+[
+  {
+    "bbox": [
+      143,
+      43,
+      362,
+      80
+    ],
+    "text": "TAN CHAY YEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      129,
+      86,
+      309,
+      111
+    ],
+    "text": "ABC HO TRADING",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      107,
+      112,
+      328,
+      134
+    ],
+    "text": "NO.2&4,JALAN HARMONI 3/2,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      125,
+      135,
+      309,
+      158
+    ],
+    "text": "TAMAN DESA HARMONI.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      104,
+      158,
+      330,
+      177
+    ],
+    "text": "81100 JOHOR BAHRU JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      167,
+      182,
+      279,
+      203
+    ],
+    "text": "07-355 2616",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      27,
+      243,
+      105,
+      260
+    ],
+    "text": "CASH BILL :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      118,
+      242,
+      202,
+      260
+    ],
+    "text": "01-143008",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      23,
+      263,
+      67,
+      286
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      268,
+      111,
+      284
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      118,
+      263,
+      301,
+      290
+    ],
+    "text": "09/01/2019 8:01:11 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      21,
+      290,
+      87,
+      307
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      93,
+      294,
+      112,
+      310
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      117,
+      288,
+      144,
+      306
+    ],
+    "text": "01",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      37,
+      314,
+      136,
+      332
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      211,
+      312,
+      249,
+      334
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      266,
+      311,
+      317,
+      332
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      330,
+      312,
+      406,
+      335
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      277,
+      337,
+      315,
+      357
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      347,
+      337,
+      387,
+      354
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      22,
+      362,
+      79,
+      378
+    ],
+    "text": "PLASTIC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      228,
+      361,
+      248,
+      382
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      263,
+      360,
+      309,
+      377
+    ],
+    "text": "15.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      327,
+      359,
+      383,
+      384
+    ],
+    "text": "31.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      208,
+      394,
+      260,
+      413
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      356,
+      395,
+      419,
+      416
+    ],
+    "text": "31.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      142,
+      418,
+      262,
+      439
+    ],
+    "text": "TOTAL AMOUNT:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      345,
+      420,
+      411,
+      442
+    ],
+    "text": "31.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      133,
+      439,
+      260,
+      463
+    ],
+    "text": "CASH RECEIVED :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      353,
+      442,
+      412,
+      459
+    ],
+    "text": "101.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      181,
+      461,
+      262,
+      487
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      364,
+      464,
+      414,
+      488
+    ],
+    "text": "70.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      86,
+      502,
+      362,
+      523
+    ],
+    "text": "*GOODS SOLD ARE NON-REFUNDABLE*",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      149,
+      524,
+      306,
+      544
+    ],
+    "text": "***THANK YOU***",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      121,
+      547,
+      331,
+      570
+    ],
+    "text": "***PLEASE COME AGAIN***",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

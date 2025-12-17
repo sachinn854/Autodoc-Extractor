@@ -1,0 +1,387 @@
+[
+  {
+    "bbox": [
+      137,
+      257,
+      524,
+      294
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      189,
+      294,
+      482,
+      327
+    ],
+    "text": "(CO. REG :860671-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      55,
+      326,
+      594,
+      359
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      361,
+      578,
+      393
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG ,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      86,
+      395,
+      582,
+      424
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      123,
+      429,
+      530,
+      461
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      221,
+      461,
+      430,
+      492
+    ],
+    "text": "(IOI PUCHONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      221,
+      496,
+      433,
+      523
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      4,
+      561,
+      551,
+      593
+    ],
+    "text": "DOUBLE EXT BOX 10Y 40/016 CBD4110",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      632,
+      561,
+      668,
+      592
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      4,
+      596,
+      153,
+      622
+    ],
+    "text": "WA21 -20",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      5,
+      629,
+      218,
+      657
+    ],
+    "text": "9553114461423",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      371,
+      630,
+      516,
+      658
+    ],
+    "text": "1 X 25.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      551,
+      630,
+      632,
+      657
+    ],
+    "text": "25.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      4,
+      663,
+      203,
+      690
+    ],
+    "text": "PLASTIC BAGS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      632,
+      664,
+      667,
+      693
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      5,
+      697,
+      87,
+      725
+    ],
+    "text": "99999",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      371,
+      698,
+      517,
+      727
+    ],
+    "text": "1 X 0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      566,
+      697,
+      633,
+      726
+    ],
+    "text": "0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      4,
+      763,
+      189,
+      794
+    ],
+    "text": "ITEM(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      498,
+      763,
+      666,
+      794
+    ],
+    "text": "QTY(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      5,
+      829,
+      302,
+      859
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      533,
+      832,
+      664,
+      858
+    ],
+    "text": "RM 26.10",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      4,
+      867,
+      71,
+      893
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      532,
+      865,
+      667,
+      892
+    ],
+    "text": "RM 50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      4,
+      899,
+      104,
+      927
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      533,
+      897,
+      665,
+      926
+    ],
+    "text": "RM 23.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      5,
+      963,
+      414,
+      996
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      500,
+      963,
+      618,
+      994
+    ],
+    "text": "RM 1.48",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      3,
+      1032,
+      401,
+      1062
+    ],
+    "text": "23-03-18 18:09 SH01 ZJ86",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      453,
+      1031,
+      664,
+      1061
+    ],
+    "text": "T1 R000111754",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      6,
+      1066,
+      402,
+      1095
+    ],
+    "text": "OPERATOR TRAINEE CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      106,
+      1132,
+      551,
+      1162
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      170,
+      1167,
+      481,
+      1195
+    ],
+    "text": "7 DAY WITH RECEIPT .",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      138,
+      1201,
+      532,
+      1228
+    ],
+    "text": "STRICTLY NO CASH REFUND .",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,563 @@
+[
+  {
+    "bbox": [
+      190,
+      144,
+      707,
+      189
+    ],
+    "text": "PAPPARICH BMC",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      330,
+      194,
+      528,
+      235
+    ],
+    "text": "NO.19 & 21",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      239,
+      243,
+      655,
+      288
+    ],
+    "text": "JALAN TEMENGGUNG 23/9",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      228,
+      293,
+      650,
+      336
+    ],
+    "text": "BANDAR MAHKOTA CHERAS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      71,
+      340,
+      790,
+      390
+    ],
+    "text": "43200 SELANGOR DARUL EHSAN, MALAYSIA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      308,
+      444,
+      532,
+      489
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      131,
+      540,
+      730,
+      581
+    ],
+    "text": "GST ID:0 0 0 1 6 4 2 7 0 0 8 0",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      26,
+      590,
+      244,
+      631
+    ],
+    "text": "2 COUNTERI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      612,
+      592,
+      830,
+      639
+    ],
+    "text": "2003 SAIFUL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      683,
+      232,
+      728
+    ],
+    "text": "CHK 274898",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      711,
+      689,
+      829,
+      730
+    ],
+    "text": "GUEST1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      239,
+      737,
+      655,
+      782
+    ],
+    "text": "15 JUN 18 08:34:31 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      30,
+      780,
+      385,
+      864
+    ],
+    "text": "TBL35 / 1",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      90,
+      920,
+      435,
+      954
+    ],
+    "text": "B02 HALF BL EGG E",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      674,
+      918,
+      790,
+      957
+    ],
+    "text": "4.53 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      88,
+      961,
+      435,
+      1004
+    ],
+    "text": "B03 HNN TST+B+K E",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      670,
+      967,
+      791,
+      1010
+    ],
+    "text": "5.57 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      1017,
+      375,
+      1056
+    ],
+    "text": "D19 CHAM (I) E",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      670,
+      1019,
+      793,
+      1056
+    ],
+    "text": "5.57 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      88,
+      1062,
+      172,
+      1099
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      644,
+      1066,
+      752,
+      1103
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      650,
+      1163,
+      747,
+      1200
+    ],
+    "text": "15.67",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      93,
+      1208,
+      248,
+      1251
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      655,
+      1210,
+      752,
+      1249
+    ],
+    "text": "15.67",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      95,
+      1258,
+      315,
+      1308
+    ],
+    "text": "10% SRV CHG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      670,
+      1262,
+      750,
+      1301
+    ],
+    "text": "1.55",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      88,
+      1307,
+      209,
+      1346
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      657,
+      1312,
+      754,
+      1353
+    ],
+    "text": "17.22",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      91,
+      1359,
+      235,
+      1393
+    ],
+    "text": "RND ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      672,
+      1359,
+      780,
+      1402
+    ],
+    "text": "0.02-",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      88,
+      1404,
+      314,
+      1449
+    ],
+    "text": "TTL ATF RND",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      655,
+      1409,
+      750,
+      1450
+    ],
+    "text": "17.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      88,
+      1454,
+      234,
+      1495
+    ],
+    "text": "PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      646,
+      1460,
+      749,
+      1499
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1501,
+      292,
+      1544
+    ],
+    "text": "CHANGE DUE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      668,
+      1505,
+      750,
+      1542
+    ],
+    "text": "2.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      110,
+      1553,
+      771,
+      1594
+    ],
+    "text": "2003 CLOSED 15 JUN 18 09:08:37 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      149,
+      1600,
+      728,
+      1641
+    ],
+    "text": "THANK YOU! PLEASE COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      351,
+      1650,
+      536,
+      1695
+    ],
+    "text": "GST AT 0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      88,
+      1742,
+      293,
+      1789
+    ],
+    "text": "GSTSUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      330,
+      1749,
+      530,
+      1790
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      571,
+      1749,
+      711,
+      1792
+    ],
+    "text": "GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      93,
+      1796,
+      289,
+      1833
+    ],
+    "text": "S=GST @0%:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      334,
+      1794,
+      433,
+      1833
+    ],
+    "text": "17.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      571,
+      1798,
+      653,
+      1837
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      90,
+      1841,
+      288,
+      1884
+    ],
+    "text": "Z=GST @0%:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      330,
+      1848,
+      412,
+      1882
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      564,
+      1846,
+      654,
+      1887
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      34,
+      920,
+      51,
+      959
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      32,
+      967,
+      51,
+      999
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      32,
+      1014,
+      49,
+      1051
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  }
+]

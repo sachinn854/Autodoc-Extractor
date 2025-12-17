@@ -1,0 +1,299 @@
+[
+  {
+    "bbox": [
+      172,
+      341,
+      670,
+      385
+    ],
+    "text": "99 SPEED MART S/B (519537-X)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      222,
+      388,
+      629,
+      424
+    ],
+    "text": "LOT P.T. 33198, BATU 4",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      212,
+      438,
+      652,
+      480
+    ],
+    "text": "JALAN KAPAR, MUKIM KAPAR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      251,
+      487,
+      633,
+      530
+    ],
+    "text": "42100 KLANG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      265,
+      536,
+      595,
+      578
+    ],
+    "text": "1174-PERMATA MAGNA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      216,
+      585,
+      676,
+      627
+    ],
+    "text": "GST ID. NO : 000181747712",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      191,
+      682,
+      699,
+      731
+    ],
+    "text": "INVOICE NO : 17688/103/T0184",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      91,
+      785,
+      222,
+      823
+    ],
+    "text": "09:28PM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      392,
+      787,
+      502,
+      825
+    ],
+    "text": "560811",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      659,
+      786,
+      806,
+      827
+    ],
+    "text": "04-06-16",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      94,
+      886,
+      575,
+      927
+    ],
+    "text": "9178 GARDENIA SQUIGGLES CHO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      659,
+      886,
+      809,
+      924
+    ],
+    "text": "RM2.10 S",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      126,
+      934,
+      345,
+      975
+    ],
+    "text": "@2 X RM 1.05",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      89,
+      1035,
+      637,
+      1073
+    ],
+    "text": "TOTAL SALES (INCLUSIVE GST) RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      500,
+      1080,
+      630,
+      1124
+    ],
+    "text": "CASH RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      460,
+      1135,
+      638,
+      1171
+    ],
+    "text": "CHANGE RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      694,
+      1038,
+      777,
+      1078
+    ],
+    "text": "2.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      695,
+      1084,
+      782,
+      1128
+    ],
+    "text": "5.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      692,
+      1135,
+      792,
+      1171
+    ],
+    "text": "3.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      92,
+      1231,
+      294,
+      1278
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      374,
+      1231,
+      557,
+      1271
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      659,
+      1233,
+      786,
+      1271
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      92,
+      1282,
+      204,
+      1318
+    ],
+    "text": "S = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      483,
+      1280,
+      559,
+      1320
+    ],
+    "text": "1.98",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      730,
+      1285,
+      798,
+      1321
+    ],
+    "text": ".12",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      181,
+      1428,
+      682,
+      1476
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      90,
+      1480,
+      786,
+      1523
+    ],
+    "text": "KEEP THE INVOICE FOR APPLICABLE RETURNS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

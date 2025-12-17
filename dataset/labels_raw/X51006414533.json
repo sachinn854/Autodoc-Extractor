@@ -1,0 +1,288 @@
+[
+  {
+    "bbox": [
+      2163,
+      1855,
+      3045,
+      1944
+    ],
+    "text": "BHPETROL PERMAS JAYA 2",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      2310,
+      1955,
+      2886,
+      2030
+    ],
+    "text": "LOT PTD 101051",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2233,
+      2051,
+      2963,
+      2139
+    ],
+    "text": "JALAN PERMAS 10/10",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2236,
+      2151,
+      2956,
+      2239
+    ],
+    "text": "8175 MASAI, JOHOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2191,
+      2438,
+      2915,
+      2531
+    ],
+    "text": "PREPAY CHIT NUMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2350,
+      2536,
+      2742,
+      2622
+    ],
+    "text": "57381",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2151,
+      2733,
+      2988,
+      2812
+    ],
+    "text": "THIS IS NOT A RECEIPT",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1834,
+      2837,
+      3300,
+      2922
+    ],
+    "text": "A TAX INVOICE WILL BE ISSUED UPON THE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1911,
+      2933,
+      3267,
+      3019
+    ],
+    "text": "COMPLETION OF THE SALE TRANSACTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1757,
+      3124,
+      2511,
+      3206
+    ],
+    "text": "10-04-2018 08:11:53",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2701,
+      3121,
+      3193,
+      3200
+    ],
+    "text": "CASHIER: 465",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      1753,
+      3218,
+      2710,
+      3314
+    ],
+    "text": "TRANSACTION NO: 1-494268",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1746,
+      3422,
+      1916,
+      3510
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2410,
+      3418,
+      2697,
+      3502
+    ],
+    "text": "U\\PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2853,
+      3415,
+      3303,
+      3511
+    ],
+    "text": "QNTY AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1734,
+      3610,
+      1862,
+      3694
+    ],
+    "text": "PPF",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2337,
+      3605,
+      2419,
+      3693
+    ],
+    "text": "P7",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2935,
+      3603,
+      3024,
+      3694
+    ],
+    "text": "50",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      3085,
+      3607,
+      3300,
+      3691
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2296,
+      3800,
+      2780,
+      3894
+    ],
+    "text": "TOTAL AMOUNT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2284,
+      3899,
+      2464,
+      3983
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2925,
+      3894,
+      3016,
+      3988
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1813,
+      4097,
+      3292,
+      4183
+    ],
+    "text": "THANK YOU FOR SHOPPING AT BHPETROMART",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1965,
+      4200,
+      3175,
+      4282
+    ],
+    "text": "CUSTOMER SERVICE 1-300-22-2828",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2504,
+      3611,
+      2708,
+      3693
+    ],
+    "text": "1.000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      3082,
+      3894,
+      3296,
+      3979
+    ],
+    "text": "50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

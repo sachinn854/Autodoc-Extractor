@@ -1,0 +1,442 @@
+[
+  {
+    "bbox": [
+      144,
+      168,
+      568,
+      200
+    ],
+    "text": "BILLION SIX ENTERPRISE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      143,
+      207,
+      571,
+      244
+    ],
+    "text": "NO 3, JALAN TAMAN JAS'A 2;",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      110,
+      244,
+      601,
+      281
+    ],
+    "text": "SECTION U6, 40150 SHAH ALAM.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      213,
+      285,
+      499,
+      317
+    ],
+    "text": "TEL : 603-58856749",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      166,
+      319,
+      546,
+      352
+    ],
+    "text": "GST REG NO: 000944312320",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      285,
+      378,
+      427,
+      403
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      50,
+      407,
+      351,
+      441
+    ],
+    "text": "INVOICE NO : 0-170891",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      51,
+      446,
+      111,
+      473
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      203,
+      452,
+      516,
+      479
+    ],
+    "text": ": 22/02/2018 7:41:46 AM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      50,
+      484,
+      139,
+      515
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      200,
+      488,
+      267,
+      514
+    ],
+    "text": ": 123",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      105,
+      567,
+      240,
+      592
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      374,
+      572,
+      418,
+      599
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      468,
+      569,
+      530,
+      594
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      569,
+      571,
+      666,
+      594
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      64,
+      603,
+      303,
+      626
+    ],
+    "text": "1 SR' 9556405112205",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      392,
+      605,
+      417,
+      629
+    ],
+    "text": "11",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      484,
+      607,
+      532,
+      629
+    ],
+    "text": "5.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      601,
+      606,
+      664,
+      627
+    ],
+    "text": "63.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      83,
+      639,
+      415,
+      669
+    ],
+    "text": "TG7 7\" HIPS PLATE (50PCS) JP",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      351,
+      697,
+      417,
+      723
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      603,
+      697,
+      664,
+      720
+    ],
+    "text": "63.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      322,
+      738,
+      417,
+      759
+    ],
+    "text": "DISCOUNT:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      616,
+      735,
+      666,
+      758
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      41,
+      770,
+      419,
+      801
+    ],
+    "text": "TOTAL SALES INCLUSIVE GST @6.00%:",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      601,
+      776,
+      664,
+      798
+    ],
+    "text": "63.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      288,
+      811,
+      419,
+      835
+    ],
+    "text": "MASTER CARD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      604,
+      809,
+      663,
+      832
+    ],
+    "text": "63.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      209,
+      847,
+      414,
+      870
+    ],
+    "text": "5148826201779121",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      73,
+      901,
+      222,
+      928
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      279,
+      902,
+      302,
+      927
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      378,
+      905,
+      513,
+      930
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      550,
+      905,
+      645,
+      928
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      68,
+      937,
+      99,
+      960
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      256,
+      942,
+      303,
+      963
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      450,
+      942,
+      513,
+      963
+    ],
+    "text": "60.19",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      598,
+      940,
+      645,
+      963
+    ],
+    "text": "3.61",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      56,
+      1010,
+      675,
+      1042
+    ],
+    "text": "BARANG YANG SUDAH DI BELI, WANG TIDAK DAPAT DI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      68,
+      1043,
+      660,
+      1075
+    ],
+    "text": "KEMBALIKAN. PERTUKARAN BARANG HANYA BOLEH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      99,
+      1078,
+      630,
+      1110
+    ],
+    "text": "DIBUAT DALAM 3 HARI SAHAJA DENGAN RESIT.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

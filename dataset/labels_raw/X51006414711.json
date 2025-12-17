@@ -1,0 +1,849 @@
+[
+  {
+    "bbox": [
+      2239,
+      707,
+      2665,
+      769
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2199,
+      791,
+      2728,
+      855
+    ],
+    "text": "DOMINO'S PIZZA",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      1960,
+      896,
+      2957,
+      958
+    ],
+    "text": "GST REF NO : 001694261248",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1826,
+      995,
+      3065,
+      1061
+    ],
+    "text": "DOMINO'S PIZZA TAMAN UNIVERSITI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1731,
+      1090,
+      3170,
+      1165
+    ],
+    "text": "30, JLN KEBUDAYAAN 7, TMN UNIVERSITI",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2076,
+      1184,
+      2843,
+      1254
+    ],
+    "text": "81300 SKUDAI, JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1703,
+      1531,
+      2239,
+      1595
+    ],
+    "text": "CARRY OUT NOW",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2601,
+      1522,
+      3084,
+      1599
+    ],
+    "text": "PAY BY : CASH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1703,
+      1779,
+      1910,
+      1836
+    ],
+    "text": "ORDER",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2133,
+      1775,
+      2348,
+      1830
+    ],
+    "text": ": 8554",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2605,
+      1771,
+      2691,
+      1841
+    ],
+    "text": "BY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2810,
+      1766,
+      3012,
+      1825
+    ],
+    "text": ": 5586",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1700,
+      1867,
+      2504,
+      1937
+    ],
+    "text": "ORDER TIME : 13:14:55",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2592,
+      1861,
+      3170,
+      1925
+    ],
+    "text": "DATE : 28/04/18",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      1698,
+      2019,
+      2265,
+      2078
+    ],
+    "text": "NAME : MRS YUEN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1705,
+      2107,
+      2553,
+      2186
+    ],
+    "text": "PICKUP TIME : 13:29:55",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1700,
+      2287,
+      1821,
+      2353
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1854,
+      2285,
+      2023,
+      2344
+    ],
+    "text": "MENU",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2149,
+      2283,
+      2328,
+      2345
+    ],
+    "text": "DESC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2403,
+      2285,
+      2649,
+      2349
+    ],
+    "text": "COUPON",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2742,
+      2276,
+      2913,
+      2335
+    ],
+    "text": "DISC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      3010,
+      2274,
+      3223,
+      2333
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1722,
+      2419,
+      1773,
+      2476
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1859,
+      2421,
+      2028,
+      2480
+    ],
+    "text": "6\"HT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2111,
+      2417,
+      2258,
+      2485
+    ],
+    "text": "(KB)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2397,
+      2421,
+      2713,
+      2476
+    ],
+    "text": "LSF1-PSI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2990,
+      2408,
+      3197,
+      2472
+    ],
+    "text": "15.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1722,
+      2537,
+      1777,
+      2599
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1852,
+      2537,
+      2023,
+      2601
+    ],
+    "text": "6\"HT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2111,
+      2540,
+      2258,
+      2606
+    ],
+    "text": "(KB)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2395,
+      2537,
+      2711,
+      2596
+    ],
+    "text": "LSF1-PSI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2994,
+      2531,
+      3198,
+      2593
+    ],
+    "text": "15.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1727,
+      2660,
+      1771,
+      2715
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      1854,
+      2660,
+      2023,
+      2715
+    ],
+    "text": "CWAH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2392,
+      2654,
+      2708,
+      2713
+    ],
+    "text": "AOA1-ADI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2994,
+      2649,
+      3196,
+      2706
+    ],
+    "text": "14.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2735,
+      2825,
+      2937,
+      2880
+    ],
+    "text": "14.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2985,
+      2827,
+      3187,
+      2882
+    ],
+    "text": "45.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1685,
+      2948,
+      2140,
+      3007
+    ],
+    "text": "TOTAL ITEMS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2544,
+      2953,
+      2584,
+      2997
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1685,
+      3058,
+      2052,
+      3122
+    ],
+    "text": "SUB-TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2546,
+      3067,
+      2577,
+      3118
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2832,
+      3056,
+      3036,
+      3120
+    ],
+    "text": "45.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1685,
+      3179,
+      2291,
+      3247
+    ],
+    "text": "COUPON DISCOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2542,
+      3185,
+      2575,
+      3229
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2832,
+      3170,
+      3032,
+      3236
+    ],
+    "text": "14.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1681,
+      3293,
+      2125,
+      3352
+    ],
+    "text": "GRAND TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2537,
+      3297,
+      2574,
+      3345
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2821,
+      3291,
+      3032,
+      3353
+    ],
+    "text": "30.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      1674,
+      3416,
+      1964,
+      3480
+    ],
+    "text": "PAYMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2542,
+      3416,
+      2571,
+      3460
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2783,
+      3407,
+      3029,
+      3466
+    ],
+    "text": "101.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1676,
+      3528,
+      2085,
+      3596
+    ],
+    "text": "CHANGE DUE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2533,
+      3532,
+      2568,
+      3585
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2821,
+      3519,
+      3025,
+      3583
+    ],
+    "text": "70.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1683,
+      3642,
+      2327,
+      3701
+    ],
+    "text": "*6% GST INCLUDED",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2535,
+      3647,
+      2566,
+      3691
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2854,
+      3634,
+      3025,
+      3698
+    ],
+    "text": "1.75",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1817,
+      3825,
+      3008,
+      3893
+    ],
+    "text": "SUPPORT OUR SMILE CAMPAIGN : )",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2012,
+      3946,
+      2827,
+      4014
+    ],
+    "text": "DID WE SMILE AT YOU?",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2131,
+      4044,
+      2711,
+      4103
+    ],
+    "text": "LET US KNOW AT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1894,
+      4136,
+      2935,
+      4206
+    ],
+    "text": "WWW.DOMINOS.COM.MY/SMILE AND",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1716,
+      4237,
+      3151,
+      4307
+    ],
+    "text": "RECEIVE A 30% OFF SIDE ITEM E-COUPON",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1968,
+      4334,
+      2856,
+      4406
+    ],
+    "text": "UPON SURVEY SUBMISSION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1852,
+      4427,
+      2975,
+      4502
+    ],
+    "text": "SURVEY CODE : CBD280740855414",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1722,
+      4576,
+      2994,
+      4644
+    ],
+    "text": "THANK YOU FOR VISITING DOMINO'S.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1993,
+      4673,
+      2720,
+      4739
+    ],
+    "text": "PLEASE COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1852,
+      4780,
+      2858,
+      4842
+    ],
+    "text": "1 - 3 0 0 - 8 8 8 - 3 3 3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1990,
+      4875,
+      2717,
+      4945
+    ],
+    "text": "WWW.DOMINOS.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1676,
+      5037,
+      3023,
+      5105
+    ],
+    "text": "WE ARE COMPLIANT TO THE PDPA 2010.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1745,
+      5126,
+      2954,
+      5191
+    ],
+    "text": "VISIT WWW.DOMINOS.COM.MY/TERMS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1852,
+      5213,
+      2854,
+      5275
+    ],
+    "text": "TO VIEW OUR PERSONAL DATE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1988,
+      5287,
+      2704,
+      5359
+    ],
+    "text": "PROTECTION POLICY.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2181,
+      5420,
+      2511,
+      5495
+    ],
+    "text": "OWNED BY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1786,
+      5508,
+      2909,
+      5567
+    ],
+    "text": "DOMMAL FOOD SERVICES SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2023,
+      5598,
+      2680,
+      5664
+    ],
+    "text": "CO. NO. 419060-A",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      3082,
+      5595,
+      3130,
+      5654
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  }
+]

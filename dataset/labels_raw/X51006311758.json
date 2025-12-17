@@ -1,0 +1,739 @@
+[
+  {
+    "bbox": [
+      265,
+      235,
+      525,
+      271
+    ],
+    "text": "TONYMOLY VIVA CITY",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      224,
+      275,
+      550,
+      305
+    ],
+    "text": "(TONYMOLY SHOP (95874))",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      167,
+      314,
+      616,
+      344
+    ],
+    "text": "UNIT L1-044B, VIVACITY MEGAMALL,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      282,
+      349,
+      494,
+      381
+    ],
+    "text": "JALAN WAN ALWI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      225,
+      387,
+      547,
+      419
+    ],
+    "text": "93350 KUCHING, SARAWAK.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      112,
+      425,
+      412,
+      457
+    ],
+    "text": "GST ID : 000349356032",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      310,
+      535,
+      469,
+      569
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      113,
+      574,
+      226,
+      607
+    ],
+    "text": "TERMINAL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      341,
+      575,
+      413,
+      603
+    ],
+    "text": ": 880",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      613,
+      233,
+      643
+    ],
+    "text": "SALES NO.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      337,
+      611,
+      468,
+      641
+    ],
+    "text": ": 8807949",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      111,
+      650,
+      257,
+      679
+    ],
+    "text": "SALES DATE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      340,
+      646,
+      637,
+      677
+    ],
+    "text": ": 29/03/2018 20:37:46",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      113,
+      686,
+      172,
+      717
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      339,
+      686,
+      510,
+      717
+    ],
+    "text": ": THEN FIONA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      340,
+      760,
+      430,
+      786
+    ],
+    "text": ": CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      798,
+      188,
+      829
+    ],
+    "text": "POINT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      339,
+      796,
+      385,
+      822
+    ],
+    "text": ": 0",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      113,
+      869,
+      583,
+      900
+    ],
+    "text": "EGG PORE BLACKHEAD STEAM BALM2EAC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      610,
+      870,
+      663,
+      901
+    ],
+    "text": "[SR]",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      906,
+      258,
+      938
+    ],
+    "text": "SS04018600",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      412,
+      906,
+      541,
+      939
+    ],
+    "text": "1 * 55.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      590,
+      906,
+      668,
+      937
+    ],
+    "text": "55.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      113,
+      947,
+      274,
+      976
+    ],
+    "text": "DISC 10.00%",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      565,
+      941,
+      639,
+      974
+    ],
+    "text": "-5.59",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      111,
+      981,
+      582,
+      1013
+    ],
+    "text": "EGG PORE TIGHTENING COOLING PA30G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      113,
+      1017,
+      261,
+      1049
+    ],
+    "text": "SS04017600",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      411,
+      1015,
+      541,
+      1049
+    ],
+    "text": "1 * 55.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      593,
+      1014,
+      666,
+      1047
+    ],
+    "text": "55.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      111,
+      1056,
+      271,
+      1087
+    ],
+    "text": "DISC 10.00%",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      566,
+      1051,
+      640,
+      1083
+    ],
+    "text": "-5.59",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      113,
+      1095,
+      285,
+      1124
+    ],
+    "text": "DISCOUNT 10%",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      533,
+      1089,
+      580,
+      1123
+    ],
+    "text": "EAC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      607,
+      1090,
+      666,
+      1127
+    ],
+    "text": "[ZR]",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      1131,
+      189,
+      1163
+    ],
+    "text": "DIS10",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      409,
+      1129,
+      528,
+      1161
+    ],
+    "text": "1 * 0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      607,
+      1130,
+      665,
+      1158
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      114,
+      1207,
+      264,
+      1235
+    ],
+    "text": "ITEM COUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      649,
+      1201,
+      669,
+      1233
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      116,
+      1242,
+      410,
+      1271
+    ],
+    "text": "TOTAL SALES INCL. GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      578,
+      1240,
+      665,
+      1272
+    ],
+    "text": "100.62",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      111,
+      1280,
+      390,
+      1310
+    ],
+    "text": "ROUNDING ADJUSTMENT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      596,
+      1279,
+      667,
+      1306
+    ],
+    "text": "-0.02",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      113,
+      1318,
+      398,
+      1347
+    ],
+    "text": "TOTAL AFTER ROUNDING",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      580,
+      1314,
+      666,
+      1344
+    ],
+    "text": "100.60",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      115,
+      1394,
+      172,
+      1420
+    ],
+    "text": "VISA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      581,
+      1389,
+      667,
+      1421
+    ],
+    "text": "100.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      113,
+      1431,
+      214,
+      1460
+    ],
+    "text": "CARD NO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      435,
+      1429,
+      666,
+      1458
+    ],
+    "text": "46 XXXXXXXX 1819",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      114,
+      1467,
+      243,
+      1496
+    ],
+    "text": "APP. CODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      463,
+      1463,
+      668,
+      1494
+    ],
+    "text": "A0000000031010",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      114,
+      1502,
+      342,
+      1532
+    ],
+    "text": "46 XXXXXXXX 1819",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      111,
+      1657,
+      271,
+      1687
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      321,
+      1653,
+      465,
+      1684
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      566,
+      1654,
+      667,
+      1686
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      112,
+      1733,
+      213,
+      1760
+    ],
+    "text": "SR = 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      395,
+      1731,
+      468,
+      1759
+    ],
+    "text": "94.92",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      609,
+      1731,
+      670,
+      1760
+    ],
+    "text": "5.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      112,
+      1770,
+      214,
+      1798
+    ],
+    "text": "ZR = 0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      407,
+      1772,
+      469,
+      1798
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      609,
+      1771,
+      669,
+      1799
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      112,
+      1847,
+      456,
+      1877
+    ],
+    "text": "TOTAL PROMOTIONAL SAVING",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      595,
+      1845,
+      670,
+      1873
+    ],
+    "text": "11.18",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      111,
+      1882,
+      556,
+      1911
+    ],
+    "text": "PRINTED ON: 29-03-2018 20:38:07",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      343,
+      1991,
+      469,
+      2020
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      268,
+      2027,
+      514,
+      2053
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      608,
+      979,
+      666,
+      1012
+    ],
+    "text": "[SR]",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

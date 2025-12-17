@@ -1,0 +1,508 @@
+[
+  {
+    "bbox": [
+      60,
+      246,
+      445,
+      281
+    ],
+    "text": "SUN WONG KUT SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      58,
+      283,
+      424,
+      322
+    ],
+    "text": "COMPANY NO: 20965-W",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      59,
+      321,
+      250,
+      352
+    ],
+    "text": "SITE: 1046",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      355,
+      437,
+      390
+    ],
+    "text": "176 JLN SUNGEI BESI,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      393,
+      415,
+      423
+    ],
+    "text": "57100 KUALA LUMPUR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      56,
+      429,
+      467,
+      467
+    ],
+    "text": "TELEPHONE: 03-9221345",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      58,
+      465,
+      444,
+      501
+    ],
+    "text": "GST NO: 001580630016",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      60,
+      573,
+      579,
+      609
+    ],
+    "text": "INVOICE NUMBER 60000483942",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      134,
+      645,
+      229,
+      681
+    ],
+    "text": "39.54",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      133,
+      641,
+      540,
+      685
+    ],
+    "text": "39.54 LITRE PUMP # 07",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      57,
+      678,
+      272,
+      715
+    ],
+    "text": "FUEL SAVE 95",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      347,
+      683,
+      386,
+      714
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      445,
+      684,
+      577,
+      719
+    ],
+    "text": "88.17 C",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      138,
+      718,
+      233,
+      749
+    ],
+    "text": "2.230",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      269,
+      716,
+      310,
+      750
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      347,
+      720,
+      365,
+      749
+    ],
+    "text": "/",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      389,
+      721,
+      481,
+      750
+    ],
+    "text": "LITRE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      751,
+      149,
+      787
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      349,
+      757,
+      385,
+      786
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      446,
+      756,
+      538,
+      789
+    ],
+    "text": "88.17",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      61,
+      789,
+      138,
+      824
+    ],
+    "text": "VISA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      348,
+      792,
+      386,
+      822
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      446,
+      791,
+      538,
+      822
+    ],
+    "text": "88.17",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      60,
+      827,
+      249,
+      861
+    ],
+    "text": "RELIEF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      307,
+      829,
+      331,
+      856
+    ],
+    "text": "C",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      348,
+      828,
+      385,
+      859
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      462,
+      828,
+      543,
+      857
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      61,
+      860,
+      271,
+      897
+    ],
+    "text": "TOTAL GROSS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      309,
+      865,
+      328,
+      892
+    ],
+    "text": "C",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      347,
+      861,
+      385,
+      895
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      443,
+      863,
+      537,
+      894
+    ],
+    "text": "88.17",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      55,
+      930,
+      405,
+      969
+    ],
+    "text": "SHELL LOYALTY CARD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      968,
+      370,
+      1002
+    ],
+    "text": "6018840059147765",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      59,
+      1004,
+      406,
+      1037
+    ],
+    "text": "POINTS AWARDED: 39",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      59,
+      1145,
+      136,
+      1176
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      234,
+      1146,
+      308,
+      1177
+    ],
+    "text": "TIME",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      346,
+      1147,
+      405,
+      1178
+    ],
+    "text": "NUN",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      464,
+      1145,
+      517,
+      1179
+    ],
+    "text": "OPT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1183,
+      211,
+      1214
+    ],
+    "text": "21/02/18",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      236,
+      1185,
+      325,
+      1216
+    ],
+    "text": "11:19",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      350,
+      1186,
+      500,
+      1216
+    ],
+    "text": "40278 07",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      57,
+      1289,
+      461,
+      1325
+    ],
+    "text": "DIESEL & PETROL RON95",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      59,
+      1325,
+      559,
+      1364
+    ],
+    "text": "GIVEN RELIEF UNDER SECTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      1361,
+      503,
+      1397
+    ],
+    "text": "56 (3) (B) GST ACT 2014",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      61,
+      1433,
+      234,
+      1471
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      1468,
+      386,
+      1511
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

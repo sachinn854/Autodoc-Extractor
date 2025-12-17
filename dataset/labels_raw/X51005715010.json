@@ -1,0 +1,618 @@
+[
+  {
+    "bbox": [
+      205,
+      31,
+      460,
+      79
+    ],
+    "text": "3-1708032",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      156,
+      135,
+      477,
+      180
+    ],
+    "text": "WATSONS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      71,
+      205,
+      516,
+      233
+    ],
+    "text": "WATSON'S PERSONAL CARE STORES SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      148,
+      233,
+      440,
+      260
+    ],
+    "text": "COMPANY REG NO.: 28982V",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      149,
+      259,
+      445,
+      290
+    ],
+    "text": "GST REG NO. 000947339264",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      155,
+      285,
+      446,
+      317
+    ],
+    "text": "USJ SUMMIT, SUBANG (SS)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      53,
+      340,
+      333,
+      365
+    ],
+    "text": "22241 WS CUT SCUSSORS",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      427,
+      341,
+      494,
+      366
+    ],
+    "text": "18.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      505,
+      336,
+      529,
+      369
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      61,
+      365,
+      352,
+      390
+    ],
+    "text": "64542 QVS TEMPO TWEEZER",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      429,
+      365,
+      488,
+      393
+    ],
+    "text": "17.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      508,
+      369,
+      529,
+      393
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      396,
+      367,
+      420
+    ],
+    "text": "21434 WS BABY WIPES FRAG",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      431,
+      391,
+      491,
+      419
+    ],
+    "text": "7.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      506,
+      391,
+      531,
+      418
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      93,
+      417,
+      320,
+      445
+    ],
+    "text": "PWP LESS 30% MAR 18",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      428,
+      423,
+      496,
+      446
+    ],
+    "text": "-2.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      53,
+      444,
+      312,
+      472
+    ],
+    "text": "95448 WATSONS BASKET",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      440,
+      447,
+      487,
+      472
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      501,
+      439,
+      528,
+      475
+    ],
+    "text": "Z",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      109,
+      496,
+      329,
+      525
+    ],
+    "text": "SUBTOTAL (QTY 4)",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      403,
+      497,
+      495,
+      526
+    ],
+    "text": "RM41.43",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      108,
+      525,
+      208,
+      554
+    ],
+    "text": "ROUNDING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      107,
+      577,
+      326,
+      608
+    ],
+    "text": "SUBTOTAL (QTY 4)",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      400,
+      576,
+      495,
+      604
+    ],
+    "text": "RM41.45",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      101,
+      605,
+      165,
+      632
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      403,
+      606,
+      496,
+      633
+    ],
+    "text": "RM51.50",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      104,
+      632,
+      247,
+      665
+    ],
+    "text": "CHANGE CASH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      401,
+      633,
+      486,
+      660
+    ],
+    "text": "RN10.05",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      225,
+      712,
+      360,
+      739
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      52,
+      744,
+      111,
+      771
+    ],
+    "text": "RATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      195,
+      742,
+      280,
+      766
+    ],
+    "text": "NET(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      307,
+      740,
+      392,
+      769
+    ],
+    "text": "GST(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      428,
+      737,
+      541,
+      770
+    ],
+    "text": "TOTAL(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      59,
+      769,
+      80,
+      794
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      97,
+      768,
+      161,
+      793
+    ],
+    "text": "6.00%",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      188,
+      768,
+      251,
+      791
+    ],
+    "text": "39.09",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      309,
+      766,
+      356,
+      791
+    ],
+    "text": "2.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      424,
+      764,
+      493,
+      789
+    ],
+    "text": "41.43",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      247,
+      896,
+      359,
+      927
+    ],
+    "text": "STATEMENT",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      68,
+      946,
+      291,
+      983
+    ],
+    "text": "LOYALTY ACC.NUMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      368,
+      950,
+      483,
+      977
+    ],
+    "text": "9926016**",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      73,
+      981,
+      213,
+      1008
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      370,
+      980,
+      513,
+      1005
+    ],
+    "text": "TOTAL POINTS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      68,
+      1009,
+      261,
+      1037
+    ],
+    "text": "OPENING BALANCE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      437,
+      1006,
+      488,
+      1031
+    ],
+    "text": "2264",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      73,
+      1032,
+      230,
+      1059
+    ],
+    "text": "EARNED POINTS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      457,
+      1033,
+      500,
+      1057
+    ],
+    "text": "43",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      72,
+      1061,
+      260,
+      1089
+    ],
+    "text": "CLOSING BALANCE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      437,
+      1058,
+      486,
+      1083
+    ],
+    "text": "2307",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      62,
+      1191,
+      193,
+      1217
+    ],
+    "text": "00440010036",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      207,
+      1192,
+      299,
+      1215
+    ],
+    "text": "25032018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      315,
+      1190,
+      406,
+      1216
+    ],
+    "text": "13:11:54",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      415,
+      1191,
+      466,
+      1216
+    ],
+    "text": "0003",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      479,
+      1189,
+      510,
+      1220
+    ],
+    "text": "IKA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      415,
+      527,
+      487,
+      554
+    ],
+    "text": "RM0.02",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

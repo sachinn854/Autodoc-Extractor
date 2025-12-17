@@ -1,0 +1,640 @@
+[
+  {
+    "bbox": [
+      72,
+      198,
+      503,
+      227
+    ],
+    "text": "AIK HUAT HARDWARE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      72,
+      224,
+      502,
+      252
+    ],
+    "text": "ENTERPRISE (SETIA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      125,
+      251,
+      454,
+      277
+    ],
+    "text": "ALAM) SDN BHD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      234,
+      275,
+      342,
+      299
+    ],
+    "text": "822737-X",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      115,
+      297,
+      462,
+      325
+    ],
+    "text": "NO. 17-G, JALAN SETIA INDAH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      147,
+      326,
+      427,
+      353
+    ],
+    "text": "(X) U13/X, SETIA ALAM,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      104,
+      350,
+      469,
+      377
+    ],
+    "text": "SEKSYEN U13, 40170 SHAH ALAM,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      52,
+      373,
+      518,
+      402
+    ],
+    "text": "TEL: 012 - 6651783 FAX: 03 - 33623608",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      157,
+      401,
+      417,
+      427
+    ],
+    "text": "GST NO: 000394528768",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      149,
+      453,
+      432,
+      497
+    ],
+    "text": "SIMPLIFIED TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      29,
+      548,
+      90,
+      571
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      32,
+      598,
+      512,
+      625
+    ],
+    "text": "RECEIPT #: CSP0382398 DATE: 30/03/2017",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      29,
+      621,
+      274,
+      649
+    ],
+    "text": "SALESPERSON : AH002",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      305,
+      624,
+      489,
+      648
+    ],
+    "text": "TIME: 16:44:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      32,
+      672,
+      90,
+      695
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      252,
+      672,
+      298,
+      698
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      352,
+      673,
+      396,
+      700
+    ],
+    "text": "U/P",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      429,
+      676,
+      512,
+      700
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      346,
+      699,
+      395,
+      725
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      456,
+      700,
+      507,
+      727
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      32,
+      725,
+      198,
+      749
+    ],
+    "text": "6521000000008",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      256,
+      727,
+      274,
+      751
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      343,
+      729,
+      401,
+      751
+    ],
+    "text": "6.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      457,
+      727,
+      511,
+      750
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      520,
+      726,
+      535,
+      750
+    ],
+    "text": "S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      29,
+      748,
+      449,
+      777
+    ],
+    "text": "8\" X 3.6MM(100PCS)BLACK CABLE TIES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      31,
+      796,
+      212,
+      823
+    ],
+    "text": "TOTAL QUANTITY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      341,
+      799,
+      361,
+      823
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      220,
+      872,
+      413,
+      900
+    ],
+    "text": "SUB-TOTAL (GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      296,
+      896,
+      348,
+      920
+    ],
+    "text": "DISC",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      297,
+      921,
+      401,
+      949
+    ],
+    "text": "ROUNDING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      59,
+      942,
+      186,
+      970
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      969,
+      163,
+      996
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      59,
+      995,
+      215,
+      1023
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      484,
+      876,
+      536,
+      897
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      484,
+      901,
+      537,
+      920
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      484,
+      926,
+      537,
+      946
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      437,
+      950,
+      534,
+      971
+    ],
+    "text": "6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      412,
+      973,
+      537,
+      999
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      414,
+      999,
+      538,
+      1023
+    ],
+    "text": "14.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      113,
+      1045,
+      452,
+      1074
+    ],
+    "text": "*GST @ 6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      210,
+      1093,
+      352,
+      1122
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      40,
+      1145,
+      94,
+      1168
+    ],
+    "text": "CODE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      237,
+      1145,
+      319,
+      1171
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      370,
+      1143,
+      396,
+      1171
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      435,
+      1143,
+      528,
+      1172
+    ],
+    "text": "TAX/AMT",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      38,
+      1192,
+      69,
+      1219
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      262,
+      1195,
+      315,
+      1219
+    ],
+    "text": "5.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      373,
+      1198,
+      393,
+      1221
+    ],
+    "text": "6",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      475,
+      1196,
+      525,
+      1221
+    ],
+    "text": "0.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      274,
+      1268,
+      399,
+      1296
+    ],
+    "text": "TAX TOTAL:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      475,
+      1268,
+      531,
+      1296
+    ],
+    "text": "0.34",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      96,
+      1371,
+      469,
+      1395
+    ],
+    "text": "GOODS SOLD ARE NOT REFUNDABLE,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      124,
+      1394,
+      443,
+      1420
+    ],
+    "text": "THANK YOU FOR CHOOSING US.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      1419,
+      507,
+      1443
+    ],
+    "text": "PLS PROVIDE ORIGINAL BILL FOR GOODS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      32,
+      1442,
+      530,
+      1465
+    ],
+    "text": "EXCHANGE WITHIN 1 WEEK FROM TRANSACTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      46,
+      1466,
+      515,
+      1490
+    ],
+    "text": "GOODS MUST BE IN ORIGINAL STATE TO BE",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      146,
+      1489,
+      417,
+      1515
+    ],
+    "text": "ENTITLED FOR EXCHANGE.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

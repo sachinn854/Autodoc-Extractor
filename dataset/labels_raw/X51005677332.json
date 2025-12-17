@@ -1,0 +1,552 @@
+[
+  {
+    "bbox": [
+      92,
+      205,
+      843,
+      256
+    ],
+    "text": "SYARIKAT PERNIAGAAN GIN KEE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      386,
+      269,
+      559,
+      307
+    ],
+    "text": "(81109-A)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      241,
+      312,
+      687,
+      348
+    ],
+    "text": "NO 290, JALAN AIR PANAS,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      386,
+      361,
+      557,
+      399
+    ],
+    "text": "STAPAK,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      271,
+      410,
+      662,
+      442
+    ],
+    "text": "53200, KUALA LUMPUR,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      318,
+      452,
+      619,
+      490
+    ],
+    "text": "TEL : 03-40210276",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      282,
+      512,
+      651,
+      548
+    ],
+    "text": "GST ID : 000750673920",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      237,
+      559,
+      698,
+      597
+    ],
+    "text": "SIMPLIFIED TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      45,
+      630,
+      150,
+      671
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      45,
+      689,
+      173,
+      727
+    ],
+    "text": "DOC NO.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      260,
+      685,
+      505,
+      723
+    ],
+    "text": ": CS00012693",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      561,
+      687,
+      849,
+      725
+    ],
+    "text": "DATE: 12/01/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      36,
+      741,
+      179,
+      777
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      260,
+      741,
+      405,
+      775
+    ],
+    "text": ": USER",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      561,
+      734,
+      813,
+      775
+    ],
+    "text": "TIME: 13:02:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      787,
+      284,
+      828
+    ],
+    "text": "SALESPERSON :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      104,
+      1774,
+      829,
+      1809
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      559,
+      783,
+      653,
+      821
+    ],
+    "text": "REF. :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      873,
+      119,
+      909
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      344,
+      873,
+      404,
+      918
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      467,
+      873,
+      591,
+      911
+    ],
+    "text": "S/PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      632,
+      869,
+      775,
+      916
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      798,
+      877,
+      866,
+      911
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      45,
+      926,
+      139,
+      956
+    ],
+    "text": "3843",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      361,
+      920,
+      391,
+      963
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      493,
+      920,
+      574,
+      956
+    ],
+    "text": "7.95",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      692,
+      922,
+      769,
+      963
+    ],
+    "text": "7.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      803,
+      924,
+      867,
+      954
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      45,
+      965,
+      562,
+      1008
+    ],
+    "text": "1 1/2\" SANCORA PAINT BRUSH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      137,
+      1016,
+      284,
+      1059
+    ],
+    "text": "TOTAL QTY:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      361,
+      1018,
+      391,
+      1052
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      692,
+      1016,
+      769,
+      1052
+    ],
+    "text": "7.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      137,
+      1084,
+      592,
+      1131
+    ],
+    "text": "TOTAL SALES (EXCLUDING GST) :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      694,
+      1091,
+      771,
+      1129
+    ],
+    "text": "7.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      423,
+      1142,
+      594,
+      1183
+    ],
+    "text": "DISCOUNT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      692,
+      1142,
+      769,
+      1180
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      401,
+      1197,
+      597,
+      1238
+    ],
+    "text": "TOTAL GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      692,
+      1195,
+      771,
+      1231
+    ],
+    "text": "0.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      414,
+      1244,
+      593,
+      1291
+    ],
+    "text": "ROUNDING :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      696,
+      1253,
+      766,
+      1291
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      68,
+      1311,
+      595,
+      1352
+    ],
+    "text": "TOTAL SALES (INCLUSIVE OF GST) :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      681,
+      1308,
+      764,
+      1353
+    ],
+    "text": "7.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      450,
+      1372,
+      597,
+      1402
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      689,
+      1364,
+      770,
+      1405
+    ],
+    "text": "7.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      450,
+      1571,
+      621,
+      1614
+    ],
+    "text": "AMT (RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      672,
+      1575,
+      834,
+      1609
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      540,
+      1620,
+      632,
+      1658
+    ],
+    "text": "7.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      738,
+      1616,
+      828,
+      1657
+    ],
+    "text": "0.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      540,
+      1675,
+      619,
+      1718
+    ],
+    "text": "7.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      743,
+      1682,
+      828,
+      1720
+    ],
+    "text": "0.45",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

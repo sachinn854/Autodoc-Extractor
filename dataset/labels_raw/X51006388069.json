@@ -1,0 +1,640 @@
+[
+  {
+    "bbox": [
+      138,
+      226,
+      542,
+      259
+    ],
+    "text": "SEGI CASH & CARRY SDN. BHD.",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      151,
+      267,
+      534,
+      298
+    ],
+    "text": "PT17920 SEK U9, SHAH ALAM",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      152,
+      306,
+      533,
+      341
+    ],
+    "text": "GST REG NO : 001951645696",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      243,
+      378,
+      479,
+      429
+    ],
+    "text": "POSTED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      426,
+      197,
+      456
+    ],
+    "text": "INVOICE NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      242,
+      427,
+      350,
+      456
+    ],
+    "text": ": 34867",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      427,
+      986,
+      563,
+      1016
+    ],
+    "text": "- 100X20G",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      468,
+      107,
+      496
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      243,
+      468,
+      564,
+      501
+    ],
+    "text": ": 25 MAY 2017 09:41AM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      274,
+      1589,
+      443,
+      1623
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      509,
+      153,
+      537
+    ],
+    "text": "COUNTER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      247,
+      510,
+      307,
+      536
+    ],
+    "text": ": 09",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      48,
+      1629,
+      169,
+      1659
+    ],
+    "text": "GST CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      586,
+      580,
+      616
+    ],
+    "text": "MFM ROSES ALL PURPOSE FLOUR 12X850G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      49,
+      667,
+      364,
+      697
+    ],
+    "text": "TLC SOTONG SAUCE 725G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      47,
+      747,
+      333,
+      778
+    ],
+    "text": "TLC FISH SAUCE 725G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      45,
+      826,
+      411,
+      856
+    ],
+    "text": "ROYAL BAKING POWDER 450G",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      45,
+      908,
+      590,
+      936
+    ],
+    "text": "KUAT HARIMAU BLEACH LEMON TP 2X900ML",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      49,
+      988,
+      393,
+      1016
+    ],
+    "text": "INDOCAFE COFFEEMIX 3IN1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      47,
+      1069,
+      167,
+      1096
+    ],
+    "text": "UDANG XL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      47,
+      1149,
+      275,
+      1177
+    ],
+    "text": "BURUNG PUYUH PC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      628,
+      184,
+      656
+    ],
+    "text": "1 X 18.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      708,
+      168,
+      738
+    ],
+    "text": "1 X 2.69",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      789,
+      168,
+      816
+    ],
+    "text": "1 X 2.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      869,
+      182,
+      897
+    ],
+    "text": "2 X 11.69",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      45,
+      948,
+      364,
+      983
+    ],
+    "text": "2 X 5.51 (DISC: 1.53)",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1029,
+      184,
+      1058
+    ],
+    "text": "1 X 33.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      47,
+      1109,
+      246,
+      1138
+    ],
+    "text": "0.434 X 39.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      49,
+      1187,
+      169,
+      1217
+    ],
+    "text": "4 X 2.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      550,
+      624,
+      653,
+      653
+    ],
+    "text": "18.60 Z",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      561,
+      705,
+      654,
+      734
+    ],
+    "text": "2.69 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      564,
+      786,
+      653,
+      816
+    ],
+    "text": "2.70 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      547,
+      865,
+      653,
+      895
+    ],
+    "text": "23.38 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      562,
+      946,
+      653,
+      974
+    ],
+    "text": "7.96 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      545,
+      1026,
+      653,
+      1056
+    ],
+    "text": "33.90 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      548,
+      1107,
+      656,
+      1135
+    ],
+    "text": "17.32 Z",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      550,
+      1185,
+      654,
+      1215
+    ],
+    "text": "11.80 S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      365,
+      1631,
+      519,
+      1665
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      551,
+      1630,
+      655,
+      1663
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      1668,
+      153,
+      1698
+    ],
+    "text": "Z @0.0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      1710,
+      154,
+      1739
+    ],
+    "text": "S @6.0%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      443,
+      1670,
+      522,
+      1701
+    ],
+    "text": "35.92",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      447,
+      1712,
+      520,
+      1739
+    ],
+    "text": "77.76",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      596,
+      1670,
+      660,
+      1700
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      597,
+      1710,
+      658,
+      1740
+    ],
+    "text": "4.67",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      46,
+      1268,
+      274,
+      1297
+    ],
+    "text": "NO OF ITEMS: 10",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      229,
+      1307,
+      503,
+      1339
+    ],
+    "text": "TOTAL INCL. GST:RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      136,
+      1349,
+      500,
+      1378
+    ],
+    "text": "MASTER XXXXXXXXXXXX0000:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      365,
+      1388,
+      503,
+      1421
+    ],
+    "text": "CHANGE:RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      350,
+      1429,
+      506,
+      1462
+    ],
+    "text": "SAVINGS:RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      564,
+      1309,
+      656,
+      1335
+    ],
+    "text": "118.35",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      565,
+      1348,
+      657,
+      1376
+    ],
+    "text": "118.35",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      594,
+      1389,
+      656,
+      1415
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      597,
+      1429,
+      656,
+      1457
+    ],
+    "text": "3.06",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      1471,
+      397,
+      1504
+    ],
+    "text": "MISSED POINT TODAY: 113",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      46,
+      1509,
+      367,
+      1545
+    ],
+    "text": "SERVED BY ASHOK KUMAR",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      154,
+      1832,
+      534,
+      1862
+    ],
+    "text": "REF NO: 00600736354034867",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      94,
+      1869,
+      597,
+      1904
+    ],
+    "text": "GOODS SOLD ARE NOT RETURNABLE. TQ",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

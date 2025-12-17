@@ -1,0 +1,431 @@
+[
+  {
+    "bbox": [
+      1572,
+      1390,
+      2906,
+      1485
+    ],
+    "text": "UNIHAKKA INTERNATIONAL SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      1996,
+      1482,
+      2492,
+      1551
+    ],
+    "text": "14 MAY 2018 18:10",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2078,
+      1560,
+      2414,
+      1642
+    ],
+    "text": "(867388-U)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1666,
+      1639,
+      2807,
+      1716
+    ],
+    "text": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1790,
+      1726,
+      2668,
+      1799
+    ],
+    "text": "TAMPOI,81200 JOHOR BAHRU,JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2036,
+      1813,
+      2412,
+      1873
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1498,
+      1884,
+      2316,
+      1951
+    ],
+    "text": "INVOICE # : OR18051402170467",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1493,
+      1997,
+      1619,
+      2063
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1497,
+      2095,
+      2445,
+      2177
+    ],
+    "text": "SR I00100000035- 1 MEAT + 3 VEGE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1488,
+      2182,
+      1644,
+      2249
+    ],
+    "text": "$7.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1492,
+      2292,
+      2273,
+      2374
+    ],
+    "text": "SR I00100000065-ADD MEATS",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1486,
+      2397,
+      1637,
+      2463
+    ],
+    "text": "$0.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2405,
+      2555,
+      2960,
+      2628
+    ],
+    "text": "TOTAL AMOUNT: $8.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      2476,
+      2631,
+      2944,
+      2717
+    ],
+    "text": "GST @6%: $0.50",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2505,
+      2729,
+      2939,
+      2792
+    ],
+    "text": "NETT TOTAL: $8.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      1470,
+      2821,
+      1873,
+      2896
+    ],
+    "text": "PAYMENT MODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1475,
+      2919,
+      1647,
+      2985
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1470,
+      3004,
+      1688,
+      3077
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1470,
+      3205,
+      1809,
+      3269
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1465,
+      3292,
+      1811,
+      3356
+    ],
+    "text": "SR = GST @6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1828,
+      3421,
+      2537,
+      3493
+    ],
+    "text": "GST REG #000656195584",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1705,
+      3499,
+      2696,
+      3581
+    ],
+    "text": "BAR WANG RICE@PERMAS JAYA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1853,
+      3587,
+      2503,
+      3669
+    ],
+    "text": "(PRICE INCLUSIVE OF GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1832,
+      3668,
+      2555,
+      3754
+    ],
+    "text": "THANK YOU & COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1741,
+      3756,
+      2614,
+      3825
+    ],
+    "text": "LIKE AND FOLLOW US ON FACEBOOK!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1790,
+      3837,
+      2552,
+      3929
+    ],
+    "text": "FACEBOOK COM/BARWANGRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1962,
+      2006,
+      2063,
+      2081
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2819,
+      2017,
+      2956,
+      2076
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1958,
+      2189,
+      1994,
+      2255
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2796,
+      2198,
+      2952,
+      2267
+    ],
+    "text": "$7.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1953,
+      2406,
+      1992,
+      2468
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2789,
+      2420,
+      2947,
+      2482
+    ],
+    "text": "$1.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2722,
+      2848,
+      2935,
+      2910
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2777,
+      2942,
+      2928,
+      3001
+    ],
+    "text": "$8.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2773,
+      3020,
+      2929,
+      3087
+    ],
+    "text": "$0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2218,
+      3219,
+      2445,
+      3281
+    ],
+    "text": "AMOUNT($)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2771,
+      3224,
+      2924,
+      3288
+    ],
+    "text": "TAX($)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2349,
+      3311,
+      2448,
+      3366
+    ],
+    "text": "8.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2821,
+      3324,
+      2926,
+      3375
+    ],
+    "text": "0.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

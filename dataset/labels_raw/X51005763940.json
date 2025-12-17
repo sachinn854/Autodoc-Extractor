@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      237,
+      111,
+      470,
+      152
+    ],
+    "text": "HARVEY NORMAN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      20,
+      224,
+      485,
+      259
+    ],
+    "text": "HARVEY NORMAN M'SIA PARADIGM MALL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      21,
+      263,
+      555,
+      299
+    ],
+    "text": "ELITETRAX MARKETING SDN BHD (616227-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      20,
+      301,
+      512,
+      337
+    ],
+    "text": "LOT 1F-01&02,1ST FLR,PARADIGM MALL,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      20,
+      339,
+      314,
+      375
+    ],
+    "text": "NO. 1 JALAN SS 7/26A,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      21,
+      377,
+      187,
+      412
+    ],
+    "text": "KELANA JAYA,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      21,
+      416,
+      290,
+      451
+    ],
+    "text": "47301 PETALING JAYA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      21,
+      453,
+      569,
+      485
+    ],
+    "text": "TEL: 1300-88-5200 (HN CUSTOMER SERVICE)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      21,
+      492,
+      388,
+      521
+    ],
+    "text": "GST REG. NO : 000551006208",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      192,
+      532,
+      388,
+      562
+    ],
+    "text": "** ORIGINAL **",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      20,
+      566,
+      558,
+      600
+    ],
+    "text": "YOU WERE SERVED BY SALESMAN: CHI CHERN",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      34,
+      643,
+      134,
+      669
+    ],
+    "text": "6005283",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      35,
+      681,
+      290,
+      708
+    ],
+    "text": "CANON CART PG-47BK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      77,
+      719,
+      135,
+      744
+    ],
+    "text": "2 *",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      262,
+      720,
+      334,
+      745
+    ],
+    "text": "30.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      471,
+      716,
+      585,
+      745
+    ],
+    "text": "60.00 S6",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      36,
+      793,
+      275,
+      820
+    ],
+    "text": "TOTAL INCL.OF GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      474,
+      792,
+      545,
+      819
+    ],
+    "text": "60.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      36,
+      868,
+      201,
+      895
+    ],
+    "text": "UOB TERMINAL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      288,
+      868,
+      319,
+      893
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      472,
+      868,
+      544,
+      892
+    ],
+    "text": "60.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      64,
+      905,
+      162,
+      932
+    ],
+    "text": "CARD NO",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      248,
+      904,
+      500,
+      931
+    ],
+    "text": ": ************9014",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      64,
+      943,
+      190,
+      969
+    ],
+    "text": "AUTH CODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      251,
+      942,
+      360,
+      968
+    ],
+    "text": ": R13299",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      34,
+      1017,
+      229,
+      1043
+    ],
+    "text": "GST INCLUSIVE:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      303,
+      1016,
+      442,
+      1043
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      485,
+      1015,
+      582,
+      1044
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      34,
+      1055,
+      246,
+      1081
+    ],
+    "text": "S6 = 6.00 % OF",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      374,
+      1053,
+      445,
+      1078
+    ],
+    "text": "60.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      528,
+      1051,
+      587,
+      1078
+    ],
+    "text": "3.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      35,
+      1129,
+      93,
+      1155
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      162,
+      1130,
+      220,
+      1154
+    ],
+    "text": "TIME",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      260,
+      1127,
+      346,
+      1153
+    ],
+    "text": "BRANCH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      373,
+      1127,
+      418,
+      1152
+    ],
+    "text": "POS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      471,
+      1126,
+      574,
+      1152
+    ],
+    "text": "TRANSAC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      38,
+      1166,
+      233,
+      1191
+    ],
+    "text": "11.02.18 14:08",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      288,
+      1165,
+      346,
+      1190
+    ],
+    "text": "2007",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      399,
+      1163,
+      419,
+      1189
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      488,
+      1165,
+      557,
+      1187
+    ],
+    "text": "24409",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      36,
+      1203,
+      177,
+      1230
+    ],
+    "text": "SALESMANID",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      219,
+      1201,
+      345,
+      1227
+    ],
+    "text": "CASHIER ID",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      401,
+      1200,
+      558,
+      1226
+    ],
+    "text": "CASHIERNAME",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      77,
+      1240,
+      162,
+      1266
+    ],
+    "text": "803216",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      261,
+      1239,
+      347,
+      1263
+    ],
+    "text": "801817",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      400,
+      1237,
+      544,
+      1262
+    ],
+    "text": "NORSHAFIKA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      61,
+      1312,
+      544,
+      1343
+    ],
+    "text": "USE THIS CODE : WELCOME20 TO ENJOY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      62,
+      1350,
+      442,
+      1380
+    ],
+    "text": "RM 20 DISCOUNT ONLINE NOW !",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      20,
+      1424,
+      554,
+      1457
+    ],
+    "text": "SHOP WITH CONFIDENCE AT HARVEY NORMAN.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      19,
+      1461,
+      498,
+      1494
+    ],
+    "text": "KEEP RECEIPT AS PROOF OF PURCHASE.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      18,
+      1498,
+      487,
+      1529
+    ],
+    "text": "VISIT WWW.HARVEYNORMAN.COM.MY FOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      21,
+      1537,
+      399,
+      1567
+    ],
+    "text": "MORE PROMOTIONS AND OFFERS.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      56,
+      1658,
+      649,
+      1688
+    ],
+    "text": "660002007000020024409120180211140759",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  }
+]

@@ -1,0 +1,431 @@
+[
+  {
+    "bbox": [
+      379,
+      262,
+      588,
+      283
+    ],
+    "text": "AEON CO. (M) BHD (126926-H)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      372,
+      286,
+      597,
+      304
+    ],
+    "text": "3RD FLR, AEON TAMAN MALURI SC",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      387,
+      308,
+      572,
+      326
+    ],
+    "text": "JLN JEJAKA, TAMAN MALURI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      379,
+      329,
+      582,
+      349
+    ],
+    "text": "CHERAS, 55100 KUALA LUMPUR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      402,
+      351,
+      565,
+      369
+    ],
+    "text": "GST ID : 002017394688",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      433,
+      373,
+      542,
+      390
+    ],
+    "text": "SHOPPING HOURS",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      379,
+      394,
+      588,
+      413
+    ],
+    "text": "SUN-THU: 1000 HRS - 2230 HRS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      379,
+      416,
+      589,
+      435
+    ],
+    "text": "FRI-SAT : 1000 HRS - 2300 HRS",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      334,
+      460,
+      449,
+      477
+    ],
+    "text": "1X 000007996511",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      563,
+      457,
+      620,
+      475
+    ],
+    "text": "75.00SR",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      356,
+      481,
+      474,
+      499
+    ],
+    "text": "AMBROSIAL GREEK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      309,
+      523,
+      381,
+      542
+    ],
+    "text": "SUB-TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      580,
+      522,
+      620,
+      540
+    ],
+    "text": "75.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      309,
+      545,
+      464,
+      564
+    ],
+    "text": "TOTAL SALES INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      579,
+      544,
+      619,
+      561
+    ],
+    "text": "75.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      310,
+      566,
+      495,
+      586
+    ],
+    "text": "TOTAL AFTER ADJ INCL GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      579,
+      565,
+      620,
+      583
+    ],
+    "text": "75.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      308,
+      591,
+      344,
+      608
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      572,
+      587,
+      619,
+      604
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      309,
+      612,
+      404,
+      629
+    ],
+    "text": "ITEM COUNT 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      448,
+      610,
+      526,
+      629
+    ],
+    "text": "CHANGE AMT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      579,
+      609,
+      619,
+      626
+    ],
+    "text": "25.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      340,
+      631,
+      581,
+      650
+    ],
+    "text": "INVOICE NO: 2018030610100080498",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      309,
+      655,
+      397,
+      674
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      464,
+      654,
+      512,
+      670
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      593,
+      652,
+      620,
+      670
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      309,
+      678,
+      366,
+      694
+    ],
+    "text": "SR @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      470,
+      675,
+      511,
+      692
+    ],
+    "text": "70.75",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      586,
+      675,
+      619,
+      691
+    ],
+    "text": "4.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      310,
+      698,
+      349,
+      716
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      470,
+      696,
+      512,
+      714
+    ],
+    "text": "70.75",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      586,
+      695,
+      619,
+      712
+    ],
+    "text": "4.25",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      310,
+      719,
+      434,
+      738
+    ],
+    "text": "06/03/2018 20:01",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      494,
+      716,
+      618,
+      736
+    ],
+    "text": "1010 008 00B0498",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      309,
+      740,
+      474,
+      758
+    ],
+    "text": "0305582 PJ PIRYALATHA",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      416,
+      783,
+      542,
+      801
+    ],
+    "text": "AEON PERMAS JAYA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      386,
+      803,
+      572,
+      823
+    ],
+    "text": "TEL 1-300-80-AEON (2366)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      372,
+      824,
+      588,
+      845
+    ],
+    "text": "THANK YOU FOR YOUR PATRONAGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      408,
+      847,
+      543,
+      865
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

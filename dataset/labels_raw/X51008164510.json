@@ -1,0 +1,255 @@
+[
+  {
+    "bbox": [
+      45,
+      201,
+      553,
+      238
+    ],
+    "text": "OCEAN LC PACKAGING ENTERPRISE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      134,
+      247,
+      487,
+      283
+    ],
+    "text": "GST NO: 000945983488",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      86,
+      292,
+      540,
+      329
+    ],
+    "text": "41-1, JLN RADIN ANUM 2, SRI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      64,
+      340,
+      550,
+      382
+    ],
+    "text": "PETALING, 57000 KUALA LUMPUR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      47,
+      385,
+      579,
+      426
+    ],
+    "text": "H/P:012-3163818 FAX:0390542829",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      210,
+      430,
+      402,
+      470
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      529,
+      172,
+      569
+    ],
+    "text": "#027553",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      225,
+      527,
+      401,
+      569
+    ],
+    "text": "27/06/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      456,
+      527,
+      544,
+      568
+    ],
+    "text": "12:45",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      576,
+      152,
+      616
+    ],
+    "text": "01 LAI",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      471,
+      572,
+      583,
+      616
+    ],
+    "text": "000000",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      51,
+      675,
+      190,
+      712
+    ],
+    "text": "4X 38.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      400,
+      673,
+      543,
+      713
+    ],
+    "text": "RM152.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      49,
+      721,
+      156,
+      754
+    ],
+    "text": "OTHERS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      53,
+      762,
+      191,
+      803
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      399,
+      761,
+      544,
+      800
+    ],
+    "text": "RM152.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      50,
+      854,
+      242,
+      890
+    ],
+    "text": "GST TAXABLE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      334,
+      851,
+      473,
+      891
+    ],
+    "text": "RM152.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      897,
+      159,
+      938
+    ],
+    "text": "GST 0%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      364,
+      896,
+      474,
+      934
+    ],
+    "text": "RM0.00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      50,
+      1038,
+      193,
+      1086
+    ],
+    "text": "ITEMS 4Q",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      49,
+      1083,
+      143,
+      1129
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      262,
+      1086,
+      542,
+      1124
+    ],
+    "text": "RM152.00",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

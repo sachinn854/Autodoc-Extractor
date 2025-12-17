@@ -1,0 +1,607 @@
+[
+  {
+    "bbox": [
+      203,
+      179,
+      552,
+      223
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      187,
+      261,
+      554,
+      303
+    ],
+    "text": "BHPETROL SUBANG AIRPORT",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      140,
+      303,
+      602,
+      343
+    ],
+    "text": "JALAN LAPANGAN TERBANG SUBANG",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      283,
+      350,
+      475,
+      384
+    ],
+    "text": "47200 SUBANG",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      315,
+      389,
+      444,
+      423
+    ],
+    "text": "SELANGOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      250,
+      467,
+      492,
+      498
+    ],
+    "text": "D'ROSH SERVPORT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      187,
+      498,
+      571,
+      539
+    ],
+    "text": "CO. REG. NO: 000948487-V",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      170,
+      539,
+      572,
+      577
+    ],
+    "text": "GST REG. NO: 000768122880",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      626,
+      347,
+      658
+    ],
+    "text": "18-01-2018 15:44:46",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      395,
+      619,
+      585,
+      656
+    ],
+    "text": "CASHIER: 888",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      45,
+      665,
+      364,
+      696
+    ],
+    "text": "INVOICE NO: 1-916166",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      44,
+      745,
+      108,
+      774
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      316,
+      744,
+      426,
+      778
+    ],
+    "text": "U\\PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      489,
+      742,
+      556,
+      774
+    ],
+    "text": "QNTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      569,
+      733,
+      666,
+      769
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      823,
+      318,
+      854
+    ],
+    "text": "INFINITI 97 E4MP3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      346,
+      823,
+      427,
+      851
+    ],
+    "text": "2.570",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      478,
+      819,
+      554,
+      851
+    ],
+    "text": "16.32",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      586,
+      808,
+      697,
+      846
+    ],
+    "text": "41.95 S",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      268,
+      901,
+      442,
+      932
+    ],
+    "text": "TOTAL SALES",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      586,
+      893,
+      663,
+      927
+    ],
+    "text": "41.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      268,
+      977,
+      585,
+      1010
+    ],
+    "text": "TOTAL AMOUNT PAYABLE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      583,
+      1013,
+      665,
+      1044
+    ],
+    "text": "41.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      268,
+      1058,
+      428,
+      1087
+    ],
+    "text": "EDC MASTER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      582,
+      1051,
+      664,
+      1084
+    ],
+    "text": "41.95",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      1134,
+      219,
+      1166
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      378,
+      1136,
+      522,
+      1165
+    ],
+    "text": "AMOUNT RM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      567,
+      1131,
+      665,
+      1159
+    ],
+    "text": "TAX RM",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      59,
+      1176,
+      284,
+      1204
+    ],
+    "text": "S: STANDARD 6%",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      442,
+      1174,
+      520,
+      1204
+    ],
+    "text": "39.58",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      598,
+      1171,
+      665,
+      1200
+    ],
+    "text": "2.37",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      45,
+      1253,
+      123,
+      1284
+    ],
+    "text": "ECARD",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1293,
+      267,
+      1322
+    ],
+    "text": "WONG TAI CHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      1333,
+      234,
+      1362
+    ],
+    "text": "CARD NUMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      393,
+      1330,
+      649,
+      1361
+    ],
+    "text": "7897139011685960",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      60,
+      1371,
+      298,
+      1402
+    ],
+    "text": "MERCHANT NUMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      409,
+      1367,
+      646,
+      1400
+    ],
+    "text": "000001020138429",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      62,
+      1408,
+      314,
+      1443
+    ],
+    "text": "REFERENCE NUMBER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      459,
+      1407,
+      649,
+      1436
+    ],
+    "text": "199258579655",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      61,
+      1447,
+      298,
+      1477
+    ],
+    "text": "AWARD BALANCE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      598,
+      1445,
+      650,
+      1473
+    ],
+    "text": "412",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      188,
+      1486,
+      286,
+      1517
+    ],
+    "text": "EARNED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      611,
+      1482,
+      646,
+      1514
+    ],
+    "text": "41",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      187,
+      1525,
+      361,
+      1554
+    ],
+    "text": "NEW BALANCE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      597,
+      1524,
+      650,
+      1553
+    ],
+    "text": "453",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      59,
+      1563,
+      283,
+      1597
+    ],
+    "text": "EPOINTS EXPIRY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      407,
+      1562,
+      442,
+      1592
+    ],
+    "text": "24",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      486,
+      1563,
+      646,
+      1592
+    ],
+    "text": "31/10/2020",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      395,
+      1602,
+      442,
+      1633
+    ],
+    "text": "136",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      485,
+      1601,
+      651,
+      1634
+    ],
+    "text": "30/11/2020",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      74,
+      1718,
+      661,
+      1753
+    ],
+    "text": "THANK YOU FOR SHOPPING AT SHPETROMART",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      138,
+      1757,
+      614,
+      1789
+    ],
+    "text": "CUSTOMER SERVICE 1-300-22-2828",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      522,
+      898,
+      555,
+      927
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      520,
+      1017,
+      554,
+      1046
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      522,
+      1055,
+      555,
+      1087
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

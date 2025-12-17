@@ -1,0 +1,387 @@
+[
+  {
+    "bbox": [
+      239,
+      326,
+      659,
+      370
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      295,
+      378,
+      585,
+      421
+    ],
+    "text": "CO-REG:860671-D",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      126,
+      428,
+      750,
+      476
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      144,
+      480,
+      728,
+      524
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      166,
+      532,
+      736,
+      573
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      203,
+      583,
+      672,
+      630
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      300,
+      631,
+      584,
+      678
+    ],
+    "text": "(SELAYANG MALL)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      312,
+      682,
+      563,
+      725
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      70,
+      782,
+      431,
+      822
+    ],
+    "text": "BASKET W/HOOK 9314#",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      782,
+      787,
+      826,
+      825
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      69,
+      828,
+      439,
+      875
+    ],
+    "text": "UF31/3-41/ - 12/144",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      883,
+      321,
+      925
+    ],
+    "text": "6934091453268",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      484,
+      886,
+      549,
+      925
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      73,
+      935,
+      622,
+      975
+    ],
+    "text": "TOILET PAPER HOLDER BWJ-2503#",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      783,
+      938,
+      830,
+      974
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      68,
+      988,
+      245,
+      1026
+    ],
+    "text": "W-18 - 24",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      74,
+      1038,
+      321,
+      1074
+    ],
+    "text": "6946208425037",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      484,
+      1037,
+      659,
+      1078
+    ],
+    "text": "1 X 17.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      73,
+      1137,
+      287,
+      1182
+    ],
+    "text": "ITEM(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      632,
+      1138,
+      828,
+      1185
+    ],
+    "text": "QTY(S) : 2",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      69,
+      1238,
+      413,
+      1278
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      74,
+      1291,
+      154,
+      1331
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      671,
+      1238,
+      829,
+      1280
+    ],
+    "text": "RM 21.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      670,
+      1292,
+      829,
+      1332
+    ],
+    "text": "RM 21.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      69,
+      1386,
+      545,
+      1433
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      630,
+      1385,
+      768,
+      1436
+    ],
+    "text": "RM 1.19",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      70,
+      1488,
+      525,
+      1531
+    ],
+    "text": "25-01-16 11:59 SH01 ZJ08",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      579,
+      1491,
+      824,
+      1531
+    ],
+    "text": "T3 R000276342",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      69,
+      1536,
+      554,
+      1581
+    ],
+    "text": "OPERATOR SLC - NOR RUZITA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      176,
+      1640,
+      697,
+      1679
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      257,
+      1688,
+      620,
+      1733
+    ],
+    "text": "3 DAY WITH RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      218,
+      1742,
+      681,
+      1781
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      576,
+      887,
+      658,
+      925
+    ],
+    "text": "3.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      704,
+      887,
+      790,
+      927
+    ],
+    "text": "3.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      690,
+      1038,
+      790,
+      1075
+    ],
+    "text": "17.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  }
+]

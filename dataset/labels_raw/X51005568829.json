@@ -1,0 +1,915 @@
+[
+  {
+    "bbox": [
+      136,
+      203,
+      763,
+      240
+    ],
+    "text": "THAI DELICIOUS RESTAURANT",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      218,
+      254,
+      685,
+      294
+    ],
+    "text": "NO.22 JALAN PUTERI 2/4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      298,
+      303,
+      606,
+      342
+    ],
+    "text": "BANDAR PUTERI",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      181,
+      353,
+      719,
+      390
+    ],
+    "text": "47100 PUCHONG, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      321,
+      397,
+      578,
+      433
+    ],
+    "text": "03-8051 9514",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      70,
+      461,
+      165,
+      492
+    ],
+    "text": "BILL NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      211,
+      467,
+      226,
+      495
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      258,
+      464,
+      406,
+      492
+    ],
+    "text": "01-36870",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      703,
+      459,
+      810,
+      497
+    ],
+    "text": "TABLE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      69,
+      509,
+      143,
+      537
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      209,
+      512,
+      225,
+      541
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      257,
+      508,
+      623,
+      542
+    ],
+    "text": "02/02/2017 7:31:08 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      720,
+      509,
+      767,
+      541
+    ],
+    "text": "A3",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      69,
+      556,
+      180,
+      585
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      211,
+      561,
+      223,
+      585
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      262,
+      557,
+      317,
+      585
+    ],
+    "text": "123",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      69,
+      601,
+      121,
+      634
+    ],
+    "text": "PAX",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      211,
+      609,
+      223,
+      632
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      256,
+      602,
+      276,
+      634
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      162,
+      711,
+      335,
+      744
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      450,
+      710,
+      503,
+      746
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      564,
+      710,
+      645,
+      739
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      712,
+      709,
+      835,
+      738
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      109,
+      758,
+      125,
+      785
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      156,
+      754,
+      341,
+      780
+    ],
+    "text": "06S BRAISED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      486,
+      757,
+      507,
+      785
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      567,
+      754,
+      646,
+      784
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      757,
+      757,
+      835,
+      783
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      157,
+      788,
+      400,
+      814
+    ],
+    "text": "PORK LEG SMALL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      109,
+      853,
+      128,
+      882
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      159,
+      852,
+      375,
+      881
+    ],
+    "text": "32 PHRANAKON",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      488,
+      855,
+      501,
+      881
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      566,
+      855,
+      645,
+      882
+    ],
+    "text": "28.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      757,
+      857,
+      831,
+      881
+    ],
+    "text": "28.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      155,
+      885,
+      337,
+      911
+    ],
+    "text": "SALTED EGG",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      159,
+      916,
+      246,
+      944
+    ],
+    "text": "SQUID",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      949,
+      127,
+      977
+    ],
+    "text": "3",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      157,
+      950,
+      394,
+      975
+    ],
+    "text": "51 GARLIC FRIED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      488,
+      952,
+      505,
+      976
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      571,
+      953,
+      644,
+      978
+    ],
+    "text": "13.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      759,
+      951,
+      831,
+      977
+    ],
+    "text": "13.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      158,
+      981,
+      258,
+      1007
+    ],
+    "text": "KAILAN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      106,
+      1052,
+      126,
+      1078
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      158,
+      1048,
+      356,
+      1073
+    ],
+    "text": "84 THAI STYLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      486,
+      1050,
+      505,
+      1075
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      572,
+      1050,
+      649,
+      1078
+    ],
+    "text": "15.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      756,
+      1049,
+      836,
+      1079
+    ],
+    "text": "15.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      155,
+      1080,
+      359,
+      1103
+    ],
+    "text": "KERABUTOFU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      107,
+      1144,
+      126,
+      1170
+    ],
+    "text": "5",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      159,
+      1145,
+      372,
+      1170
+    ],
+    "text": "130 PLAINRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      486,
+      1147,
+      504,
+      1171
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      586,
+      1143,
+      652,
+      1173
+    ],
+    "text": "1.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      774,
+      1142,
+      840,
+      1169
+    ],
+    "text": "7.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      107,
+      1190,
+      125,
+      1217
+    ],
+    "text": "6",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      159,
+      1189,
+      355,
+      1215
+    ],
+    "text": "113 COCONUT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      485,
+      1189,
+      503,
+      1220
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      585,
+      1190,
+      651,
+      1220
+    ],
+    "text": "6.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      775,
+      1190,
+      834,
+      1218
+    ],
+    "text": "6.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      159,
+      1220,
+      223,
+      1247
+    ],
+    "text": "THAI",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      110,
+      1257,
+      126,
+      1281
+    ],
+    "text": "7",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      159,
+      1254,
+      351,
+      1282
+    ],
+    "text": "116 DISTILLED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      487,
+      1260,
+      502,
+      1285
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      585,
+      1256,
+      646,
+      1284
+    ],
+    "text": "0.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      772,
+      1258,
+      838,
+      1286
+    ],
+    "text": "0.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      159,
+      1285,
+      258,
+      1315
+    ],
+    "text": "WATER",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      106,
+      1324,
+      127,
+      1352
+    ],
+    "text": "8",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      156,
+      1323,
+      308,
+      1348
+    ],
+    "text": "106B COLD",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      483,
+      1324,
+      501,
+      1351
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      585,
+      1324,
+      651,
+      1351
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      775,
+      1320,
+      835,
+      1348
+    ],
+    "text": "2.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      156,
+      1352,
+      390,
+      1377
+    ],
+    "text": "PANDAN GINGER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      159,
+      1383,
+      215,
+      1410
+    ],
+    "text": "TEA",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      445,
+      1442,
+      527,
+      1471
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      757,
+      1444,
+      835,
+      1470
+    ],
+    "text": "92.80",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      355,
+      1492,
+      527,
+      1522
+    ],
+    "text": "GRAND TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      756,
+      1493,
+      836,
+      1520
+    ],
+    "text": "92.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      313,
+      1536,
+      530,
+      1566
+    ],
+    "text": "CASH RECEIVED:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      744,
+      1538,
+      834,
+      1563
+    ],
+    "text": "100.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      408,
+      1581,
+      533,
+      1612
+    ],
+    "text": "CHANGE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      775,
+      1580,
+      834,
+      1610
+    ],
+    "text": "7.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      270,
+      1649,
+      537,
+      1680
+    ],
+    "text": "AVERAGE/PAX(S):",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      754,
+      1648,
+      835,
+      1679
+    ],
+    "text": "23.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      252,
+      1732,
+      676,
+      1764
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

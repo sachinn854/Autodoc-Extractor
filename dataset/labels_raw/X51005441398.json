@@ -1,0 +1,585 @@
+[
+  {
+    "bbox": [
+      115,
+      277,
+      428,
+      303
+    ],
+    "text": "BREWERY TAP",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      113,
+      309,
+      459,
+      336
+    ],
+    "text": "DWNER BY CASTLE BLUE S/B",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      202,
+      343,
+      357,
+      372
+    ],
+    "text": "(1035693-T)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      129,
+      375,
+      430,
+      402
+    ],
+    "text": "GST NO : 002108047360",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      57,
+      406,
+      516,
+      437
+    ],
+    "text": "AVTIVO PLAZA,LOT B-F-11, BLOCK B",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      58,
+      441,
+      501,
+      469
+    ],
+    "text": "NO1.JALAN PJU 9/1,D'SARA AVEVUE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      86,
+      472,
+      474,
+      502
+    ],
+    "text": "BANDAR SRI D'SARA, 52000 XL",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      157,
+      507,
+      415,
+      532
+    ],
+    "text": "TEL: +603-62629219",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      174,
+      574,
+      388,
+      597
+    ],
+    "text": "* GUEST CHECK *",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      640,
+      284,
+      663
+    ],
+    "text": "TABLE NO: D06",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      58,
+      706,
+      174,
+      729
+    ],
+    "text": "ORDER NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      217,
+      707,
+      315,
+      729
+    ],
+    "text": ": 11649",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      57,
+      739,
+      116,
+      761
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      203,
+      740,
+      518,
+      765
+    ],
+    "text": ": 30/03/2018 # 8:13 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      75,
+      1560,
+      490,
+      1584
+    ],
+    "text": "GOODS SOLD ARE NON REFUNDABLE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      772,
+      157,
+      795
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      204,
+      772,
+      389,
+      795
+    ],
+    "text": ": ORDER LOGIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      806,
+      144,
+      827
+    ],
+    "text": "WAITER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      203,
+      806,
+      387,
+      834
+    ],
+    "text": ": HARRY,PAING",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      57,
+      838,
+      145,
+      860
+    ],
+    "text": "PRN ON",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      202,
+      838,
+      502,
+      863
+    ],
+    "text": ": 30/03/2018 11:18 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      58,
+      904,
+      174,
+      928
+    ],
+    "text": "QTY ITEM",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      484,
+      906,
+      516,
+      929
+    ],
+    "text": "RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      174,
+      971,
+      389,
+      995
+    ],
+    "text": "*** DINE IN ***",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      59,
+      1004,
+      73,
+      1027
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      100,
+      1004,
+      517,
+      1031
+    ],
+    "text": "TIGER 2 BUCKET - HH 95.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      100,
+      1037,
+      374,
+      1065
+    ],
+    "text": "2 TIGER BUCKET- HH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      60,
+      1071,
+      71,
+      1092
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      99,
+      1070,
+      287,
+      1098
+    ],
+    "text": "CHICKEN WINGS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      399,
+      1071,
+      516,
+      1095
+    ],
+    "text": "22.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1104,
+      72,
+      1125
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      100,
+      1102,
+      272,
+      1126
+    ],
+    "text": "FRENCH FRIES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      402,
+      1104,
+      517,
+      1128
+    ],
+    "text": "12.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1136,
+      73,
+      1159
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      101,
+      1135,
+      331,
+      1164
+    ],
+    "text": "TIGER BUCKET- HH",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      401,
+      1136,
+      517,
+      1160
+    ],
+    "text": "50.00 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      60,
+      1202,
+      75,
+      1224
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      100,
+      1202,
+      217,
+      1226
+    ],
+    "text": "SUBTOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      388,
+      1204,
+      473,
+      1225
+    ],
+    "text": "179.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      102,
+      1235,
+      214,
+      1258
+    ],
+    "text": "GST @6%:",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      403,
+      1235,
+      473,
+      1258
+    ],
+    "text": "10.74",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      1268,
+      271,
+      1296
+    ],
+    "text": "ROUNDING ADJ",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      416,
+      1269,
+      471,
+      1292
+    ],
+    "text": "0.01",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      99,
+      1301,
+      231,
+      1325
+    ],
+    "text": "NET TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      388,
+      1301,
+      473,
+      1324
+    ],
+    "text": "189.75",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      61,
+      1366,
+      517,
+      1389
+    ],
+    "text": "- *** 30/03/2018 11:11 PM *** --",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      59,
+      1428,
+      218,
+      1456
+    ],
+    "text": "TAX SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      287,
+      1429,
+      375,
+      1453
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      473,
+      1430,
+      518,
+      1455
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      59,
+      1461,
+      204,
+      1484
+    ],
+    "text": "SR:GST @6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      289,
+      1461,
+      376,
+      1484
+    ],
+    "text": "179.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      445,
+      1462,
+      517,
+      1485
+    ],
+    "text": "10.74",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      88,
+      1527,
+      490,
+      1552
+    ],
+    "text": "THANK YOU, PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

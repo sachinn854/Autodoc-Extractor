@@ -1,0 +1,475 @@
+[
+  {
+    "bbox": [
+      1498,
+      1604,
+      2873,
+      1688
+    ],
+    "text": "UNIHAKKA INTERNATIONAL SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      1932,
+      1684,
+      2452,
+      1761
+    ],
+    "text": "24 MAY 2018 18:29",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2026,
+      1770,
+      2338,
+      1840
+    ],
+    "text": "(867388-U)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1609,
+      1851,
+      2764,
+      1924
+    ],
+    "text": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1739,
+      1939,
+      2628,
+      2015
+    ],
+    "text": "TAMPOI,81200 JOHOR BAHRU,JOHOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1998,
+      2019,
+      2369,
+      2078
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1455,
+      2097,
+      2299,
+      2165
+    ],
+    "text": "INVOICE # : OR18052402170329",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1461,
+      2225,
+      1595,
+      2280
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1926,
+      2219,
+      2033,
+      2289
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2769,
+      2201,
+      2943,
+      2265
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1461,
+      2311,
+      2409,
+      2384
+    ],
+    "text": "SR I00100000025- 1 MEAT + 2 VEGE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1467,
+      2402,
+      1623,
+      2481
+    ],
+    "text": "$6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1929,
+      2408,
+      1969,
+      2463
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2763,
+      2387,
+      2925,
+      2450
+    ],
+    "text": "$6.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1455,
+      2519,
+      2445,
+      2592
+    ],
+    "text": "SR I00100000170- IMPORTED VEGGIES",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1458,
+      2629,
+      1629,
+      2690
+    ],
+    "text": "$1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1932,
+      2619,
+      1965,
+      2683
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2763,
+      2601,
+      2919,
+      2677
+    ],
+    "text": "$1.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1467,
+      2736,
+      2497,
+      2809
+    ],
+    "text": "SR I00100000149- ADD VEGETABLE (X)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1470,
+      2836,
+      1620,
+      2906
+    ],
+    "text": "$0.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1938,
+      2836,
+      1969,
+      2897
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2778,
+      2815,
+      2931,
+      2891
+    ],
+    "text": "$0.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2399,
+      2968,
+      2946,
+      3032
+    ],
+    "text": "TOTAL AMOUNT: $8.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      2464,
+      3044,
+      2932,
+      3111
+    ],
+    "text": "GST @6%: $0.48",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2497,
+      3124,
+      2931,
+      3194
+    ],
+    "text": "NETT TOTAL: $8.40",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      1464,
+      3261,
+      1867,
+      3336
+    ],
+    "text": "PAYMENT MODE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2717,
+      3252,
+      2931,
+      3310
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1475,
+      3363,
+      1655,
+      3422
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2778,
+      3335,
+      2931,
+      3402
+    ],
+    "text": "$8.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1464,
+      3447,
+      1699,
+      3514
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2782,
+      3417,
+      2929,
+      3484
+    ],
+    "text": "$0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1464,
+      3640,
+      1806,
+      3707
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2231,
+      3631,
+      2472,
+      3692
+    ],
+    "text": "AMOUNT($)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2792,
+      3622,
+      2954,
+      3682
+    ],
+    "text": "TAX($)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1473,
+      3732,
+      1834,
+      3796
+    ],
+    "text": "SR = GST @6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2363,
+      3723,
+      2458,
+      3772
+    ],
+    "text": "7.92",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2837,
+      3713,
+      2935,
+      3771
+    ],
+    "text": "0.48",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1853,
+      3845,
+      2550,
+      3915
+    ],
+    "text": "GST REG #000656195584",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1715,
+      3931,
+      2699,
+      3998
+    ],
+    "text": "BAR WANG RICE@PERMAS JAYA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1883,
+      4011,
+      2528,
+      4086
+    ],
+    "text": "(PRICE INCLUSIVE OF GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1854,
+      4094,
+      2560,
+      4167
+    ],
+    "text": "THANK YOU & COME AGAIN!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1775,
+      4177,
+      2638,
+      4247
+    ],
+    "text": "LIKE AND FOLLOW US ON FACEBOOK!",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1816,
+      4264,
+      2595,
+      4331
+    ],
+    "text": "FACEBOOK.COM/BARWANGRICE",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

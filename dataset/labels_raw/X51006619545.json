@@ -1,0 +1,1058 @@
+[
+  {
+    "bbox": [
+      47,
+      280,
+      494,
+      323
+    ],
+    "text": "COSWAY (M) SDN BHD (50118-A)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      51,
+      323,
+      621,
+      365
+    ],
+    "text": "2ND FLOOR, WISMA COSWAY, JALAN RAJA CHULAN,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      47,
+      362,
+      437,
+      403
+    ],
+    "text": "50200 KUALA LUMPUR, MALAYSIA.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      52,
+      401,
+      325,
+      435
+    ],
+    "text": "TEL :603-2030 1000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      438,
+      318,
+      472
+    ],
+    "text": "FAX :603-2142 5587",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      473,
+      407,
+      520
+    ],
+    "text": "EMAIL: INFO@COSWAY.COM.MY",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      49,
+      542,
+      579,
+      580
+    ],
+    "text": "GST REGISTRATION NO : 000743903232",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      210,
+      643,
+      611,
+      683
+    ],
+    "text": "TAX INVOICE (COSWAY)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      94,
+      736,
+      300,
+      768
+    ],
+    "text": "CENTER : K074",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      562,
+      738,
+      770,
+      771
+    ],
+    "text": "USER ID : K074",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      181,
+      786,
+      545,
+      828
+    ],
+    "text": "ID : S900044(LEE MEI YEIN)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      89,
+      835,
+      600,
+      878
+    ],
+    "text": "INV NO/DATE:K074-001096(06/12/2016)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      51,
+      889,
+      388,
+      921
+    ],
+    "text": "MTD RC AT K074 : 111.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      937,
+      490,
+      971
+    ],
+    "text": "MTD SV/GV AT K074 : 10.56/10.55",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      50,
+      988,
+      369,
+      1024
+    ],
+    "text": "MTD QV AT K074 : 10.56",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      1068,
+      186,
+      1098
+    ],
+    "text": "PRODUCT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      309,
+      1069,
+      441,
+      1099
+    ],
+    "text": "QTY IOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      569,
+      1108,
+      641,
+      1141
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      51,
+      1156,
+      170,
+      1184
+    ],
+    "text": "8 089884",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      355,
+      1160,
+      376,
+      1192
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      462,
+      1159,
+      519,
+      1186
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      1205,
+      491,
+      1245
+    ],
+    "text": "(B3F1)PM BATHROOM CLEANER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      50,
+      1261,
+      147,
+      1290
+    ],
+    "text": "80 0898",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      350,
+      1256,
+      379,
+      1295
+    ],
+    "text": "8",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      748,
+      1265,
+      789,
+      1295
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      51,
+      1310,
+      406,
+      1347
+    ],
+    "text": "PM BATHROOM CLEANER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      50,
+      1366,
+      170,
+      1397
+    ],
+    "text": "8 081118",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      353,
+      1367,
+      375,
+      1399
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      464,
+      1371,
+      519,
+      1398
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      1418,
+      391,
+      1462
+    ],
+    "text": "(A3F1)PMFLR CLEANER",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      51,
+      1474,
+      161,
+      1504
+    ],
+    "text": "80 08112",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      348,
+      1469,
+      385,
+      1511
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      462,
+      1479,
+      519,
+      1503
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      1526,
+      486,
+      1559
+    ],
+    "text": "PM CON FLOOR CLEANER-PINE",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      51,
+      1581,
+      172,
+      1609
+    ],
+    "text": "8 741698",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      354,
+      1583,
+      375,
+      1615
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      462,
+      1583,
+      517,
+      1612
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      52,
+      1630,
+      453,
+      1667
+    ],
+    "text": "(A2F1)BG MASK 74169/157/147",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      51,
+      1687,
+      159,
+      1713
+    ],
+    "text": "80 74147",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      348,
+      1685,
+      385,
+      1719
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      464,
+      1686,
+      519,
+      1720
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      51,
+      1736,
+      422,
+      1772
+    ],
+    "text": "BG HYDRATING SPA MASK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      52,
+      1792,
+      159,
+      1821
+    ],
+    "text": "80 74169",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      356,
+      1796,
+      373,
+      1827
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      465,
+      1792,
+      517,
+      1820
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      49,
+      1842,
+      456,
+      1875
+    ],
+    "text": "BG VISIBLY SOFT MILK MASK",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      367,
+      1877,
+      772,
+      1909
+    ],
+    "text": "AMT PAID INCL GST : RM111.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      381,
+      1940,
+      771,
+      1973
+    ],
+    "text": "AMT PAID EXCL. GST :RM 105.57",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      526,
+      1992,
+      771,
+      2027
+    ],
+    "text": "GST AMT : RM5.33",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      47,
+      2039,
+      444,
+      2072
+    ],
+    "text": "PAID BY : CC*7185:RM111.90",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      111,
+      2110,
+      319,
+      2145
+    ],
+    "text": "TOTAL QTY : 15",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      465,
+      2110,
+      674,
+      2146
+    ],
+    "text": "RC EARNED : 3",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      138,
+      2160,
+      302,
+      2196
+    ],
+    "text": "RPUSED : 0",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      507,
+      2161,
+      673,
+      2198
+    ],
+    "text": "RC USED : 0",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      158,
+      2210,
+      356,
+      2246
+    ],
+    "text": "TOTAL SV : 10.56",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      526,
+      2214,
+      728,
+      2247
+    ],
+    "text": "TOTAL GV : 10.55",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      559,
+      2275,
+      772,
+      2315
+    ],
+    "text": "BIF FROM INV NO :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      454,
+      2325,
+      674,
+      2364
+    ],
+    "text": "RC BALANCE : 0.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      49,
+      2399,
+      337,
+      2431
+    ],
+    "text": "MERNBER SIGNATURE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      51,
+      2430,
+      389,
+      2469
+    ],
+    "text": "V2.82 06/12/2016 20:09:40",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      51,
+      2492,
+      241,
+      2530
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      375,
+      2495,
+      499,
+      2531
+    ],
+    "text": "AMT(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      639,
+      2495,
+      764,
+      2536
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      362,
+      2530,
+      497,
+      2569
+    ],
+    "text": "(EXCL GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      53,
+      2581,
+      154,
+      2621
+    ],
+    "text": "SR(6%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      47,
+      2630,
+      154,
+      2673
+    ],
+    "text": "ZR(0%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      51,
+      2682,
+      198,
+      2721
+    ],
+    "text": "EX/OS(0%)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      426,
+      2583,
+      513,
+      2618
+    ],
+    "text": "105.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      453,
+      2636,
+      515,
+      2668
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      453,
+      2685,
+      515,
+      2718
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      710,
+      2585,
+      769,
+      2621
+    ],
+    "text": "6.33",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      710,
+      2637,
+      773,
+      2669
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      708,
+      2682,
+      767,
+      2719
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      56,
+      2745,
+      149,
+      2782
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      424,
+      2747,
+      512,
+      2782
+    ],
+    "text": "105.57",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      704,
+      2749,
+      767,
+      2785
+    ],
+    "text": "6.33",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      48,
+      2835,
+      788,
+      2865
+    ],
+    "text": "SAME STCCE WITHIN FOURTEEN(14) DAYS FROM THE PURCHASED",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      46,
+      2866,
+      778,
+      2898
+    ],
+    "text": "DATE SUBJECT TO COMPANY'S APPROVAL. IOU ITEMS MUST BE",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      46,
+      2901,
+      720,
+      2928
+    ],
+    "text": "\"EDEEMED WITHIN THREE(3) MONTHS FROM THE DATE OF",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      48,
+      2933,
+      535,
+      2964
+    ],
+    "text": "INVOICE.(TERMS & CONDITIONS APPLIED)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      474,
+      1072,
+      514,
+      1099
+    ],
+    "text": "EV",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      532,
+      1072,
+      649,
+      1100
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      668,
+      1072,
+      761,
+      1100
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      685,
+      1110,
+      757,
+      1141
+    ],
+    "text": "(RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      545,
+      1159,
+      619,
+      1191
+    ],
+    "text": "26.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      680,
+      1161,
+      788,
+      1194
+    ],
+    "text": "53.40SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      544,
+      1369,
+      620,
+      1403
+    ],
+    "text": "32.70",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      679,
+      1370,
+      786,
+      1402
+    ],
+    "text": "32.70SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      560,
+      1477,
+      617,
+      1510
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      695,
+      1476,
+      787,
+      1511
+    ],
+    "text": "0.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      545,
+      1583,
+      618,
+      1616
+    ],
+    "text": "25.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      682,
+      1583,
+      787,
+      1616
+    ],
+    "text": "25.80SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      560,
+      1690,
+      622,
+      1722
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      694,
+      1686,
+      787,
+      1720
+    ],
+    "text": "0.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      559,
+      1794,
+      618,
+      1826
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      695,
+      1793,
+      787,
+      1827
+    ],
+    "text": "0.00SR",
+    "class": "OTHER",
+    "class_id": 11
+  }
+]

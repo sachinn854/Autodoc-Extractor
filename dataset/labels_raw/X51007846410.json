@@ -1,0 +1,750 @@
+[
+  {
+    "bbox": [
+      1543,
+      1465,
+      2891,
+      1550
+    ],
+    "text": "IDEAL MENU GROUP SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      2012,
+      1578,
+      2425,
+      1658
+    ],
+    "text": "(1143655-H)",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1684,
+      1667,
+      2728,
+      1752
+    ],
+    "text": "31,31A, JALAN HANG TUAH 9,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      1807,
+      1766,
+      2614,
+      1848
+    ],
+    "text": "TAMAN SKUDAI BARU,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1938,
+      1867,
+      2475,
+      1940
+    ],
+    "text": "81300 SKUDAI,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      2081,
+      1957,
+      2350,
+      2028
+    ],
+    "text": "JOHOR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1838,
+      2044,
+      2577,
+      2113
+    ],
+    "text": "GST ID : 001707421696",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1966,
+      2187,
+      2451,
+      2255
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1377,
+      2310,
+      1684,
+      2389
+    ],
+    "text": "RECEIPT#:",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1783,
+      2307,
+      2187,
+      2371
+    ],
+    "text": "CS10031697",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      1376,
+      2397,
+      1541,
+      2464
+    ],
+    "text": "STAFF:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1368,
+      2482,
+      1628,
+      2552
+    ],
+    "text": "CASHIER:",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      1784,
+      2482,
+      2208,
+      2552
+    ],
+    "text": "SM CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      2368,
+      2313,
+      2552,
+      2380
+    ],
+    "text": "TABLE:",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2670,
+      2316,
+      2746,
+      2374
+    ],
+    "text": "10",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2368,
+      2406,
+      2538,
+      2473
+    ],
+    "text": "DATE:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2664,
+      2404,
+      3006,
+      2471
+    ],
+    "text": "10/06/2018",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      2363,
+      2480,
+      2538,
+      2559
+    ],
+    "text": "TIME:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2664,
+      2488,
+      2927,
+      2561
+    ],
+    "text": "16:23:00",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1365,
+      2605,
+      1751,
+      2690
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2234,
+      2611,
+      2354,
+      2693
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2415,
+      2620,
+      2585,
+      2681
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2711,
+      2614,
+      2851,
+      2681
+    ],
+    "text": "AMT",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2901,
+      2620,
+      3024,
+      2687
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1377,
+      2696,
+      2006,
+      2757
+    ],
+    "text": "A1 LO BAK RICE - SET",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2266,
+      2699,
+      2298,
+      2757
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2427,
+      2702,
+      2588,
+      2755
+    ],
+    "text": "12.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      2705,
+      2699,
+      2851,
+      2755
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2930,
+      2702,
+      3024,
+      2763
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1368,
+      2781,
+      1956,
+      2848
+    ],
+    "text": "BUBBLE GREEN TEA",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2269,
+      2784,
+      2298,
+      2845
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2459,
+      2787,
+      2585,
+      2843
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2731,
+      2789,
+      2851,
+      2847
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2936,
+      2784,
+      3021,
+      2848
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      1830,
+      2865,
+      2000,
+      2935
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2251,
+      2874,
+      2301,
+      2938
+    ],
+    "text": "2",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2711,
+      2874,
+      2884,
+      2935
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1696,
+      3015,
+      2509,
+      3094
+    ],
+    "text": "TOTAL SALES (EXCLUDING GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2708,
+      3020,
+      2878,
+      3087
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2257,
+      3117,
+      2532,
+      3193
+    ],
+    "text": "DISCOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2740,
+      3120,
+      2880,
+      3184
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2056,
+      3219,
+      2594,
+      3301
+    ],
+    "text": "SERVICE CHARGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2737,
+      3228,
+      2880,
+      3295
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2216,
+      3319,
+      2599,
+      3392
+    ],
+    "text": "TOTAL GST :",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2740,
+      3327,
+      2877,
+      3385
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2231,
+      3427,
+      2594,
+      3506
+    ],
+    "text": "ROUNDING :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2731,
+      3427,
+      2871,
+      3494
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1553,
+      3535,
+      2533,
+      3617
+    ],
+    "text": "TOTAL SALES (INCLUSIVE OF GST)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2696,
+      3544,
+      2874,
+      3605
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2313,
+      3640,
+      2521,
+      3716
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2690,
+      3641,
+      2868,
+      3714
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2216,
+      3731,
+      2523,
+      3798
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      2734,
+      3731,
+      2869,
+      3798
+    ],
+    "text": "8.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1585,
+      3895,
+      2141,
+      3962
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1596,
+      4041,
+      1903,
+      4108
+    ],
+    "text": "TAX CODE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1681,
+      4123,
+      1821,
+      4184
+    ],
+    "text": "SR0",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2003,
+      4047,
+      2059,
+      4114
+    ],
+    "text": "%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2009,
+      4123,
+      2053,
+      4187
+    ],
+    "text": "0",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      2117,
+      4041,
+      2421,
+      4114
+    ],
+    "text": "AMT (RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2246,
+      4126,
+      2419,
+      4190
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2474,
+      4047,
+      2772,
+      4114
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      2632,
+      4135,
+      2778,
+      4191
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1854,
+      4240,
+      2062,
+      4319
+    ],
+    "text": "TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      2240,
+      4243,
+      2421,
+      4319
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      2623,
+      4249,
+      2766,
+      4319
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      1568,
+      4360,
+      2676,
+      4432
+    ],
+    "text": "# INDICATED THIS TAX CODE BELONG TO SERVICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      1576,
+      4426,
+      1802,
+      4495
+    ],
+    "text": "CHARGES.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      1643,
+      4646,
+      2690,
+      4718
+    ],
+    "text": "THANK YOU. PLEASE COME AGAIN !!",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

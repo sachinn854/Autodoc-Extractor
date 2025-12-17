@@ -1,0 +1,398 @@
+[
+  {
+    "bbox": [
+      258,
+      277,
+      627,
+      315
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      293,
+      312,
+      591,
+      349
+    ],
+    "text": "(CO.REG :860671-D)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      159,
+      344,
+      703,
+      386
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      176,
+      378,
+      687,
+      419
+    ],
+    "text": "KAWASAN PERINDUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      191,
+      414,
+      692,
+      450
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      225,
+      444,
+      638,
+      485
+    ],
+    "text": "(GST ID NO :000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      324,
+      482,
+      536,
+      517
+    ],
+    "text": "(IOI PUCHONG)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      323,
+      515,
+      538,
+      549
+    ],
+    "text": "-TAX INVOICE-",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      104,
+      579,
+      687,
+      620
+    ],
+    "text": "SEKOPLAS H/D GARBAGE 89CM*117CM 10S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      737,
+      591,
+      772,
+      622
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      104,
+      612,
+      255,
+      644
+    ],
+    "text": "WA57 - 16",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      103,
+      645,
+      319,
+      680
+    ],
+    "text": "9557002081113",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      471,
+      656,
+      485,
+      684
+    ],
+    "text": "4",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      501,
+      654,
+      521,
+      684
+    ],
+    "text": "X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      552,
+      658,
+      619,
+      686
+    ],
+    "text": "9.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      654,
+      658,
+      736,
+      691
+    ],
+    "text": "38.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      102,
+      712,
+      282,
+      748
+    ],
+    "text": "ITEM(S) : 1",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      601,
+      724,
+      768,
+      761
+    ],
+    "text": "QTY(S) : 4",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      100,
+      779,
+      401,
+      816
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      633,
+      793,
+      768,
+      824
+    ],
+    "text": "RM 38.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      99,
+      815,
+      166,
+      845
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      633,
+      827,
+      767,
+      859
+    ],
+    "text": "RM 50.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      100,
+      848,
+      198,
+      879
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      630,
+      860,
+      766,
+      893
+    ],
+    "text": "RM 12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      98,
+      917,
+      514,
+      957
+    ],
+    "text": "GST @6% INCLUDED IN TOTAL",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      595,
+      926,
+      718,
+      960
+    ],
+    "text": "RM 2.15",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      96,
+      983,
+      228,
+      1015
+    ],
+    "text": "27-04-18",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      249,
+      987,
+      329,
+      1018
+    ],
+    "text": "16:26",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      345,
+      991,
+      411,
+      1019
+    ],
+    "text": "SH01",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      429,
+      991,
+      496,
+      1022
+    ],
+    "text": "ZJ86",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      546,
+      995,
+      583,
+      1025
+    ],
+    "text": "T2",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      596,
+      995,
+      765,
+      1029
+    ],
+    "text": "R000120718",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      98,
+      1019,
+      496,
+      1057
+    ],
+    "text": "OPERATOR TRAINEE CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      194,
+      1087,
+      645,
+      1128
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      259,
+      1123,
+      572,
+      1160
+    ],
+    "text": "7 DAY WITH RECEIPT.",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      225,
+      1154,
+      624,
+      1196
+    ],
+    "text": "STRICTLY NO CASH REFUND.",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

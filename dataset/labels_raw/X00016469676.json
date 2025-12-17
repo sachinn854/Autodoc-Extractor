@@ -1,0 +1,310 @@
+[
+  {
+    "bbox": [
+      127,
+      55,
+      347,
+      89
+    ],
+    "text": "TAN CHAY YEE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      53,
+      88,
+      415,
+      127
+    ],
+    "text": "S.H.H. MOTOR (SUNGAI RENGIT) SDN. BHD.",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      157,
+      126,
+      266,
+      147
+    ],
+    "text": "(801580-T)",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      77,
+      150,
+      392,
+      170
+    ],
+    "text": "NO. 343, JALAN KURAU, SUNGAI RENGIT,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      124,
+      167,
+      334,
+      191
+    ],
+    "text": "81620 PENGERANG, JOHOR.",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      95,
+      191,
+      374,
+      215
+    ],
+    "text": "TEL: 07-8263254 FAX: 07-8266888",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      201,
+      234,
+      266,
+      259
+    ],
+    "text": "INVOICE",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      17,
+      300,
+      103,
+      323
+    ],
+    "text": "ITEM/DESC.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      253,
+      300,
+      440,
+      323
+    ],
+    "text": "QTY U.PRICE RM(TOTAL)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      14,
+      343,
+      56,
+      364
+    ],
+    "text": "4132",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      272,
+      343,
+      290,
+      369
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      307,
+      343,
+      353,
+      367
+    ],
+    "text": "20.00",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      392,
+      344,
+      443,
+      367
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      19,
+      364,
+      186,
+      389
+    ],
+    "text": "CROCS 300X17 TUBES",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      264,
+      408,
+      360,
+      428
+    ],
+    "text": "SUB TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      396,
+      410,
+      441,
+      427
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      175,
+      432,
+      360,
+      449
+    ],
+    "text": "ROUNDING ADJUSTMENT :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      405,
+      433,
+      441,
+      451
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      241,
+      450,
+      361,
+      473
+    ],
+    "text": "GRAND TOTAL :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      397,
+      454,
+      439,
+      472
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      306,
+      475,
+      361,
+      497
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      396,
+      473,
+      442,
+      494
+    ],
+    "text": "20.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      289,
+      497,
+      361,
+      516
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      405,
+      497,
+      443,
+      516
+    ],
+    "text": "0.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      15,
+      538,
+      351,
+      561
+    ],
+    "text": "23-01-2019 13:14:15 PM, PRINT BY: ROOT",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      18,
+      560,
+      345,
+      581
+    ],
+    "text": "TOKEN NO: 0, STATION ID: A1, PID: POS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      14,
+      582,
+      167,
+      602
+    ],
+    "text": "INVOICE NO: 22497",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      15,
+      622,
+      186,
+      645
+    ],
+    "text": "THANKS YOUR SUPPORT",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "bbox": [
+      220,
+      197,
+      329,
+      223
+    ],
+    "text": "CITY MILK",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      76,
+      227,
+      446,
+      252
+    ],
+    "text": "R&C VENTURE SDN BHD (1191015-W)",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      74,
+      254,
+      459,
+      281
+    ],
+    "text": "LOT-18A-2, BERJAYA TIMES SQUARE,",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      194,
+      284,
+      351,
+      310
+    ],
+    "text": "KUALA LUMPUR.",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      139,
+      312,
+      399,
+      339
+    ],
+    "text": "(GST NO: 001557721088)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      126,
+      370,
+      392,
+      399
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      31,
+      427,
+      366,
+      480
+    ],
+    "text": "ORDER #:139358",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      33,
+      504,
+      216,
+      531
+    ],
+    "text": "INV NO.: 539319",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      31,
+      533,
+      84,
+      559
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      117,
+      539,
+      130,
+      558
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      142,
+      533,
+      368,
+      557
+    ],
+    "text": "19-04-2018 13:43:54",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      27,
+      562,
+      341,
+      588
+    ],
+    "text": "CASHIER: CITY MILK CASHIER",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      32,
+      619,
+      165,
+      646
+    ],
+    "text": "DESCRIPTION",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      206,
+      618,
+      247,
+      646
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      292,
+      620,
+      378,
+      647
+    ],
+    "text": "U.PRICE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      399,
+      619,
+      458,
+      646
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      471,
+      619,
+      506,
+      645
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      33,
+      676,
+      259,
+      704
+    ],
+    "text": "BANANA MILKSHAKE(R)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      201,
+      706,
+      236,
+      731
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      304,
+      706,
+      353,
+      731
+    ],
+    "text": "9.50",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      410,
+      707,
+      460,
+      732
+    ],
+    "text": "9.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      480,
+      707,
+      508,
+      731
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      33,
+      764,
+      151,
+      790
+    ],
+    "text": "TOTAL QTY:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      163,
+      764,
+      178,
+      792
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      31,
+      793,
+      293,
+      821
+    ],
+    "text": "TOTAL (EXCLUDING GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      455,
+      794,
+      509,
+      819
+    ],
+    "text": "8.96",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      32,
+      822,
+      236,
+      849
+    ],
+    "text": "GST PAYABLE (6%):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      458,
+      823,
+      508,
+      845
+    ],
+    "text": "0.54",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      33,
+      849,
+      329,
+      877
+    ],
+    "text": "TOTAL (INCLUSIVE OF GST):",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      456,
+      850,
+      507,
+      875
+    ],
+    "text": "9.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      32,
+      909,
+      171,
+      953
+    ],
+    "text": "TOTAL:",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      410,
+      909,
+      506,
+      953
+    ],
+    "text": "9.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      1012,
+      108,
+      1040
+    ],
+    "text": "CASH :",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      448,
+      1013,
+      508,
+      1037
+    ],
+    "text": "10.50",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      1040,
+      128,
+      1063
+    ],
+    "text": "CHANGE :",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      459,
+      1040,
+      510,
+      1064
+    ],
+    "text": "1.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      32,
+      1125,
+      72,
+      1148
+    ],
+    "text": "GST",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      81,
+      1124,
+      167,
+      1151
+    ],
+    "text": "SUMMARY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      270,
+      1125,
+      386,
+      1149
+    ],
+    "text": "AMOUNT(RM)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      423,
+      1124,
+      506,
+      1149
+    ],
+    "text": "TAX(RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      34,
+      1153,
+      62,
+      1175
+    ],
+    "text": "SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      154,
+      1152,
+      223,
+      1177
+    ],
+    "text": "(@ 6%)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      340,
+      1152,
+      390,
+      1175
+    ],
+    "text": "8.96",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      459,
+      1153,
+      508,
+      1175
+    ],
+    "text": "0.54",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      149,
+      1294,
+      380,
+      1318
+    ],
+    "text": "**** THANK YOU ****",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      173,
+      1322,
+      380,
+      1349
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

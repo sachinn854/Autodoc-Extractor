@@ -1,0 +1,464 @@
+[
+  {
+    "bbox": [
+      228,
+      118,
+      380,
+      146
+    ],
+    "text": "KFA SUPPLY",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      187,
+      151,
+      425,
+      181
+    ],
+    "text": "( ROC : SA0416111-K )",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      166,
+      183,
+      444,
+      214
+    ],
+    "text": "( GST NO: 002126950400 )",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      34,
+      221,
+      580,
+      249
+    ],
+    "text": "125A TINGKAT BAWAH PT 1961 JALAN MALINJA",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      93,
+      252,
+      515,
+      280
+    ],
+    "text": "SITE B 45400 SEKINCHAN SELANGOR",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      166,
+      322,
+      402,
+      356
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      48,
+      372,
+      134,
+      398
+    ],
+    "text": "BILL NO",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      166,
+      370,
+      341,
+      398
+    ],
+    "text": ": CS0032277",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      46,
+      407,
+      103,
+      433
+    ],
+    "text": "DATE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      166,
+      408,
+      438,
+      434
+    ],
+    "text": ": 27/05/2018 8:07 PM",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      48,
+      437,
+      136,
+      465
+    ],
+    "text": "CASHIER",
+    "class": "CASHIER",
+    "class_id": 10
+  },
+  {
+    "bbox": [
+      168,
+      442,
+      342,
+      467
+    ],
+    "text": ": CT001 / 0001",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      49,
+      484,
+      103,
+      511
+    ],
+    "text": "ITEM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      252,
+      487,
+      296,
+      514
+    ],
+    "text": "QTY",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      330,
+      484,
+      389,
+      512
+    ],
+    "text": "PRICE",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      409,
+      487,
+      499,
+      512
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      47,
+      523,
+      355,
+      550
+    ],
+    "text": "STAR 74CM X79CM 10KEPING",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      50,
+      553,
+      229,
+      579
+    ],
+    "text": "9555794100234",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      285,
+      556,
+      300,
+      578
+    ],
+    "text": "1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      329,
+      555,
+      395,
+      580
+    ],
+    "text": "11.60",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      432,
+      554,
+      536,
+      581
+    ],
+    "text": "11.60 SR",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      46,
+      590,
+      125,
+      617
+    ],
+    "text": "QTY : 1",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      208,
+      592,
+      327,
+      619
+    ],
+    "text": "TOTAL RM",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      207,
+      628,
+      284,
+      654
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      210,
+      671,
+      297,
+      701
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      354,
+      597,
+      365,
+      615
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      355,
+      634,
+      363,
+      653
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      355,
+      676,
+      364,
+      696
+    ],
+    "text": ":",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      431,
+      595,
+      495,
+      621
+    ],
+    "text": "11.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      432,
+      630,
+      494,
+      655
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      443,
+      675,
+      493,
+      698
+    ],
+    "text": "0.40",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      44,
+      739,
+      197,
+      767
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      46,
+      781,
+      153,
+      808
+    ],
+    "text": "SR @ 6%",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      45,
+      821,
+      95,
+      845
+    ],
+    "text": "TOTAL",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      307,
+      740,
+      391,
+      768
+    ],
+    "text": "AMOUNT",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      342,
+      785,
+      405,
+      808
+    ],
+    "text": "10.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      342,
+      821,
+      402,
+      845
+    ],
+    "text": "10.94",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      435,
+      740,
+      475,
+      766
+    ],
+    "text": "TAX",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      442,
+      784,
+      495,
+      808
+    ],
+    "text": "0.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      439,
+      821,
+      493,
+      848
+    ],
+    "text": "0.66",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      208,
+      867,
+      370,
+      895
+    ],
+    "text": "THANK YOU",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      147,
+      894,
+      427,
+      923
+    ],
+    "text": "PLEASE COME AGAIN",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]

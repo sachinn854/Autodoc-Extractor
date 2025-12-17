@@ -1,0 +1,695 @@
+[
+  {
+    "bbox": [
+      205,
+      337,
+      681,
+      384
+    ],
+    "text": "MR. D.I.Y. (M) SDN BHD",
+    "class": "COMPANY",
+    "class_id": 0
+  },
+  {
+    "bbox": [
+      275,
+      381,
+      587,
+      421
+    ],
+    "text": "CO-REG:860671-D",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      89,
+      426,
+      770,
+      467
+    ],
+    "text": "LOT 1851-A & 1851-B, JALAN KPB 6,",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      109,
+      469,
+      749,
+      507
+    ],
+    "text": "KAWASAN PERINOUSTRIAN BALAKONG,",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      133,
+      514,
+      754,
+      550
+    ],
+    "text": "43300 SERI KEMBANGAN, SELANGOR",
+    "class": "ADDRESS",
+    "class_id": 1
+  },
+  {
+    "bbox": [
+      175,
+      552,
+      687,
+      591
+    ],
+    "text": "(GST ID NO : 000306020352)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      156,
+      594,
+      706,
+      633
+    ],
+    "text": "(TESCO EXTRA ARA DAMANSARA)",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      319,
+      638,
+      543,
+      673
+    ],
+    "text": "TAX INVOICE",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      28,
+      722,
+      336,
+      759
+    ],
+    "text": "PILLAR SINK TAP",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      31,
+      766,
+      254,
+      804
+    ],
+    "text": "FZ02 - 6/54",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      813,
+      724,
+      853,
+      759
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      26,
+      806,
+      180,
+      846
+    ],
+    "text": "9072351",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      481,
+      808,
+      672,
+      842
+    ],
+    "text": "2 X 23.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      708,
+      809,
+      813,
+      844
+    ],
+    "text": "47.80",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      27,
+      851,
+      483,
+      884
+    ],
+    "text": "SHIELDTOX FIK 600ML MP",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      810,
+      845,
+      856,
+      885
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      27,
+      891,
+      212,
+      927
+    ],
+    "text": "WA01 - 24",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      23,
+      935,
+      312,
+      971
+    ],
+    "text": "9556111988559",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      486,
+      933,
+      546,
+      967
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      587,
+      935,
+      669,
+      968
+    ],
+    "text": "8.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      732,
+      936,
+      814,
+      971
+    ],
+    "text": "8.90",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      27,
+      978,
+      337,
+      1009
+    ],
+    "text": "SPONGE KOREA-2S",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      813,
+      976,
+      859,
+      1014
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      26,
+      1021,
+      298,
+      1056
+    ],
+    "text": "AR62 - 12/312",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      27,
+      1064,
+      172,
+      1095
+    ],
+    "text": "9064017",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      485,
+      1061,
+      545,
+      1093
+    ],
+    "text": "4 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      586,
+      1062,
+      669,
+      1096
+    ],
+    "text": "3.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      715,
+      1061,
+      813,
+      1096
+    ],
+    "text": "12.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      27,
+      1103,
+      274,
+      1138
+    ],
+    "text": "PLASTIC BAGS",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      27,
+      1147,
+      130,
+      1179
+    ],
+    "text": "99999",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      485,
+      1147,
+      545,
+      1178
+    ],
+    "text": "1 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      587,
+      1144,
+      669,
+      1177
+    ],
+    "text": "0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      728,
+      1146,
+      815,
+      1179
+    ],
+    "text": "0.20",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      27,
+      1188,
+      481,
+      1223
+    ],
+    "text": "VANCE LIGHTER - 1S VT02",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      815,
+      1184,
+      862,
+      1224
+    ],
+    "text": "*S",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      27,
+      1232,
+      318,
+      1267
+    ],
+    "text": "WB22 - 50/1000",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      29,
+      1274,
+      307,
+      1307
+    ],
+    "text": "9555258606166",
+    "class": "QTY",
+    "class_id": 6
+  },
+  {
+    "bbox": [
+      485,
+      1273,
+      544,
+      1307
+    ],
+    "text": "5 X",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      587,
+      1272,
+      667,
+      1307
+    ],
+    "text": "0.60",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      730,
+      1270,
+      814,
+      1306
+    ],
+    "text": "3.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      28,
+      1355,
+      170,
+      1396
+    ],
+    "text": "ITEM(S)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      202,
+      1357,
+      257,
+      1394
+    ],
+    "text": ": 5",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      626,
+      1357,
+      854,
+      1393
+    ],
+    "text": "QTY(S) : 13",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      27,
+      1440,
+      402,
+      1475
+    ],
+    "text": "TOTAL INCL. GST@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      29,
+      1485,
+      112,
+      1519
+    ],
+    "text": "CASH",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      30,
+      1525,
+      151,
+      1560
+    ],
+    "text": "CHANGE",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      687,
+      1437,
+      854,
+      1475
+    ],
+    "text": "RM 71.90",
+    "class": "TOTAL",
+    "class_id": 3
+  },
+  {
+    "bbox": [
+      689,
+      1482,
+      855,
+      1516
+    ],
+    "text": "RM 72.00",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      713,
+      1526,
+      855,
+      1560
+    ],
+    "text": "RM 0.10",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      29,
+      1605,
+      257,
+      1644
+    ],
+    "text": "GST SUMMARY",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      30,
+      1651,
+      193,
+      1683
+    ],
+    "text": "GST S@6%",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      400,
+      1603,
+      541,
+      1646
+    ],
+    "text": "AMT (RM)",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      485,
+      1648,
+      585,
+      1686
+    ],
+    "text": "67.83",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      609,
+      1605,
+      749,
+      1646
+    ],
+    "text": "TAX (RM)",
+    "class": "TAX",
+    "class_id": 4
+  },
+  {
+    "bbox": [
+      713,
+      1647,
+      794,
+      1684
+    ],
+    "text": "4.07",
+    "class": "LINE_TOTAL",
+    "class_id": 8
+  },
+  {
+    "bbox": [
+      31,
+      1777,
+      320,
+      1809
+    ],
+    "text": "02-03-18 17:23",
+    "class": "DATE",
+    "class_id": 2
+  },
+  {
+    "bbox": [
+      338,
+      1773,
+      528,
+      1808
+    ],
+    "text": "SH01 ZJ42",
+    "class": "OTHER",
+    "class_id": 11
+  },
+  {
+    "bbox": [
+      586,
+      1773,
+      861,
+      1809
+    ],
+    "text": "T1 R000227410",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      30,
+      1817,
+      194,
+      1852
+    ],
+    "text": "OPERATOR",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      218,
+      1819,
+      568,
+      1854
+    ],
+    "text": "TADC - AEIM ABDUL",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      156,
+      1904,
+      714,
+      1939
+    ],
+    "text": "EXCHANGE ARE ALLOWED WITHIN",
+    "class": "ITEM",
+    "class_id": 5
+  },
+  {
+    "bbox": [
+      234,
+      1946,
+      626,
+      1977
+    ],
+    "text": "7 DAY WITH RECEIPT .",
+    "class": "DOCUMENT_NO",
+    "class_id": 9
+  },
+  {
+    "bbox": [
+      192,
+      1982,
+      691,
+      2026
+    ],
+    "text": "STRICTLY NO CASH REFUND .",
+    "class": "ITEM",
+    "class_id": 5
+  }
+]
