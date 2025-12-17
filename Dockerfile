@@ -1,7 +1,11 @@
-# Multi-stage build for both backend and frontend
-FROM python:3.11-slim as backend-build
+# ============================================
+# Stage 1: Build Backend
+# ============================================
+FROM python:3.11-slim AS backend-build
 
-# Install system dependencies for backend
+WORKDIR /backend
+
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     poppler-utils \
@@ -9,71 +13,67 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# Set backend working directory
-WORKDIR /app/backend
-
-# Copy backend requirements and install
+# Install Python dependencies
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy backend code
-COPY backend/ .
+COPY backend/app ./app
+COPY backend/models ./models
 
-# Frontend build stage
-FROM node:18-alpine as frontend-build
 
-WORKDIR /app/frontend
+# ============================================
+# Stage 2: Build Frontend
+# ============================================
+FROM node:18-alpine AS frontend-build
+
+WORKDIR /frontend
+
+# Install dependencies
 COPY frontend/package*.json ./
-RUN npm ci
+RUN npm install
+
+# Copy frontend code and build
 COPY frontend/ .
 RUN npm run build
 
-# Final production image
+
+# ============================================
+# Stage 3: Production Image (Render)
+# ============================================
 FROM python:3.11-slim
 
-# Install runtime dependencies
+WORKDIR /app
+
+# Install runtime system dependencies
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     poppler-utils \
     libgl1-mesa-glx \
     libglib2.0-0 \
-    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js for serving frontend
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    npm install -g serve
+# ✅ Install Python deps again (SAFE way)
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /app
+# Copy backend code
+COPY --from=backend-build /backend /app/backend
 
-# Copy backend from build stage
-COPY --from=backend-build /app/backend ./backend
-COPY --from=backend-build /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
-COPY --from=backend-build /usr/local/bin /usr/local/bin
+# Copy frontend build (Next.js)
+COPY --from=frontend-build /frontend/.next /app/frontend/.next
+COPY --from=frontend-build /frontend/public /app/frontend/public
+COPY --from=frontend-build /frontend/package.json /app/frontend/package.json
+COPY --from=frontend-build /frontend/next.config.js /app/frontend/next.config.js
 
-# Copy frontend build from build stage
-COPY --from=frontend-build /app/frontend/.next ./frontend/.next
-COPY --from=frontend-build /app/frontend/public ./frontend/public
-COPY --from=frontend-build /app/frontend/package*.json ./frontend/
-COPY --from=frontend-build /app/frontend/next.config.js ./frontend/
+# Create required directories
+RUN mkdir -p /app/backend/data /app/backend/tmp
 
-# Install frontend production dependencies
-WORKDIR /app/frontend
-RUN npm ci --only=production
+# (EXPOSE optional for Render, but keep generic)
+EXPOSE 8001
 
-# Create startup script
-WORKDIR /app
-RUN echo '#!/bin/bash\n\
-cd /app/backend && uvicorn app.main:app --host 0.0.0.0 --port 8001 &\n\
-cd /app/frontend && npm start -- -p 3000 &\n\
-wait' > /app/start.sh && chmod +x /app/start.sh
+# ❌ Healthcheck removed (Render-safe)
 
-# Expose ports
-EXPOSE 8001 3000
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD curl -f http://localhost:8001/health || exit 1
-
-CMD ["/app/start.sh"]
+# Start backend on Render dynamic PORT
+WORKDIR /app/backend
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8001}"]

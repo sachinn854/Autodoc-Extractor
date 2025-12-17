@@ -18,6 +18,7 @@ load_dotenv()
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, EmailStr
 from sqlalchemy.orm import Session
 import logging
@@ -86,11 +87,18 @@ app = FastAPI(
 # Add CORS middleware to allow frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],  # Frontend URLs
+    allow_origins=["*"],  # Allow all origins in production (Render deployment)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
+
+# Mount static files for production (Next.js build)
+# Check if frontend build exists (for Docker deployment)
+FRONTEND_BUILD_DIR = Path(__file__).parent.parent.parent / "frontend" / ".next" / "static"
+if FRONTEND_BUILD_DIR.exists():
+    app.mount("/_next/static", StaticFiles(directory=str(FRONTEND_BUILD_DIR)), name="nextjs-static")
+    logger.info("✅ Mounted Next.js static files")
 
 # Job status tracking (in production, use Redis/database)
 JOB_STATUS = {}
@@ -1388,6 +1396,44 @@ async def get_job_result(job_id: str):
             status_code=500,
             detail=f"Failed to load results: {str(e)}"
         )
+
+
+# ==================== FRONTEND SERVING (PRODUCTION) ====================
+
+@app.get("/{full_path:path}")
+async def serve_frontend(full_path: str):
+    """
+    Serve Next.js frontend in production (Docker deployment)
+    This catches all non-API routes and serves the frontend
+    """
+    # Check if this is an API route (skip frontend serving)
+    if full_path.startswith("api/") or full_path.startswith("docs") or full_path.startswith("redoc"):
+        raise HTTPException(status_code=404, detail="API endpoint not found")
+    
+    # Path to frontend build directory
+    frontend_dir = Path(__file__).parent.parent.parent / "frontend"
+    
+    # If frontend directory doesn't exist, skip (local development)
+    if not frontend_dir.exists():
+        raise HTTPException(status_code=404, detail="Frontend not available in development mode")
+    
+    # Serve index.html for all routes (Next.js handles client-side routing)
+    index_path = frontend_dir / ".next" / "server" / "pages" / "index.html"
+    
+    # Fallback to serving from public directory
+    if not index_path.exists():
+        # Try to serve static file from public directory
+        public_file = frontend_dir / "public" / full_path
+        if public_file.exists() and public_file.is_file():
+            return FileResponse(public_file)
+        
+        # Default to index.html for client-side routing
+        index_path = frontend_dir / ".next" / "server" / "pages" / "index.html"
+    
+    if index_path.exists():
+        return FileResponse(index_path)
+    else:
+        raise HTTPException(status_code=404, detail="Frontend build not found")
 
 
 if __name__ == "__main__":
