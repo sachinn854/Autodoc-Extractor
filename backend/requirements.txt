@@ -16,3 +16,4 @@ pyjwt
 bcrypt
 python-multipart
 email-validator
+python-dotenv

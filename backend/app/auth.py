@@ -1,10 +1,15 @@
 """
-Authentication utilities: password hashing, JWT tokens, user verification
+Authentication utilities: password hashing, JWT tokens, user verification, email verification
 """
 from datetime import datetime, timedelta
 from typing import Optional
 import jwt
 import bcrypt
+import secrets
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import os
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
@@ -63,6 +68,80 @@ def decode_token(token: str) -> dict:
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Could not validate credentials"
         )
+
+
+def generate_verification_token() -> str:
+    """Generate a random verification token"""
+    return secrets.token_urlsafe(32)
+
+
+def send_verification_email(email: str, token: str, frontend_url: str = "http://localhost:3000"):
+    """
+    Send verification email to user
+    
+    Args:
+        email: User's email address
+        token: Verification token
+        frontend_url: Frontend base URL
+    """
+    try:
+        # Email configuration (you can move these to environment variables)
+        SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
+        SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+        SMTP_EMAIL = os.getenv("SMTP_EMAIL", "your-email@gmail.com")
+        SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "your-app-password")
+        
+        # Skip email if credentials not configured
+        if SMTP_EMAIL == "your-email@gmail.com":
+            print(f"⚠️ SMTP not configured. Verification link: {frontend_url}/verify-email?token={token}")
+            return
+        
+        # Create message
+        msg = MIMEMultipart('alternative')
+        msg['Subject'] = "Verify Your Email - Autodoc Extractor"
+        msg['From'] = SMTP_EMAIL
+        msg['To'] = email
+        
+        # Verification link
+        verify_link = f"{frontend_url}/verify-email?token={token}"
+        
+        # HTML email body
+        html = f"""
+        <html>
+          <body style="font-family: Arial, sans-serif;">
+            <h2>Welcome to Autodoc Extractor!</h2>
+            <p>Thank you for signing up. Please verify your email address by clicking the button below:</p>
+            <p style="margin: 30px 0;">
+              <a href="{verify_link}" 
+                 style="background-color: #4CAF50; color: white; padding: 12px 24px; 
+                        text-decoration: none; border-radius: 4px; display: inline-block;">
+                Verify Email Address
+              </a>
+            </p>
+            <p>Or copy and paste this link into your browser:</p>
+            <p><a href="{verify_link}">{verify_link}</a></p>
+            <p style="color: #666; font-size: 12px; margin-top: 40px;">
+              If you didn't create an account, please ignore this email.
+            </p>
+          </body>
+        </html>
+        """
+        
+        part = MIMEText(html, 'html')
+        msg.attach(part)
+        
+        # Send email
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SMTP_EMAIL, SMTP_PASSWORD)
+            server.send_message(msg)
+        
+        print(f"✅ Verification email sent to {email}")
+        
+    except Exception as e:
+        print(f"❌ Failed to send verification email: {e}")
+        print(f"⚠️ Verification link: {frontend_url}/verify-email?token={token}")
+
 
 
 def get_current_user(

@@ -1,1 +1,47 @@
-# Phase 7: Dockerfile for Autodoc Extractor Backend\n# Production-ready containerized deployment\n\nFROM python:3.9-slim\n\n# Set working directory\nWORKDIR /app\n\n# Install system dependencies\nRUN apt-get update && apt-get install -y \\\n    # For pdf2image\n    poppler-utils \\\n    # For OpenCV\n    libgl1-mesa-glx \\\n    libglib2.0-0 \\\n    libsm6 \\\n    libxext6 \\\n    libxrender-dev \\\n    libgomp1 \\\n    # For Tesseract OCR (fallback)\n    tesseract-ocr \\\n    tesseract-ocr-eng \\\n    # General utilities\n    wget \\\n    curl \\\n    && rm -rf /var/lib/apt/lists/*\n\n# Copy requirements first for better Docker layer caching\nCOPY requirements.txt .\n\n# Install Python dependencies\nRUN pip install --no-cache-dir --upgrade pip\nRUN pip install --no-cache-dir -r requirements.txt\n\n# Copy application code\nCOPY app/ ./app/\n\n# Create necessary directories\nRUN mkdir -p tmp/uploads tmp/preprocessed tmp/results models data/history\n\n# Set environment variables\nENV PYTHONPATH=/app\nENV PYTHONUNBUFFERED=1\nENV FASTAPI_ENV=production\n\n# Expose port\nEXPOSE 8000\n\n# Health check\nHEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \\\n    CMD curl -f http://localhost:8000/health || exit 1\n\n# Run FastAPI application\nCMD [\"uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\", \"--workers\", \"1\"]\n\n# Production notes:\n# - Use --workers based on CPU cores in production\n# - Consider using gunicorn with uvicorn workers for production\n# - Mount volumes for persistent storage: /app/tmp and /app/data\n# - Set resource limits in docker-compose or k8s\n# - Use multi-stage build to reduce image size in production
+# Autodoc Extractor Backend - Production Dockerfile
+FROM python:3.13-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    tesseract-ocr \
+    tesseract-ocr-eng \
+    libtesseract-dev \
+    poppler-utils \
+    libgl1 \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first (for better caching)
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Create necessary directories
+RUN mkdir -p tmp/uploads tmp/preprocessed tmp/results data models
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
+# Expose port
+EXPOSE 8001
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8001/health || exit 1
+
+# Run the application
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001"]

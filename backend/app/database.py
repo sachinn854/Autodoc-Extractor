@@ -26,6 +26,8 @@ class User(Base):
     full_name = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     is_active = Column(Boolean, default=True)
+    is_verified = Column(Boolean, default=False)  # Email verification status
+    verification_token = Column(String, nullable=True)  # Email verification token
     
     # Relationship
     documents = relationship("Document", back_populates="user", cascade="all, delete-orphan")

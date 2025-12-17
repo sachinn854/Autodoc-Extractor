@@ -10,6 +10,10 @@ import traceback
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -30,7 +34,8 @@ from app.insights import generate_spending_insights, load_historical_data, save_
 from app.database import Base, engine, get_db, init_db, User, Document
 from app.auth import (
     hash_password, authenticate_user, create_access_token, 
-    get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES
+    get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES,
+    generate_verification_token, send_verification_email
 )
 
 # Configure logging
@@ -172,24 +177,35 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
             detail="Email already registered"
         )
     
+    # Generate verification token
+    verification_token = generate_verification_token()
+    
     # Create new user
     hashed_password = hash_password(request.password)
     new_user = User(
         email=request.email,
         password_hash=hashed_password,
-        full_name=request.full_name
+        full_name=request.full_name,
+        verification_token=verification_token,
+        is_verified=False  # Email not verified yet
     )
     
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
     
+    # Send verification email
+    try:
+        send_verification_email(new_user.email, verification_token)
+    except Exception as e:
+        logger.error(f"Failed to send verification email: {e}")
+    
     # Create access token
     access_token = create_access_token(
         data={"user_id": new_user.id, "email": new_user.email}
     )
     
-    logger.info(f"New user registered: {new_user.email}")
+    logger.info(f"New user registered: {new_user.email} (unverified)")
     
     return TokenResponse(
         access_token=access_token,
@@ -222,6 +238,13 @@ async def login(request: LoginRequest, db: Session = Depends(get_db)):
             detail="Incorrect email or password"
         )
     
+    # Check if email is verified
+    if not user.is_verified:
+        raise HTTPException(
+            status_code=403,
+            detail="Email not verified. Please check your email for verification link."
+        )
+    
     # Create access token
     access_token = create_access_token(
         data={"user_id": user.id, "email": user.email}
@@ -239,6 +262,39 @@ async def login(request: LoginRequest, db: Session = Depends(get_db)):
             "is_active": user.is_active
         }
     )
+
+
+@app.get("/auth/verify-email")
+async def verify_email(token: str, db: Session = Depends(get_db)):
+    """
+    Verify user's email address using verification token
+    
+    Args:
+        token: Email verification token
+        
+    Returns:
+        Success message
+    """
+    # Find user by verification token
+    user = db.query(User).filter(User.verification_token == token).first()
+    
+    if not user:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid or expired verification token"
+        )
+    
+    # Mark user as verified
+    user.is_verified = True
+    user.verification_token = None  # Clear token after use
+    db.commit()
+    
+    logger.info(f"Email verified for user: {user.email}")
+    
+    return {
+        "message": "Email verified successfully! You can now login.",
+        "email": user.email
+    }
 
 
 @app.get("/auth/me", response_model=UserResponse)

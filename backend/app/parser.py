@@ -92,32 +92,62 @@ class TableParser:
     def filter_tokens_inside_table(self, tokens: List[Dict], table_bbox: List[int]) -> List[Dict]:
         """
         Filter OCR tokens that are inside the table bounding box
+        STOPS at TOTAL/SUBTOTAL row to exclude footer content
         
         Args:
             tokens: List of OCR tokens
             table_bbox: dict with x1,y1,x2,y2 OR [x1, y1, x2, y2] list
             
         Returns:
-            Filtered tokens inside table
+            Filtered tokens inside table (excluding content after TOTAL)
         """
         # Handle both dict and list formats
         if isinstance(table_bbox, dict):
             x1, y1, x2, y2 = table_bbox['x1'], table_bbox['y1'], table_bbox['x2'], table_bbox['y2']
         else:
             x1, y1, x2, y2 = table_bbox
-        filtered_tokens = []
         
+        # First, collect all tokens inside bbox
+        tokens_inside = []
         for token in tokens:
             bbox = token.get('bbox', [])
             if len(bbox) >= 4:
-                # Calculate token center
                 token_x1, token_y1, token_x2, token_y2 = bbox[:4]
                 center_x = (token_x1 + token_x2) / 2
                 center_y = (token_y1 + token_y2) / 2
                 
-                # Check if center is inside table bbox
                 if x1 <= center_x <= x2 and y1 <= center_y <= y2:
-                    filtered_tokens.append(token)
+                    tokens_inside.append(token)
+        
+        # Sort by Y position (top to bottom)
+        tokens_inside.sort(key=lambda t: t.get('bbox', [0,0,0,0])[1])
+        
+        # Now filter, stopping at TOTAL keywords
+        filtered_tokens = []
+        
+        for token in tokens_inside:
+            text = token.get('text', '').strip().upper()
+            
+            # 🛑 STOP at TOTAL/SUBTOTAL keywords - don't include this or anything after
+            total_keywords = [
+                'TOTAL AMOUNT', 'SUBTOTAL', 'SUB TOTAL', 'GRAND TOTAL',
+                'NET TOTAL', 'FINAL AMOUNT', 'AMOUNT PAYABLE', 'BILL TOTAL'
+            ]
+            
+            # Check if this token contains a TOTAL keyword
+            is_total_keyword = any(keyword in text for keyword in total_keywords)
+            
+            # Also check for standalone "TOTAL" with specific patterns
+            if not is_total_keyword:
+                if text in ['TOTAL', 'TOTAL:', 'AMOUNT', 'AMOUNT:']:
+                    is_total_keyword = True
+            
+            if is_total_keyword:
+                logger.info(f"🛑 Table parsing stopped at TOTAL keyword: '{token.get('text', '')}'")
+                print(f"🛑 TABLE BUILDING STOPPED AT: '{token.get('text', '')}'")
+                break  # Stop processing tokens - exclude TOTAL and everything after
+            
+            filtered_tokens.append(token)
         
         return filtered_tokens
     
@@ -804,7 +834,7 @@ class BusinessSchemaParser:
     def extract_items_from_ocr(self, pages_data: List[dict]) -> Tuple[List[dict], List[str]]:
         """
         Extract items from raw OCR data when no tables are detected (receipt format)
-        Uses column header as anchor point and strict semantic filtering.
+        Routes to header-based OR headerless parsing based on detection.
         
         Args:
             pages_data: OCR pages data (array format)
@@ -838,6 +868,74 @@ class BusinessSchemaParser:
         
         # Sort tokens by Y position (top to bottom)
         sorted_tokens = sorted(all_tokens, key=lambda t: t.get('bbox', [0,0,0,0])[1])
+        
+        # 🔍 DETECT: Does this receipt have column headers?
+        has_header = self._has_column_header(sorted_tokens)
+        
+        if has_header:
+            print("\n✅ HEADER DETECTED → Using header-based parsing\n")
+            logger.info("Header detected: using column-based parsing")
+            return self._extract_items_with_header(sorted_tokens)
+        else:
+            print("\n⚠️ NO HEADER → Using headerless parsing\n")
+            logger.info("No header detected: using proximity-based parsing")
+            return self._extract_items_headerless(sorted_tokens)
+        
+        # 🔍 DETECT: Does this receipt have column headers?
+        has_header = self._has_column_header(sorted_tokens)
+        
+        if has_header:
+            print("\n✅ HEADER DETECTED → Using header-based parsing\n")
+            logger.info("Header detected: using column-based parsing")
+            return self._extract_items_with_header(sorted_tokens)
+        else:
+            print("\n⚠️ NO HEADER → Using headerless parsing\n")
+            logger.info("No header detected: using proximity-based parsing")
+            return self._extract_items_headerless(sorted_tokens)
+    
+    def _has_column_header(self, sorted_tokens: List[dict]) -> bool:
+        """
+        Detect if receipt has column header row (QTY, RATE, TOTAL keywords)
+        
+        Args:
+            sorted_tokens: Tokens sorted by Y position
+            
+        Returns:
+            True if header found, False otherwise
+        """
+        # Search for header keywords in first 50 tokens
+        header_keywords = ['QTY', 'QUANTITY', 'RATE', 'PRICE', 'UNIT PRICE', 'TOTAL', 'AMOUNT']
+        
+        for i, token in enumerate(sorted_tokens[:50]):
+            text = token.get('text', '').strip().upper()
+            text_clean = text.replace('.', '').replace(':', '').strip()
+            
+            # Check if this is a header keyword
+            if any(keyword == text_clean for keyword in header_keywords):
+                # Verify nearby tokens have more header keywords
+                nearby_tokens = sorted_tokens[max(0, i-2):min(len(sorted_tokens), i+5)]
+                nearby_texts = [t.get('text', '').upper().replace('.', '').replace(':', '').strip() 
+                               for t in nearby_tokens]
+                header_count = sum(1 for nt in nearby_texts if nt in header_keywords)
+                
+                if header_count >= 2:  # At least 2 header keywords nearby
+                    logger.info(f"Header detected at token #{i}: '{text}'")
+                    return True
+        
+        return False
+    
+    def _extract_items_with_header(self, sorted_tokens: List[dict]) -> Tuple[List[dict], List[str]]:
+        """
+        EXISTING LOGIC: Extract items using column header positions
+        
+        Args:
+            sorted_tokens: Tokens sorted by Y position
+            
+        Returns:
+            Tuple of (items list, confidence flags)
+        """
+        items = []
+        flags = []
         
         # 🔍 STEP 1: Find column header row and detect column positions
         column_header_index = -1
@@ -931,6 +1029,7 @@ class BusinessSchemaParser:
             reject_keywords = [
                 # Transaction fields
                 'DATE', 'TIME', 'CASHIER', 'MEMBER', 'INVOICE', 'RECEIPT', 'DOCUMENT',
+                'TERMINAL', 'BANK CARD', 'CARD NUMBER', 'APPROVAL', 'TRANSACTION',
                 
                 # Totals (all variations)
                 'TOTAL', 'SUBTOTAL', 'SUB TOTAL', 'SUB-TOTAL', 'GRAND TOTAL',
@@ -994,6 +1093,15 @@ class BusinessSchemaParser:
             token = sorted_tokens[i]
             text = token.get('text', '').strip()
             
+            # 🛑 STOP: Check if this is Total/Grand Total keyword (end of items)
+            text_upper = text.upper()
+            total_keywords = ['SUBTOTAL', 'SUB TOTAL', 'GRAND TOTAL', 'NET TOTAL', 
+                            'TOTAL AMOUNT', 'FINAL AMOUNT', 'AMOUNT PAYABLE']
+            if any(keyword in text_upper for keyword in total_keywords):
+                logger.info(f"🛑 TOTAL keyword detected: '{text}' - stopping item extraction")
+                print(f"\n🛑 TOTAL DETECTED: '{text}' - Stopping here\n")
+                break  # Stop processing further tokens
+            
             is_valid = is_valid_item_row(text, i)
             status = "✅ VALID" if is_valid else "❌ REJECT"
             logger.info(f"Token #{i}: {status} | '{text}'")
@@ -1027,6 +1135,332 @@ class BusinessSchemaParser:
             logger.warning("No items extracted from receipt-style parsing")
         
         return items, flags
+    
+    def _extract_items_headerless(self, sorted_tokens: List[dict]) -> Tuple[List[dict], List[str]]:
+        """
+        NEW LOGIC: Extract items WITHOUT column headers (proximity + semantic inference)
+        
+        Args:
+            sorted_tokens: Tokens sorted by Y position
+            
+        Returns:
+            Tuple of (items list, confidence flags)
+        """
+        items = []
+        flags = []
+        
+        print("\n" + "="*80)
+        print("🔥 HEADERLESS PARSING MODE 🔥")
+        print("="*80 + "\n")
+        
+        logger.info("=" * 80)
+        logger.info("HEADERLESS PARSING: Using proximity + semantic inference")
+        logger.info("=" * 80)
+        
+        # Group tokens into rows by Y position
+        rows = self._group_tokens_into_rows_headerless(sorted_tokens)
+        logger.info(f"Grouped {len(sorted_tokens)} tokens into {len(rows)} rows")
+        
+        print(f"\n📊 GROUPED INTO {len(rows)} ROWS\n")
+        
+        # Process each row
+        for row_idx, row_tokens in enumerate(rows):
+            # 🛑 STOP: Check if this is Total/Grand Total row (end of items)
+            if self._is_total_row(row_tokens):
+                logger.info(f"🛑 TOTAL ROW detected at row {row_idx} - stopping item extraction")
+                print(f"\n🛑 TOTAL ROW DETECTED - Stopping here\n")
+                break  # Stop processing further rows
+            
+            # Check if this is a valid item row
+            if not self._is_valid_item_row_headerless(row_tokens):
+                logger.debug(f"Row {row_idx}: Skipped (not item row)")
+                continue
+            
+            # Extract item from row
+            item = self._extract_item_from_row_headerless(row_tokens)
+            
+            if item and item.get('description') and len(item.get('description', '')) > 3:
+                # Validate math: qty × price ≈ total
+                qty = item.get('qty', 1.0)
+                price = item.get('unit_price', 0.0)
+                total = item.get('line_total', 0.0)
+                
+                if total > 0:
+                    expected_total = qty * price
+                    error = abs(total - expected_total)
+                    tolerance = max(0.05, total * 0.02)  # 2% tolerance or 5 cents
+                    
+                    if error <= tolerance:
+                        print(f"\n✅ ITEM: {item['description']}")
+                        print(f"   Qty: {qty} | Price: {price:.2f} | Total: {total:.2f}")
+                        items.append(item)
+                        logger.info(f"✅ Item extracted: {item['description']} (Qty:{qty}, Price:{price:.2f}, Total:{total:.2f})")
+                    else:
+                        logger.debug(f"❌ Math mismatch: {item['description']} ({qty}×{price:.2f}={expected_total:.2f} ≠ {total:.2f})")
+                        flags.append(f"MATH_MISMATCH: {item['description']}")
+        
+        logger.info("=" * 80)
+        logger.info(f"HEADERLESS RESULT: {len(items)} items extracted")
+        logger.info("=" * 80)
+        
+        if not items:
+            flags.append("NO_ITEMS_EXTRACTED_HEADERLESS: Could not parse items without column headers")
+            logger.warning("No items extracted from headerless parsing")
+        
+        print(f"\n📦 FINAL: {len(items)} items extracted\n")
+        
+        return items, flags
+    
+    def _group_tokens_into_rows_headerless(self, sorted_tokens: List[dict]) -> List[List[dict]]:
+        """
+        Group tokens into rows by Y coordinate proximity
+        
+        Args:
+            sorted_tokens: Tokens sorted by Y position
+            
+        Returns:
+            List of rows (each row is list of tokens)
+        """
+        if not sorted_tokens:
+            return []
+        
+        rows = []
+        current_row = [sorted_tokens[0]]
+        current_y = sorted_tokens[0].get('bbox', [0,0,0,0])[1]
+        
+        y_threshold = 15  # Y tolerance for same row
+        
+        for token in sorted_tokens[1:]:
+            bbox = token.get('bbox', [0,0,0,0])
+            token_y = bbox[1]
+            
+            if abs(token_y - current_y) <= y_threshold:
+                # Same row
+                current_row.append(token)
+            else:
+                # New row
+                if current_row:
+                    # Sort current row by X position (left to right)
+                    current_row.sort(key=lambda t: t.get('bbox', [0,0,0,0])[0])
+                    rows.append(current_row)
+                current_row = [token]
+                current_y = token_y
+        
+        # Add last row
+        if current_row:
+            current_row.sort(key=lambda t: t.get('bbox', [0,0,0,0])[0])
+            rows.append(current_row)
+        
+        return rows
+    
+    def _is_total_row(self, row_tokens: List[dict]) -> bool:
+        """
+        Check if row is a Total/Grand Total/Sub Total row (end of items section)
+        
+        Args:
+            row_tokens: Tokens in the row
+            
+        Returns:
+            True if this is a total row (should stop parsing)
+        """
+        if not row_tokens:
+            return False
+        
+        # Combine all text in row
+        row_text = ' '.join(t.get('text', '').strip() for t in row_tokens if t.get('text', '').strip())
+        row_text_upper = row_text.upper()
+        
+        # Total keywords that indicate end of items
+        total_keywords = [
+            'SUBTOTAL', 'SUB TOTAL', 'SUB-TOTAL',
+            'TOTAL AMOUNT', 'AMOUNT TOTAL', 'TOTAL PRICE', 'TOTAL QTY',
+            'GRAND TOTAL', 'NET TOTAL', 'GROSS TOTAL',
+            'FINAL AMOUNT', 'AMOUNT PAYABLE', 'PAYABLE AMOUNT',
+            'BILL TOTAL', 'INVOICE TOTAL',
+            'TOTAL:', 'AMOUNT:'
+        ]
+        
+        # Check for exact or close matches (case-insensitive, whitespace-flexible)
+        for keyword in total_keywords:
+            if keyword in row_text_upper:
+                logger.info(f"🛑 Total row detected: '{row_text}' (matched: {keyword})")
+                print(f"🛑 STOPPING AT: '{row_text}' (matched: {keyword})")
+                return True
+        
+        # Also check for single word "TOTAL" or "AMOUNT" if it's the main text
+        # But NOT if it's part of "LINE TOTAL" column header
+        if 'TOTAL' in row_text_upper and 'LINE' not in row_text_upper:
+            # Must have a numeric value after it (indicating summary row)
+            has_number = any(self._parse_amount(t.get('text', '')) > 0 for t in row_tokens)
+            if has_number:
+                logger.info(f"🛑 Total row detected: '{row_text}' (TOTAL keyword with number)")
+                print(f"🛑 STOPPING AT: '{row_text}' (TOTAL with number)")
+                return True
+        
+        # Check for standalone "AMOUNT" with a large number (likely total)
+        if row_text_upper.startswith('AMOUNT') or 'AMOUNT' == row_text_upper.strip():
+            has_number = any(self._parse_amount(t.get('text', '')) > 0 for t in row_tokens)
+            if has_number:
+                logger.info(f"🛑 Total row detected: '{row_text}' (AMOUNT keyword)")
+                print(f"🛑 STOPPING AT: '{row_text}' (AMOUNT keyword)")
+                return True
+        
+        return False
+    
+    def _is_valid_item_row_headerless(self, row_tokens: List[dict]) -> bool:
+        """
+        Check if row is a valid item row (not header/footer/summary)
+        
+        Args:
+            row_tokens: Tokens in the row
+            
+        Returns:
+            True if valid item row
+        """
+        if not row_tokens:
+            return False
+        
+        # Combine all text in row
+        row_text = ' '.join(t.get('text', '').strip() for t in row_tokens if t.get('text', '').strip())
+        row_text_upper = row_text.upper()
+        
+        # Must have some alphabetic content
+        if not any(c.isalpha() for c in row_text):
+            return False
+        
+        # Reject header/footer keywords
+        reject_keywords = [
+            'DATE', 'TIME', 'CASHIER', 'MEMBER', 'INVOICE', 'RECEIPT',
+            'SUBTOTAL', 'SUB TOTAL', 'GRAND TOTAL', 'NET TOTAL',
+            'TAX', 'GST', 'SST', 'VAT', 'CGST', 'SGST',
+            'ROUNDING', 'CHANGE', 'CASH', 'PAYMENT', 'BALANCE', 'TENDER',
+            'DISCOUNT', 'DISC', 'OFF', 'LESS',
+            'THANK', 'THANKS', 'WELCOME', 'VISIT',
+            'SDN', 'BHD', 'REG NO', 'PRIVATE LIMITED',
+            # Payment/Terminal info
+            'TERMINAL', 'BANK CARD', 'CARD NUMBER', 'APPROVAL',
+            'TRANSACTION', 'REFERENCE', 'REF NO',
+            # Header keywords
+            'QTY', 'QUANTITY', 'RATE', 'PRICE', 'AMOUNT'
+        ]
+        
+        for keyword in reject_keywords:
+            if keyword in row_text_upper:
+                return False
+        
+        # Must contain at least one numeric value
+        has_number = any(self._parse_amount(t.get('text', '')) > 0 for t in row_tokens)
+        if not has_number:
+            return False
+        
+        return True
+    
+    def _extract_item_from_row_headerless(self, row_tokens: List[dict]) -> Optional[dict]:
+        """
+        Extract item from row using proximity + semantic inference
+        
+        Strategy:
+        - Find description anchor (longest alphabetic text, leftmost)
+        - Find numeric tokens (right of description)
+        - Assign roles by position and magnitude:
+          * Small integer (1-20) = Qty
+          * First decimal = Unit Price
+          * Last/largest = Line Total
+        
+        Args:
+            row_tokens: Tokens in row (sorted left to right)
+            
+        Returns:
+            Item dict or None
+        """
+        if not row_tokens:
+            return None
+        
+        # Separate text tokens and numeric tokens
+        text_tokens = []
+        numeric_values = []
+        
+        for token in row_tokens:
+            text = token.get('text', '').strip()
+            num_val = self._parse_amount(text)
+            
+            if num_val > 0:
+                numeric_values.append(num_val)
+            elif any(c.isalpha() for c in text):
+                text_tokens.append(text)
+        
+        # Build description from text tokens
+        description = ' '.join(text_tokens).strip()
+        
+        if not description or len(description) < 3:
+            return None
+        
+        if not numeric_values:
+            return None
+        
+        # Validate numeric values - reject abnormally large numbers (card/approval codes)
+        # Typical max price: $10,000 per item
+        MAX_REASONABLE_PRICE = 10000.0
+        numeric_values = [v for v in numeric_values if v <= MAX_REASONABLE_PRICE]
+        
+        if not numeric_values:
+            return None
+        
+        # Assign numeric roles by position and magnitude
+        qty = 1.0
+        unit_price = 0.0
+        line_total = 0.0
+        
+        if len(numeric_values) == 1:
+            # Single number = price/total
+            unit_price = numeric_values[0]
+            line_total = numeric_values[0]
+        
+        elif len(numeric_values) == 2:
+            # Two numbers: determine which is qty/price/total
+            val1, val2 = numeric_values[0], numeric_values[1]
+            
+            # If first is small integer (≤20), treat as qty
+            if val1 <= 20 and val1 == int(val1):
+                qty = val1
+                line_total = val2
+                unit_price = line_total / qty if qty > 0 else line_total
+            else:
+                # Both are prices: first=unit_price, second=line_total
+                unit_price = val1
+                line_total = val2
+                qty = line_total / unit_price if unit_price > 0 else 1.0
+        
+        elif len(numeric_values) >= 3:
+            # Three+ numbers: standard format [qty, price, total]
+            qty = numeric_values[0]
+            unit_price = numeric_values[1]
+            line_total = numeric_values[2]
+            
+            # Validate: if math doesn't work, try alternative
+            expected = qty * unit_price
+            if abs(line_total - expected) > (line_total * 0.2):
+                # Try: [price, qty, total]
+                alt_price = numeric_values[0]
+                alt_qty = numeric_values[1]
+                alt_total = numeric_values[2]
+                alt_expected = alt_qty * alt_price
+                
+                if abs(alt_total - alt_expected) < abs(line_total - expected):
+                    qty = alt_qty
+                    unit_price = alt_price
+                    line_total = alt_total
+        
+        # Final validation
+        if unit_price <= 0 or line_total <= 0:
+            return None
+        
+        return {
+            'description': description,
+            'qty': qty,
+            'unit_price': unit_price,
+            'line_total': line_total
+        }
     
     def _extract_item_from_token_area(self, desc_token: dict, all_tokens: List[dict], desc_index: int, column_positions: dict = None) -> dict:
         """
@@ -1361,11 +1795,11 @@ class BusinessSchemaParser:
                     tokens = page_data.get('tokens', [])
                     all_tokens.extend(tokens)
         
-        # Look for total amounts
-        amounts['total'] = self._find_amount_by_keywords(all_tokens, self.total_keywords)
+        # Look for total amounts from OCR
+        ocr_total = self._find_amount_by_keywords(all_tokens, self.total_keywords)
         amounts['tax'] = self._find_amount_by_keywords(all_tokens, self.tax_keywords)
         
-        # Calculate subtotal from items if not found
+        # Calculate subtotal from items (MOST ACCURATE)
         if amounts['subtotal'] == 0.0:
             item_total = 0.0
             for table in tables:
@@ -1375,9 +1809,18 @@ class BusinessSchemaParser:
                     item_total += line_total
             amounts['subtotal'] = item_total
         
-        # If total not found, use subtotal + tax
-        if amounts['total'] == 0.0:
-            amounts['total'] = amounts['subtotal'] + amounts['tax']
+        # Calculate total from items sum + tax (MORE ACCURATE than OCR)
+        calculated_total = amounts['subtotal'] + amounts['tax']
+        
+        # Use calculated total if available, otherwise use OCR total
+        if calculated_total > 0:
+            amounts['total'] = calculated_total
+            logger.info(f"Using calculated total: ${calculated_total:.2f} (items sum + tax)")
+        elif ocr_total > 0:
+            amounts['total'] = ocr_total
+            logger.info(f"Using OCR-extracted total: ${ocr_total:.2f}")
+        else:
+            amounts['total'] = 0.0
         
         return amounts
     
