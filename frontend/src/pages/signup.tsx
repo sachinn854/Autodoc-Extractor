@@ -41,7 +41,11 @@ export default function Signup() {
 
     try {
       await signup(email, password, fullName);
-      // Redirect handled by AuthContext
+      // Show success message - verification email sent
+      setError(''); // Clear any previous errors
+      alert('Account created! Please check your email to verify your account before logging in.');
+      // Redirect to login
+      window.location.href = '/login';
     } catch (err: any) {
       setError(err.message || 'Signup failed. Please try again.');
     } finally {
