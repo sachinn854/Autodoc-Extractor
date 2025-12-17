@@ -24,6 +24,10 @@ import {
 import { AccountCircle, Upload as UploadIcon } from '@mui/icons-material';
 import { useAuth } from '../contexts/AuthContext';
 
+// API URL configuration
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 
+  (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8001');
+
 interface Document {
   id: number;
   job_id: string;
@@ -57,7 +61,7 @@ export default function Dashboard() {
 
   const fetchDocuments = async () => {
     try {
-      const response = await fetch('http://localhost:8001/my-documents', {
+      const response = await fetch(`${API_URL}/my-documents`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

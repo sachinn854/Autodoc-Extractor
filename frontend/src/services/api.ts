@@ -9,9 +9,10 @@ import {
 } from '../types/schema';
 
 // API Configuration
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-domain.com' 
-  : 'http://localhost:8001';
+// In production (Docker/Render), backend serves frontend on same port
+// Use empty baseURL for same-origin requests
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 
+  (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8001');
 
 const api = axios.create({
   baseURL: API_BASE_URL,
