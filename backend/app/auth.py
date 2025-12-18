@@ -7,6 +7,7 @@ import jwt
 import bcrypt
 import secrets
 import smtplib
+import logging
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
@@ -14,6 +15,9 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 from app.database import get_db, User
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 # Configuration
 SECRET_KEY = "your-secret-key-change-this-in-production-12345"  # TODO: Move to env variable
