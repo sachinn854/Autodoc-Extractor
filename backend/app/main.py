@@ -85,12 +85,18 @@ app = FastAPI(
 )
 
 # Add CORS middleware to allow frontend access
+# Get allowed origins from environment or use defaults
+allowed_origins = os.getenv("CORS_ORIGINS", "*").split(",")
+if allowed_origins == ["*"]:
+    # For Render deployment, allow all origins
+    allowed_origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins in production (Render deployment)
+    allow_origins=allowed_origins,
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allow_headers=["*"],
 )
 
 # Mount static files for production (Next.js build)
@@ -195,7 +201,7 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
         password_hash=hashed_password,
         full_name=request.full_name,
         verification_token=verification_token,
-        is_verified=False  # Email not verified yet
+        is_verified=False  # Email verification required
     )
     
     db.add(new_user)
@@ -203,10 +209,15 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     db.refresh(new_user)
     
     # Send verification email
+    email_sent = False
     try:
-        send_verification_email(new_user.email, verification_token)
+        email_sent = send_verification_email(new_user.email, verification_token)
+        if not email_sent:
+            logger.warning(f"Email verification not sent for {new_user.email} - SMTP not configured")
     except Exception as e:
         logger.error(f"Failed to send verification email: {e}")
+    
+    logger.info(f"New user registered: {new_user.email} (verification required)")
     
     # Create access token
     access_token = create_access_token(
@@ -215,16 +226,35 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     
     logger.info(f"New user registered: {new_user.email} (unverified)")
     
-    return TokenResponse(
-        access_token=access_token,
-        user={
+    # Prepare response message
+    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
+    
+    response_data = {
+        "access_token": access_token,
+        "user": {
             "id": new_user.id,
             "email": new_user.email,
             "full_name": new_user.full_name,
             "created_at": new_user.created_at.isoformat(),
-            "is_active": new_user.is_active
+            "is_active": new_user.is_active,
+            "is_verified": new_user.is_verified
         }
-    )
+    }
+    
+    # Add verification info
+    if not smtp_configured:
+        response_data["verification_info"] = {
+            "email_sent": False,
+            "message": "SMTP not configured. Contact admin for manual verification.",
+            "verification_token": verification_token
+        }
+    else:
+        response_data["verification_info"] = {
+            "email_sent": email_sent,
+            "message": "Verification email sent. Please check your inbox." if email_sent else "Failed to send verification email."
+        }
+    
+    return response_data
 
 
 @app.post("/auth/login", response_model=TokenResponse)
@@ -297,11 +327,98 @@ async def verify_email(token: str, db: Session = Depends(get_db)):
     user.verification_token = None  # Clear token after use
     db.commit()
     
-    logger.info(f"Email verified for user: {user.email}")
+    logger.info(f"✅ Email verified for user: {user.email}")
     
     return {
         "message": "Email verified successfully! You can now login.",
         "email": user.email
+    }
+
+
+@app.post("/auth/admin/verify-user")
+async def admin_verify_user(email: str, admin_key: str, db: Session = Depends(get_db)):
+    """
+    Admin endpoint to manually verify users when SMTP is not configured
+    
+    Args:
+        email: User email to verify
+        admin_key: Admin verification key
+        
+    Returns:
+        Success message
+    """
+    # Simple admin key check (you can make this more secure)
+    expected_admin_key = os.getenv("ADMIN_VERIFICATION_KEY", "admin123")
+    
+    if admin_key != expected_admin_key:
+        raise HTTPException(
+            status_code=403,
+            detail="Invalid admin key"
+        )
+    
+    # Find user by email
+    user = db.query(User).filter(User.email == email).first()
+    
+    if not user:
+        raise HTTPException(
+            status_code=404,
+            detail="User not found"
+        )
+    
+    if user.is_verified:
+        return {
+            "message": f"User {email} is already verified",
+            "email": user.email
+        }
+    
+    # Mark user as verified
+    user.is_verified = True
+    user.verification_token = None  # Clear token
+    db.commit()
+    
+    logger.info(f"👨‍💼 Admin verified user: {user.email}")
+    
+    return {
+        "message": f"User {email} has been manually verified by admin",
+        "email": user.email
+    }
+
+
+@app.get("/auth/admin/unverified-users")
+async def get_unverified_users(admin_key: str, db: Session = Depends(get_db)):
+    """
+    Admin endpoint to list unverified users
+    
+    Args:
+        admin_key: Admin verification key
+        
+    Returns:
+        List of unverified users
+    """
+    # Simple admin key check
+    expected_admin_key = os.getenv("ADMIN_VERIFICATION_KEY", "admin123")
+    
+    if admin_key != expected_admin_key:
+        raise HTTPException(
+            status_code=403,
+            detail="Invalid admin key"
+        )
+    
+    # Get unverified users
+    unverified_users = db.query(User).filter(User.is_verified == False).all()
+    
+    return {
+        "unverified_users": [
+            {
+                "id": user.id,
+                "email": user.email,
+                "full_name": user.full_name,
+                "created_at": user.created_at.isoformat(),
+                "verification_token": user.verification_token
+            }
+            for user in unverified_users
+        ],
+        "count": len(unverified_users)
     }
 
 
@@ -600,22 +717,12 @@ async def run_complete_pipeline(
         logger.info(f"Phase 2 completed: {len(processed_paths)} pages preprocessed")
         
         # Phase 3: OCR
-        logger.info(f"Starting Phase 3: OCR processing with {len(processed_paths)} images")
-        logger.info(f"Preprocessed image paths: {processed_paths}")
-        update_job_status(job_id, "processing", "Phase 3: Running OCR")
+        logger.info(f"🔄 Starting Phase 3: OCR processing with {len(processed_paths)} images")
+        update_job_status(job_id, "processing", "Phase 3: Running OCR text extraction")
         
-        # Test OCR import
-        logger.info("Testing OCR import...")
         try:
             from app.ocr_engine import process_document_ocr
-            logger.info("OCR import successful")
-        except Exception as import_err:
-            logger.error(f"OCR import failed: {import_err}")
-            raise
-            
-        try:
-            logger.info("Calling process_document_ocr...")
-            logger.info(f"Paths to process: {processed_paths}")
+            logger.info("✅ OCR import successful")
             
             ocr_results = process_document_ocr(
                 preprocessed_image_paths=processed_paths,
@@ -624,22 +731,31 @@ async def run_complete_pipeline(
                 normalize_coords=normalize_coords
             )
             
-            logger.info(f"process_document_ocr returned successfully!")
-            logger.info(f"Phase 3 completed: {ocr_results.get('total_tokens', 0)} tokens extracted")
+            logger.info(f"✅ Phase 3 completed: {ocr_results.get('total_tokens', 0)} tokens extracted")
             
         except Exception as e:
-            logger.error(f"Phase 3 OCR processing failed: {e}")
+            logger.error(f"❌ Phase 3 OCR processing failed: {e}")
             logger.error(f"OCR error traceback: {traceback.format_exc()}")
             
-            # GUARANTEE: Save empty OCR results to prevent FileNotFoundError downstream
+            # CRITICAL: Save empty OCR results to prevent downstream failures
             from app.ocr_engine import save_ocr_output
-            empty_ocr_results = {"pages": [], "total_pages": 0, "total_tokens": 0}
+            empty_ocr_results = {
+                "job_id": job_id,
+                "pages": [], 
+                "total_pages": 0, 
+                "total_tokens": 0,
+                "error": str(e),
+                "status": "ocr_failed_continuing"
+            }
             save_ocr_output(job_id, empty_ocr_results)
-            logger.info("Saved empty OCR results to prevent downstream errors")
+            logger.info("💾 Saved empty OCR results to prevent downstream errors")
             
-            # Continue with empty OCR data instead of failing
+            # Continue with empty OCR data instead of failing entire pipeline
             ocr_results = empty_ocr_results
-            logger.info("Continuing pipeline with empty OCR data")
+            logger.info("⚠️ Continuing pipeline with empty OCR data")
+            
+            # Update status to indicate OCR issue but pipeline continuing
+            update_job_status(job_id, "processing", f"OCR failed ({str(e)[:50]}...), continuing with other phases")
         
         # Phase 4: Table Detection & Parsing
         update_job_status(job_id, "processing", "Phase 4: Detecting tables and structure")
@@ -1139,14 +1255,32 @@ async def cleanup_job(job_id: str) -> JSONResponse:
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint."""
-    return {
-        "status": "healthy", 
-        "service": "autodoc-extractor",
-        "version": "2.0.0",
-        "active_jobs": len(JOB_STATUS),
-        "timestamp": datetime.now().isoformat()
-    }
+    """Health check endpoint for Render deployment."""
+    try:
+        # Test OCR engine availability
+        ocr_status = "unknown"
+        try:
+            from app.ocr_engine import get_ocr_engine
+            ocr_engine = get_ocr_engine("en")
+            ocr_status = "ready" if ocr_engine else "failed"
+        except Exception as e:
+            ocr_status = f"error: {str(e)[:50]}"
+        
+        return {
+            "status": "healthy", 
+            "service": "autodoc-extractor",
+            "version": "2.0.0",
+            "active_jobs": len(JOB_STATUS),
+            "ocr_engine": ocr_status,
+            "environment": os.getenv("RENDER", "local"),
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "error": str(e),
+            "timestamp": datetime.now().isoformat()
+        }
 
 
 @app.get("/jobs")

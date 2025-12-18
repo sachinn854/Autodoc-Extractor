@@ -133,26 +133,111 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 - [ ] Enable firewall rules
 - [ ] Set up CI/CD pipeline
 
+## 🚀 Render.com Deployment (Recommended)
+
+### Quick Deploy to Render
+
+1. **Fork this repository** to your GitHub account
+
+2. **Connect to Render:**
+   - Go to [render.com](https://render.com)
+   - Sign up/login with GitHub
+   - Click "New" → "Blueprint"
+   - Connect your forked repository
+   - Render will automatically detect `render.yaml`
+
+3. **Set Environment Variables:**
+   ```
+   SECRET_KEY=your-generated-secret-key-here
+   SMTP_EMAIL=your-gmail@gmail.com
+   SMTP_PASSWORD=your-gmail-app-password
+   ```
+
+4. **Deploy:**
+   - Click "Apply"
+   - Wait 5-10 minutes for build completion
+   - Your app will be live at `https://your-app-name.onrender.com`
+
+### Environment Variables for Render
+
+```bash
+# Required
+SECRET_KEY=generate-with-python-secrets-token-urlsafe-32
+DATABASE_URL=sqlite:///./data/autodoc.db
+ADMIN_VERIFICATION_KEY=generate-secure-admin-key
+
+# Email Configuration (Required for automatic verification)
+SMTP_EMAIL=your-gmail@gmail.com
+SMTP_PASSWORD=your-gmail-app-password
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+
+# Auto-configured by Render
+PORT=8001
+RENDER=true
+HUB_HOME=/app/models
+RENDER_SERVICE_NAME=your-app-name
+```
+
+### 📧 Email Verification Setup
+
+#### Option 1: Gmail SMTP (Recommended)
+1. **Enable 2-Factor Authentication** on your Gmail account
+2. **Generate App Password:**
+   - Go to https://myaccount.google.com/apppasswords
+   - Select "Mail" and your device
+   - Copy the 16-character password
+3. **Set Environment Variables in Render:**
+   ```
+   SMTP_EMAIL=your-gmail@gmail.com
+   SMTP_PASSWORD=your-16-char-app-password
+   ```
+
+#### Option 2: Manual Admin Verification
+If SMTP is not configured, use admin panel for manual verification:
+
+1. **Open Admin Panel:** `admin_verify.html` in browser
+2. **Set API URL:** `https://your-app-name.onrender.com`
+3. **Use Admin Key:** From `ADMIN_VERIFICATION_KEY` environment variable
+4. **Verify Users:** Load unverified users and verify manually
+
+#### Admin API Endpoints:
+- `GET /auth/admin/unverified-users?admin_key=KEY` - List unverified users
+- `POST /auth/admin/verify-user` - Manually verify a user
+
+### First Deployment Notes
+
+- **Build Time:** 10-15 minutes (downloads AI models)
+- **First Request:** May take 30-60 seconds (model initialization)
+- **Subsequent Requests:** Fast (models cached)
+- **Storage:** 1GB persistent disk for database and models
+
 ## 🐛 Troubleshooting
 
-### View logs
+### Render Deployment Issues
+
 ```bash
+# Check build logs in Render dashboard
+# Common issues:
+# 1. Model download timeout → Increase build timeout in render.yaml
+# 2. Memory issues → Upgrade to higher plan
+# 3. Port issues → Ensure PORT=8001 in environment
+```
+
+### Local Development
+
+```bash
+# View logs
 docker-compose logs backend
 docker-compose logs frontend
-```
 
-### Restart specific service
-```bash
+# Restart specific service
 docker-compose restart backend
-```
 
-### Rebuild after code changes
-```bash
+# Rebuild after code changes
 docker-compose up --build
-```
 
-### Clean everything
-```bash
+# Clean everything
 docker-compose down -v
 docker system prune -a
 ```

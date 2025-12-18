@@ -21,6 +21,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy backend code
 COPY backend/app ./app
 COPY backend/models ./models
+COPY backend/migrate_db.py ./
+COPY backend/.env.example ./
+COPY yolov8n.pt ./
+COPY download_models.py ./
 
 
 # ============================================
@@ -62,13 +66,29 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy backend code
 COPY --from=backend-build /backend /app/backend
 
+# Copy additional backend files
+COPY backend/migrate_db.py /app/backend/
+COPY backend/.env.example /app/backend/
+COPY yolov8n.pt /app/backend/
+
+# 🚀 CRITICAL FIX: Preload PaddleOCR models during build (prevents Render timeout)
+ENV HUB_HOME=/app/backend/models
+COPY download_models.py /app/backend/
+RUN cd /app/backend && python download_models.py
+
 # Copy frontend build (Next.js)
 COPY --from=frontend-build /frontend/.next /app/frontend/.next
 COPY --from=frontend-build /frontend/package.json /app/frontend/package.json
 COPY --from=frontend-build /frontend/next.config.js /app/frontend/next.config.js
 
 # Create required directories
-RUN mkdir -p /app/backend/data /app/backend/tmp
+RUN mkdir -p /app/backend/data /app/backend/tmp /app/backend/models
+
+# Set environment variables for production
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app/backend
+ENV HUB_HOME=/app/backend/models
+ENV DATABASE_URL=sqlite:///./data/autodoc.db
 
 # (EXPOSE optional for Render, but keep generic)
 EXPOSE 8001

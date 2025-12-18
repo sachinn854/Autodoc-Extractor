@@ -75,26 +75,37 @@ def generate_verification_token() -> str:
     return secrets.token_urlsafe(32)
 
 
-def send_verification_email(email: str, token: str, frontend_url: str = "http://localhost:3000"):
+def send_verification_email(email: str, token: str, frontend_url: str = None):
     """
     Send verification email to user
     
     Args:
         email: User's email address
         token: Verification token
-        frontend_url: Frontend base URL
+        frontend_url: Frontend base URL (auto-detected if None)
     """
     try:
-        # Email configuration (you can move these to environment variables)
+        # Auto-detect frontend URL
+        if frontend_url is None:
+            if os.getenv("RENDER"):
+                # On Render, use the service URL
+                frontend_url = f"https://{os.getenv('RENDER_SERVICE_NAME', 'autodoc-extractor')}.onrender.com"
+            else:
+                frontend_url = "http://localhost:3000"
+        
+        # Email configuration from environment variables
         SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
         SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-        SMTP_EMAIL = os.getenv("SMTP_EMAIL", "your-email@gmail.com")
-        SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "your-app-password")
+        SMTP_EMAIL = os.getenv("SMTP_EMAIL")
+        SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
         
-        # Skip email if credentials not configured
-        if SMTP_EMAIL == "your-email@gmail.com":
-            print(f"⚠️ SMTP not configured. Verification link: {frontend_url}/verify-email?token={token}")
-            return
+        # Check if SMTP is configured
+        if not SMTP_EMAIL or not SMTP_PASSWORD or SMTP_EMAIL == "your-email@gmail.com":
+            print(f"⚠️ SMTP not configured!")
+            print(f"📧 ADMIN: Manual verification link for {email}:")
+            print(f"   {frontend_url}/verify-email?token={token}")
+            print(f"📧 User can copy this link to verify their email manually")
+            return False
         
         # Create message
         msg = MIMEMultipart('alternative')
@@ -137,10 +148,12 @@ def send_verification_email(email: str, token: str, frontend_url: str = "http://
             server.send_message(msg)
         
         print(f"✅ Verification email sent to {email}")
+        return True
         
     except Exception as e:
         print(f"❌ Failed to send verification email: {e}")
-        print(f"⚠️ Verification link: {frontend_url}/verify-email?token={token}")
+        print(f"📧 Manual verification link: {frontend_url}/verify-email?token={token}")
+        return False
 
 
 

@@ -194,6 +194,65 @@ class ApiService {
       throw new Error(error.response?.data?.message || 'Failed to cleanup job');
     }
   }
+
+  // Authentication Methods
+  async signup(email: string, password: string, fullName?: string): Promise<{ access_token: string; user: any }> {
+    try {
+      const response = await api.post('/auth/signup', {
+        email,
+        password,
+        full_name: fullName
+      });
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 400) {
+        throw new Error(error.response.data.detail || 'Email already registered');
+      }
+      throw new Error(error.response?.data?.detail || 'Signup failed');
+    }
+  }
+
+  async login(email: string, password: string): Promise<{ access_token: string; user: any }> {
+    try {
+      const response = await api.post('/auth/login', {
+        email,
+        password
+      });
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 401) {
+        throw new Error('Invalid email or password');
+      }
+      if (error.response?.status === 403) {
+        throw new Error('Email not verified. Please check your email.');
+      }
+      throw new Error(error.response?.data?.detail || 'Login failed');
+    }
+  }
+
+  async getCurrentUser(): Promise<any> {
+    try {
+      const response = await api.get('/auth/me');
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 401) {
+        throw new Error('Authentication required');
+      }
+      throw new Error(error.response?.data?.detail || 'Failed to get user info');
+    }
+  }
+
+  async getMyDocuments(skip: number = 0, limit: number = 50): Promise<{ documents: any[]; total: number }> {
+    try {
+      const response = await api.get(`/my-documents?skip=${skip}&limit=${limit}`);
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 401) {
+        throw new Error('Authentication required');
+      }
+      throw new Error(error.response?.data?.detail || 'Failed to get documents');
+    }
+  }
 }
 
 // Utility Functions

@@ -18,13 +18,15 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - DATABASE_URL=sqlite:///./data/autodoc.db
+      - HUB_HOME=/app/models
+      - CORS_ORIGINS=http://localhost:3000
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
       interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
+      timeout: 30s
+      retries: 5
+      start_period: 120s
 
   # Frontend Service
   frontend:

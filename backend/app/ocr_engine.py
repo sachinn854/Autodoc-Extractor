@@ -40,14 +40,15 @@ def get_ocr_engine(lang: str = "en", job_id: str = None):
     
     # Check if engine already cached
     if lang in _ocr_engine_cache:
-        logger.info(f"Using cached OCR engine for language: {lang}")
+        logger.info(f"✅ Using cached OCR engine for language: {lang}")
         return _ocr_engine_cache[lang]
     
-    logger.info(f"Initializing PaddleOCR engine for language: {lang}")
+    logger.info(f"🔄 Initializing PaddleOCR engine for language: {lang}")
     
     # Update job status to indicate model download
     if job_id:
         from app.main import update_job_status
+        update_job_status(job_id, "processing", "🔄 Loading OCR models (first time setup)...")
         update_job_status(job_id, "processing", "Downloading OCR models (first time setup, may take 2-3 minutes)...")
     
     try:

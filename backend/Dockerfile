@@ -30,12 +30,23 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy application code
 COPY . .
 
+# 🚀 CRITICAL FIX: Preload PaddleOCR models during build (prevents Render timeout)
+RUN python -c "\
+import os\
+os.environ['HUB_HOME'] = '/app/models'\
+from paddleocr import PaddleOCR\
+print('🔄 Downloading PaddleOCR models...')\
+ocr = PaddleOCR(use_angle_cls=True, lang='en', show_log=False)\
+print('✅ PaddleOCR models downloaded successfully!')\
+"
+
 # Create necessary directories
 RUN mkdir -p tmp/uploads tmp/preprocessed tmp/results data models
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
+ENV HUB_HOME=/app/models
 
 # Expose port
 EXPOSE 8001
@@ -45,4 +56,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:8001/health || exit 1
 
 # Run the application
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8001}"]
