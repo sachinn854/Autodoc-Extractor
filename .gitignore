@@ -43,10 +43,10 @@ backend/tmp/
 tmp/
 *.tmp
 
-# Dataset files (large)
-dataset/
+# Dataset files (large) - exclude from deployment
 dataset/raw/
 dataset/images/
+dataset/labels_raw/
 dataset/intermediate/
 debug_vis/
 runs/
