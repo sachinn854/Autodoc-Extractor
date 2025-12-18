@@ -101,10 +101,12 @@ def send_verification_email(email: str, token: str, frontend_url: str = None):
         
         # Check if SMTP is configured
         if not SMTP_EMAIL or not SMTP_PASSWORD or SMTP_EMAIL == "your-email@gmail.com":
-            print(f"⚠️ SMTP not configured!")
-            print(f"📧 ADMIN: Manual verification link for {email}:")
-            print(f"   {frontend_url}/verify-email?token={token}")
-            print(f"📧 User can copy this link to verify their email manually")
+            print(f"⚠️ SMTP not configured for {email}")
+            print(f"📧 To enable email verification:")
+            print(f"   1. Set SMTP_EMAIL environment variable to your Gmail")
+            print(f"   2. Set SMTP_PASSWORD to your Gmail app password")
+            print(f"   3. Restart the application")
+            print(f"📧 For now, users can signup and use the app without verification")
             return False
         
         # Create message
@@ -187,6 +189,11 @@ def get_current_user(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Inactive user"
         )
+    
+    # For now, allow unverified users to upload (email verification optional)
+    # TODO: Enable strict verification when SMTP is properly configured
+    if not user.is_verified:
+        logger.warning(f"⚠️ Unverified user accessing system: {user.email}")
     
     return user
 

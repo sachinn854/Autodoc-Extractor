@@ -82,13 +82,14 @@ COPY --from=frontend-build /frontend/package.json /app/frontend/package.json
 COPY --from=frontend-build /frontend/next.config.js /app/frontend/next.config.js
 
 # Create required directories
-RUN mkdir -p /app/backend/data /app/backend/tmp /app/backend/models
+RUN mkdir -p /app/backend/data /app/backend/tmp /app/backend/models /app/backend/models/yolo_config
 
 # Set environment variables for production
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app/backend
 ENV HUB_HOME=/app/backend/models
 ENV DATABASE_URL=sqlite:///./data/autodoc.db
+ENV YOLO_CONFIG_DIR=/app/backend/models/yolo_config
 
 # (EXPOSE optional for Render, but keep generic)
 EXPOSE 8001

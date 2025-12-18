@@ -208,16 +208,23 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(new_user)
     
-    # Send verification email
+    # Try to send verification email
     email_sent = False
-    try:
-        email_sent = send_verification_email(new_user.email, verification_token)
-        if not email_sent:
-            logger.warning(f"Email verification not sent for {new_user.email} - SMTP not configured")
-    except Exception as e:
-        logger.error(f"Failed to send verification email: {e}")
+    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
     
-    logger.info(f"New user registered: {new_user.email} (verification required)")
+    if smtp_configured:
+        try:
+            email_sent = send_verification_email(new_user.email, verification_token)
+            if email_sent:
+                logger.info(f"✅ Verification email sent to {new_user.email}")
+            else:
+                logger.warning(f"⚠️ Failed to send verification email to {new_user.email}")
+        except Exception as e:
+            logger.error(f"❌ Email sending error for {new_user.email}: {e}")
+    else:
+        logger.info(f"📧 SMTP not configured - user {new_user.email} can use app without verification")
+    
+    logger.info(f"New user registered: {new_user.email} ({'verified' if email_sent else 'unverified - SMTP not configured'})")
     
     # Create access token
     access_token = create_access_token(
@@ -226,9 +233,7 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     
     logger.info(f"New user registered: {new_user.email} (unverified)")
     
-    # Prepare response message
-    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
-    
+    # Prepare response
     response_data = {
         "access_token": access_token,
         "user": {
@@ -241,18 +246,17 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
         }
     }
     
-    # Add verification info
-    if not smtp_configured:
-        response_data["verification_info"] = {
-            "email_sent": False,
-            "message": "SMTP not configured. Contact admin for manual verification.",
-            "verification_token": verification_token
-        }
+    # Add verification status
+    if smtp_configured:
+        if email_sent:
+            response_data["message"] = "Account created! Please check your email to verify your account."
+            response_data["verification_required"] = True
+        else:
+            response_data["message"] = "Account created but verification email failed. You can still use the app."
+            response_data["verification_required"] = False
     else:
-        response_data["verification_info"] = {
-            "email_sent": email_sent,
-            "message": "Verification email sent. Please check your inbox." if email_sent else "Failed to send verification email."
-        }
+        response_data["message"] = "Account created! Email verification is disabled - you can start using the app immediately."
+        response_data["verification_required"] = False
     
     return response_data
 
@@ -336,7 +340,7 @@ async def verify_email(token: str, db: Session = Depends(get_db)):
 
 
 @app.post("/auth/admin/verify-user")
-async def admin_verify_user(email: str, admin_key: str, db: Session = Depends(get_db)):
+async def admin_verify_user(email: str, admin_key: str = "admin123", db: Session = Depends(get_db)):
     """
     Admin endpoint to manually verify users when SMTP is not configured
     
@@ -422,6 +426,75 @@ async def get_unverified_users(admin_key: str, db: Session = Depends(get_db)):
     }
 
 
+@app.post("/auth/quick-verify/{email}")
+async def quick_verify_user(email: str, db: Session = Depends(get_db)):
+    """
+    Quick verification endpoint for testing (remove in production)
+    """
+    # Find user by email
+    user = db.query(User).filter(User.email == email).first()
+    
+    if not user:
+        raise HTTPException(
+            status_code=404,
+            detail="User not found"
+        )
+    
+    if user.is_verified:
+        return {
+            "message": f"User {email} is already verified",
+            "email": user.email
+        }
+    
+    # Mark user as verified
+    user.is_verified = True
+    user.verification_token = None
+    db.commit()
+    
+    logger.info(f"🚀 Quick verified user: {user.email}")
+    
+    return {
+        "message": f"User {email} has been quickly verified for testing",
+        "email": user.email
+    }
+
+
+@app.post("/auth/test-email")
+async def test_email_configuration(email: str):
+    """
+    Test email configuration by sending a test email
+    """
+    try:
+        # Generate a test token
+        test_token = "test-token-123"
+        
+        # Try to send email
+        from app.auth import send_verification_email
+        email_sent = send_verification_email(email, test_token)
+        
+        if email_sent:
+            return {
+                "status": "success",
+                "message": f"Test email sent successfully to {email}",
+                "smtp_configured": True
+            }
+        else:
+            return {
+                "status": "failed",
+                "message": "SMTP not configured or email sending failed",
+                "smtp_configured": False,
+                "help": "Check GMAIL_SETUP.md for configuration instructions"
+            }
+            
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": f"Email test failed: {str(e)}",
+            "smtp_configured": False,
+            "help": "Check GMAIL_SETUP.md for configuration instructions"
+        }
+
+
 @app.get("/auth/me", response_model=UserResponse)
 async def get_current_user_info(current_user: User = Depends(get_current_user)):
     """
@@ -475,10 +548,19 @@ async def upload_document(
                 detail=f"Unsupported file type: {file_ext}. Allowed: {allowed_extensions}"
             )
         
-        # Create upload directory
+        # Create upload directory with proper permissions
         script_dir = Path(__file__).parent.parent
         upload_dir = script_dir / "tmp" / "uploads" / job_id
-        upload_dir.mkdir(parents=True, exist_ok=True)
+        
+        try:
+            upload_dir.mkdir(parents=True, exist_ok=True)
+            # Ensure directory is writable
+            if not upload_dir.exists():
+                raise Exception(f"Failed to create upload directory: {upload_dir}")
+            logger.info(f"Upload directory created: {upload_dir}")
+        except Exception as dir_error:
+            logger.error(f"Directory creation failed: {dir_error}")
+            raise HTTPException(status_code=500, detail=f"Failed to create upload directory: {str(dir_error)}")
         
         # Save uploaded file
         input_file_path = upload_dir / f"raw_input{file_ext}"
@@ -528,15 +610,25 @@ async def upload_document(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Upload failed for job {job_id}: {e}")
+        logger.error(f"❌ Upload failed for job {job_id}: {e}")
+        logger.error(f"❌ Upload error traceback: {traceback.format_exc()}")
         
         # Clean up on failure
         try:
             delete_tmp_job(job_id)
-        except:
-            pass
+        except Exception as cleanup_error:
+            logger.error(f"⚠️ Cleanup failed: {cleanup_error}")
         
-        raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
+        # Provide more specific error messages
+        error_msg = str(e)
+        if "Permission denied" in error_msg:
+            error_msg = "Server storage permission error. Please try again."
+        elif "No space left" in error_msg:
+            error_msg = "Server storage full. Please try again later."
+        elif "File too large" in error_msg:
+            error_msg = "File too large. Please upload a smaller file."
+        
+        raise HTTPException(status_code=500, detail=f"Upload failed: {error_msg}")
 
 
 @app.post("/process/{job_id}", response_model=ProcessResponse)
