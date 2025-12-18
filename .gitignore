@@ -44,12 +44,12 @@ tmp/
 *.tmp
 
 # Dataset files (large)
+dataset/
 dataset/raw/
 dataset/images/
 dataset/intermediate/
 debug_vis/
 runs/
-
 # Model files
 
 # Data folder (user data & history)
@@ -132,3 +132,18 @@ site/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Development and test files
+test_*.py
+test_*.sh
+test_*.ps1
+test_*.bat
+run_*.bat
+validate_*.py
+download_models.py
+admin_verify.html
+images.cache
+
+# Large directories (development only)
+venv/
+.vscode/
