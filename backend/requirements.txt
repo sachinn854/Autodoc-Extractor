@@ -1,20 +1,39 @@
+# Core ML & Computer Vision
 opencv-python
+numpy
+scikit-learn
+pandas
+ultralytics
+
+# Image & PDF Processing
 Pillow
 pdf2image
 pdfplumber
-numpy
-python-dateutil
-fastapi
-uvicorn
-ultralytics
-scikit-learn
+
+# OCR Engines
 pytesseract
-pandas
-python-dateutil
+paddlepaddle
+paddleocr
+
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+
+# Database
 sqlalchemy>=2.0.0
+
+# Authentication & Security
 pyjwt
 bcrypt
-python-multipart
-email-validator
 python-dotenv
-aiofiles
+
+# Email
+email-validator
+
+# Date/Time Utilities
+python-dateutil
+
+# Data Validation
+pydantic
