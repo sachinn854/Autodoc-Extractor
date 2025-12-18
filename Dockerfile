@@ -71,10 +71,10 @@ COPY backend/migrate_db.py /app/backend/
 COPY backend/.env.example /app/backend/
 COPY yolov8n.pt /app/backend/
 
-# 🚀 CRITICAL FIX: Preload PaddleOCR models during build (prevents Render timeout)
+# 🚀 Model download setup (download at runtime to avoid build issues)
 ENV HUB_HOME=/app/backend/models
 COPY download_models.py /app/backend/
-RUN cd /app/backend && python download_models.py
+# Note: Models will be downloaded on first OCR request to avoid build timeouts
 
 # Copy frontend build (Next.js)
 COPY --from=frontend-build /frontend/.next /app/frontend/.next
