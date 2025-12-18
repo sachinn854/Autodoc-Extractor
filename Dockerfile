@@ -64,7 +64,6 @@ COPY --from=backend-build /backend /app/backend
 
 # Copy frontend build (Next.js)
 COPY --from=frontend-build /frontend/.next /app/frontend/.next
-COPY --from=frontend-build /frontend/public /app/frontend/public
 COPY --from=frontend-build /frontend/package.json /app/frontend/package.json
 COPY --from=frontend-build /frontend/next.config.js /app/frontend/next.config.js
 
