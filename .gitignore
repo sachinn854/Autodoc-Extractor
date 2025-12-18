@@ -44,8 +44,10 @@ tmp/
 *.tmp
 
 # Dataset files (large) - exclude from deployment
+dataset/
 dataset/raw/
 dataset/images/
+dataset/labels/
 dataset/labels_raw/
 dataset/intermediate/
 debug_vis/
