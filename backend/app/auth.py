@@ -167,11 +167,19 @@ def send_otp_email(email: str, otp_code: str) -> bool:
         part = MIMEText(html, 'html')
         msg.attach(part)
         
-        # Send email
+        # Send email with debug logging
+        print(f"🔄 Attempting to send email to {email}")
+        print(f"📧 SMTP Server: {SMTP_SERVER}:{SMTP_PORT}")
+        print(f"📧 From: {SMTP_EMAIL}")
+        
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            print("🔄 Connecting to SMTP server...")
             server.starttls()
+            print("🔄 Starting TLS...")
             server.login(SMTP_EMAIL, SMTP_PASSWORD)
+            print("🔄 Logged in successfully...")
             server.send_message(msg)
+            print("🔄 Message sent...")
         
         print(f"✅ OTP email sent to {email}")
         return True
