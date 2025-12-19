@@ -21,7 +21,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy backend code
 COPY backend/app ./app
 COPY backend/models ./models
-COPY backend/migrate_db.py ./
 COPY backend/.env.example ./
 COPY yolov8n.pt ./
 
@@ -66,7 +65,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY --from=backend-build /backend /app/backend
 
 # Copy additional backend files
-COPY backend/migrate_db.py /app/backend/
 COPY backend/.env.example /app/backend/
 COPY yolov8n.pt /app/backend/
 

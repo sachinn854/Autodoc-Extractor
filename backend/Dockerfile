@@ -20,15 +20,17 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first (for better caching)
-#
-COPY backend/requirements.txt .
+COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY . .
+COPY app ./app
+COPY models ./models
+COPY .env.example ./
+COPY ../yolov8n.pt ./
 
 # 🚀 CRITICAL FIX: Preload PaddleOCR models during build (prevents Render timeout)
 RUN python -c "\
