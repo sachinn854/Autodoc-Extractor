@@ -1,150 +1,211 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import {
   Container,
   Box,
-  Paper,
+  Typography,
   TextField,
   Button,
-  Typography,
   Alert,
+  Paper,
   Link,
   CircularProgress,
+  Divider,
 } from '@mui/material';
+import { Person, Email, Lock } from '@mui/icons-material';
+import OTPVerification from '../components/OTPVerification';
+import apiService from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
 
-export default function Signup() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-  const { signup } = useAuth();
+const SignupPage: React.FC = () => {
   const router = useRouter();
+  const { loginWithToken } = useAuth();
+  
+  const [step, setStep] = useState<'signup' | 'otp'>('signup');
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    fullName: '',
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     setError('');
 
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
-      return;
-    }
-
-    if (password.length < 6) {
-      setError('Password must be at least 6 characters');
-      return;
-    }
-
-    setLoading(true);
-
     try {
-      await signup(email, password, fullName);
-      // Show success message - verification email sent
-      setError(''); // Clear any previous errors
-      alert('Account created! Please check your email to verify your account before logging in.');
-      // Redirect to login
-      window.location.href = '/login';
+      const response = await apiService.signup(
+        formData.email,
+        formData.password,
+        formData.fullName
+      );
+
+      // Move to OTP verification step
+      setStep('otp');
+      
     } catch (err: any) {
-      setError(err.message || 'Signup failed. Please try again.');
+      setError(err.message);
     } finally {
       setLoading(false);
     }
   };
 
+  const handleOTPVerificationSuccess = (token: string, user: any) => {
+    // Login user and redirect to dashboard
+    loginWithToken(token, user);
+    router.push('/dashboard');
+  };
+
+  const handleBackToSignup = () => {
+    setStep('signup');
+    setError('');
+  };
+
+  if (step === 'otp') {
+    return (
+      <>
+        <Head>
+          <title>Verify Email - Autodoc Extractor</title>
+        </Head>
+        <Container maxWidth="sm" sx={{ py: 8 }}>
+          <OTPVerification
+            email={formData.email}
+            onVerificationSuccess={handleOTPVerificationSuccess}
+            onBack={handleBackToSignup}
+          />
+        </Container>
+      </>
+    );
+  }
+
   return (
-    <Container maxWidth="sm">
-      <Box
-        sx={{
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <Paper elevation={3} sx={{ p: 4, width: '100%' }}>
-          <Typography variant="h4" component="h1" gutterBottom align="center">
-            Autodoc Extractor
-          </Typography>
-          <Typography variant="h6" gutterBottom align="center" color="text.secondary">
-            Create Your Account
-          </Typography>
+    <>
+      <Head>
+        <title>Sign Up - Autodoc Extractor</title>
+        <meta name="description" content="Create your account to start processing documents with AI" />
+      </Head>
+
+      <Container maxWidth="sm" sx={{ py: 8 }}>
+        <Paper elevation={3} sx={{ p: 4 }}>
+          <Box textAlign="center" mb={4}>
+            <Typography variant="h4" gutterBottom fontWeight={600} color="primary">
+              📄 Create Account
+            </Typography>
+            <Typography variant="body1" color="textSecondary">
+              Join Autodoc Extractor to start processing your documents
+            </Typography>
+          </Box>
 
           {error && (
-            <Alert severity="error" sx={{ mt: 2, mb: 2 }}>
+            <Alert severity="error" sx={{ mb: 3 }}>
               {error}
             </Alert>
           )}
 
-          <form onSubmit={handleSubmit}>
-            <TextField
-              fullWidth
-              label="Full Name (Optional)"
-              value={fullName}
-              onChange={(e) => setFullName(e.target.value)}
-              margin="normal"
-              autoComplete="name"
-              autoFocus
-            />
-            <TextField
-              fullWidth
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              margin="normal"
-              required
-              autoComplete="email"
-            />
-            <TextField
-              fullWidth
-              label="Password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              margin="normal"
-              required
-              autoComplete="new-password"
-              helperText="Minimum 6 characters"
-            />
-            <TextField
-              fullWidth
-              label="Confirm Password"
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              margin="normal"
-              required
-              autoComplete="new-password"
-            />
+          <Box component="form" onSubmit={handleSignup}>
+            <Box mb={3}>
+              <TextField
+                fullWidth
+                label="Full Name"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleInputChange}
+                variant="outlined"
+                InputProps={{
+                  startAdornment: <Person sx={{ mr: 1, color: 'text.secondary' }} />,
+                }}
+              />
+            </Box>
+
+            <Box mb={3}>
+              <TextField
+                fullWidth
+                label="Email Address"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                variant="outlined"
+                required
+                InputProps={{
+                  startAdornment: <Email sx={{ mr: 1, color: 'text.secondary' }} />,
+                }}
+              />
+            </Box>
+
+            <Box mb={4}>
+              <TextField
+                fullWidth
+                label="Password"
+                name="password"
+                type="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                variant="outlined"
+                required
+                helperText="Minimum 6 characters"
+                InputProps={{
+                  startAdornment: <Lock sx={{ mr: 1, color: 'text.secondary' }} />,
+                }}
+              />
+            </Box>
+
             <Button
               type="submit"
               fullWidth
               variant="contained"
               size="large"
-              sx={{ mt: 3, mb: 2 }}
-              disabled={loading}
+              disabled={loading || !formData.email || !formData.password}
+              sx={{ mb: 3, py: 1.5 }}
             >
-              {loading ? <CircularProgress size={24} /> : 'Sign Up'}
+              {loading ? (
+                <>
+                  <CircularProgress size={20} sx={{ mr: 1 }} />
+                  Creating Account...
+                </>
+              ) : (
+                'Create Account'
+              )}
             </Button>
-          </form>
 
-          <Box sx={{ mt: 2, textAlign: 'center' }}>
-            <Typography variant="body2">
-              Already have an account?{' '}
+            <Divider sx={{ mb: 3 }}>
+              <Typography variant="body2" color="textSecondary">
+                Already have an account?
+              </Typography>
+            </Divider>
+
+            <Box textAlign="center">
               <Link
                 component="button"
-                variant="body2"
+                type="button"
+                variant="body1"
                 onClick={() => router.push('/login')}
                 sx={{ cursor: 'pointer' }}
               >
-                Login
+                Sign In Instead
               </Link>
+            </Box>
+          </Box>
+
+          <Box mt={4} p={2} bgcolor="grey.50" borderRadius={1}>
+            <Typography variant="caption" color="textSecondary" textAlign="center" display="block">
+              🔐 We'll send a 6-digit verification code to your email address
             </Typography>
           </Box>
         </Paper>
-      </Box>
-    </Container>
+      </Container>
+    </>
   );
-}
+};
+
+export default SignupPage;

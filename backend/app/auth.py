@@ -8,6 +8,7 @@ import bcrypt
 import secrets
 import smtplib
 import logging
+import random
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
@@ -74,29 +75,36 @@ def decode_token(token: str) -> dict:
         )
 
 
-def generate_verification_token() -> str:
-    """Generate a random verification token"""
-    return secrets.token_urlsafe(32)
+
+def generate_otp() -> str:
+    """Generate a 6-digit OTP code"""
+    return str(random.randint(100000, 999999))
 
 
-def send_verification_email(email: str, token: str, frontend_url: str = None):
+def is_otp_expired(expires_at: datetime) -> bool:
+    """Check if OTP has expired"""
+    return datetime.utcnow() > expires_at
+
+
+def get_otp_expiry_time() -> datetime:
+    """Get OTP expiry time (10 minutes from now)"""
+    return datetime.utcnow() + timedelta(minutes=10)
+
+
+
+
+def send_otp_email(email: str, otp_code: str) -> bool:
     """
-    Send verification email to user
+    Send OTP verification email to user
     
     Args:
         email: User's email address
-        token: Verification token
-        frontend_url: Frontend base URL (auto-detected if None)
+        otp_code: 6-digit OTP code
+        
+    Returns:
+        bool: True if email sent successfully, False otherwise
     """
     try:
-        # Auto-detect frontend URL
-        if frontend_url is None:
-            if os.getenv("RENDER"):
-                # On Render, use the service URL
-                frontend_url = f"https://{os.getenv('RENDER_SERVICE_NAME', 'autodoc-extractor')}.onrender.com"
-            else:
-                frontend_url = "http://localhost:3000"
-        
         # Email configuration from environment variables
         SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
         SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
@@ -106,40 +114,52 @@ def send_verification_email(email: str, token: str, frontend_url: str = None):
         # Check if SMTP is configured
         if not SMTP_EMAIL or not SMTP_PASSWORD or SMTP_EMAIL == "your-email@gmail.com":
             print(f"⚠️ SMTP not configured for {email}")
-            print(f"📧 To enable email verification:")
+            print(f"📧 OTP Code for manual verification: {otp_code}")
+            print(f"📧 To enable email OTP:")
             print(f"   1. Set SMTP_EMAIL environment variable to your Gmail")
             print(f"   2. Set SMTP_PASSWORD to your Gmail app password")
             print(f"   3. Restart the application")
-            print(f"📧 For now, users can signup and use the app without verification")
             return False
         
         # Create message
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = "Verify Your Email - Autodoc Extractor"
+        msg['Subject'] = "Your OTP Code - Autodoc Extractor"
         msg['From'] = SMTP_EMAIL
         msg['To'] = email
-        
-        # Verification link
-        verify_link = f"{frontend_url}/verify-email?token={token}"
         
         # HTML email body
         html = f"""
         <html>
-          <body style="font-family: Arial, sans-serif;">
-            <h2>Welcome to Autodoc Extractor!</h2>
-            <p>Thank you for signing up. Please verify your email address by clicking the button below:</p>
-            <p style="margin: 30px 0;">
-              <a href="{verify_link}" 
-                 style="background-color: #4CAF50; color: white; padding: 12px 24px; 
-                        text-decoration: none; border-radius: 4px; display: inline-block;">
-                Verify Email Address
-              </a>
-            </p>
-            <p>Or copy and paste this link into your browser:</p>
-            <p><a href="{verify_link}">{verify_link}</a></p>
-            <p style="color: #666; font-size: 12px; margin-top: 40px;">
-              If you didn't create an account, please ignore this email.
-            </p>
+          <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+              <h1 style="color: #3b82f6;">📄 Autodoc Extractor</h1>
+              <h2 style="color: #333;">Email Verification</h2>
+            </div>
+            
+            <div style="background: #f8fafc; padding: 30px; border-radius: 10px; text-align: center;">
+              <p style="font-size: 18px; margin-bottom: 20px;">Your verification code is:</p>
+              
+              <div style="background: #3b82f6; color: white; font-size: 32px; font-weight: bold; 
+                          padding: 20px; border-radius: 8px; letter-spacing: 8px; margin: 20px 0;">
+                {otp_code}
+              </div>
+              
+              <p style="color: #666; font-size: 14px; margin-top: 20px;">
+                This code will expire in <strong>10 minutes</strong>
+              </p>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 8px;">
+              <p style="margin: 0; color: #856404; font-size: 14px;">
+                <strong>Security Note:</strong> Never share this code with anyone. 
+                Our team will never ask for your OTP code.
+              </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px; color: #666; font-size: 12px;">
+              <p>If you didn't request this code, please ignore this email.</p>
+              <p>© 2024 Autodoc Extractor - AI Document Processing</p>
+            </div>
           </body>
         </html>
         """
@@ -153,12 +173,12 @@ def send_verification_email(email: str, token: str, frontend_url: str = None):
             server.login(SMTP_EMAIL, SMTP_PASSWORD)
             server.send_message(msg)
         
-        print(f"✅ Verification email sent to {email}")
+        print(f"✅ OTP email sent to {email}")
         return True
         
     except Exception as e:
-        print(f"❌ Failed to send verification email: {e}")
-        print(f"📧 Manual verification link: {frontend_url}/verify-email?token={token}")
+        print(f"❌ Failed to send OTP email: {e}")
+        print(f"📧 Manual OTP for {email}: {otp_code}")
         return False
 
 

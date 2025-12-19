@@ -35,8 +35,7 @@ from app.insights import generate_spending_insights, load_historical_data, save_
 from app.database import Base, engine, get_db, init_db, User, Document
 from app.auth import (
     hash_password, authenticate_user, create_access_token, 
-    get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES,
-    generate_verification_token, send_verification_email
+    get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES
 )
 
 # Configure logging
@@ -191,8 +190,10 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
             detail="Email already registered"
         )
     
-    # Generate verification token
-    verification_token = generate_verification_token()
+    # Generate OTP for email verification
+    from app.auth import generate_otp, get_otp_expiry_time
+    otp_code = generate_otp()
+    otp_expires_at = get_otp_expiry_time()
     
     # Create new user
     hashed_password = hash_password(request.password)
@@ -200,7 +201,9 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
         email=request.email,
         password_hash=hashed_password,
         full_name=request.full_name,
-        verification_token=verification_token,
+        otp_code=otp_code,
+        otp_expires_at=otp_expires_at,
+        otp_attempts=0,
         is_verified=False  # Email verification required
     )
     
@@ -208,23 +211,24 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(new_user)
     
-    # Try to send verification email
+    # Try to send OTP email
+    from app.auth import send_otp_email
     email_sent = False
     smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
     
     if smtp_configured:
         try:
-            email_sent = send_verification_email(new_user.email, verification_token)
+            email_sent = send_otp_email(new_user.email, otp_code)
             if email_sent:
-                logger.info(f"✅ Verification email sent to {new_user.email}")
+                logger.info(f"✅ OTP email sent to {new_user.email}")
             else:
-                logger.warning(f"⚠️ Failed to send verification email to {new_user.email}")
+                logger.warning(f"⚠️ Failed to send OTP email to {new_user.email}")
         except Exception as e:
-            logger.error(f"❌ Email sending error for {new_user.email}: {e}")
+            logger.error(f"❌ OTP email sending error for {new_user.email}: {e}")
     else:
-        logger.info(f"📧 SMTP not configured - user {new_user.email} can use app without verification")
+        logger.info(f"📧 SMTP not configured - OTP: {otp_code} for {new_user.email}")
     
-    logger.info(f"New user registered: {new_user.email} ({'verified' if email_sent else 'unverified - SMTP not configured'})")
+    logger.info(f"New user registered: {new_user.email} (OTP verification required)")
     
     # Create access token
     access_token = create_access_token(
@@ -243,20 +247,20 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
             "created_at": new_user.created_at.isoformat(),
             "is_active": new_user.is_active,
             "is_verified": new_user.is_verified
-        }
+        },
+        "verification_required": True,
+        "otp_sent": email_sent
     }
     
-    # Add verification status
+    # Add verification status message
     if smtp_configured:
         if email_sent:
-            response_data["message"] = "Account created! Please check your email to verify your account."
-            response_data["verification_required"] = True
+            response_data["message"] = "Account created! Please check your email for the 6-digit OTP code."
         else:
-            response_data["message"] = "Account created but verification email failed. You can still use the app."
-            response_data["verification_required"] = False
+            response_data["message"] = "Account created! OTP email failed to send. Check server logs for the OTP code."
     else:
-        response_data["message"] = "Account created! Email verification is disabled - you can start using the app immediately."
-        response_data["verification_required"] = False
+        response_data["message"] = f"Account created! SMTP not configured. Your OTP code: {otp_code}"
+        response_data["otp_code"] = otp_code  # Only for development
     
     return response_data
 
@@ -306,37 +310,165 @@ async def login(request: LoginRequest, db: Session = Depends(get_db)):
     )
 
 
-@app.get("/auth/verify-email")
-async def verify_email(token: str, db: Session = Depends(get_db)):
+class OTPVerificationRequest(BaseModel):
+    email: EmailStr
+    otp_code: str
+
+@app.post("/auth/verify-otp")
+async def verify_otp(request: OTPVerificationRequest, db: Session = Depends(get_db)):
     """
-    Verify user's email address using verification token
+    Verify user's email address using OTP code
     
     Args:
-        token: Email verification token
+        request: Email and OTP code
+        
+    Returns:
+        Success message and access token
+    """
+    # Find user by email
+    user = db.query(User).filter(User.email == request.email).first()
+    
+    if not user:
+        raise HTTPException(
+            status_code=404,
+            detail="User not found"
+        )
+    
+    if user.is_verified:
+        raise HTTPException(
+            status_code=400,
+            detail="Email already verified"
+        )
+    
+    # Check if OTP exists
+    if not user.otp_code:
+        raise HTTPException(
+            status_code=400,
+            detail="No OTP found. Please request a new OTP."
+        )
+    
+    # Check if OTP has expired
+    from app.auth import is_otp_expired
+    if is_otp_expired(user.otp_expires_at):
+        # Clear expired OTP
+        user.otp_code = None
+        user.otp_expires_at = None
+        user.otp_attempts = 0
+        db.commit()
+        
+        raise HTTPException(
+            status_code=400,
+            detail="OTP has expired. Please request a new OTP."
+        )
+    
+    # Check attempt limit
+    if user.otp_attempts >= 5:
+        # Clear OTP after too many attempts
+        user.otp_code = None
+        user.otp_expires_at = None
+        user.otp_attempts = 0
+        db.commit()
+        
+        raise HTTPException(
+            status_code=429,
+            detail="Too many failed attempts. Please request a new OTP."
+        )
+    
+    # Verify OTP
+    if user.otp_code != request.otp_code:
+        user.otp_attempts += 1
+        db.commit()
+        
+        remaining_attempts = 5 - user.otp_attempts
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid OTP code. {remaining_attempts} attempts remaining."
+        )
+    
+    # OTP is correct - verify user
+    user.is_verified = True
+    user.otp_code = None  # Clear OTP after successful verification
+    user.otp_expires_at = None
+    user.otp_attempts = 0
+    db.commit()
+    
+    # Create access token
+    access_token = create_access_token(
+        data={"user_id": user.id, "email": user.email}
+    )
+    
+    logger.info(f"✅ Email verified via OTP for user: {user.email}")
+    
+    return {
+        "message": "Email verified successfully! You can now use the app.",
+        "email": user.email,
+        "access_token": access_token,
+        "user": {
+            "id": user.id,
+            "email": user.email,
+            "full_name": user.full_name,
+            "is_verified": True
+        }
+    }
+
+
+@app.post("/auth/resend-otp")
+async def resend_otp(email: EmailStr, db: Session = Depends(get_db)):
+    """
+    Resend OTP code to user's email
+    
+    Args:
+        email: User's email address
         
     Returns:
         Success message
     """
-    # Find user by verification token
-    user = db.query(User).filter(User.verification_token == token).first()
+    # Find user by email
+    user = db.query(User).filter(User.email == email).first()
     
     if not user:
         raise HTTPException(
-            status_code=400,
-            detail="Invalid or expired verification token"
+            status_code=404,
+            detail="User not found"
         )
     
-    # Mark user as verified
-    user.is_verified = True
-    user.verification_token = None  # Clear token after use
+    if user.is_verified:
+        raise HTTPException(
+            status_code=400,
+            detail="Email already verified"
+        )
+    
+    # Generate new OTP
+    from app.auth import generate_otp, get_otp_expiry_time, send_otp_email
+    otp_code = generate_otp()
+    otp_expires_at = get_otp_expiry_time()
+    
+    # Update user with new OTP
+    user.otp_code = otp_code
+    user.otp_expires_at = otp_expires_at
+    user.otp_attempts = 0  # Reset attempts
     db.commit()
     
-    logger.info(f"✅ Email verified for user: {user.email}")
+    # Send OTP email
+    email_sent = False
+    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
+    
+    if smtp_configured:
+        try:
+            email_sent = send_otp_email(user.email, otp_code)
+        except Exception as e:
+            logger.error(f"❌ Failed to resend OTP to {user.email}: {e}")
+    
+    logger.info(f"🔄 OTP resent to {user.email}")
     
     return {
-        "message": "Email verified successfully! You can now login.",
-        "email": user.email
+        "message": "New OTP sent to your email" if email_sent else "New OTP generated (check server logs)",
+        "email": user.email,
+        "otp_sent": email_sent,
+        "otp_code": otp_code if not smtp_configured else None  # Only for development
     }
+
+
 
 
 @app.post("/auth/admin/verify-user")

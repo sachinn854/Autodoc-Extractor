@@ -242,6 +242,41 @@ class ApiService {
     }
   }
 
+  async verifyOTP(email: string, otpCode: string): Promise<{ access_token: string; user: any }> {
+    try {
+      const response = await api.post('/auth/verify-otp', {
+        email,
+        otp_code: otpCode
+      });
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 400) {
+        throw new Error(error.response.data.detail || 'Invalid OTP code');
+      }
+      if (error.response?.status === 429) {
+        throw new Error('Too many failed attempts. Please request a new OTP.');
+      }
+      throw new Error(error.response?.data?.detail || 'OTP verification failed');
+    }
+  }
+
+  async resendOTP(email: string): Promise<{ message: string; otp_sent: boolean }> {
+    try {
+      const response = await api.post('/auth/resend-otp', null, {
+        params: { email }
+      });
+      return response.data;
+    } catch (error: any) {
+      if (error.response?.status === 404) {
+        throw new Error('User not found');
+      }
+      if (error.response?.status === 400) {
+        throw new Error('Email already verified');
+      }
+      throw new Error(error.response?.data?.detail || 'Failed to resend OTP');
+    }
+  }
+
   async getMyDocuments(skip: number = 0, limit: number = 50): Promise<{ documents: any[]; total: number }> {
     try {
       const response = await api.get(`/my-documents?skip=${skip}&limit=${limit}`);

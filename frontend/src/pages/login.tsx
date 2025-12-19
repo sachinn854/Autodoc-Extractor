@@ -12,13 +12,16 @@ import {
   CircularProgress,
 } from '@mui/material';
 import { useAuth } from '../contexts/AuthContext';
+import OTPVerification from '../components/OTPVerification';
+import apiService from '../services/api';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const [showOTPVerification, setShowOTPVerification] = useState(false);
+  const { login, loginWithToken } = useAuth();
   const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,11 +33,57 @@ export default function Login() {
       await login(email, password);
       // Redirect handled by AuthContext
     } catch (err: any) {
-      setError(err.message || 'Login failed. Please try again.');
+      const errorMessage = err.message || 'Login failed. Please try again.';
+      
+      // Check if error is about email verification
+      if (errorMessage.includes('Email not verified') || errorMessage.includes('not verified')) {
+        setShowOTPVerification(true);
+        setError('Please verify your email first. We\'ll send you a new OTP code.');
+        
+        // Trigger OTP resend
+        try {
+          await apiService.resendOTP(email);
+        } catch (resendErr) {
+          console.error('Failed to resend OTP:', resendErr);
+        }
+      } else {
+        setError(errorMessage);
+      }
     } finally {
       setLoading(false);
     }
   };
+
+  const handleOTPVerificationSuccess = (token: string, user: any) => {
+    // Login user and redirect
+    loginWithToken(token, user);
+  };
+
+  const handleBackToLogin = () => {
+    setShowOTPVerification(false);
+    setError('');
+  };
+
+  if (showOTPVerification) {
+    return (
+      <Container maxWidth="sm">
+        <Box
+          sx={{
+            minHeight: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <OTPVerification
+            email={email}
+            onVerificationSuccess={handleOTPVerificationSuccess}
+            onBack={handleBackToLogin}
+          />
+        </Box>
+      </Container>
+    );
+  }
 
   return (
     <Container maxWidth="sm">

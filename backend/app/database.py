@@ -27,7 +27,10 @@ class User(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
     is_active = Column(Boolean, default=True)
     is_verified = Column(Boolean, default=False)  # Email verification status
-    verification_token = Column(String, nullable=True)  # Email verification token
+    verification_token = Column(String, nullable=True)  # Email verification token (deprecated)
+    otp_code = Column(String, nullable=True)  # 6-digit OTP code
+    otp_expires_at = Column(DateTime, nullable=True)  # OTP expiration time
+    otp_attempts = Column(Integer, default=0)  # Failed OTP attempts counter
     
     # Relationship
     documents = relationship("Document", back_populates="user", cascade="all, delete-orphan")
