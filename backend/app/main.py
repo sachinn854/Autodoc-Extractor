@@ -1891,9 +1891,28 @@ async def serve_frontend(full_path: str):
 # Mount static files AFTER all API routes (to avoid conflicts)
 FRONTEND_STATIC_DIR = Path(__file__).parent.parent / "static"
 
+# Root route - serve frontend index.html
+@app.get("/")
+async def serve_root():
+    """Serve frontend index.html at root"""
+    if not FRONTEND_STATIC_DIR.exists():
+        return JSONResponse(
+            status_code=503,
+            content={"detail": f"Frontend static directory not found: {FRONTEND_STATIC_DIR}"}
+        )
+    
+    index_path = FRONTEND_STATIC_DIR / "index.html"
+    if index_path.exists():
+        return FileResponse(index_path)
+    
+    return JSONResponse(
+        status_code=404,
+        content={"detail": "Frontend index.html not found"}
+    )
+
 # Serve frontend index.html for root and SPA routes
 @app.get("/{full_path:path}")
-async def serve_frontend(full_path: str):
+async def serve_frontend(full_path: str = ""):
     """Serve frontend static files and handle SPA routing"""
     # Check if it's an API route (should not reach here)
     if full_path.startswith(("api/", "auth/", "upload", "process", "status", "result", "download", "jobs", "cleanup", "health", "docs", "openapi.json", "my-documents")):
@@ -1903,8 +1922,14 @@ async def serve_frontend(full_path: str):
     if not FRONTEND_STATIC_DIR.exists():
         return JSONResponse(
             status_code=503,
-            content={"detail": "Frontend not available in development mode"}
+            content={"detail": f"Frontend static directory not found: {FRONTEND_STATIC_DIR}"}
         )
+    
+    # Handle root path
+    if not full_path or full_path == "":
+        index_path = FRONTEND_STATIC_DIR / "index.html"
+        if index_path.exists():
+            return FileResponse(index_path)
     
     # Try to serve the requested file
     file_path = FRONTEND_STATIC_DIR / full_path
@@ -1918,6 +1943,8 @@ async def serve_frontend(full_path: str):
     
     return JSONResponse(
         status_code=404,
+        content={"detail": f"File not found: {full_path}"}
+    )
         content={"detail": "Frontend file not found"}
     )
 
