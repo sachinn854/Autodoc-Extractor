@@ -9,10 +9,8 @@ import {
 } from '../types/schema';
 
 // API Configuration
-// In production (Docker/Render), backend serves frontend on same port
-// Use empty baseURL for same-origin requests
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 
-  (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8001');
+// Same origin deployment - FastAPI serves frontend
+const API_BASE_URL = '';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -26,13 +24,13 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     console.log(`🚀 API Request: ${config.method?.toUpperCase()} ${config.url}`);
-    
+
     // Add auth token if available
     const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') : null;
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
-    
+
     return config;
   },
   (error) => {
@@ -294,17 +292,17 @@ class ApiService {
 export const apiUtils = {
   // Poll job status until completion
   async pollJobStatus(
-    jobId: string, 
+    jobId: string,
     onProgress?: (status: JobStatus) => void,
     maxAttempts: number = 60, // 5 minutes with 5-second intervals
     interval: number = 5000
   ): Promise<JobStatus> {
     const apiService = new ApiService();
-    
+
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
       try {
         const status = await apiService.getJobStatus(jobId);
-        
+
         if (onProgress) {
           onProgress(status);
         }
@@ -317,12 +315,12 @@ export const apiUtils = {
         await new Promise(resolve => setTimeout(resolve, interval));
       } catch (error) {
         console.error(`Status check attempt ${attempt + 1} failed:`, error);
-        
+
         // If it's the last attempt, throw the error
         if (attempt === maxAttempts - 1) {
           throw error;
         }
-        
+
         // Wait before retry
         await new Promise(resolve => setTimeout(resolve, interval));
       }
@@ -342,11 +340,11 @@ export const apiUtils = {
       // Step 1: Upload file
       onProgress?.('Uploading file...');
       const uploadResponse = await apiService.uploadFile(file);
-      
+
       // Step 2: Start processing
       onProgress?.('Starting processing...');
       await apiService.startProcessing(uploadResponse.job_id);
-      
+
       // Step 3: Poll for completion
       onProgress?.('Processing document...');
       const finalStatus = await this.pollJobStatus(
@@ -361,7 +359,7 @@ export const apiUtils = {
       // Step 4: Get results
       onProgress?.('Retrieving results...');
       const results = await apiService.getResults(uploadResponse.job_id);
-      
+
       return results;
     } catch (error) {
       console.error('Upload and process flow failed:', error);
@@ -372,11 +370,11 @@ export const apiUtils = {
   // Format file size for display
   formatFileSize(bytes: number): string {
     if (bytes === 0) return '0 Bytes';
-    
+
     const k = 1024;
     const sizes = ['Bytes', 'KB', 'MB', 'GB'];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
-    
+
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
   },
 
@@ -384,7 +382,7 @@ export const apiUtils = {
   isValidFileType(file: File): boolean {
     const validTypes = [
       'image/jpeg',
-      'image/png', 
+      'image/png',
       'image/tiff',
       'application/pdf'
     ];

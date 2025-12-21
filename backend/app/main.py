@@ -98,12 +98,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount static files for production (Next.js build)
-# Check if frontend build exists (for Docker deployment)
-FRONTEND_BUILD_DIR = Path(__file__).parent.parent.parent / "frontend" / ".next" / "static"
-if FRONTEND_BUILD_DIR.exists():
-    app.mount("/_next/static", StaticFiles(directory=str(FRONTEND_BUILD_DIR)), name="nextjs-static")
-    logger.info("✅ Mounted Next.js static files")
+# Mount static files for production (Frontend + API in same container)
+# Serve Next.js static export
+FRONTEND_STATIC_DIR = Path(__file__).parent.parent / "static"
+if FRONTEND_STATIC_DIR.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_STATIC_DIR), html=True), name="frontend")
+    logger.info("✅ Mounted Frontend static files")
+else:
+    logger.warning("⚠️ Frontend static directory not found")
 
 # Job status tracking (in production, use Redis/database)
 JOB_STATUS = {}
@@ -851,13 +853,17 @@ async def process_document_pipeline(
         
         # Step 2: Run OCR on preprocessed images
         ocr_results = process_document_ocr(
-            preprocessed_image_paths=processed_paths,
             job_id=job_id,
-            lang=lang,
-            normalize_coords=normalize_coords
+            image_paths=processed_paths,
+            lang=lang
         )
         
         logger.info(f"OCR completed: {ocr_results['total_tokens']} tokens extracted")
+        
+        # Save OCR results to file
+        from app.ocr_engine import save_ocr_output
+        save_ocr_output(job_id, ocr_results)
+        logger.info("💾 OCR results saved to file")
         
         # Step 3: Table detection and parsing (Phase 4)
         table_results = process_tables_for_job(job_id, processed_paths, ocr_results)
@@ -956,15 +962,18 @@ async def run_complete_pipeline(
         update_job_status(job_id, "processing", "Phase 3: Running OCR text extraction")
         
         try:
-            from app.ocr_engine import process_document_ocr
+            from app.ocr_engine import process_document_ocr, save_ocr_output
             logger.info("✅ OCR import successful")
             
             ocr_results = process_document_ocr(
-                preprocessed_image_paths=processed_paths,
                 job_id=job_id,
-                lang=lang,
-                normalize_coords=normalize_coords
+                image_paths=processed_paths,
+                lang=lang
             )
+            
+            # Save OCR results to file
+            save_ocr_output(job_id, ocr_results)
+            logger.info("💾 OCR results saved to file")
             
             logger.info(f"✅ Phase 3 completed: {ocr_results.get('total_tokens', 0)} tokens extracted")
             
