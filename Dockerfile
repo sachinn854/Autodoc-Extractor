@@ -9,9 +9,9 @@ WORKDIR /app/frontend
 COPY frontend/package*.json ./
 RUN npm install
 
-# Copy frontend source and build + export
+# Copy frontend source and build (Next.js 14 auto-exports with output: export)
 COPY frontend/ ./
-RUN npm run build-export
+RUN npm run build
 
 # Stage 2: Production with FastAPI serving frontend
 FROM python:3.11-slim AS production
