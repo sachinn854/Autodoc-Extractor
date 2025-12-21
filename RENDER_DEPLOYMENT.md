@@ -231,3 +231,25 @@ Test it:
 2. Sign up for an account
 3. Upload a receipt/invoice
 4. Watch the magic happen! ✨
+
+
+🎯 SendGrid Setup Steps:
+Step 1: Create SendGrid Account
+Go to https://sendgrid.com
+Sign up (Free plan: 100 emails/day)
+Verify your account
+Step 2: Get API Key
+SendGrid Dashboard → Settings → API Keys
+Create API Key → Full Access
+Copy the API key
+Step 3: Add Environment Variables in Render
+SENDGRID_API_KEY=SG.your_api_key_here
+FROM_EMAIL=noreply@autodoc-extractor.com
+Step 4: Deploy Updated Code
+Push to GitHub
+Render will auto-deploy
+✅ Benefits:
+✅ HTTP API (not SMTP) - works on Render
+✅ Reliable delivery - better than Gmail SMTP
+✅ Free tier - 100 emails/day
+✅ Fallback - SMTP as backup

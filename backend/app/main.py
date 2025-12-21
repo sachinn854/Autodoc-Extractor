@@ -136,6 +136,17 @@ def update_job_status(job_id: str, status: str, progress: str = None, error: str
     }
     save_job_status()
 
+
+def clear_job_status():
+    """Clear all job status (for debugging)"""
+    global JOB_STATUS
+    JOB_STATUS = {}
+    status_file = Path("tmp/job_status.json")
+    if status_file.exists():
+        status_file.unlink()
+    print("✅ Job status cleared")
+
+
 # Load existing job status on startup
 load_job_status()
 
@@ -1521,6 +1532,86 @@ async def list_jobs():
             for job_id, info in JOB_STATUS.items()
         }
     }
+
+
+@app.post("/clear-jobs")
+async def clear_all_jobs():
+    """Clear all job status (for debugging)"""
+    clear_job_status()
+    return {"message": "All job status cleared"}
+
+
+@app.post("/clear-all-data")
+async def clear_all_data(db: Session = Depends(get_db)):
+    """
+    Clear all data - database, cache, temp files (for debugging)
+    ⚠️ WARNING: This will delete ALL user data and documents!
+    """
+    try:
+        # 1. Clear database
+        db.query(Document).delete()
+        db.query(User).delete()
+        db.commit()
+        
+        # 2. Clear job status cache
+        clear_job_status()
+        
+        # 3. Clear OCR engine cache
+        try:
+            from app.ocr_engine import _ocr_engine_cache
+            _ocr_engine_cache.clear()
+            print("✅ OCR cache cleared")
+        except Exception as e:
+            print(f"⚠️ Could not clear OCR cache: {e}")
+        
+        # 4. Clear temp files
+        import shutil
+        temp_dirs = [
+            Path("tmp"),
+            Path("data/history"),
+            Path("backend/tmp"),
+            Path("backend/data/history")
+        ]
+        
+        for temp_dir in temp_dirs:
+            if temp_dir.exists():
+                try:
+                    shutil.rmtree(temp_dir)
+                    temp_dir.mkdir(parents=True, exist_ok=True)
+                except Exception as e:
+                    print(f"Could not clear {temp_dir}: {e}")
+        
+        # 5. Recreate necessary directories
+        essential_dirs = [
+            Path("tmp/uploads"),
+            Path("tmp/preprocessed"), 
+            Path("tmp/results"),
+            Path("data"),
+            Path("backend/tmp/uploads"),
+            Path("backend/tmp/preprocessed"),
+            Path("backend/tmp/results"),
+            Path("backend/data")
+        ]
+        
+        for dir_path in essential_dirs:
+            dir_path.mkdir(parents=True, exist_ok=True)
+        
+        return {
+            "message": "✅ All data cleared successfully!",
+            "cleared": {
+                "database": "All users and documents deleted",
+                "job_cache": "All job status cleared", 
+                "ocr_cache": "OCR engine cache cleared",
+                "temp_files": "All temporary files deleted",
+                "directories": "Essential directories recreated"
+            }
+        }
+        
+    except Exception as e:
+        return {
+            "message": f"❌ Error during cleanup: {str(e)}",
+            "status": "partial_failure"
+        }
 
 
 @app.get("/status/{job_id}", response_model=StatusResponse)

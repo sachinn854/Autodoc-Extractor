@@ -77,6 +77,10 @@ package-lock.json
 out/
 frontend/.next/
 frontend/out/
+
+# Frontend build and cache folders
+frontend/.turbo/
+frontend/coverage/
 frontend/build/
 
 # Environment variables

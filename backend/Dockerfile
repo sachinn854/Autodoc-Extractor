@@ -26,21 +26,12 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy application code (paths relative to backend repo root)
 COPY app ./app
 COPY models ./models
 COPY .env.example ./
-COPY ../yolov8n.pt ./
 
-# 🚀 CRITICAL FIX: Preload PaddleOCR models during build (prevents Render timeout)
-RUN python -c "\
-import os\
-os.environ['HUB_HOME'] = '/app/models'\
-from paddleocr import PaddleOCR\
-print('🔄 Downloading PaddleOCR models...')\
-ocr = PaddleOCR(use_angle_cls=True, lang='en', show_log=False)\
-print('✅ PaddleOCR models downloaded successfully!')\
-"
+# Download models on first request to avoid build timeout
 
 # Create necessary directories
 RUN mkdir -p tmp/uploads tmp/preprocessed tmp/results data models

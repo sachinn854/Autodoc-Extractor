@@ -58,13 +58,11 @@ def get_ocr_engine(lang: str = "en", job_id: str = None):
         
         from paddleocr import PaddleOCR
         
-        # Initialize PaddleOCR with progressive fallback approaches
+        # Initialize PaddleOCR with CPU-only configuration (lightweight)
         init_attempts = [
-            # Modern PaddleOCR 3.x+ approach
-            {'use_textline_orientation': True, 'lang': lang},
-            # Legacy approach with angle classification
+            # CPU-only with basic features
             {'use_angle_cls': True, 'lang': lang},
-            # Basic approach without angle features
+            # Minimal configuration
             {'lang': lang}
         ]
         

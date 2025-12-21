@@ -604,16 +604,19 @@ class BusinessSchemaParser:
         
         print(f"📊 Has structured table data: {has_structured_data}")
         
-        if has_structured_data:
+        # FORCE OCR PARSING for receipts (table detection often wrong for receipts)
+        force_ocr_parsing = True  # Temporary fix for receipt parsing
+        
+        if has_structured_data and not force_ocr_parsing:
             # PREFER structured tables - data is already parsed!
             logger.info("📊 Using STRUCTURED TABLE DATA (tables.json has rows)")
             for table in tables_list:
                 table_items, table_flags = self.parse_table_to_items(table)
                 items.extend(table_items)
                 confidence_flags.extend(table_flags)
-        elif is_receipt or not tables_list:
+        elif is_receipt or not tables_list or force_ocr_parsing:
             # Receipt format OR no tables - extract directly from OCR
-            logger.info("📝 Using receipt-style OCR parsing (no table structure)")
+            logger.info("📝 Using receipt-style OCR parsing (FORCED for better accuracy)")
             items, confidence_flags = self.extract_items_from_ocr(ocr_pages)
         else:
             # Tables exist but no structured data - fallback to OCR
