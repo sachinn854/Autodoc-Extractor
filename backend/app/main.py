@@ -99,13 +99,8 @@ app.add_middleware(
 )
 
 # Mount static files for production (Frontend + API in same container)
-# Serve Next.js static export
-FRONTEND_STATIC_DIR = Path(__file__).parent.parent / "static"
-if FRONTEND_STATIC_DIR.exists():
-    app.mount("/", StaticFiles(directory=str(FRONTEND_STATIC_DIR), html=True), name="frontend")
-    logger.info("✅ Mounted Frontend static files")
-else:
-    logger.warning("⚠️ Frontend static directory not found")
+# Important: Mount static files AFTER API routes to avoid conflicts
+# This will be moved to the end of the file
 
 # Job status tracking (in production, use Redis/database)
 JOB_STATUS = {}
@@ -1893,6 +1888,13 @@ async def serve_frontend(full_path: str):
     else:
         raise HTTPException(status_code=404, detail="Frontend build not found")
 
+# Mount static files AFTER all API routes (to avoid conflicts)
+FRONTEND_STATIC_DIR = Path(__file__).parent.parent / "static"
+if FRONTEND_STATIC_DIR.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_STATIC_DIR), html=True), name="frontend")
+    logger.info("✅ Mounted Frontend static files at root")
+else:
+    logger.warning("⚠️ Frontend static directory not found")
 
 if __name__ == "__main__":
     import uvicorn
