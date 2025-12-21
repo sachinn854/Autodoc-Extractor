@@ -1890,11 +1890,36 @@ async def serve_frontend(full_path: str):
 
 # Mount static files AFTER all API routes (to avoid conflicts)
 FRONTEND_STATIC_DIR = Path(__file__).parent.parent / "static"
-if FRONTEND_STATIC_DIR.exists():
-    app.mount("/", StaticFiles(directory=str(FRONTEND_STATIC_DIR), html=True), name="frontend")
-    logger.info("✅ Mounted Frontend static files at root")
-else:
-    logger.warning("⚠️ Frontend static directory not found")
+
+# Serve frontend index.html for root and SPA routes
+@app.get("/{full_path:path}")
+async def serve_frontend(full_path: str):
+    """Serve frontend static files and handle SPA routing"""
+    # Check if it's an API route (should not reach here)
+    if full_path.startswith(("api/", "auth/", "upload", "process", "status", "result", "download", "jobs", "cleanup", "health", "docs", "openapi.json", "my-documents")):
+        raise HTTPException(status_code=404, detail="API endpoint not found")
+    
+    # Check if static directory exists
+    if not FRONTEND_STATIC_DIR.exists():
+        return JSONResponse(
+            status_code=503,
+            content={"detail": "Frontend not available in development mode"}
+        )
+    
+    # Try to serve the requested file
+    file_path = FRONTEND_STATIC_DIR / full_path
+    if file_path.is_file():
+        return FileResponse(file_path)
+    
+    # For SPA routing, serve index.html
+    index_path = FRONTEND_STATIC_DIR / "index.html"
+    if index_path.exists():
+        return FileResponse(index_path)
+    
+    return JSONResponse(
+        status_code=404,
+        content={"detail": "Frontend file not found"}
+    )
 
 if __name__ == "__main__":
     import uvicorn
