@@ -1945,8 +1945,6 @@ async def serve_frontend(full_path: str = ""):
         status_code=404,
         content={"detail": f"File not found: {full_path}"}
     )
-        content={"detail": "Frontend file not found"}
-    )
 
 if __name__ == "__main__":
     import uvicorn
