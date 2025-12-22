@@ -212,7 +212,7 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
         otp_code=otp_code,
         otp_expires_at=otp_expires_at,
         otp_attempts=0,
-        is_verified=False  # Email verification required
+        is_verified=True  # Email verification DISABLED for testing
     )
     
     db.add(new_user)
@@ -292,12 +292,12 @@ async def login(request: LoginRequest, db: Session = Depends(get_db)):
             detail="Incorrect email or password"
         )
     
-    # Check if email is verified
-    if not user.is_verified:
-        raise HTTPException(
-            status_code=403,
-            detail="Email not verified. Please check your email for verification link."
-        )
+    # Check if email is verified - DISABLED for testing
+    # if not user.is_verified:
+    #     raise HTTPException(
+    #         status_code=403,
+    #         detail="Email not verified. Please check your email for verification link."
+    #     )
     
     # Create access token
     access_token = create_access_token(
