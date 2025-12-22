@@ -1921,7 +1921,6 @@ async def serve_root():
             "health": "/health"
         }
     )
-    )
 
 # Serve frontend index.html for root and SPA routes
 @app.get("/{full_path:path}")
