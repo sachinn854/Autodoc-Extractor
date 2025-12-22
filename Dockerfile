@@ -46,6 +46,9 @@ COPY backend/models ./models
 # Copy built frontend static files
 COPY --from=frontend-builder /app/frontend/out ./static
 
+# Debug: List static directory contents
+RUN ls -la ./static || echo "Static directory not found"
+
 # Create necessary directories
 RUN mkdir -p tmp/uploads tmp/preprocessed tmp/results data models
 

@@ -1897,8 +1897,14 @@ async def serve_root():
     """Serve frontend index.html at root"""
     if not FRONTEND_STATIC_DIR.exists():
         return JSONResponse(
-            status_code=503,
-            content={"detail": f"Frontend static directory not found: {FRONTEND_STATIC_DIR}"}
+            status_code=200,
+            content={
+                "message": "Autodoc Extractor API", 
+                "status": "running",
+                "frontend": "not available (static files missing)",
+                "api_docs": "/docs",
+                "health": "/health"
+            }
         )
     
     index_path = FRONTEND_STATIC_DIR / "index.html"
@@ -1906,8 +1912,15 @@ async def serve_root():
         return FileResponse(index_path)
     
     return JSONResponse(
-        status_code=404,
-        content={"detail": "Frontend index.html not found"}
+        status_code=200,
+        content={
+            "message": "Autodoc Extractor API",
+            "status": "running", 
+            "frontend": "index.html not found",
+            "api_docs": "/docs",
+            "health": "/health"
+        }
+    )
     )
 
 # Serve frontend index.html for root and SPA routes
