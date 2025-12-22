@@ -433,25 +433,82 @@ Frontend (250MB) + Backend (400MB) = Two separate containers
 **Process**: Batch upload → Automated extraction → CSV export to QuickBooks
 **Benefit**: 80% reduction in manual data entry time
 
-## 🔧 Getting Started (Development)
+## 🔧 Local Setup Guide (Clone & Run)
 
-### Prerequisites
-- Python 3.11+ (for backend)
-- Node.js 18+ (for frontend)
-- Tesseract OCR installed
-- Git for version control
+### Prerequisites (Install These First)
+- **Python 3.11+** - [Download here](https://www.python.org/downloads/)
+- **Node.js 18+** - [Download here](https://nodejs.org/)
+- **Git** - [Download here](https://git-scm.com/)
 
-### Quick Setup
-1. **Clone the repository**
-2. **Backend setup**: Install Python dependencies, start FastAPI server
-3. **Frontend setup**: Install Node packages, start Next.js development server
-4. **Test upload**: Try processing a sample restaurant bill
+### Install Tesseract OCR
+**Windows:**
+- Download from: https://github.com/UB-Mannheim/tesseract/wiki
+- Install and add to PATH
 
-### Environment Configuration
-- Set API endpoints for local development
-- Configure OCR engine parameters
-- Set up database connections
-- Enable debug logging for development
+**Mac:**
+```bash
+brew install tesseract
+```
+
+**Linux:**
+```bash
+sudo apt install tesseract-ocr
+```
+
+### 🚀 Quick Setup (5 Minutes)
+
+#### Step 1: Clone Repository
+```bash
+git clone https://github.com/sachinn854/Autodoc-Extractor.git
+cd Autodoc-Extractor
+```
+
+#### Step 2: Setup Backend
+```bash
+cd backend
+python -m venv venv
+
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8001
+```
+**Backend running at:** http://localhost:8001
+
+#### Step 3: Setup Frontend (New Terminal)
+```bash
+cd frontend
+npm install
+echo "NEXT_PUBLIC_API_URL=http://localhost:8001" > .env.local
+npm run dev
+```
+**Frontend running at:** http://localhost:3000
+
+#### Step 4: Test It
+1. Open http://localhost:3000
+2. Sign up with any email/password
+3. Upload a restaurant bill image
+4. See the magic happen!
+
+### 🐛 Common Issues
+
+**"Tesseract not found":**
+- Make sure Tesseract is installed and in PATH
+- Restart terminal after installation
+
+**"Port already in use":**
+- Change port: `uvicorn app.main:app --reload --port 8002`
+- Update frontend .env.local: `NEXT_PUBLIC_API_URL=http://localhost:8002`
+
+**"Module not found":**
+- Make sure virtual environment is activated
+- Run `pip install -r requirements.txt` again
+
+That's it! Your local restaurant bill analyzer is ready! 🎉
 
 ## 🤝 Contributing
 
