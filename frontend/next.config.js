@@ -2,20 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export', // Static export for FastAPI serving
-  trailingSlash: true,
+  output: 'standalone', // Change back to standalone for Node.js deployment
   images: {
-    unoptimized: true, // Required for static export
+    domains: ['localhost'],
   },
-  // API calls will go to same origin (FastAPI backend)
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: '/api/:path*', // Same origin API calls
-      },
-    ];
-  },
-};
+}
 
 module.exports = nextConfig;

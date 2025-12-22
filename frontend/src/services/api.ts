@@ -9,8 +9,8 @@ import {
 } from '../types/schema';
 
 // API Configuration
-// Same origin deployment - FastAPI serves frontend
-const API_BASE_URL = '';
+// Production: Use backend API URL from environment
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
