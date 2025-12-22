@@ -198,79 +198,36 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
             detail="Email already registered"
         )
     
-    # Generate OTP for email verification
-    from app.auth import generate_otp, get_otp_expiry_time
-    otp_code = generate_otp()
-    otp_expires_at = get_otp_expiry_time()
-    
-    # Create new user
+    # Create new user - SIMPLE (No OTP/Verification)
     hashed_password = hash_password(request.password)
     new_user = User(
         email=request.email,
         password_hash=hashed_password,
         full_name=request.full_name,
-        otp_code=otp_code,
-        otp_expires_at=otp_expires_at,
-        otp_attempts=0,
-        is_verified=True  # Email verification DISABLED for testing
+        is_verified=True  # Auto-verified
     )
     
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
     
-    # Try to send OTP email
-    from app.auth import send_otp_email
-    email_sent = False
-    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
-    
-    if smtp_configured:
-        try:
-            email_sent = send_otp_email(new_user.email, otp_code)
-            if email_sent:
-                logger.info(f"✅ OTP email sent to {new_user.email}")
-            else:
-                logger.warning(f"⚠️ Failed to send OTP email to {new_user.email}")
-        except Exception as e:
-            logger.error(f"❌ OTP email sending error for {new_user.email}: {e}")
-    else:
-        logger.info(f"📧 SMTP not configured - OTP: {otp_code} for {new_user.email}")
-    
-    logger.info(f"New user registered: {new_user.email} (OTP verification required)")
-    
-    # Create access token
+    # Create access token immediately
     access_token = create_access_token(
         data={"user_id": new_user.id, "email": new_user.email}
     )
     
-    logger.info(f"New user registered: {new_user.email} (unverified)")
+    logger.info(f"New user registered and logged in: {new_user.email}")
     
-    # Prepare response
-    response_data = {
+    return {
         "access_token": access_token,
+        "token_type": "bearer",
         "user": {
             "id": new_user.id,
             "email": new_user.email,
             "full_name": new_user.full_name,
-            "created_at": new_user.created_at.isoformat(),
-            "is_active": new_user.is_active,
             "is_verified": new_user.is_verified
-        },
-        "verification_required": True,
-        "otp_sent": email_sent
+        }
     }
-    
-    # Add verification status message
-    if smtp_configured:
-        if email_sent:
-            response_data["message"] = "Account created! Please check your email for the 6-digit OTP code."
-        else:
-            response_data["message"] = "Account created! OTP email failed to send. Check server logs for the OTP code."
-    else:
-        response_data["message"] = f"Account created! SMTP not configured. Your OTP code: {otp_code}"
-        response_data["otp_code"] = otp_code  # Only for development
-    
-    return response_data
 
 
 @app.post("/auth/login", response_model=TokenResponse)
@@ -1491,6 +1448,11 @@ async def cleanup_job(job_id: str) -> JSONResponse:
         logger.error(f"Cleanup failed for job {job_id}: {e}")
         raise HTTPException(status_code=500, detail=f"Cleanup failed: {str(e)}")
 
+
+@app.get("/ping")
+async def ping():
+    """Fast ping endpoint for keep-alive"""
+    return {"status": "ok", "timestamp": datetime.now().isoformat()}
 
 @app.get("/health")
 async def health_check():
