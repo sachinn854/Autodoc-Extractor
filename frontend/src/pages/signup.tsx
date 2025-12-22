@@ -14,7 +14,6 @@ import {
   Divider,
 } from '@mui/material';
 import { Person, Email, Lock } from '@mui/icons-material';
-import OTPVerification from '../components/OTPVerification';
 import apiService from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
 
@@ -22,7 +21,6 @@ const SignupPage: React.FC = () => {
   const router = useRouter();
   const { loginWithToken } = useAuth();
   
-  const [step, setStep] = useState<'signup' | 'otp'>('signup');
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -50,8 +48,9 @@ const SignupPage: React.FC = () => {
         formData.fullName
       );
 
-      // Move to OTP verification step
-      setStep('otp');
+      // Direct login after signup (no verification needed)
+      loginWithToken(response.access_token, response.user);
+      router.push('/dashboard');
       
     } catch (err: any) {
       setError(err.message);
@@ -70,23 +69,6 @@ const SignupPage: React.FC = () => {
     setStep('signup');
     setError('');
   };
-
-  if (step === 'otp') {
-    return (
-      <>
-        <Head>
-          <title>Verify Email - Autodoc Extractor</title>
-        </Head>
-        <Container maxWidth="sm" sx={{ py: 8 }}>
-          <OTPVerification
-            email={formData.email}
-            onVerificationSuccess={handleOTPVerificationSuccess}
-            onBack={handleBackToSignup}
-          />
-        </Container>
-      </>
-    );
-  }
 
   return (
     <>
