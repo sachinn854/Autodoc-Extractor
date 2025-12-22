@@ -59,17 +59,6 @@ const SignupPage: React.FC = () => {
     }
   };
 
-  const handleOTPVerificationSuccess = (token: string, user: any) => {
-    // Login user and redirect to dashboard
-    loginWithToken(token, user);
-    router.push('/dashboard');
-  };
-
-  const handleBackToSignup = () => {
-    setStep('signup');
-    setError('');
-  };
-
   return (
     <>
       <Head>
