@@ -3,20 +3,37 @@ import numpy as np
 from typing import List, Dict, Tuple
 import os
 from pathlib import Path
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class TableDetector:
     """
-    OpenCV-based table detection for document images (lightweight replacement for YOLO)
-    Uses morphological operations to detect table structures
+    YOLO-based table detection for document images (high accuracy)
+    Uses YOLOv8 for advanced table structure detection
     """
     
     def __init__(self):
-        """Initialize lightweight table detector using OpenCV"""
-        print("✅ Initialized OpenCV-based table detector")
+        """Initialize YOLO-based table detector"""
+        self.yolo_model = None
+        self._initialize_yolo()
+    
+    def _initialize_yolo(self):
+        """Initialize YOLO model for table detection"""
+        from ultralytics import YOLO
+        
+        # Try to load pre-trained table detection model
+        model_path = "yolov8n.pt"  # Start with nano model for speed
+        
+        logger.info(f"🔄 Loading YOLO model: {model_path}")
+        self.yolo_model = YOLO(model_path)
+        logger.info("✅ YOLO model loaded successfully")
     
     def detect_tables(self, image_path: str, min_table_area: int = 5000) -> List[Dict]:
         """
-        Detect tables using OpenCV morphological line detection
+        Detect tables using YOLO model
         
         Args:
             image_path: Path to input image
@@ -25,63 +42,51 @@ class TableDetector:
         Returns:
             List of detected table regions with coordinates
         """
+        logger.info(f"🔍 YOLO table detection on: {image_path}")
+        
         try:
-            # Read image
-            image = cv2.imread(image_path)
-            if image is None:
-                print(f"❌ Could not read image: {image_path}")
-                return self._fallback_full_image_table(image_path)
-            
-            # Convert to grayscale
-            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-            
-            # Apply threshold to get binary image
-            _, binary = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY_INV)
-            
-            # Detect horizontal lines
-            horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (40, 1))
-            horizontal_lines = cv2.morphologyEx(binary, cv2.MORPH_OPEN, horizontal_kernel)
-            
-            # Detect vertical lines
-            vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 40))
-            vertical_lines = cv2.morphologyEx(binary, cv2.MORPH_OPEN, vertical_kernel)
-            
-            # Combine horizontal and vertical lines
-            table_mask = cv2.addWeighted(horizontal_lines, 0.5, vertical_lines, 0.5, 0.0)
-            
-            # Find contours (potential table regions)
-            contours, _ = cv2.findContours(table_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            # Run YOLO inference
+            results = self.yolo_model(image_path)
             
             tables = []
-            for i, contour in enumerate(contours):
-                # Get bounding rectangle
-                x, y, w, h = cv2.boundingRect(contour)
-                area = w * h
-                
-                # Filter by minimum area
-                if area > min_table_area:
-                    tables.append({
-                        "label": "TABLE",
-                        "bbox": {
-                            "x1": x,
-                            "y1": y,
-                            "x2": x + w,
-                            "y2": y + h
-                        },
-                        "confidence": 0.85,  # Fixed confidence for rule-based detection
-                        "area": area
-                    })
+            for r in results:
+                boxes = r.boxes
+                if boxes is not None:
+                    for box in boxes:
+                        # Get bounding box coordinates
+                        x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                        confidence = box.conf[0].cpu().numpy()
+                        
+                        # Calculate area
+                        area = (x2 - x1) * (y2 - y1)
+                        
+                        # More lenient criteria for table detection
+                        if area >= min_table_area and confidence > 0.3:  # Lower confidence threshold
+                            table_info = {
+                                "table_bbox": {
+                                    "x1": int(x1),
+                                    "y1": int(y1), 
+                                    "x2": int(x2),
+                                    "y2": int(y2)
+                                },
+                                "confidence": float(confidence),
+                                "label": "TABLE",
+                                "area": int(area)
+                            }
+                            tables.append(table_info)
             
-            # If no tables detected, fallback to full image
+            logger.info(f"✅ YOLO detected {len(tables)} tables")
+            
+            # If no tables detected, always fallback to full image for restaurant bills
             if not tables:
-                print("⚠️ No tables detected, using full image as table")
+                logger.warning("⚠️ YOLO found no tables, using intelligent fallback for restaurant bills")
                 return self._fallback_full_image_table(image_path)
             
-            print(f"✅ Detected {len(tables)} tables using OpenCV")
             return tables
             
         except Exception as e:
-            print(f"❌ Table detection failed: {e}")
+            logger.error(f"❌ YOLO table detection failed: {e}")
+            logger.info("🔄 Falling back to full image table detection")
             return self._fallback_full_image_table(image_path)
     
     def _fallback_full_image_table(self, image_path: str) -> List[Dict]:
@@ -96,19 +101,19 @@ class TableDetector:
             # Try to find a more intelligent table region by looking for common table headers
             # This is a smarter fallback that looks for actual table content
             return [{
-                "label": "TABLE",
                 "bbox": {
                     "x1": 0,
                     "y1": int(height * 0.3),  # Start from 30% down the image to skip headers
                     "x2": width,
                     "y2": int(height * 0.8)   # End at 80% to skip footers
                 },
+                "label": "TABLE",
                 "confidence": 1.0,
                 "area": width * int(height * 0.5)  # 50% of image area
             }]
             
         except Exception as e:
-            print(f"❌ Fallback table detection failed: {e}")
+            logger.error(f"❌ Fallback table detection failed: {e}")
             return []
     
     def visualize_tables(self, image_path: str, output_path: str = None) -> str:
@@ -133,7 +138,7 @@ class TableDetector:
             
             # Draw bounding boxes
             for i, table in enumerate(tables):
-                bbox = table['bbox']
+                bbox = table['table_bbox']
                 x1, y1, x2, y2 = bbox['x1'], bbox['y1'], bbox['x2'], bbox['y2']
                 
                 # Draw rectangle
@@ -148,11 +153,11 @@ class TableDetector:
                 output_path = image_path.replace('.', '_tables.')
             
             cv2.imwrite(output_path, image)
-            print(f"✅ Visualization saved to: {output_path}")
+            logger.info(f"✅ Visualization saved to: {output_path}")
             return output_path
             
         except Exception as e:
-            print(f"❌ Visualization failed: {e}")
+            logger.error(f"❌ Visualization failed: {e}")
             return image_path
 
 
@@ -163,7 +168,7 @@ def detect_tables(image_path: str, confidence_threshold: float = 0.25) -> List[D
     
     Args:
         image_path: Path to input image
-        confidence_threshold: Not used in OpenCV version (kept for compatibility)
+        confidence_threshold: Not used in YOLO version (kept for compatibility)
         
     Returns:
         List of detected table regions
