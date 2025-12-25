@@ -94,6 +94,18 @@ const ResultPage: React.FC = () => {
   const handleDataChange = (updatedData: Item[]) => {
     setExtractedData(updatedData);
     setDataModified(true);
+    
+    // Update results state to reflect changes in summary
+    if (results?.extracted) {
+      setResults(prev => ({
+        ...prev!,
+        extracted: {
+          ...prev!.extracted!,
+          items: updatedData,
+          total: updatedData.reduce((sum, item) => sum + item.line_total, 0)
+        }
+      }));
+    }
   };
 
   const handleSaveChanges = async () => {
@@ -342,7 +354,7 @@ const ResultPage: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-1">
-                  {results.extracted.items.length}
+                  {extractedData.length}
                 </div>
                 <div className="text-sm text-gray-600">Items Extracted</div>
               </div>
