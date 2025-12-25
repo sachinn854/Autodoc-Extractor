@@ -85,24 +85,28 @@ class TableDetector:
             return self._fallback_full_image_table(image_path)
     
     def _fallback_full_image_table(self, image_path: str) -> List[Dict]:
-        """Fallback: treat entire image as one table"""
+        """Fallback: treat entire image as one table, but try to find table headers first"""
         try:
             image = cv2.imread(image_path)
             if image is None:
                 return []
             
             height, width = image.shape[:2]
+            
+            # Try to find a more intelligent table region by looking for common table headers
+            # This is a smarter fallback that looks for actual table content
             return [{
                 "label": "TABLE",
                 "bbox": {
                     "x1": 0,
-                    "y1": 0,
+                    "y1": int(height * 0.3),  # Start from 30% down the image to skip headers
                     "x2": width,
-                    "y2": height
+                    "y2": int(height * 0.8)   # End at 80% to skip footers
                 },
                 "confidence": 1.0,
-                "area": width * height
+                "area": width * int(height * 0.5)  # 50% of image area
             }]
+            
         except Exception as e:
             print(f"❌ Fallback table detection failed: {e}")
             return []

@@ -494,6 +494,105 @@ npm run dev
 3. Upload a restaurant bill image
 4. See the magic happen!
 
+## �  Project Structure
+
+```
+Autodoc-Extractor/
+├── 📄 README.md                    # This documentation
+├── 📄 RENDER_DEPLOYMENT.md         # Deployment guide
+├── 📄 FULLSTACK_DEPLOYMENT.md      # Full-stack deployment
+│
+├── 📂 backend/                     # Python FastAPI Backend
+│   ├── 📂 app/                     # Main application code
+│   │   ├── 📄 main.py              # FastAPI app & API routes
+│   │   ├── 📄 auth.py              # Authentication & JWT
+│   │   ├── 📄 database.py          # Database models & setup
+│   │   ├── 📄 ocr_engine.py        # OCR processing engine
+│   │   ├── 📄 preprocessing.py     # Image preprocessing
+│   │   ├── 📄 table_detector.py    # Table detection logic
+│   │   └── 📄 parser.py            # Data extraction & parsing
+│   │
+│   ├── 📂 models/                  # ML models (auto-created)
+│   ├── 📂 tmp/                     # Temporary files (auto-created)
+│   │   ├── 📂 uploads/             # Uploaded images
+│   │   ├── 📂 preprocessed/        # Processed images
+│   │   └── 📂 results/             # Extraction results
+│   │
+│   ├── 📄 requirements.txt         # Python dependencies
+│   ├── 📄 Dockerfile              # Backend container config
+│   ├── 📄 .env.example            # Environment variables template
+│   ├── 📄 app.db                  # SQLite database (auto-created)
+│   │
+│   └── 📂 venv/                    # Virtual environment (after setup)
+│
+├── 📂 frontend/                    # Next.js React Frontend
+│   ├── 📂 src/                     # Source code
+│   │   ├── 📂 pages/               # Next.js pages
+│   │   │   ├── 📄 index.tsx        # Home page
+│   │   │   ├── 📄 login.tsx        # Login page
+│   │   │   ├── 📄 signup.tsx       # Signup page
+│   │   │   ├── 📄 dashboard.tsx    # Main dashboard
+│   │   │   └── 📂 result/          # Results pages
+│   │   │
+│   │   ├── 📂 components/          # React components
+│   │   │   ├── 📄 Layout.tsx       # Main layout
+│   │   │   ├── 📄 DocumentUpload.tsx # File upload
+│   │   │   ├── 📄 ProcessingStatus.tsx # Progress tracking
+│   │   │   ├── 📄 ResultsDisplay.tsx # Show extracted data
+│   │   │   └── 📄 OTPVerification.tsx # Email verification
+│   │   │
+│   │   ├── 📂 services/            # API client
+│   │   │   └── 📄 api.ts           # Axios API calls
+│   │   │
+│   │   ├── 📂 contexts/            # React contexts
+│   │   │   └── 📄 AuthContext.tsx  # Authentication state
+│   │   │
+│   │   ├── 📂 types/               # TypeScript types
+│   │   │   └── 📄 schema.ts        # API response types
+│   │   │
+│   │   └── 📂 styles/              # CSS styles
+│   │       └── 📄 globals.css      # Global styles
+│   │
+│   ├── 📂 public/                  # Static assets
+│   │   └── 📄 favicon.ico          # Website icon
+│   │
+│   ├── 📂 node_modules/            # Node dependencies (after npm install)
+│   ├── 📂 .next/                   # Next.js build files (auto-created)
+│   │
+│   ├── 📄 package.json             # Node.js dependencies
+│   ├── 📄 package-lock.json        # Dependency lock file
+│   ├── 📄 next.config.js           # Next.js configuration
+│   ├── 📄 tsconfig.json            # TypeScript config
+│   ├── 📄 tailwind.config.js       # Tailwind CSS config
+│   ├── 📄 postcss.config.js        # PostCSS config
+│   ├── 📄 Dockerfile              # Frontend container config
+│   ├── 📄 .env.example            # Environment template
+│   └── 📄 .env.local              # Local environment (after setup)
+│
+└── 📂 .git/                       # Git repository (after clone)
+```
+
+### 📋 Key Files Explained
+
+#### Backend Files:
+- **`app/main.py`** - Main FastAPI application with all API routes
+- **`app/ocr_engine.py`** - Tesseract OCR integration for text extraction
+- **`app/parser.py`** - Business logic to extract restaurant data
+- **`app/database.py`** - SQLAlchemy models for user data and bills
+- **`requirements.txt`** - All Python packages needed
+
+#### Frontend Files:
+- **`src/pages/dashboard.tsx`** - Main page after login
+- **`src/components/DocumentUpload.tsx`** - Drag & drop file upload
+- **`src/services/api.ts`** - All API calls to backend
+- **`package.json`** - All Node.js packages needed
+
+#### Auto-Created Files (Don't Worry About These):
+- **`backend/app.db`** - SQLite database file
+- **`backend/tmp/`** - Temporary processing files
+- **`frontend/.next/`** - Next.js build cache
+- **`frontend/node_modules/`** - Installed packages
+
 ### 🐛 Common Issues
 
 **"Tesseract not found":**

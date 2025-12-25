@@ -77,10 +77,7 @@ class TableParser:
                 "cells": row_cells
             })
         
-        # Step 5: Merge multi-line items
-        structured_rows = self.merge_multiline_items(structured_rows)
-        
-        # Step 6: Build final structure
+        # Step 5: Build final structure
         result = {
             "table_bbox": table_bbox,
             "rows": structured_rows
@@ -89,17 +86,9 @@ class TableParser:
         logger.info(f"Final table structure has {len(structured_rows)} rows")
         return result
     
-    def filter_tokens_inside_table(self, tokens: List[Dict], table_bbox: List[int]) -> List[Dict]:
+    def filter_tokens_inside_table(self, tokens: List[Dict], table_bbox) -> List[Dict]:
         """
         Filter OCR tokens that are inside the table bounding box
-        STOPS at TOTAL/SUBTOTAL row to exclude footer content
-        
-        Args:
-            tokens: List of OCR tokens
-            table_bbox: dict with x1,y1,x2,y2 OR [x1, y1, x2, y2] list
-            
-        Returns:
-            Filtered tokens inside table (excluding content after TOTAL)
         """
         # Handle both dict and list formats
         if isinstance(table_bbox, dict):
@@ -122,13 +111,13 @@ class TableParser:
         # Sort by Y position (top to bottom)
         tokens_inside.sort(key=lambda t: t.get('bbox', [0,0,0,0])[1])
         
-        # Now filter, stopping at TOTAL keywords
+        # Filter, stopping at TOTAL keywords
         filtered_tokens = []
         
         for token in tokens_inside:
             text = token.get('text', '').strip().upper()
             
-            # 🛑 STOP at TOTAL/SUBTOTAL keywords - don't include this or anything after
+            # Stop at TOTAL/SUBTOTAL keywords
             total_keywords = [
                 'TOTAL AMOUNT', 'SUBTOTAL', 'SUB TOTAL', 'GRAND TOTAL',
                 'NET TOTAL', 'FINAL AMOUNT', 'AMOUNT PAYABLE', 'BILL TOTAL'
@@ -144,8 +133,7 @@ class TableParser:
             
             if is_total_keyword:
                 logger.info(f"🛑 Table parsing stopped at TOTAL keyword: '{token.get('text', '')}'")
-                print(f"🛑 TABLE BUILDING STOPPED AT: '{token.get('text', '')}'")
-                break  # Stop processing tokens - exclude TOTAL and everything after
+                break  # Stop processing tokens
             
             filtered_tokens.append(token)
         
@@ -154,12 +142,6 @@ class TableParser:
     def group_tokens_into_rows(self, tokens: List[Dict]) -> List[List[Dict]]:
         """
         Group tokens into rows based on vertical proximity (y-coordinates)
-        
-        Args:
-            tokens: List of OCR tokens inside table
-            
-        Returns:
-            List of rows, each row is a list of tokens
         """
         if not tokens:
             return []
@@ -173,6 +155,24 @@ class TableParser:
                 tokens_with_y.append((token, y_center))
         
         if not tokens_with_y:
+            return []
+        
+        # Sort by y-coordinate
+        tokens_with_y.sort(key=lambda x: x[1])
+        
+        # Group into rows using y-threshold
+        rows = []
+        current_row = [tokens_with_y[0][0]]
+        current_y = tokens_with_y[0][1]
+        
+        for token, y_center in tokens_with_y[1:]:
+            if abs(y_center - current_y) <= self.y_threshold:
+                # Same row
+                current_row.append(token)
+            else:
+                # New row
+                if len(current_row) >= self.min_tokens_per_row:
+                    rows.append(current_row)
             return []
         
         # Sort by y-coordinate
@@ -2452,49 +2452,7 @@ class BusinessSchemaParser:
         
         return 0.0
 
-# Convenience function for Phase 5
-def process_document_to_business_schema(job_id: str) -> dict:
-    """
-    Process a completed job to business schema (Phase 5)
-    
-    Args:
-        job_id: Job identifier
-        
-    Returns:
-        Business schema dictionary
-    """
-    # Load Phase 4 table data
-    results_dir = Path(__file__).parent.parent / "tmp" / "results" / job_id
-    
-    tables_file = results_dir / "tables.json"
-    ocr_file = results_dir / "ocr.json"  # Fixed: Match ocr_engine.py filename
-    
-    if not tables_file.exists():
-        raise FileNotFoundError(f"Tables data not found for job {job_id}")
-    
-    # Load OCR data with tolerance for missing files
-    if not ocr_file.exists():
-        logger.warning(f"OCR data not found for job {job_id}, using empty OCR data")
-        ocr_data = {"pages": [], "total_pages": 0, "total_tokens": 0}
-    else:
-        try:
-            with open(ocr_file, 'r', encoding='utf-8') as f:
-                ocr_data = json.load(f)
-                # Validate OCR data structure
-                if not isinstance(ocr_data, dict) or "pages" not in ocr_data:
-                    logger.warning(f"Invalid OCR data structure for job {job_id}, using empty OCR data")
-                    ocr_data = {"pages": [], "total_pages": 0, "total_tokens": 0}
-        except Exception as e:
-            logger.error(f"Failed to load OCR data for job {job_id}: {e}, using empty OCR data")
-            ocr_data = {"pages": [], "total_pages": 0, "total_tokens": 0}
-    
-    # Load tables data
-    with open(tables_file, 'r', encoding='utf-8') as f:
-        tables_data = json.load(f)
-    
-    # Process to business schema
-    parser = BusinessSchemaParser()
-    return parser.process_document_to_schema(job_id, tables_data, ocr_data)
+# Convenience function for Phase 5 - REMOVED DUPLICATE
 
 if __name__ == "__main__":
     # Test the parser with sample data
@@ -2533,3 +2491,736 @@ if __name__ == "__main__":
         print(f"Amount parsing: '{amount_text}' -> {parsed}")
     
     print("Phase 5 parser ready!")
+
+def process_multiple_tables(tokens: List[Dict], detected_tables: List[Dict]) -> List[Dict]:
+    """
+    Process multiple detected tables using the TableParser
+    
+    Args:
+        tokens: OCR tokens with text, bbox, confidence
+        detected_tables: List of detected table regions
+        
+    Returns:
+        List of structured tables
+    """
+    parser = TableParser()
+    structured_tables = []
+    
+    for table in detected_tables:
+        try:
+            structured_table = parser.parse_table_structure(tokens, table['bbox'])
+            structured_table['label'] = table.get('label', 'TABLE')
+            structured_table['confidence'] = table.get('confidence', 1.0)
+            structured_tables.append(structured_table)
+        except Exception as e:
+            logger.error(f"Failed to parse table: {e}")
+            continue
+    
+    return structured_tables
+
+
+class BusinessSchemaExtractor:
+    """
+    Extract business schema (vendor, items, totals) from OCR and table data
+    """
+    
+    def __init__(self):
+        # Currency mappings
+        self.currency_symbols = {
+            'RM': 'MYR', 'MYR': 'MYR',
+            '$': 'USD', 'USD': 'USD',
+            '€': 'EUR', 'EUR': 'EUR',
+            '£': 'GBP', 'GBP': 'GBP',
+            '₹': 'INR', 'INR': 'INR',
+            '¥': 'JPY', 'JPY': 'JPY',
+        }
+        
+        # Total/tax keywords
+        self.total_keywords = ['total', 'grand total', 'net total', 'amount', 'balance']
+        self.tax_keywords = ['tax', 'gst', 'vat', 'service tax', 'sst']
+        
+        # Confidence threshold for suspicious OCR
+        self.confidence_threshold = 0.5
+    
+    def process_document_to_schema(self, job_id: str, tables_data: dict, ocr_data: dict) -> dict:
+        """
+        Main function to convert Phase 4 tables to business schema
+        
+        Args:
+            job_id: Job identifier
+            tables_data: Output from Phase 4 table detection
+            ocr_data: Output from Phase 3 OCR
+            
+        Returns:
+            Business schema dictionary
+        """
+        print("\n" + "="*80)
+        print("🔥 ENTERED ITEM PARSING LOGIC (process_document_to_schema) 🔥")
+        print("="*80 + "\n")
+        logger.info(f"Processing document to business schema for job {job_id}")
+        
+        # Step 1: Extract header information from OCR tokens
+        ocr_pages = ocr_data.get('pages', [])
+        header_info = self.extract_header_fields(ocr_pages)
+        
+        # Step 2: Check if this is a RECEIPT (not a table-based invoice)
+        tables_list = tables_data.get('tables', [])
+        print(f"\n📋 Tables found: {len(tables_list)}")
+        
+        is_receipt = self._is_receipt_document(tables_list)
+        print(f"\n🧾 Is Receipt? {is_receipt}")
+        
+        if is_receipt:
+            print("🧾 RECEIPT DETECTED: Bypassing table parsing, using OCR-based extraction\n")
+            logger.info("🧾 RECEIPT DETECTED: Bypassing table parsing, using OCR-based extraction")
+        
+        # Step 3: Process items - Use OCR-based extraction for receipts
+        items = []
+        confidence_flags = []
+        
+        # Force OCR parsing for better accuracy
+        logger.info("📝 Using receipt-style OCR parsing (FORCED for better accuracy)")
+        items, confidence_flags = self.extract_items_from_ocr(ocr_pages)
+        
+        # Step 4: Remove duplicate items
+        items = self.deduplicate_items(items)
+        logger.info(f"After deduplication: {len(items)} unique items")
+        
+        # Step 5: Extract totals and amounts
+        amounts = self.extract_amounts(ocr_pages, tables_list)
+        
+        # Step 6: Validate and correct calculations
+        validation_flags = self.validate_totals(items, amounts)
+        confidence_flags.extend(validation_flags)
+        
+        # Step 7: Build final schema
+        business_schema = self.build_final_output(
+            header_info, items, amounts, confidence_flags
+        )
+        
+        # Step 8: Save outputs
+        json_path, csv_path = self.save_business_schema(job_id, business_schema)
+        logger.info(f"Business schema saved to {json_path} and {csv_path}")
+        
+        return business_schema
+    
+    def extract_items_from_ocr(self, pages_data: List[dict]) -> Tuple[List[dict], List[str]]:
+        """
+        Extract items from raw OCR data using simple row-based parsing
+        """
+        print("\n" + "="*80)
+        print("🔥 ENTERED extract_items_from_ocr 🔥")
+        print("="*80 + "\n")
+        
+        items = []
+        flags = []
+        
+        # Collect all tokens from all pages
+        all_tokens = []
+        for page_data in pages_data:
+            if isinstance(page_data, dict):
+                tokens = page_data.get('tokens', [])
+                all_tokens.extend(tokens)
+        
+        if not all_tokens:
+            return items, flags
+        
+        print("\n=== RAW OCR TOKENS (First 25) ===")
+        for i, t in enumerate(all_tokens[:25]):
+            print(f"{i}: {t.get('text', '')}")
+        print("="*40 + "\n")
+        
+        logger.info(f"Attempting receipt-style parsing from {len(all_tokens)} OCR tokens")
+        
+        # Sort tokens by Y position (top to bottom)
+        sorted_tokens = sorted(all_tokens, key=lambda t: t.get('bbox', [0,0,0,0])[1])
+        
+        # Use header-aware parsing
+        print("\n✅ HEADER DETECTED → Using header-based parsing\n")
+        logger.info("Header detected: using column-based parsing")
+        return self._extract_items_with_header(sorted_tokens)
+    
+    def _extract_items_with_header(self, sorted_tokens: List[dict]) -> Tuple[List[dict], List[str]]:
+        """
+        HEADER-AWARE: Extract items by detecting column headers first
+        """
+        items = []
+        flags = []
+        
+        print("\n🔍 HEADER-AWARE PARSING")
+        
+        # Step 1: Find where items start (after headers) and end (before totals)
+        start_index = 0
+        end_index = len(sorted_tokens)
+        
+        # Look for item section indicators
+        for i, token in enumerate(sorted_tokens):
+            text = token.get('text', '').upper().strip()
+            
+            # Find start: Look for QTY/ITEM headers or similar patterns
+            item_start_keywords = ['QTY', 'ITEM', 'DESCRIPTION', 'PRODUCT', 'CODE/DESC']
+            if start_index == 0:
+                for keyword in item_start_keywords:
+                    if keyword in text:
+                        start_index = i + 1
+                        print(f"📋 Items START after header '{text}' at token {i}")
+                        break
+            
+            # Find end: Look for total/summary keywords
+            total_keywords = [
+                'SUBTOTAL', 'SUB TOTAL', 'SUB-TOTAL',
+                'TOTAL:', 'TOTAL AMOUNT', 'GRAND TOTAL', 'NET TOTAL', 'FINAL TOTAL',
+                'AMOUNT PAYABLE', 'BILL TOTAL', 'ROUND', 'ROUNDING',
+                'TAX:', 'GST:', 'VAT:', 'SERVICE TAX',
+                'CASH PAYMENT', 'PAYMENT', 'CHANGE', 'TENDER'
+            ]
+            
+            # Check if this token indicates end of items
+            is_total_keyword = False
+            for keyword in total_keywords:
+                if keyword in text or text == keyword:
+                    is_total_keyword = True
+                    break
+            
+            # Special case: "Total :" pattern
+            if text == 'TOTAL' and i + 1 < len(sorted_tokens):
+                next_text = sorted_tokens[i + 1].get('text', '').strip()
+                if next_text == ':':
+                    is_total_keyword = True
+            
+            if is_total_keyword and i > start_index:  # Only stop if we've found items section
+                end_index = i
+                print(f"🛑 Items END before total '{text}' at token {i}")
+                break
+        
+        print(f"📍 Processing items from token {start_index} to {end_index}")
+        
+        # Step 2: Group tokens by rows (Y position) and extract items
+        current_row_tokens = []
+        current_y = None
+        y_tolerance = 15  # pixels
+        
+        for i in range(start_index, end_index):
+            token = sorted_tokens[i]
+            text = token.get('text', '').strip()
+            
+            if not text:
+                continue
+                
+            token_y = token.get('bbox', [0,0,0,0])[1]
+            
+            # Check if this token is on the same row as previous tokens
+            if current_y is None or abs(token_y - current_y) <= y_tolerance:
+                # Same row
+                current_row_tokens.append(token)
+                current_y = token_y
+            else:
+                # New row - process the previous row
+                if current_row_tokens:
+                    item = self._build_item_from_row_tokens(current_row_tokens)
+                    if item and item.get('description') and item.get('line_total', 0) > 0:
+                        items.append(item)
+                        print(f"✅ Found item: {item['description']} - Qty:{item['qty']}, Unit:${item['unit_price']}, Total:${item['line_total']}")
+                
+                # Start new row
+                current_row_tokens = [token]
+                current_y = token_y
+        
+        # Process the last row
+        if current_row_tokens:
+            item = self._build_item_from_row_tokens(current_row_tokens)
+            if item and item.get('description') and item.get('line_total', 0) > 0:
+                items.append(item)
+                print(f"✅ Found item: {item['description']} - Qty:{item['qty']}, Unit:${item['unit_price']}, Total:${item['line_total']}")
+        
+        return items, flags
+    
+    def _build_item_from_row_tokens(self, row_tokens: List[dict]) -> dict:
+        """
+        Build item from tokens in a single row using position-based logic
+        """
+        if not row_tokens:
+            return None
+        
+        # Sort tokens by X position (left to right)
+        row_tokens.sort(key=lambda t: t.get('bbox', [0,0,0,0])[0])
+        
+        description_parts = []
+        numbers = []
+        qty = 1.0  # Default quantity
+        
+        print(f"\n🔍 Processing row tokens: {[t.get('text', '') for t in row_tokens]}")
+        
+        for token in row_tokens:
+            text = token.get('text', '').strip()
+            
+            # Check for quantity prefix like "2X", "3X", etc.
+            qty_match = re.match(r'^(\d+)X$', text.upper())
+            if qty_match:
+                qty = float(qty_match.group(1))
+                print(f"  ✅ Found quantity prefix: {text} → qty={qty}")
+                continue  # Skip this token, we've extracted the quantity
+            
+            # Try to parse as number (price/total)
+            num_val = self._parse_amount(text)
+            if num_val > 0:
+                numbers.append(num_val)
+                print(f"  💰 Found number: {text} → {num_val}")
+            elif any(c.isalpha() for c in text) and len(text) >= 3:
+                # Only include substantial text parts
+                description_parts.append(text)
+                print(f"  📝 Found text: {text}")
+        
+        if not description_parts:
+            print("  ❌ No description parts found")
+            return None
+        
+        description = ' '.join(description_parts)
+        print(f"  📋 Final description: '{description}'")
+        print(f"  🔢 Numbers found: {numbers}")
+        print(f"  📊 Final qty: {qty}")
+        
+        # Skip if description looks like header or footer
+        desc_upper = description.upper()
+        
+        # Skip address/company info patterns
+        address_patterns = [
+            'ADDRESS:', 'TEL:', 'PHONE:', 'EMAIL:', 'WEBSITE:', 'WWW.',
+            'STREET', 'ROAD', 'AVENUE', 'BOULEVARD', 'LANE', 'DRIVE',
+            'CITY', 'STATE', 'COUNTRY', 'ZIP', 'POSTAL',
+            'SDN BHD', 'PTE LTD', 'LIMITED', 'INC', 'CORP'
+        ]
+        
+        # Skip receipt metadata
+        metadata_patterns = [
+            'RECEIPT:', 'INVOICE:', 'BILL NO:', 'DOCUMENT NO:',
+            'CASHIER:', 'SERVER:', 'TABLE:', 'GUESTS:',
+            'DATE:', 'TIME:', 'MEMBER:'
+        ]
+        
+        # Skip totals/summary
+        total_patterns = [
+            'TOTAL', 'SUBTOTAL', 'TAX', 'GST', 'VAT',
+            'PAYMENT', 'CASH', 'CHANGE', 'TENDER'
+        ]
+        
+        # Check if description matches skip patterns
+        should_skip = False
+        
+        # Address info - skip if contains address keywords
+        for pattern in address_patterns:
+            if pattern in desc_upper:
+                should_skip = True
+                print(f"  ❌ Skipping address info: {desc_upper}")
+                break
+        
+        # Metadata - skip if starts with metadata keywords
+        if not should_skip:
+            for pattern in metadata_patterns:
+                if desc_upper.startswith(pattern):
+                    should_skip = True
+                    print(f"  ❌ Skipping metadata: {desc_upper}")
+                    break
+        
+        # Totals - skip if contains total keywords
+        if not should_skip:
+            for pattern in total_patterns:
+                if pattern in desc_upper and len(desc_upper) <= len(pattern) + 5:
+                    should_skip = True
+                    print(f"  ❌ Skipping total/summary: {desc_upper}")
+                    break
+        
+        if should_skip:
+            return None
+        
+        # Skip if description is too generic or looks like company info
+        generic_names = ['ECOSPACE', 'ECO-FRIENDLY STORE', 'DINEFINE', 'RESTAURANT', 'TAN WOON YANN']
+        if description.upper() in generic_names:
+            print(f"  ❌ Skipping generic/company name: {description}")
+            return None
+        
+        # Initialize default values
+        unit_price = 0.0
+        line_total = 0.0
+        
+        # Assign numbers based on count and typical receipt layout
+        if len(numbers) == 1:
+            # Single number = line total (most common in receipts)
+            line_total = numbers[0]
+            unit_price = line_total / qty if qty > 0 else line_total
+            print(f"  📊 Single number logic: total={line_total}, unit_price={unit_price}")
+        elif len(numbers) == 2:
+            # Two numbers: Check which makes more sense
+            # If first number is small and second is larger, likely qty already found from prefix
+            if qty > 1.0:
+                # Quantity prefix found, so numbers are likely unit_price, line_total
+                unit_price = numbers[0]
+                line_total = numbers[1]
+                print(f"  📊 Two number logic (with qty prefix): unit_price={unit_price}, total={line_total}")
+            else:
+                # No quantity prefix, check if first number could be qty
+                if numbers[0] <= 20 and numbers[0] == int(numbers[0]):
+                    # First number looks like quantity
+                    qty = numbers[0]
+                    line_total = numbers[1]
+                    unit_price = line_total / qty if qty > 0 else line_total
+                    print(f"  📊 Two number logic (qty detected): qty={qty}, total={line_total}, unit_price={unit_price}")
+                else:
+                    # Both are prices: unit_price, line_total
+                    unit_price = numbers[0]
+                    line_total = numbers[1]
+                    print(f"  📊 Two number logic (both prices): unit_price={unit_price}, total={line_total}")
+        elif len(numbers) >= 3:
+            # Three+ numbers = qty, unit_price, line_total
+            if qty == 1.0:  # No quantity prefix found
+                potential_qty = numbers[0]
+                if potential_qty <= 50 and potential_qty == int(potential_qty):
+                    qty = potential_qty
+                    unit_price = numbers[1]
+                    line_total = numbers[2]
+                    print(f"  📊 Three number logic (qty from numbers): qty={qty}, unit_price={unit_price}, total={line_total}")
+                else:
+                    # First number doesn't look like qty, treat as prices
+                    unit_price = numbers[0]
+                    line_total = numbers[1]
+                    print(f"  📊 Three number logic (no qty): unit_price={unit_price}, total={line_total}")
+            else:
+                # Quantity already found from prefix, remaining numbers are prices
+                unit_price = numbers[0]
+                line_total = numbers[1]
+                print(f"  📊 Three number logic (with prefix): qty={qty}, unit_price={unit_price}, total={line_total}")
+        
+        # Validation and correction: Check if math makes sense
+        if qty > 0 and unit_price > 0 and line_total > 0:
+            expected_total = qty * unit_price
+            error_ratio = abs(expected_total - line_total) / max(expected_total, line_total)
+            
+            if error_ratio > 0.1:  # More than 10% error
+                print(f"  ⚠️ Math error detected: {qty} × {unit_price} = {expected_total} ≠ {line_total}")
+                
+                # Try to fix: if line_total is correct, recalculate unit_price
+                if line_total > 0:
+                    corrected_unit_price = line_total / qty
+                    print(f"  🔧 Correcting unit_price: {unit_price} → {corrected_unit_price}")
+                    unit_price = corrected_unit_price
+        
+        # Validation: ensure reasonable values
+        if qty <= 0:
+            qty = 1.0
+        if unit_price <= 0 and line_total > 0:
+            unit_price = line_total / qty
+        if line_total <= 0 and unit_price > 0:
+            line_total = unit_price * qty
+        
+        # Final check: must have valid description and total
+        if not description or line_total <= 0:
+            print(f"  ❌ Final validation failed: desc='{description}', total={line_total}")
+            return None
+        
+        result = {
+            "description": description,
+            "qty": qty,
+            "unit_price": unit_price,
+            "line_total": line_total
+        }
+        
+        print(f"  ✅ FINAL ITEM: {result}")
+        return result
+    
+    def _parse_amount(self, text: str) -> float:
+        """
+        Parse amount from text string - IMPROVED VERSION
+        """
+        if not text:
+            return 0.0
+        
+        # Clean the text
+        cleaned = text.strip()
+        
+        # Remove currency symbols and common prefixes
+        cleaned = re.sub(r'[₹$€£¥RM]', '', cleaned)
+        
+        # Handle comma as thousands separator vs decimal separator
+        if ',' in cleaned and '.' in cleaned:
+            # Both comma and dot present: 1,234.56 format
+            cleaned = cleaned.replace(',', '')
+        elif ',' in cleaned:
+            # Only comma present: could be 1,234 (thousands) or 12,34 (decimal)
+            parts = cleaned.split(',')
+            if len(parts) == 2 and len(parts[1]) <= 2:
+                # Likely decimal: 12,34 → 12.34
+                cleaned = cleaned.replace(',', '.')
+            else:
+                # Likely thousands: 1,234 → 1234
+                cleaned = cleaned.replace(',', '')
+        
+        # Try to extract number - be more careful with regex
+        try:
+            # Look for decimal number pattern (more restrictive)
+            match = re.search(r'\b\d{1,6}(?:\.\d{1,2})?\b', cleaned)
+            if match:
+                value = float(match.group())
+                # Sanity check: reasonable price range
+                if 0.01 <= value <= 10000:  # Between 1 cent and $10,000
+                    return value
+                elif value > 10000:
+                    # Might be a large number that needs decimal adjustment
+                    # Try dividing by 100 if it looks like cents
+                    if value > 100000:
+                        return value / 100
+                    return value
+        except (ValueError, AttributeError):
+            pass
+        
+        return 0.0
+    
+    def _is_receipt_document(self, tables_list: List[dict]) -> bool:
+        """
+        Detect if document is a receipt (not a structured table invoice)
+        """
+        if not tables_list:
+            return True  # No tables = likely receipt
+        
+        # Check table labels for receipt indicators
+        receipt_indicators = ['RECEIPT', 'BOOK', 'GOODS', 'FALLBACK', 'PAPER', 'DINING']
+        for table in tables_list:
+            label = str(table.get('label', 'NO_LABEL')).upper()
+            
+            # NO_LABEL or missing label = treat as receipt
+            if label in ['NO_LABEL', 'NONE', '']:
+                logger.info(f"🧾 No label found - treating as receipt")
+                return True
+            
+            # Check for receipt indicators in label
+            if any(indicator in label for indicator in receipt_indicators):
+                logger.info(f"🧾 Receipt indicator found in label: '{label}'")
+                return True
+            
+            # Check if table has rows - if not, it's likely a receipt bbox fallback
+            if not table.get('rows'):
+                logger.info("🧾 Table has no rows - treating as receipt")
+                return True
+        
+        return False
+    
+    def extract_header_fields(self, pages_data: List[dict]) -> dict:
+        """
+        Extract vendor, date, currency from OCR tokens
+        """
+        header = {
+            'vendor': '',
+            'date': None,
+            'currency': 'MYR'  # Default currency
+        }
+        
+        # Collect all tokens from all pages
+        all_tokens = []
+        for page_data in pages_data:
+            if isinstance(page_data, dict):
+                tokens = page_data.get('tokens', [])
+                all_tokens.extend(tokens)
+        
+        if not all_tokens:
+            return header
+        
+        # Sort tokens by position (top-left first)
+        sorted_tokens = sorted(all_tokens, key=lambda t: (t.get('bbox', [0, 0])[1], t.get('bbox', [0, 0])[0]))
+        
+        # Extract vendor (top-most, longest text)
+        vendor = self._extract_vendor(sorted_tokens[:10])  # Check top 10 tokens
+        if vendor:
+            header['vendor'] = vendor
+        
+        return header
+    
+    def _extract_vendor(self, tokens: List[dict]) -> str:
+        """Extract vendor name from top tokens"""
+        for token in tokens:
+            text = token.get('text', '').strip()
+            if len(text) > 5 and any(c.isalpha() for c in text):
+                return text
+        return ''
+    
+    def deduplicate_items(self, items: List[dict]) -> List[dict]:
+        """
+        Remove duplicate items based on description similarity
+        """
+        if not items:
+            return items
+        
+        # Group items by description (case-insensitive)
+        from collections import defaultdict
+        grouped = defaultdict(list)
+        
+        for item in items:
+            description = str(item.get('description', '')).strip().lower()
+            grouped[description].append(item)
+        
+        unique_items = []
+        
+        for description, item_group in grouped.items():
+            if len(item_group) == 1:
+                # No duplicates, keep as is
+                unique_items.append(item_group[0])
+                logger.info(f"✅ Keeping unique item: {description}")
+            else:
+                # Multiple items with same description - pick the best one
+                logger.info(f"🔍 Found {len(item_group)} duplicates for: {description}")
+                
+                # Score each item based on calculation accuracy
+                best_item = None
+                best_score = -1
+                
+                for item in item_group:
+                    qty = float(item.get('qty', 1))
+                    unit_price = float(item.get('unit_price', 0))
+                    line_total = float(item.get('line_total', 0))
+                    
+                    # Calculate expected total
+                    expected_total = qty * unit_price
+                    
+                    # Score based on how close the calculation is
+                    if line_total > 0:
+                        error = abs(expected_total - line_total) / line_total
+                        score = 1.0 - error  # Higher score = better match
+                    else:
+                        score = 0
+                    
+                    logger.info(f"  Item: Qty={qty}, Price={unit_price}, Total={line_total}, Score={score:.2f}")
+                    
+                    if score > best_score:
+                        best_score = score
+                        best_item = item
+                
+                if best_item:
+                    unique_items.append(best_item)
+                    logger.info(f"  ✅ Keeping best match with score {best_score:.2f}")
+        
+        logger.info(f"Deduplication: {len(items)} → {len(unique_items)} items")
+        return unique_items
+    
+    def extract_amounts(self, pages_data: List[dict], tables_list: List[dict]) -> dict:
+        """Extract total amounts, tax, etc."""
+        amounts = {
+            'subtotal': 0.0,
+            'tax': 0.0,
+            'total': 0.0
+        }
+        
+        # Simple extraction - look for large numbers at the end
+        all_tokens = []
+        for page_data in pages_data:
+            if isinstance(page_data, dict):
+                tokens = page_data.get('tokens', [])
+                all_tokens.extend(tokens)
+        
+        # Find the largest number (likely the total)
+        max_amount = 0.0
+        for token in all_tokens:
+            amount = self._parse_amount(token.get('text', ''))
+            if amount > max_amount:
+                max_amount = amount
+        
+        amounts['total'] = max_amount
+        amounts['subtotal'] = max_amount  # Simplified
+        
+        return amounts
+    
+    def validate_totals(self, items: List[dict], amounts: dict) -> List[str]:
+        """Validate if item totals match document total"""
+        flags = []
+        
+        # Calculate sum of all items
+        items_total = sum(item.get('line_total', 0) for item in items)
+        document_total = amounts.get('total', 0)
+        
+        if document_total > 0 and items_total > 0:
+            difference = abs(items_total - document_total)
+            if difference > document_total * 0.1:  # 10% tolerance
+                flags.append(f"SUBTOTAL_MISMATCH: calculated={items_total:.2f}, found={document_total:.2f}")
+        
+        return flags
+    
+    def build_final_output(self, header_info: dict, items: List[dict], amounts: dict, flags: List[str]) -> dict:
+        """Build the final business schema output"""
+        
+        # Calculate totals
+        items_subtotal = sum(item.get('line_total', 0) for item in items)
+        
+        # Use calculated total if document total seems wrong
+        document_total = amounts.get('total', 0)
+        if document_total > items_subtotal * 10:  # Document total is way too high
+            final_total = items_subtotal
+        else:
+            final_total = document_total
+        
+        return {
+            "vendor": header_info.get('vendor', ''),
+            "date": header_info.get('date'),
+            "currency": header_info.get('currency', 'MYR'),
+            "items": items,
+            "tax": amounts.get('tax', 0),
+            "subtotal": items_subtotal,
+            "total": final_total,
+            "confidence_flags": flags,
+            "processing_timestamp": datetime.now().isoformat(),
+            "item_count": len(items)
+        }
+    
+    def save_business_schema(self, job_id: str, schema: dict) -> Tuple[str, str]:
+        """Save business schema to JSON and CSV files"""
+        
+        # Create results directory
+        results_dir = Path("tmp/results") / job_id
+        results_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save JSON
+        json_path = results_dir / "extracted.json"
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(schema, f, indent=2, ensure_ascii=False, default=str)
+        
+        # Save CSV
+        csv_path = results_dir / "extracted.csv"
+        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['Description', 'Quantity', 'Unit Price', 'Line Total'])
+            
+            for item in schema.get('items', []):
+                writer.writerow([
+                    item.get('description', ''),
+                    item.get('qty', 0),
+                    item.get('unit_price', 0),
+                    item.get('line_total', 0)
+                ])
+        
+        return str(json_path), str(csv_path)
+
+
+# Main function to be called from main.py
+def process_document_to_business_schema(job_id: str) -> dict:
+    """
+    Main entry point for business schema extraction
+    """
+    extractor = BusinessSchemaExtractor()
+    
+    # Load OCR and table data
+    results_dir = Path(__file__).parent.parent / "tmp" / "results" / job_id
+    
+    # Load OCR data
+    ocr_file = results_dir / "ocr.json"
+    if ocr_file.exists():
+        with open(ocr_file, 'r', encoding='utf-8') as f:
+            ocr_data = json.load(f)
+    else:
+        ocr_data = {"pages": []}
+    
+    # Load table data
+    tables_file = results_dir / "tables.json"
+    if tables_file.exists():
+        with open(tables_file, 'r', encoding='utf-8') as f:
+            tables_data = json.load(f)
+    else:
+        tables_data = {"tables": []}
+    
+    # Process to business schema
+    return extractor.process_document_to_schema(job_id, tables_data, ocr_data)

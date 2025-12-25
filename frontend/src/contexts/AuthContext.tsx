@@ -68,45 +68,57 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const login = async (email: string, password: string) => {
-    const response = await fetch(`${API_URL}/auth/login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const response = await fetch(`${API_URL}/auth/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-    if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.detail || 'Login failed');
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('auth_token', data.access_token);
+        setToken(data.access_token);
+        setUser(data.user);
+        router.push('/dashboard');
+        return; // Important: return after success
+      }
+      
+      // Only throw error if response is not ok
+      throw new Error('Invalid email or password');
+    } catch (error: any) {
+      // Re-throw the error for the component to handle
+      throw error;
     }
-
-    const data = await response.json();
-    localStorage.setItem('auth_token', data.access_token);
-    setToken(data.access_token);
-    setUser(data.user);
-    router.push('/dashboard');
   };
 
   const signup = async (email: string, password: string, fullName?: string) => {
-    const response = await fetch(`${API_URL}/auth/signup`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password, full_name: fullName }),
-    });
+    try {
+      const response = await fetch(`${API_URL}/auth/signup`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password, full_name: fullName }),
+      });
 
-    if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.detail || 'Signup failed');
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('auth_token', data.access_token);
+        setToken(data.access_token);
+        setUser(data.user);
+        router.push('/dashboard');
+        return; // Important: return after success
+      }
+      
+      // Only throw error if response is not ok
+      throw new Error('Signup failed');
+    } catch (error: any) {
+      // Re-throw the error for the component to handle
+      throw error;
     }
-
-    const data = await response.json();
-    localStorage.setItem('auth_token', data.access_token);
-    setToken(data.access_token);
-    setUser(data.user);
-    router.push('/dashboard');
   };
 
   const loginWithToken = (authToken: string, userData: User) => {

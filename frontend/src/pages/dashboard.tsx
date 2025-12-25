@@ -1,27 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import {
-  Container,
-  Box,
-  Paper,
-  Typography,
-  Button,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Chip,
-  CircularProgress,
-  Alert,
-  AppBar,
-  Toolbar,
-  IconButton,
-  Menu,
-  MenuItem,
-} from '@mui/material';
-import { AccountCircle, Upload as UploadIcon } from '@mui/icons-material';
+import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
 
 // API URL configuration
@@ -40,11 +19,10 @@ interface Document {
   total_amount?: string;
 }
 
-export default function Dashboard() {
+const Dashboard: React.FC = () => {
   const [documents, setDocuments] = useState<Document[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const { user, token, logout, isLoading } = useAuth();
   const router = useRouter();
 
@@ -80,155 +58,182 @@ export default function Dashboard() {
     }
   };
 
-  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleLogout = () => {
-    handleMenuClose();
-    logout();
-  };
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'success';
+        return 'bg-green-100 text-green-800';
       case 'processing':
-        return 'warning';
+        return 'bg-yellow-100 text-yellow-800';
       case 'failed':
-        return 'error';
+        return 'bg-red-100 text-red-800';
       default:
-        return 'default';
+        return 'bg-gray-100 text-gray-800';
     }
-  };
-
-  const formatFileSize = (bytes: number) => {
-    if (bytes < 1024) return bytes + ' B';
-    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
-    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
   };
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleString();
+    return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
   };
 
   if (isLoading || loading) {
     return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-        <CircularProgress />
-      </Box>
+      <Layout title="Dashboard - Restaurant Bill Analyzer">
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <div className="spinner w-8 h-8 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading your documents...</p>
+          </div>
+        </div>
+      </Layout>
     );
   }
 
   return (
-    <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Autodoc Extractor
-          </Typography>
-          <Typography variant="body1" sx={{ mr: 2 }}>
-            {user?.email}
-          </Typography>
-          <IconButton color="inherit" onClick={handleMenuOpen}>
-            <AccountCircle />
-          </IconButton>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
+    <Layout title="Dashboard - Restaurant Bill Analyzer">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">My Documents</h1>
+            <p className="text-gray-600">
+              Manage and view your processed restaurant bills
+            </p>
+          </div>
+          <button
+            onClick={() => router.push('/upload')}
+            className="btn btn-primary mt-4 sm:mt-0 flex items-center"
           >
-            <MenuItem onClick={handleLogout}>Logout</MenuItem>
-          </Menu>
-        </Toolbar>
-      </AppBar>
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+            </svg>
+            Upload New Bill
+          </button>
+        </div>
 
-      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-          <Typography variant="h4" component="h1">
-            My Documents
-          </Typography>
-          <Button
-            variant="contained"
-            startIcon={<UploadIcon />}
-            onClick={() => router.push('/')}
-            size="large"
-          >
-            Upload New Document
-          </Button>
-        </Box>
-
+        {/* Error Alert */}
         {error && (
-          <Alert severity="error" sx={{ mb: 2 }}>
+          <div className="alert alert-error mb-6 flex items-center">
+            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
             {error}
-          </Alert>
+          </div>
         )}
 
-        <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>File Name</TableCell>
-                <TableCell>Vendor</TableCell>
-                <TableCell>Status</TableCell>
-                <TableCell>Items</TableCell>
-                <TableCell>Total Amount</TableCell>
-                <TableCell>Uploaded</TableCell>
-                <TableCell>Actions</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {documents.length === 0 ? (
-                <TableRow>
-                  <TableCell colSpan={7} align="center">
-                    <Typography variant="body2" color="text.secondary" sx={{ py: 3 }}>
-                      No documents uploaded yet. Upload your first document to get started!
-                    </Typography>
-                  </TableCell>
-                </TableRow>
-              ) : (
-                documents.map((doc) => (
-                  <TableRow key={doc.id} hover>
-                    <TableCell>{doc.filename}</TableCell>
-                    <TableCell>{doc.vendor || '-'}</TableCell>
-                    <TableCell>
-                      <Chip
-                        label={doc.status}
-                        color={getStatusColor(doc.status)}
-                        size="small"
-                      />
-                    </TableCell>
-                    <TableCell>
-                      {doc.items_count !== undefined ? doc.items_count : '-'}
-                    </TableCell>
-                    <TableCell>{doc.total_amount || '-'}</TableCell>
-                    <TableCell>{formatDate(doc.created_at)}</TableCell>
-                    <TableCell>
-                      {doc.status === 'completed' && (
-                        <Button
-                          size="small"
-                          variant="outlined"
-                          onClick={() => router.push(`/result/${doc.job_id}`)}
-                        >
-                          View
-                        </Button>
-                      )}
-                      {doc.status === 'processing' && (
-                        <CircularProgress size={20} />
-                      )}
-                    </TableCell>
-                  </TableRow>
-                ))
-              )}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Container>
-    </>
+        {/* Documents Table */}
+        <div className="card">
+          {documents.length === 0 ? (
+            <div className="text-center py-12">
+              <div className="text-6xl mb-4">📄</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                No documents yet
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Upload your first restaurant bill to get started with AI-powered processing
+              </p>
+              <button
+                onClick={() => router.push('/upload')}
+                className="btn btn-primary"
+              >
+                Upload Your First Bill
+              </button>
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">File Name</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Restaurant</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Status</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Items</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Total</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Uploaded</th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {documents.map((doc) => (
+                    <tr key={doc.id} className="border-b border-gray-100 hover:bg-gray-50">
+                      <td className="py-4 px-4">
+                        <div className="flex items-center">
+                          <div className="text-2xl mr-3">🧾</div>
+                          <div>
+                            <div className="font-medium text-gray-900">{doc.filename}</div>
+                            <div className="text-sm text-gray-500">ID: {doc.job_id.slice(0, 8)}...</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="py-4 px-4 text-gray-900">
+                        {doc.vendor || '-'}
+                      </td>
+                      <td className="py-4 px-4">
+                        <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(doc.status)}`}>
+                          {doc.status}
+                        </span>
+                      </td>
+                      <td className="py-4 px-4 text-gray-900">
+                        {doc.items_count !== undefined ? doc.items_count : '-'}
+                      </td>
+                      <td className="py-4 px-4 text-gray-900 font-medium">
+                        {doc.total_amount || '-'}
+                      </td>
+                      <td className="py-4 px-4 text-gray-600 text-sm">
+                        {formatDate(doc.created_at)}
+                      </td>
+                      <td className="py-4 px-4">
+                        {doc.status === 'completed' && (
+                          <button
+                            onClick={() => router.push(`/result/${doc.job_id}`)}
+                            className="btn btn-outline text-sm"
+                          >
+                            View Results
+                          </button>
+                        )}
+                        {doc.status === 'processing' && (
+                          <div className="flex items-center text-yellow-600">
+                            <div className="spinner w-4 h-4 mr-2"></div>
+                            Processing...
+                          </div>
+                        )}
+                        {doc.status === 'failed' && (
+                          <span className="text-red-600 text-sm">Failed</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+
+        {/* Stats Cards */}
+        {documents.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="card text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">
+                {documents.length}
+              </div>
+              <div className="text-gray-600">Total Documents</div>
+            </div>
+            <div className="card text-center">
+              <div className="text-3xl font-bold text-green-600 mb-2">
+                {documents.filter(d => d.status === 'completed').length}
+              </div>
+              <div className="text-gray-600">Processed</div>
+            </div>
+            <div className="card text-center">
+              <div className="text-3xl font-bold text-yellow-600 mb-2">
+                {documents.filter(d => d.status === 'processing').length}
+              </div>
+              <div className="text-gray-600">Processing</div>
+            </div>
+          </div>
+        )}
+      </div>
+    </Layout>
   );
-}
+};
+export default Dashboard;

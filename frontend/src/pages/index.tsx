@@ -1,374 +1,173 @@
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
+import React from 'react';
 import { useRouter } from 'next/router';
-import {
-  Container,
-  Box,
-  Typography,
-  Paper,
-  Grid,
-  Alert,
-  Snackbar,
-  Card,
-  CardContent,
-  Chip,
-  AppBar,
-  Toolbar,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-} from '@mui/material';
-import {
-  CloudUpload as UploadIcon,
-  Analytics as AnalyticsIcon,
-  TableChart as TableIcon,
-  Speed as SpeedIcon,
-  Security as SecurityIcon,
-  AutoFixHigh as AIIcon,
-  AccountCircle,
-  Dashboard as DashboardIcon,
-} from '@mui/icons-material';
-import FileUpload from '../components/FileUpload';
-import Loader from '../components/Loader';
-import { UploadResponse } from '../types/schema';
+import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
 
 const HomePage: React.FC = () => {
   const router = useRouter();
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [error, setError] = useState<string>('');
-  const [showSuccess, setShowSuccess] = useState(false);
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const { user, token, logout, isLoading } = useAuth();
+  const { user } = useAuth();
 
-  useEffect(() => {
-    if (!isLoading && !token) {
-      router.push('/login');
+  const handleGetStarted = () => {
+    if (user) {
+      router.push('/upload');
+    } else {
+      router.push('/signup');
     }
-  }, [token, isLoading, router]);
-
-  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
   };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleLogout = () => {
-    handleMenuClose();
-    logout();
-  };
-
-  const handleUploadComplete = (response: UploadResponse) => {
-    setIsProcessing(true);
-    
-    // Redirect to results page
-    setTimeout(() => {
-      router.push(`/result/${response.job_id}`);
-    }, 1000);
-  };
-
-  const handleUploadError = (errorMessage: string) => {
-    setError(errorMessage);
-    setIsProcessing(false);
-  };
-
-  const features = [
-    {
-      icon: <AIIcon sx={{ fontSize: 40 }} color="primary" />,
-      title: 'AI-Powered OCR',
-      description: 'Advanced machine learning algorithms for accurate text extraction from receipts and invoices.'
-    },
-    {
-      icon: <TableIcon sx={{ fontSize: 40 }} color="primary" />,
-      title: 'Smart Table Detection',
-      description: 'Automatically detects and extracts structured data from complex table layouts.'
-    },
-    {
-      icon: <AnalyticsIcon sx={{ fontSize: 40 }} color="primary" />,
-      title: 'Intelligent Insights',
-      description: 'Generate spending analytics, category breakdowns, and anomaly detection automatically.'
-    },
-    {
-      icon: <SpeedIcon sx={{ fontSize: 40 }} color="primary" />,
-      title: 'Fast Processing',
-      description: 'Process documents in seconds with our optimized pipeline and real-time progress updates.'
-    },
-    {
-      icon: <SecurityIcon sx={{ fontSize: 40 }} color="primary" />,
-      title: 'Secure & Private',
-      description: 'Your documents are processed securely and automatically cleaned up after processing.'
-    }
-  ];
-
-  if (isProcessing) {
-    return (
-      <Container maxWidth="md" sx={{ py: 8 }}>
-        <Head>
-          <title>Processing Document - AutoDoc Extractor</title>
-        </Head>
-        
-        <Paper elevation={3} sx={{ p: 6, textAlign: 'center' }}>
-          <Typography variant="h4" gutterBottom color="primary" fontWeight={600}>
-            🚀 Processing Your Document
-          </Typography>
-          <Typography variant="body1" color="textSecondary" mb={4}>
-            Please wait while we extract and analyze your document data...
-          </Typography>
-          
-          <Loader 
-            message="Initializing document processing pipeline..." 
-            size="large"
-          />
-          
-          <Alert severity="info" sx={{ mt: 4, textAlign: 'left' }}>
-            <Typography variant="body2">
-              <strong>What's happening:</strong><br/>
-              • Document upload completed<br/>
-              • OCR and table detection in progress<br/>
-              • ML categorization and insights generation<br/>
-              • Results will be available shortly
-            </Typography>
-          </Alert>
-        </Paper>
-      </Container>
-    );
-  }
 
   return (
-    <>
-      <Head>
-        <title>AutoDoc Extractor - AI Document Processing & Insights</title>
-        <meta name="description" content="Upload receipts and invoices to automatically extract data and get intelligent insights with AI-powered OCR and table detection." />
-      </Head>
+    <Layout title="Restaurant Bill Analyzer - AI-Powered Receipt Processing">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Transform Your Restaurant Bills
+              <span className="block text-blue-200">Into Digital Insights</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+              Upload any restaurant bill and let our AI extract items, prices, and generate spending analytics automatically.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={handleGetStarted}
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg"
+              >
+                Get Started Free
+              </button>
+              <button
+                onClick={() => router.push('/upload')}
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors"
+              >
+                Try Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Autodoc Extractor
-          </Typography>
-          <Button
-            color="inherit"
-            startIcon={<DashboardIcon />}
-            onClick={() => router.push('/dashboard')}
-            sx={{ mr: 2 }}
+      {/* Features Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              How It Works
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Simple 3-step process to digitize your restaurant bills
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Step 1 */}
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">1. Upload Bill</h3>
+              <p className="text-gray-600">
+                Take a photo or upload an image of your restaurant bill. Supports JPG, PNG, and PDF formats.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">2. AI Processing</h3>
+              <p className="text-gray-600">
+                Our AI extracts restaurant name, menu items, prices, taxes, and totals with 90%+ accuracy.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">3. Get Insights</h3>
+              <p className="text-gray-600">
+                View structured data, spending analytics, and export to CSV for accounting software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Perfect For
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Business Owners */}
+            <div className="card text-center">
+              <div className="text-4xl mb-4">🏢</div>
+              <h3 className="text-lg font-semibold mb-2">Business Owners</h3>
+              <p className="text-gray-600 text-sm">
+                Track meal expenses for tax deductions and business reporting.
+              </p>
+            </div>
+
+            {/* Accountants */}
+            <div className="card text-center">
+              <div className="text-4xl mb-4">👔</div>
+              <h3 className="text-lg font-semibold mb-2">Accountants</h3>
+              <p className="text-gray-600 text-sm">
+                Process client receipts efficiently with automated data extraction.
+              </p>
+            </div>
+
+            {/* Personal Use */}
+            <div className="card text-center">
+              <div className="text-4xl mb-4">📱</div>
+              <h3 className="text-lg font-semibold mb-2">Personal Use</h3>
+              <p className="text-gray-600 text-sm">
+                Organize dining expenses and track your food spending patterns.
+              </p>
+            </div>
+
+            {/* Restaurants */}
+            <div className="card text-center">
+              <div className="text-4xl mb-4">🏪</div>
+              <h3 className="text-lg font-semibold mb-2">Restaurants</h3>
+              <p className="text-gray-600 text-sm">
+                Digitize and analyze sales data from competitor receipts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Digitize Your Bills?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Join thousands of users who save time and money with automated bill processing.
+          </p>
+          <button
+            onClick={handleGetStarted}
+            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg"
           >
-            Dashboard
-          </Button>
-          <Typography variant="body1" sx={{ mr: 2 }}>
-            {user?.email}
-          </Typography>
-          <IconButton color="inherit" onClick={handleMenuOpen}>
-            <AccountCircle />
-          </IconButton>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-          >
-            <MenuItem onClick={handleLogout}>Logout</MenuItem>
-          </Menu>
-        </Toolbar>
-      </AppBar>
-
-      <Container maxWidth="lg" sx={{ py: 4 }}>
-        {/* Hero Section */}
-        <Box textAlign="center" mb={8}>
-          <Typography 
-            variant="h2" 
-            component="h1" 
-            gutterBottom 
-            fontWeight={700}
-            sx={{ 
-              background: 'linear-gradient(45deg, #3b82f6, #8b5cf6)',
-              backgroundClip: 'text',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
-          >
-            📄 AutoDoc Extractor
-          </Typography>
-          
-          <Typography variant="h5" color="textSecondary" mb={4} fontWeight={300}>
-            Transform your documents into actionable insights with AI
-          </Typography>
-          
-          <Box display="flex" justifyContent="center" gap={2} mb={6} flexWrap="wrap">
-            <Chip label="OCR Technology" color="primary" />
-            <Chip label="Table Detection" color="primary" />
-            <Chip label="ML Insights" color="primary" />
-            <Chip label="Real-time Processing" color="primary" />
-          </Box>
-        </Box>
-
-        {/* Upload Section */}
-        <Box mb={8}>
-          <Typography variant="h4" textAlign="center" mb={4} fontWeight={600}>
-            Upload Your Document
-          </Typography>
-          
-          <FileUpload
-            onUploadComplete={handleUploadComplete}
-            onUploadError={handleUploadError}
-            isLoading={isProcessing}
-            acceptedTypes={['image/jpeg', 'image/png', 'image/tiff', 'application/pdf']}
-            maxSize={10}
-          />
-        </Box>
-
-        {/* Features Section */}
-        <Box mb={8}>
-          <Typography variant="h4" textAlign="center" mb={6} fontWeight={600}>
-            ⚡ Powerful Features
-          </Typography>
-          
-          <Grid container spacing={4}>
-            {features.map((feature, index) => (
-              <Grid item xs={12} md={6} lg={4} key={index}>
-                <Card 
-                  elevation={2}
-                  sx={{ 
-                    height: '100%',
-                    transition: 'transform 0.2s ease-in-out',
-                    '&:hover': {
-                      transform: 'translateY(-4px)',
-                      boxShadow: 4
-                    }
-                  }}
-                >
-                  <CardContent sx={{ textAlign: 'center', p: 4 }}>
-                    <Box mb={2}>
-                      {feature.icon}
-                    </Box>
-                    <Typography variant="h6" gutterBottom fontWeight={600}>
-                      {feature.title}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary">
-                      {feature.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-
-        {/* Process Flow */}
-        <Paper elevation={1} sx={{ p: 4, backgroundColor: '#f8fafc' }}>
-          <Typography variant="h5" textAlign="center" mb={4} fontWeight={600}>
-            📋 How It Works
-          </Typography>
-          
-          <Grid container spacing={3} textAlign="center">
-            <Grid item xs={12} sm={6} md={3}>
-              <Box>
-                <Typography variant="h4" color="primary" fontWeight={700}>
-                  1️⃣
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  Upload
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  Drop your receipt, invoice, or document
-                </Typography>
-              </Box>
-            </Grid>
-            
-            <Grid item xs={12} sm={6} md={3}>
-              <Box>
-                <Typography variant="h4" color="primary" fontWeight={700}>
-                  2️⃣
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  Extract
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  AI detects tables and extracts data
-                </Typography>
-              </Box>
-            </Grid>
-            
-            <Grid item xs={12} sm={6} md={3}>
-              <Box>
-                <Typography variant="h4" color="primary" fontWeight={700}>
-                  3️⃣
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  Analyze
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  Generate insights and categorization
-                </Typography>
-              </Box>
-            </Grid>
-            
-            <Grid item xs={12} sm={6} md={3}>
-              <Box>
-                <Typography variant="h4" color="primary" fontWeight={700}>
-                  4️⃣
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  Export
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  Download CSV or share results
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
-        </Paper>
-
-        {/* Supported Formats */}
-        <Box mt={6} textAlign="center">
-          <Typography variant="h6" mb={2} fontWeight={600}>
-            📎 Supported Formats
-          </Typography>
-          <Box display="flex" justifyContent="center" gap={2} flexWrap="wrap">
-            <Chip label="JPEG Images" variant="outlined" />
-            <Chip label="PNG Images" variant="outlined" />
-            <Chip label="TIFF Images" variant="outlined" />
-            <Chip label="PDF Documents" variant="outlined" />
-          </Box>
-          <Typography variant="body2" color="textSecondary" mt={2}>
-            Maximum file size: 10MB
-          </Typography>
-        </Box>
-      </Container>
-
-      {/* Error Snackbar */}
-      <Snackbar
-        open={!!error}
-        autoHideDuration={6000}
-        onClose={() => setError('')}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-      >
-        <Alert 
-          onClose={() => setError('')} 
-          severity="error" 
-          sx={{ width: '100%' }}
-        >
-          {error}
-        </Alert>
-      </Snackbar>
-
-      {/* Success Snackbar */}
-      <Snackbar
-        open={showSuccess}
-        autoHideDuration={3000}
-        onClose={() => setShowSuccess(false)}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-      >
-        <Alert 
-          onClose={() => setShowSuccess(false)} 
-          severity="success" 
-          sx={{ width: '100%' }}
-        >
-          Upload successful! Redirecting to results...
-        </Alert>
-      </Snackbar>
-    </>
+            Start Processing Bills Now
+          </button>
+        </div>
+      </section>
+    </Layout>
   );
 };
 

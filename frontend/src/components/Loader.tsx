@@ -1,5 +1,4 @@
 import React from 'react';
-import { CircularProgress, Box, Typography } from '@mui/material';
 import { LoaderProps } from '../types/schema';
 
 const Loader: React.FC<LoaderProps> = ({ 
@@ -7,85 +6,83 @@ const Loader: React.FC<LoaderProps> = ({
   progress, 
   size = 'medium' 
 }) => {
-  const sizeMap = {
-    small: 24,
-    medium: 40,
-    large: 60
+  const sizeClasses = {
+    small: 'w-6 h-6',
+    medium: 'w-10 h-10',
+    large: 'w-16 h-16'
   };
 
-  const circularSize = sizeMap[size];
+  const textSizeClasses = {
+    small: 'text-sm',
+    medium: 'text-base',
+    large: 'text-lg'
+  };
 
   return (
-    <Box 
-      display="flex" 
-      flexDirection="column" 
-      alignItems="center" 
-      justifyContent="center" 
-      p={4}
-      className="animate-fade-in"
-    >
-      <Box position="relative" display="inline-flex" mb={2}>
-        <CircularProgress 
-          size={circularSize}
-          variant={progress !== undefined ? 'determinate' : 'indeterminate'}
-          value={progress}
-          sx={{ 
-            color: '#3b82f6',
-            '& .MuiCircularProgress-circle': {
-              strokeLinecap: 'round',
-            }
-          }}
-        />
-        {progress !== undefined && (
-          <Box
-            position="absolute"
-            top={0}
-            left={0}
-            bottom={0}
-            right={0}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Typography 
-              variant="caption" 
-              component="div" 
-              color="textSecondary"
-              fontSize={size === 'small' ? '0.625rem' : '0.75rem'}
-              fontWeight={600}
-            >
-              {`${Math.round(progress)}%`}
-            </Typography>
-          </Box>
+    <div className="flex flex-col items-center justify-center p-8">
+      <div className="relative inline-flex mb-4">
+        {progress !== undefined ? (
+          // Determinate progress
+          <div className="relative">
+            <svg className={`${sizeClasses[size]} transform -rotate-90`} viewBox="0 0 36 36">
+              <path
+                className="text-gray-200"
+                stroke="currentColor"
+                strokeWidth="3"
+                fill="none"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                className="text-blue-600"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeDasharray={`${progress}, 100`}
+                strokeLinecap="round"
+                fill="none"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className={`font-semibold text-gray-700 ${size === 'small' ? 'text-xs' : 'text-sm'}`}>
+                {Math.round(progress)}%
+              </span>
+            </div>
+          </div>
+        ) : (
+          // Indeterminate spinner
+          <div className={`${sizeClasses[size]} animate-spin`}>
+            <svg className="w-full h-full text-blue-600" fill="none" viewBox="0 0 24 24">
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+          </div>
         )}
-      </Box>
+      </div>
       
-      <Typography 
-        variant={size === 'large' ? 'h6' : 'body1'} 
-        color="textSecondary" 
-        textAlign="center"
-        sx={{ 
-          fontWeight: 500,
-          maxWidth: '280px',
-          lineHeight: 1.5
-        }}
-      >
+      <p className={`text-gray-600 text-center font-medium max-w-xs leading-relaxed ${textSizeClasses[size]}`}>
         {message}
-      </Typography>
+      </p>
 
       {/* Animated dots for indeterminate loading */}
       {progress === undefined && (
-        <Box mt={1}>
-          <Typography 
-            variant="body2" 
-            color="textSecondary" 
-            className="animate-pulse"
-          >
+        <div className="mt-2">
+          <p className="text-sm text-gray-500 animate-pulse">
             Please wait...
-          </Typography>
-        </Box>
+          </p>
+        </div>
       )}
-    </Box>
+    </div>
   );
 };
 

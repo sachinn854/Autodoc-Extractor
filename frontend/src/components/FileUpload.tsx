@@ -1,20 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { 
-  Box, 
-  Paper, 
-  Typography, 
-  Button, 
-  LinearProgress,
-  Alert,
-  Chip,
-  IconButton
-} from '@mui/material';
-import {
-  CloudUpload as UploadIcon,
-  InsertDriveFile as FileIcon,
-  Delete as DeleteIcon,
-  CheckCircle as CheckIcon
-} from '@mui/icons-material';
 import { FileUploadProps } from '../types/schema';
 import apiService from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
@@ -83,7 +67,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
     try {
       setUploadProgress(0);
       
-      // Simulate upload progress (since axios doesn't provide real progress for FormData)
+      // Simulate upload progress
       const progressInterval = setInterval(() => {
         setUploadProgress(prev => {
           if (prev >= 90) {
@@ -94,7 +78,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
         });
       }, 200);
 
-      // Call API service directly
+      // Call API service
       const response = await apiService.uploadFile(selectedFile);
       
       clearInterval(progressInterval);
@@ -127,138 +111,115 @@ const FileUpload: React.FC<FileUploadProps> = ({
     return '📁';
   };
 
+  const formatFileSize = (bytes: number) => {
+    return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+  };
+
   return (
-    <Box className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto">
       {/* Upload Area */}
-      <Paper
-        elevation={isDragOver ? 8 : 2}
-        sx={{
-          p: 4,
-          border: isDragOver ? '2px dashed #3b82f6' : '2px dashed #d1d5db',
-          borderRadius: 2,
-          backgroundColor: isDragOver ? '#f0f9ff' : 'white',
-          transition: 'all 0.3s ease',
-          cursor: selectedFile ? 'default' : 'pointer',
-        }}
+      <div
+        className={`
+          file-upload-area cursor-pointer transition-all duration-300
+          ${isDragOver ? 'dragover border-blue-500 bg-blue-50' : 'border-gray-300'}
+          ${selectedFile ? 'cursor-default' : ''}
+        `}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
         onClick={() => !selectedFile && document.getElementById('file-input')?.click()}
       >
-        <Box 
-          display="flex" 
-          flexDirection="column" 
-          alignItems="center" 
-          textAlign="center"
-        >
-          {!selectedFile ? (
-            <>
-              <UploadIcon 
-                sx={{ 
-                  fontSize: 48, 
-                  color: isDragOver ? '#3b82f6' : '#9ca3af',
-                  mb: 2
-                }} 
-              />
-              <Typography variant="h6" gutterBottom>
-                {isDragOver ? 'Drop your file here' : 'Upload Document'}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" mb={2}>
-                Drag and drop your file here, or click to browse
-              </Typography>
-              <Box display="flex" gap={1} flexWrap="wrap" justifyContent="center">
-                {acceptedTypes.map((type) => (
-                  <Chip 
-                    key={type}
-                    label={type.split('/')[1].toUpperCase()}
-                    size="small"
-                    variant="outlined"
-                  />
-                ))}
-              </Box>
-              <Typography variant="caption" color="textSecondary" mt={1}>
-                Maximum file size: {maxSize}MB
-              </Typography>
-            </>
-          ) : (
-            <>
-              <Box 
-                display="flex" 
-                alignItems="center" 
-                gap={2} 
-                mb={2}
-                p={2}
-                bgcolor="#f8fafc"
-                borderRadius={1}
-                width="100%"
-              >
-                <Typography fontSize="2rem">
-                  {getFileIcon(selectedFile.type)}
-                </Typography>
-                <Box flex={1}>
-                  <Typography variant="subtitle1" fontWeight={600}>
-                    {selectedFile.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB • {selectedFile.type || 'Unknown'}
-                  </Typography>
-                </Box>
-                {uploadProgress === 0 && (
-                  <IconButton 
-                    onClick={handleRemoveFile}
-                    color="error"
-                    size="small"
-                  >
-                    <DeleteIcon />
-                  </IconButton>
-                )}
-                {uploadProgress === 100 && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-
-              {uploadProgress > 0 && uploadProgress < 100 && (
-                <Box width="100%" mb={2}>
-                  <LinearProgress 
-                    variant="determinate" 
-                    value={uploadProgress} 
-                    sx={{ 
-                      height: 8, 
-                      borderRadius: 4,
-                      backgroundColor: '#e5e7eb',
-                      '& .MuiLinearProgress-bar': {
-                        backgroundColor: '#3b82f6'
-                      }
-                    }}
-                  />
-                  <Typography variant="body2" color="textSecondary" mt={1}>
-                    Uploading... {uploadProgress}%
-                  </Typography>
-                </Box>
-              )}
-
+        {!selectedFile ? (
+          <div className="text-center">
+            <div className="text-6xl mb-4">
+              {isDragOver ? '📤' : '📁'}
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              {isDragOver ? 'Drop your file here' : 'Upload Restaurant Bill'}
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Drag and drop your file here, or click to browse
+            </p>
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              {acceptedTypes.map((type) => (
+                <span 
+                  key={type}
+                  className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                >
+                  {type.split('/')[1].toUpperCase()}
+                </span>
+              ))}
+            </div>
+            <p className="text-sm text-gray-500">
+              Maximum file size: {maxSize}MB
+            </p>
+          </div>
+        ) : (
+          <div>
+            <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg mb-4">
+              <div className="text-3xl">
+                {getFileIcon(selectedFile.type)}
+              </div>
+              <div className="flex-1">
+                <div className="font-semibold text-gray-900">{selectedFile.name}</div>
+                <div className="text-sm text-gray-600">
+                  {formatFileSize(selectedFile.size)} • {selectedFile.type || 'Unknown'}
+                </div>
+              </div>
               {uploadProgress === 0 && (
-                <Button
-                  variant="contained"
+                <button
+                  onClick={handleRemoveFile}
+                  className="text-red-600 hover:text-red-700 p-1"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              )}
+              {uploadProgress === 100 && (
+                <div className="text-green-600">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              )}
+            </div>
+
+            {uploadProgress > 0 && uploadProgress < 100 && (
+              <div className="mb-4">
+                <div className="progress-bar">
+                  <div 
+                    className="progress-fill"
+                    style={{ width: `${uploadProgress}%` }}
+                  ></div>
+                </div>
+                <p className="text-sm text-gray-600 mt-2 text-center">
+                  Uploading... {uploadProgress}%
+                </p>
+              </div>
+            )}
+
+            {uploadProgress === 0 && (
+              <div className="text-center">
+                <button
                   onClick={handleUpload}
                   disabled={isLoading}
-                  sx={{
-                    mt: 2,
-                    px: 4,
-                    py: 1.5,
-                    backgroundColor: '#3b82f6',
-                    '&:hover': {
-                      backgroundColor: '#2563eb'
-                    }
-                  }}
+                  className="btn btn-primary px-8 py-3 text-lg"
                 >
-                  {isLoading ? 'Processing...' : 'Upload & Process'}
-                </Button>
-              )}
-            </>
-          )}
-        </Box>
-      </Paper>
+                  {isLoading ? (
+                    <div className="flex items-center">
+                      <div className="spinner mr-2"></div>
+                      Processing...
+                    </div>
+                  ) : (
+                    'Upload & Process Bill'
+                  )}
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
 
       {/* Hidden file input */}
       <input
@@ -270,13 +231,16 @@ const FileUpload: React.FC<FileUploadProps> = ({
       />
 
       {/* Info Alert */}
-      <Alert severity="info" sx={{ mt: 2 }}>
-        <Typography variant="body2">
+      <div className="alert alert-info mt-4">
+        <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+        </svg>
+        <div>
           <strong>Supported formats:</strong> JPEG, PNG, TIFF images and PDF documents. 
-          The system will automatically detect tables, extract data, and provide insights.
-        </Typography>
-      </Alert>
-    </Box>
+          The AI will automatically detect tables, extract menu items, prices, and provide spending insights.
+        </div>
+      </div>
+    </div>
   );
 };
 

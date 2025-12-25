@@ -1,27 +1,36 @@
 """
-Phase 7: Complete FastAPI Backend & Orchestration
-Full document processing pipeline with proper API structure
+AutoDoc Extractor API v2.0
+Industry-grade FastAPI backend with document processing pipeline
+Enhanced with rate limiting, structured logging, and standardized error handling
 """
 
 import os
 import uuid
 import json
 import traceback
+import sys
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables
 load_dotenv()
 
-from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks, Depends
+from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks, Depends, Request, status, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, EmailStr
 from sqlalchemy.orm import Session
 import logging
+from logging.handlers import RotatingFileHandler
+from pythonjsonlogger import jsonlogger
+
+# Rate limiting
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 # Import our modules
 from app.preprocessing import preprocess_document, delete_tmp_job
@@ -38,11 +47,52 @@ from app.auth import (
     get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES
 )
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+# Import configuration, exceptions, and schemas
+from app.config import get_settings
+from app.exceptions import (
+    DocumentNotFoundException, 
+    ProcessingFailedException, 
+    InvalidFileTypeException,
+    RateLimitExceededException
+)
+from app.schemas import APIResponse
 
-# Pydantic Models for API Responses
+# Get settings
+settings = get_settings()
+
+# Configure JSON logging
+def setup_logging():
+    """Setup JSON structured logging"""
+    log_handler = RotatingFileHandler(
+        'app.log', 
+        maxBytes=10485760,  # 10MB
+        backupCount=5
+    )
+    
+    formatter = jsonlogger.JsonFormatter(
+        '%(asctime)s %(name)s %(levelname)s %(message)s %(pathname)s %(lineno)d'
+    )
+    log_handler.setFormatter(formatter)
+    
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO if not settings.debug else logging.DEBUG)
+    logger.addHandler(log_handler)
+    
+    # Console handler for development
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    ))
+    logger.addHandler(console_handler)
+    
+    return logger
+
+logger = setup_logging()
+
+# Initialize rate limiter
+limiter = Limiter(key_func=get_remote_address)
+
+# Pydantic Models for API Responses (kept for backward compatibility)
 class UploadResponse(BaseModel):
     job_id: str
     status: str
@@ -76,19 +126,19 @@ class StatusResponse(BaseModel):
 
 # FastAPI app initialization
 app = FastAPI(
-    title="Autodoc Extractor API",
-    description="Complete document processing pipeline with ML insights",
-    version="2.0.0",
+    title=settings.app_name,
+    description="Industry-grade document processing API with ML-powered insights",
+    version=settings.version,
     docs_url="/docs",
     redoc_url="/redoc"
 )
 
-# Add CORS middleware to allow frontend access
-# Get allowed origins from environment or use defaults
-allowed_origins = os.getenv("CORS_ORIGINS", "*").split(",")
-if allowed_origins == ["*"]:
-    # For Render deployment, allow all origins
-    allowed_origins = ["*"]
+# Add rate limiting
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
+# CORS configuration
+allowed_origins = settings.cors_origins.split(",") if settings.cors_origins != "*" else ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -97,6 +147,10 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allow_headers=["*"],
 )
+
+# API Router for versioning
+api_router = APIRouter()
+
 
 # Mount static files for production (Frontend + API in same container)
 # Important: Mount static files AFTER API routes to avoid conflicts
@@ -179,44 +233,51 @@ class UserResponse(BaseModel):
     is_active: bool
 
 
-@app.post("/auth/signup", response_model=TokenResponse)
-async def signup(request: SignupRequest, db: Session = Depends(get_db)):
+@api_router.post("/auth/signup", response_model=TokenResponse)
+@limiter.limit(settings.login_rate_limit)
+async def signup(request: Request, signup_data: SignupRequest, db: Session = Depends(get_db)):
     """
-    Create a new user account
+    Create a new user account with unique email validation
+    
+    Rate Limited: 5 requests per minute
     
     Args:
-        request: Signup details (email, password, full_name)
+        signup_data: Signup details (email, password, full_name)
         
     Returns:
         JWT token and user info
+        
+    Raises:
+        HTTPException 400: If email is already registered
     """
-    # Check if user already exists
-    existing_user = db.query(User).filter(User.email == request.email).first()
+    # Check if email is already registered
+    existing_user = db.query(User).filter(User.email == signup_data.email).first()
     if existing_user:
         raise HTTPException(
             status_code=400,
-            detail="Email already registered"
+            detail="An account with this email already exists. Please use a different email or login."
         )
     
-    # Create new user - SIMPLE (No OTP/Verification)
-    hashed_password = hash_password(request.password)
+    # Create new user with verified status
+    hashed_password = hash_password(signup_data.password)
     new_user = User(
-        email=request.email,
+        email=signup_data.email,
         password_hash=hashed_password,
-        full_name=request.full_name,
-        is_verified=True  # Auto-verified
+        full_name=signup_data.full_name,
+        is_verified=True,
+        is_active=True
     )
     
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
     
-    # Create access token immediately
+    # Generate JWT access token
     access_token = create_access_token(
         data={"user_id": new_user.id, "email": new_user.email}
     )
     
-    logger.info(f"New user registered and logged in: {new_user.email}")
+    logger.info(f"✅ New user registered: {new_user.email}")
     
     return {
         "access_token": access_token,
@@ -230,38 +291,45 @@ async def signup(request: SignupRequest, db: Session = Depends(get_db)):
     }
 
 
-@app.post("/auth/login", response_model=TokenResponse)
-async def login(request: LoginRequest, db: Session = Depends(get_db)):
+@api_router.post("/auth/login", response_model=TokenResponse)
+@limiter.limit(settings.login_rate_limit)
+async def login(request: Request, login_data: LoginRequest, db: Session = Depends(get_db)):
     """
-    Login with email and password
+    Authenticate user with email and password
+    
+    Rate Limited: 5 requests per minute
     
     Args:
-        request: Login credentials (email, password)
+        login_data: Login credentials (email, password)
         
     Returns:
         JWT token and user info
+        
+    Raises:
+        HTTPException 401: If credentials are invalid
+        HTTPException 403: If account is inactive
     """
-    # Authenticate user
-    user = authenticate_user(db, request.email, request.password)
+    # Authenticate user credentials
+    user = authenticate_user(db, login_data.email, login_data.password)
     if not user:
         raise HTTPException(
             status_code=401,
-            detail="Incorrect email or password"
+            detail="Invalid email or password. Please check your credentials and try again."
         )
     
-    # Check if email is verified - DISABLED for testing
-    # if not user.is_verified:
-    #     raise HTTPException(
-    #         status_code=403,
-    #         detail="Email not verified. Please check your email for verification link."
-    #     )
+    # Check if account is active
+    if not user.is_active:
+        raise HTTPException(
+            status_code=403,
+            detail="Account is inactive. Please contact support."
+        )
     
-    # Create access token
+    # Generate JWT access token
     access_token = create_access_token(
         data={"user_id": user.id, "email": user.email}
     )
     
-    logger.info(f"User logged in: {user.email}")
+    logger.info(f"✅ User logged in: {user.email}")
     
     return TokenResponse(
         access_token=access_token,
@@ -275,330 +343,16 @@ async def login(request: LoginRequest, db: Session = Depends(get_db)):
     )
 
 
-class OTPVerificationRequest(BaseModel):
-    email: EmailStr
-    otp_code: str
-
-@app.post("/auth/verify-otp")
-async def verify_otp(request: OTPVerificationRequest, db: Session = Depends(get_db)):
-    """
-    Verify user's email address using OTP code
-    
-    Args:
-        request: Email and OTP code
-        
-    Returns:
-        Success message and access token
-    """
-    # Find user by email
-    user = db.query(User).filter(User.email == request.email).first()
-    
-    if not user:
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )
-    
-    if user.is_verified:
-        raise HTTPException(
-            status_code=400,
-            detail="Email already verified"
-        )
-    
-    # Check if OTP exists
-    if not user.otp_code:
-        raise HTTPException(
-            status_code=400,
-            detail="No OTP found. Please request a new OTP."
-        )
-    
-    # Check if OTP has expired
-    from app.auth import is_otp_expired
-    if is_otp_expired(user.otp_expires_at):
-        # Clear expired OTP
-        user.otp_code = None
-        user.otp_expires_at = None
-        user.otp_attempts = 0
-        db.commit()
-        
-        raise HTTPException(
-            status_code=400,
-            detail="OTP has expired. Please request a new OTP."
-        )
-    
-    # Check attempt limit
-    if user.otp_attempts >= 5:
-        # Clear OTP after too many attempts
-        user.otp_code = None
-        user.otp_expires_at = None
-        user.otp_attempts = 0
-        db.commit()
-        
-        raise HTTPException(
-            status_code=429,
-            detail="Too many failed attempts. Please request a new OTP."
-        )
-    
-    # Verify OTP
-    if user.otp_code != request.otp_code:
-        user.otp_attempts += 1
-        db.commit()
-        
-        remaining_attempts = 5 - user.otp_attempts
-        raise HTTPException(
-            status_code=400,
-            detail=f"Invalid OTP code. {remaining_attempts} attempts remaining."
-        )
-    
-    # OTP is correct - verify user
-    user.is_verified = True
-    user.otp_code = None  # Clear OTP after successful verification
-    user.otp_expires_at = None
-    user.otp_attempts = 0
-    db.commit()
-    
-    # Create access token
-    access_token = create_access_token(
-        data={"user_id": user.id, "email": user.email}
-    )
-    
-    logger.info(f"✅ Email verified via OTP for user: {user.email}")
-    
-    return {
-        "message": "Email verified successfully! You can now use the app.",
-        "email": user.email,
-        "access_token": access_token,
-        "user": {
-            "id": user.id,
-            "email": user.email,
-            "full_name": user.full_name,
-            "is_verified": True
-        }
-    }
-
-
-@app.post("/auth/resend-otp")
-async def resend_otp(email: EmailStr, db: Session = Depends(get_db)):
-    """
-    Resend OTP code to user's email
-    
-    Args:
-        email: User's email address
-        
-    Returns:
-        Success message
-    """
-    # Find user by email
-    user = db.query(User).filter(User.email == email).first()
-    
-    if not user:
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )
-    
-    if user.is_verified:
-        raise HTTPException(
-            status_code=400,
-            detail="Email already verified"
-        )
-    
-    # Generate new OTP
-    from app.auth import generate_otp, get_otp_expiry_time, send_otp_email
-    otp_code = generate_otp()
-    otp_expires_at = get_otp_expiry_time()
-    
-    # Update user with new OTP
-    user.otp_code = otp_code
-    user.otp_expires_at = otp_expires_at
-    user.otp_attempts = 0  # Reset attempts
-    db.commit()
-    
-    # Send OTP email
-    email_sent = False
-    smtp_configured = bool(os.getenv("SMTP_EMAIL") and os.getenv("SMTP_PASSWORD"))
-    
-    if smtp_configured:
-        try:
-            email_sent = send_otp_email(user.email, otp_code)
-        except Exception as e:
-            logger.error(f"❌ Failed to resend OTP to {user.email}: {e}")
-    
-    logger.info(f"🔄 OTP resent to {user.email}")
-    
-    return {
-        "message": "New OTP sent to your email" if email_sent else "New OTP generated (check server logs)",
-        "email": user.email,
-        "otp_sent": email_sent,
-        "otp_code": otp_code if not smtp_configured else None  # Only for development
-    }
-
-
-
-
-@app.post("/auth/admin/verify-user")
-async def admin_verify_user(email: str, admin_key: str = "admin123", db: Session = Depends(get_db)):
-    """
-    Admin endpoint to manually verify users when SMTP is not configured
-    
-    Args:
-        email: User email to verify
-        admin_key: Admin verification key
-        
-    Returns:
-        Success message
-    """
-    # Simple admin key check (you can make this more secure)
-    expected_admin_key = os.getenv("ADMIN_VERIFICATION_KEY", "admin123")
-    
-    if admin_key != expected_admin_key:
-        raise HTTPException(
-            status_code=403,
-            detail="Invalid admin key"
-        )
-    
-    # Find user by email
-    user = db.query(User).filter(User.email == email).first()
-    
-    if not user:
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )
-    
-    if user.is_verified:
-        return {
-            "message": f"User {email} is already verified",
-            "email": user.email
-        }
-    
-    # Mark user as verified
-    user.is_verified = True
-    user.verification_token = None  # Clear token
-    db.commit()
-    
-    logger.info(f"👨‍💼 Admin verified user: {user.email}")
-    
-    return {
-        "message": f"User {email} has been manually verified by admin",
-        "email": user.email
-    }
-
-
-@app.get("/auth/admin/unverified-users")
-async def get_unverified_users(admin_key: str, db: Session = Depends(get_db)):
-    """
-    Admin endpoint to list unverified users
-    
-    Args:
-        admin_key: Admin verification key
-        
-    Returns:
-        List of unverified users
-    """
-    # Simple admin key check
-    expected_admin_key = os.getenv("ADMIN_VERIFICATION_KEY", "admin123")
-    
-    if admin_key != expected_admin_key:
-        raise HTTPException(
-            status_code=403,
-            detail="Invalid admin key"
-        )
-    
-    # Get unverified users
-    unverified_users = db.query(User).filter(User.is_verified == False).all()
-    
-    return {
-        "unverified_users": [
-            {
-                "id": user.id,
-                "email": user.email,
-                "full_name": user.full_name,
-                "created_at": user.created_at.isoformat(),
-                "verification_token": user.verification_token
-            }
-            for user in unverified_users
-        ],
-        "count": len(unverified_users)
-    }
-
-
-@app.post("/auth/quick-verify/{email}")
-async def quick_verify_user(email: str, db: Session = Depends(get_db)):
-    """
-    Quick verification endpoint for testing (remove in production)
-    """
-    # Find user by email
-    user = db.query(User).filter(User.email == email).first()
-    
-    if not user:
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )
-    
-    if user.is_verified:
-        return {
-            "message": f"User {email} is already verified",
-            "email": user.email
-        }
-    
-    # Mark user as verified
-    user.is_verified = True
-    user.verification_token = None
-    db.commit()
-    
-    logger.info(f"🚀 Quick verified user: {user.email}")
-    
-    return {
-        "message": f"User {email} has been quickly verified for testing",
-        "email": user.email
-    }
-
-
-@app.post("/auth/test-email")
-async def test_email_configuration(email: str):
-    """
-    Test email configuration by sending a test email
-    """
-    try:
-        # Generate a test token
-        test_token = "test-token-123"
-        
-        # Try to send email
-        from app.auth import send_verification_email
-        email_sent = send_verification_email(email, test_token)
-        
-        if email_sent:
-            return {
-                "status": "success",
-                "message": f"Test email sent successfully to {email}",
-                "smtp_configured": True
-            }
-        else:
-            return {
-                "status": "failed",
-                "message": "SMTP not configured or email sending failed",
-                "smtp_configured": False,
-                "help": "Check GMAIL_SETUP.md for configuration instructions"
-            }
-            
-    except Exception as e:
-        return {
-            "status": "error",
-            "message": f"Email test failed: {str(e)}",
-            "smtp_configured": False,
-            "help": "Check GMAIL_SETUP.md for configuration instructions"
-        }
-
-
-@app.get("/auth/me", response_model=UserResponse)
+@api_router.get("/auth/me", response_model=UserResponse)
 async def get_current_user_info(current_user: User = Depends(get_current_user)):
     """
-    Get current authenticated user info
+    Get current authenticated user information
     
+    Args:
+        current_user: Authenticated user from JWT token
+        
     Returns:
-        Current user details
+        User profile information
     """
     return UserResponse(
         id=current_user.id,
@@ -612,8 +366,10 @@ async def get_current_user_info(current_user: User = Depends(get_current_user)):
 # ==================== DOCUMENT ENDPOINTS ====================
 
 
-@app.post("/upload", response_model=UploadResponse)
+@api_router.post("/upload", response_model=UploadResponse)
+@limiter.limit(settings.upload_rate_limit)
 async def upload_document(
+    request: Request,
     background_tasks: BackgroundTasks, 
     file: UploadFile = File(...),
     current_user: User = Depends(get_current_user),
@@ -622,6 +378,8 @@ async def upload_document(
     """
     Upload a document and create a processing job.
     Requires authentication.
+    
+    Rate Limited: 10 requests per minute
     
     Args:
         file: Uploaded file (PDF, JPG, PNG)
@@ -728,7 +486,7 @@ async def upload_document(
         raise HTTPException(status_code=500, detail=f"Upload failed: {error_msg}")
 
 
-@app.post("/process/{job_id}", response_model=ProcessResponse)
+@api_router.post("/process/{job_id}", response_model=ProcessResponse)
 async def process_document_pipeline(
     job_id: str,
     background_tasks: BackgroundTasks,
@@ -1050,7 +808,7 @@ async def run_complete_pipeline(
         update_job_status(job_id, "failed", error=error_msg)
 
 
-@app.post("/process-tables/{job_id}")
+@api_router.post("/process-tables/{job_id}")
 async def process_tables_endpoint(job_id: str) -> JSONResponse:
     """
     Process tables for an existing job (Phase 4).
@@ -1077,7 +835,7 @@ async def process_tables_endpoint(job_id: str) -> JSONResponse:
             raise HTTPException(status_code=404, detail=f"OCR not completed for job {job_id}")
         
         # Load OCR results
-        ocr_file = results_dir / "ocr_results.json"
+        ocr_file = results_dir / "ocr.json"
         if not ocr_file.exists():
             raise HTTPException(status_code=404, detail=f"OCR results not found for job {job_id}")
         
@@ -1112,7 +870,7 @@ async def process_tables_endpoint(job_id: str) -> JSONResponse:
         raise HTTPException(status_code=500, detail=f"Table processing failed: {str(e)}")
 
 
-@app.post("/extract-business-schema/{job_id}")
+@api_router.post("/extract-business-schema/{job_id}")
 async def extract_business_schema_endpoint(job_id: str) -> JSONResponse:
     """
     Extract business schema for an existing job (Phase 5).
@@ -1147,7 +905,7 @@ async def extract_business_schema_endpoint(job_id: str) -> JSONResponse:
         raise HTTPException(status_code=500, detail=f"Business schema extraction failed: {str(e)}")
 
 
-@app.post("/process-insights/{job_id}")
+@api_router.post("/process-insights/{job_id}")
 async def process_insights_endpoint(job_id: str, include_historical: bool = True) -> JSONResponse:
     """
     Generate ML insights for an existing job (Phase 6).
@@ -1419,7 +1177,7 @@ def process_tables_for_job(job_id: str, processed_paths: List[str], ocr_results:
         }
 
 
-@app.delete("/cleanup/{job_id}")
+@api_router.delete("/cleanup/{job_id}")
 async def cleanup_job(job_id: str) -> JSONResponse:
     """
     Clean up temporary files for a completed job.
@@ -1455,36 +1213,67 @@ async def ping():
     return {"status": "ok", "timestamp": datetime.now().isoformat()}
 
 @app.get("/health")
-async def health_check():
-    """Health check endpoint for Render deployment."""
+async def health_check(request: Request):
+    """Enhanced health check endpoint for monitoring and Render deployment."""
     try:
+        import psutil
+        import sys
+        from sqlalchemy import text
+        
+        # Test database connectivity
+        db_status = "unknown"
+        try:
+            from app.database import SessionLocal
+            with SessionLocal() as session:
+                session.execute(text("SELECT 1"))
+                db_status = "connected"
+        except Exception as e:
+            db_status = f"error: {str(e)[:30]}"
+        
         # Test OCR engine availability
         ocr_status = "unknown"
         try:
             from app.ocr_engine import get_ocr_engine
             ocr_engine = get_ocr_engine("en")
-            ocr_status = "ready" if ocr_engine else "failed"
+            ocr_status = "ready" if ocr_engine else "unavailable"
         except Exception as e:
-            ocr_status = f"error: {str(e)[:50]}"
+            ocr_status = f"error: {str(e)[:30]}"
         
-        return {
-            "status": "healthy", 
-            "service": "autodoc-extractor",
-            "version": "2.0.0",
-            "active_jobs": len(JOB_STATUS),
-            "ocr_engine": ocr_status,
-            "environment": os.getenv("RENDER", "local"),
-            "timestamp": datetime.now().isoformat()
-        }
+        # System metrics
+        memory = psutil.virtual_memory()
+        disk = psutil.disk_usage('/')
+        
+        return APIResponse(
+            success=True,
+            data={
+                "status": "healthy",
+                "service": settings.app_name,
+                "version": settings.version,
+                "environment": settings.environment,
+                "timestamp": datetime.now().isoformat(),
+                "components": {
+                    "database": db_status,
+                    "ocr_engine": ocr_status,
+                    "active_jobs": len(JOB_STATUS)
+                },
+                "system": {
+                    "python_version": sys.version.split()[0],
+                    "memory_used_percent": memory.percent,
+                    "disk_used_percent": disk.percent
+                }
+            },
+            message="Service is running normally"
+        ).dict()
     except Exception as e:
-        return {
-            "status": "unhealthy",
-            "error": str(e),
-            "timestamp": datetime.now().isoformat()
-        }
+        logger.error(f"Health check failed: {str(e)}")
+        return APIResponse(
+            success=False,
+            message="Health check failed",
+            error=str(e)
+        ).dict()
 
 
-@app.get("/jobs")
+@api_router.get("/jobs")
 async def list_jobs():
     """List all active jobs."""
     return {
@@ -1500,14 +1289,14 @@ async def list_jobs():
     }
 
 
-@app.post("/clear-jobs")
+@api_router.post("/clear-jobs")
 async def clear_all_jobs():
     """Clear all job status (for debugging)"""
     clear_job_status()
     return {"message": "All job status cleared"}
 
 
-@app.post("/clear-all-data")
+@api_router.post("/clear-all-data")
 async def clear_all_data(db: Session = Depends(get_db)):
     """
     Clear all data - database, cache, temp files (for debugging)
@@ -1580,7 +1369,7 @@ async def clear_all_data(db: Session = Depends(get_db)):
         }
 
 
-@app.get("/status/{job_id}", response_model=StatusResponse)
+@api_router.get("/status/{job_id}", response_model=StatusResponse)
 async def get_job_status(job_id: str) -> StatusResponse:
     """
     Get the current status of a processing job.
@@ -1624,7 +1413,7 @@ class DocumentsListResponse(BaseModel):
     total: int
 
 
-@app.get("/my-documents", response_model=DocumentsListResponse)
+@api_router.get("/my-documents", response_model=DocumentsListResponse)
 async def get_my_documents(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
@@ -1689,7 +1478,7 @@ class SaveExtractedDataResponse(BaseModel):
     items_saved: int
 
 
-@app.patch("/result/{job_id}/save", response_model=SaveExtractedDataResponse)
+@api_router.patch("/result/{job_id}/save", response_model=SaveExtractedDataResponse)
 async def save_extracted_data(
     job_id: str,
     request: SaveExtractedDataRequest,
@@ -1736,7 +1525,7 @@ async def save_extracted_data(
     )
 
 
-@app.get("/result/{job_id}")
+@api_router.get("/result/{job_id}")
 async def get_job_result(job_id: str):
     """
     Get the final results of a completed processing job.
@@ -1773,10 +1562,11 @@ async def get_job_result(job_id: str):
         result_data = {
             "job_id": job_id,
             "status": "completed",
-            "extracted_data": {},
+            "extracted": {},  # Changed from extracted_data to extracted
             "insights": {},
             "tables": [],
-            "ocr_results": {}
+            "ocr_results": {},
+            "files": {}  # Add files section for frontend compatibility
         }
         
         # Load insights.json if exists
@@ -1792,7 +1582,7 @@ async def get_job_result(job_id: str):
                 result_data["tables"] = json.load(f)
         
         # Load OCR results if exists
-        ocr_file = results_dir / "ocr_results.json"
+        ocr_file = results_dir / "ocr.json"
         if ocr_file.exists():
             with open(ocr_file, 'r', encoding='utf-8') as f:
                 result_data["ocr_results"] = json.load(f)
@@ -1801,7 +1591,12 @@ async def get_job_result(job_id: str):
         extracted_file = results_dir / "extracted.json"  # Fixed: correct filename
         if extracted_file.exists():
             with open(extracted_file, 'r', encoding='utf-8') as f:
-                result_data["extracted_data"] = json.load(f)
+                result_data["extracted"] = json.load(f)  # Changed to extracted
+        
+        # Add CSV file URL if exists
+        csv_file = results_dir / "extracted.csv"
+        if csv_file.exists():
+            result_data["csv_url"] = f"/download/{job_id}.csv"
         
         return result_data
         
@@ -1812,6 +1607,146 @@ async def get_job_result(job_id: str):
             detail=f"Failed to load results: {str(e)}"
         )
 
+
+@api_router.put("/result/{job_id}")
+async def update_job_result(job_id: str, updated_data: dict):
+    """
+    Update the extracted data for a completed processing job.
+    
+    Args:
+        job_id: Unique job identifier
+        updated_data: Updated extracted data from frontend
+        
+    Returns:
+        JSON response confirming the update
+    """
+    if job_id not in JOB_STATUS:
+        raise HTTPException(
+            status_code=404, 
+            detail=f"Job not found: {job_id}"
+        )
+    
+    job_info = JOB_STATUS[job_id]
+    
+    # Check if job is completed
+    if job_info["status"] != "completed":
+        raise HTTPException(
+            status_code=400,
+            detail="Cannot update data for incomplete job"
+        )
+    
+    try:
+        script_dir = Path(__file__).parent.parent
+        results_dir = script_dir / "tmp" / "results" / job_id
+        
+        # Ensure results directory exists
+        if not results_dir.exists():
+            raise HTTPException(
+                status_code=404,
+                detail="Results directory not found"
+            )
+        
+        # Save updated extracted data
+        extracted_file = results_dir / "extracted.json"
+        
+        # Add timestamp to track when data was modified
+        updated_data['last_modified'] = datetime.now().isoformat()
+        updated_data['modified_by'] = 'user'
+        
+        with open(extracted_file, 'w', encoding='utf-8') as f:
+            json.dump(updated_data, f, indent=2, ensure_ascii=False, default=str)
+        
+        # Also save as CSV for download
+        csv_file = results_dir / "extracted.csv"
+        try:
+            import csv
+            with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                
+                # Write header info
+                writer.writerow(['Vendor', updated_data.get('vendor', '')])
+                writer.writerow(['Date', updated_data.get('date', '')])
+                writer.writerow(['Currency', updated_data.get('currency', '')])
+                writer.writerow(['Total', updated_data.get('total', 0)])
+                writer.writerow(['Tax', updated_data.get('tax', 0)])
+                writer.writerow([''])  # Empty row
+                
+                # Write items header
+                writer.writerow(['Description', 'Qty', 'Unit Price', 'Line Total', 'Category'])
+                
+                # Write items
+                for item in updated_data.get('items', []):
+                    writer.writerow([
+                        item.get('description', ''),
+                        item.get('qty', 0),
+                        item.get('unit_price', 0),
+                        item.get('line_total', 0),
+                        item.get('category', '')
+                    ])
+        except Exception as csv_error:
+            logger.warning(f"Failed to update CSV file: {csv_error}")
+        
+        logger.info(f"Successfully updated extracted data for job {job_id}")
+        
+        return {
+            "job_id": job_id,
+            "status": "success",
+            "message": "Extracted data updated successfully",
+            "updated_at": updated_data['last_modified']
+        }
+        
+    except Exception as e:
+        logger.error(f"Failed to update results for job {job_id}: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to update results: {str(e)}"
+        )
+
+
+@api_router.get("/download/{job_id}.csv")
+async def download_csv(job_id: str):
+    """
+    Download CSV file for a completed job
+    
+    Args:
+        job_id: Unique job identifier
+        
+    Returns:
+        CSV file response
+    """
+    if job_id not in JOB_STATUS:
+        raise HTTPException(
+            status_code=404, 
+            detail=f"Job not found: {job_id}"
+        )
+    
+    try:
+        script_dir = Path(__file__).parent.parent
+        results_dir = script_dir / "tmp" / "results" / job_id
+        csv_file = results_dir / "extracted.csv"
+        
+        if not csv_file.exists():
+            raise HTTPException(
+                status_code=404,
+                detail="CSV file not found"
+            )
+        
+        return FileResponse(
+            path=csv_file,
+            filename=f"extracted_data_{job_id}.csv",
+            media_type="text/csv"
+        )
+        
+    except Exception as e:
+        logger.error(f"Failed to download CSV for job {job_id}: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to download CSV: {str(e)}"
+        )
+
+
+# Include API router with versioning BEFORE catch-all routes
+app.include_router(api_router)
 
 # ==================== FRONTEND SERVING (PRODUCTION) ====================
 
@@ -1927,4 +1862,6 @@ if __name__ == "__main__":
     script_dir = Path(__file__).parent.parent  # Go up to backend/ directory
     (script_dir / "tmp").mkdir(parents=True, exist_ok=True)
     
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # Use port 7860 for Hugging Face Spaces compatibility
+    port = int(os.environ.get("PORT", 7860))
+    uvicorn.run(app, host="0.0.0.0", port=port)

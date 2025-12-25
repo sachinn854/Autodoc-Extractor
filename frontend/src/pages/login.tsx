@@ -1,163 +1,146 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import {
-  Container,
-  Box,
-  Paper,
-  TextField,
-  Button,
-  Typography,
-  Alert,
-  Link,
-  CircularProgress,
-} from '@mui/material';
+import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
-import OTPVerification from '../components/OTPVerification';
 import apiService from '../services/api';
 
-export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [showOTPVerification, setShowOTPVerification] = useState(false);
-  const { login, loginWithToken } = useAuth();
+const LoginPage: React.FC = () => {
   const router = useRouter();
+  const { login } = useAuth();
+  
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    
+    // Prevent double submission
+    if (loading) return;
+    
     setLoading(true);
+    setError('');
 
     try {
-      await login(email, password);
-      // Redirect handled by AuthContext
+      // Use AuthContext login directly (no double call)
+      await login(formData.email, formData.password);
+      // login function already handles redirect to dashboard
     } catch (err: any) {
-      const errorMessage = err.message || 'Login failed. Please try again.';
-      
-      // Check if error is about email verification
-      if (errorMessage.includes('Email not verified') || errorMessage.includes('not verified')) {
-        setShowOTPVerification(true);
-        setError('Please verify your email first. We\'ll send you a new OTP code.');
-        
-        // Trigger OTP resend
-        try {
-          await apiService.resendOTP(email);
-        } catch (resendErr) {
-          console.error('Failed to resend OTP:', resendErr);
-        }
-      } else {
-        setError(errorMessage);
-      }
+      setError(err.message);
     } finally {
       setLoading(false);
     }
   };
 
-  const handleOTPVerificationSuccess = (token: string, user: any) => {
-    // Login user and redirect
-    loginWithToken(token, user);
-  };
-
-  const handleBackToLogin = () => {
-    setShowOTPVerification(false);
-    setError('');
-  };
-
-  if (showOTPVerification) {
-    return (
-      <Container maxWidth="sm">
-        <Box
-          sx={{
-            minHeight: '100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <OTPVerification
-            email={email}
-            onVerificationSuccess={handleOTPVerificationSuccess}
-            onBack={handleBackToLogin}
-          />
-        </Box>
-      </Container>
-    );
-  }
-
   return (
-    <Container maxWidth="sm">
-      <Box
-        sx={{
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <Paper elevation={3} sx={{ p: 4, width: '100%' }}>
-          <Typography variant="h4" component="h1" gutterBottom align="center">
-            Autodoc Extractor
-          </Typography>
-          <Typography variant="h6" gutterBottom align="center" color="text.secondary">
-            Login to Your Account
-          </Typography>
+    <Layout title="Login - Restaurant Bill Analyzer">
+      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
+          {/* Header */}
+          <div className="text-center">
+            <div className="text-6xl mb-4">🍽️</div>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Welcome Back
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Sign in to your account to continue processing bills
+            </p>
+          </div>
 
-          {error && (
-            <Alert severity="error" sx={{ mt: 2, mb: 2 }}>
-              {error}
-            </Alert>
-          )}
+          {/* Login Form */}
+          <div className="card">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {error && (
+                <div className="alert alert-error">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                  {error}
+                </div>
+              )}
 
-          <form onSubmit={handleSubmit}>
-            <TextField
-              fullWidth
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              margin="normal"
-              required
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              fullWidth
-              label="Password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              margin="normal"
-              required
-              autoComplete="current-password"
-            />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              size="large"
-              sx={{ mt: 3, mb: 2 }}
-              disabled={loading}
-            >
-              {loading ? <CircularProgress size={24} /> : 'Login'}
-            </Button>
-          </form>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="input-field"
+                  placeholder="Enter your email"
+                />
+              </div>
 
-          <Box sx={{ mt: 2, textAlign: 'center' }}>
-            <Typography variant="body2">
-              Don't have an account?{' '}
-              <Link
-                component="button"
-                variant="body2"
-                onClick={() => router.push('/signup')}
-                sx={{ cursor: 'pointer' }}
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+                  Password
+                </label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  required
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  className="input-field"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full btn btn-primary py-3 text-lg"
               >
-                Sign Up
-              </Link>
-            </Typography>
-          </Box>
-        </Paper>
-      </Box>
-    </Container>
+                {loading ? (
+                  <div className="flex items-center justify-center">
+                    <div className="spinner mr-2"></div>
+                    Signing In...
+                  </div>
+                ) : (
+                  'Sign In'
+                )}
+              </button>
+            </form>
+
+            {/* Divider */}
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-center text-gray-600">
+                Don't have an account?{' '}
+                <button
+                  onClick={() => router.push('/signup')}
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Sign up here
+                </button>
+              </p>
+            </div>
+          </div>
+
+          {/* Features Preview */}
+          <div className="text-center text-sm text-gray-500">
+            <p>✨ No email verification required</p>
+            <p>🔒 Secure JWT authentication</p>
+            <p>📊 Instant access to bill processing</p>
+          </div>
+        </div>
+      </div>
+    </Layout>
   );
-}
+};
+
+export default LoginPage;

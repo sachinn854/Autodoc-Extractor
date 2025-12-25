@@ -53,6 +53,19 @@ def get_ocr_engine(lang: str = "en", job_id: str = None):
     try:
         import pytesseract
         
+        # Set Tesseract path explicitly for Windows
+        if os.name == 'nt':  # Windows
+            tesseract_paths = [
+                r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+                r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+                r"C:\Tesseract-OCR\tesseract.exe"
+            ]
+            for path in tesseract_paths:
+                if os.path.exists(path):
+                    pytesseract.pytesseract.tesseract_cmd = path
+                    logger.info(f"✅ Set Tesseract path: {path}")
+                    break
+        
         # Simple Tesseract wrapper function to match PaddleOCR interface
         def tesseract_ocr(image_path):
             """Tesseract OCR wrapper to match PaddleOCR interface"""

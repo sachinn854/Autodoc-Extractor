@@ -4,27 +4,16 @@ import Document, {
   Head,
   Main,
   NextScript,
-  DocumentProps,
   DocumentContext,
 } from 'next/document';
-import createEmotionServer from '@emotion/server/create-instance';
-import { AppType } from 'next/app';
-import createEmotionCache from '../utils/createEmotionCache';
-import MyApp from './_app';
 
-interface MyDocumentProps extends DocumentProps {
-  emotionStyleTags: JSX.Element[];
-}
-
-export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
+export default function MyDocument() {
   return (
     <Html lang="en">
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content="#3b82f6" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="emotion-insertion-point" content="" />
-        {emotionStyleTags}
         
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,20 +24,20 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
         />
         
         {/* Meta tags */}
-        <meta name="description" content="AI-Powered Document Processing & Insights - Extract data from receipts, invoices, and documents automatically" />
-        <meta name="keywords" content="document processing, OCR, table extraction, expense tracking, AI, machine learning" />
-        <meta name="author" content="AutoDoc Extractor" />
+        <meta name="description" content="AI-Powered Restaurant Bill Processing - Extract menu items, prices, and insights from restaurant bills automatically" />
+        <meta name="keywords" content="restaurant bill, receipt processing, OCR, expense tracking, AI, machine learning" />
+        <meta name="author" content="Restaurant Bill Analyzer" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="AutoDoc Extractor - AI Document Processing" />
-        <meta property="og:description" content="Upload receipts and invoices to automatically extract data and get intelligent insights" />
-        <meta property="og:site_name" content="AutoDoc Extractor" />
+        <meta property="og:title" content="Restaurant Bill Analyzer - AI Bill Processing" />
+        <meta property="og:description" content="Upload restaurant bills to automatically extract menu items, prices, and get spending insights" />
+        <meta property="og:site_name" content="Restaurant Bill Analyzer" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AutoDoc Extractor" />
-        <meta name="twitter:description" content="AI-Powered Document Processing & Insights" />
+        <meta name="twitter:title" content="Restaurant Bill Analyzer" />
+        <meta name="twitter:description" content="AI-Powered Restaurant Bill Processing & Insights" />
       </Head>
       <body>
         <Main />
@@ -58,39 +47,8 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   );
 }
 
-// `getInitialProps` belongs to `_document` (instead of `_app`),
-// it's compatible with static-site generation (SSG).
+// Simple getInitialProps without Material-UI/Emotion
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
-  const originalRenderPage = ctx.renderPage;
-
-  // You can consider sharing the same emotion cache between all the SSR requests to speed up performance.
-  // However, be aware that it can have global side effects.
-  const cache = createEmotionCache();
-  const { extractCriticalToChunks } = createEmotionServer(cache);
-
-  ctx.renderPage = () =>
-    originalRenderPage({
-      enhanceApp: (App: any) =>
-        function EnhanceApp(props: any) {
-          return <App emotionCache={cache} {...props} />;
-        },
-    });
-
   const initialProps = await Document.getInitialProps(ctx);
-  // This is important. It prevents emotion to render invalid HTML.
-  // See https://github.com/mui/material-ui/issues/26561#issuecomment-855286153
-  const emotionStyles = extractCriticalToChunks(initialProps.html);
-  const emotionStyleTags = emotionStyles.styles.map((style) => (
-    <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
-      key={style.key}
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: style.css }}
-    />
-  ));
-
-  return {
-    ...initialProps,
-    emotionStyleTags,
-  };
+  return initialProps;
 };

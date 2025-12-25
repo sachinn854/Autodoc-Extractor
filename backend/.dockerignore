@@ -1,7 +1,77 @@
-# Add to backend/Dockerfile if needed
+# Python cache and compiled files
 *.pyc
+*.pyo
+*.pyd
 __pycache__/
+*.so
+.Python
+
+# Temporary files and directories
 tmp/*
 !tmp/.gitkeep
+*.tmp
+*.temp
+
+# Database files
 data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Log files
 *.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+!README_HF.md
+
+# Development files
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Node modules (if any)
+node_modules/
+
+# Large model files (download at runtime)
+models/*.pt
+models/*.pth
+models/*.bin
+models/*.safetensors
