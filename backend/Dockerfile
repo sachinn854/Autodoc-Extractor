@@ -10,13 +10,12 @@ RUN apt-get update && apt-get install -y \
     tesseract-ocr-eng \
     libtesseract-dev \
     poppler-utils \
-    libgl1-mesa-glx \
+    libgl1-mesa-dev \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
     libxrender-dev \
     libgomp1 \
-    libgcc-s1 \
     curl \
     wget \
     && rm -rf /var/lib/apt/lists/* \
@@ -32,8 +31,9 @@ RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
 
 # Copy application code
 COPY app ./app
-COPY models ./models 2>/dev/null || true
-COPY .env.example ./ 2>/dev/null || true
+
+# Create models directory (will be populated at runtime)
+RUN mkdir -p models
 
 # Create necessary directories with proper permissions
 RUN mkdir -p tmp/uploads tmp/preprocessed tmp/results data models && \

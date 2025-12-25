@@ -137,12 +137,16 @@ app = FastAPI(
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-# CORS configuration
-allowed_origins = settings.cors_origins.split(",") if settings.cors_origins != "*" else ["*"]
+# CORS configuration - Specific origins for production
+origins = [
+    "https://autodoc-extractor.vercel.app",
+    "http://localhost:3000",  # For local development
+    "https://localhost:3000",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allow_headers=["*"],
