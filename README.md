@@ -409,7 +409,9 @@ Frontend (250MB) + Backend (400MB) = Two separate containers
 #### 🖥️ Frontend (User Interface)
 - **Next.js 14** - Modern React framework with server-side rendering
 - **React 18** - Component-based user interface library
-- **JavaScript** - Primary programming language for frontend logic
+- **JavaScript** - Dynamic programming language for interactive web applications
+- **HTML5** - Semantic markup for web structure
+- **CSS3** - Modern styling with custom properties and animations
 - **TailwindCSS** - Utility-first CSS framework for responsive design
 - **Axios** - HTTP client for API communication
 - **Real-time Updates** - Live processing status and progress tracking
@@ -489,10 +491,10 @@ npm run dev
 **Frontend running at:** http://localhost:3000
 
 #### Step 4: Test the Application
-1. Open http://localhost:3000
+1. Open http://localhost:3000 in your browser
 2. Sign up with any email/password
-3. Upload a restaurant bill image
-4. Watch the AI extract data automatically!
+3. Upload a restaurant bill image (JPG, PNG, or PDF)
+4. Watch the AI extract data automatically using YOLOv8 and PaddleOCR!
 
 ## 📊 Performance & Accuracy Metrics
 
@@ -702,10 +704,11 @@ Autodoc-Extractor/
 - **`requirements.txt`** - All Python packages needed
 
 #### Frontend Files:
-- **`src/pages/dashboard.jsx`** - Main page after login
-- **`src/components/DocumentUpload.jsx`** - Drag & drop file upload
-- **`src/services/api.js`** - All API calls to backend
-- **`package.json`** - All Node.js packages needed
+- **`src/pages/dashboard.jsx`** - Main dashboard with React components
+- **`src/components/DocumentUpload.jsx`** - Drag & drop file upload interface
+- **`src/services/api.js`** - API client with JavaScript ES6+ features
+- **`src/styles/globals.css`** - Global CSS styles and TailwindCSS utilities
+- **`package.json`** - Node.js dependencies and build scripts
 
 #### Auto-Created Files (Don't Worry About These):
 - **`backend/app.db`** - SQLite database file
@@ -783,7 +786,9 @@ The `app.log` file provides comprehensive system monitoring:
 ```
 Frontend (Vercel):
 ├── Next.js 14 with React 18
-├── JavaScript for component logic
+├── JavaScript ES6+ for component logic
+├── HTML5 for semantic structure
+├── CSS3 with modern features
 ├── TailwindCSS for responsive design  
 ├── Axios for API communication
 ├── JWT authentication system
