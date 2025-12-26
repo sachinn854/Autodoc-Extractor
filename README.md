@@ -407,10 +407,12 @@ Frontend (250MB) + Backend (400MB) = Two separate containers
 - **Processing Speed**: <1 second per document
 
 #### 🖥️ Frontend (User Interface)
-- **Next.js 14** - Modern React framework with TypeScript
-- **TailwindCSS** - Responsive, mobile-first design system
+- **Next.js 14** - Modern React framework with server-side rendering
+- **React 18** - Component-based user interface library
+- **JavaScript** - Primary programming language for frontend logic
+- **TailwindCSS** - Utility-first CSS framework for responsive design
+- **Axios** - HTTP client for API communication
 - **Real-time Updates** - Live processing status and progress tracking
-- **JWT Authentication** - Secure user sessions and data protection
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 
 #### ⚡ Backend (AI Processing Engine)
@@ -700,9 +702,9 @@ Autodoc-Extractor/
 - **`requirements.txt`** - All Python packages needed
 
 #### Frontend Files:
-- **`src/pages/dashboard.tsx`** - Main page after login
-- **`src/components/DocumentUpload.tsx`** - Drag & drop file upload
-- **`src/services/api.ts`** - All API calls to backend
+- **`src/pages/dashboard.jsx`** - Main page after login
+- **`src/components/DocumentUpload.jsx`** - Drag & drop file upload
+- **`src/services/api.js`** - All API calls to backend
 - **`package.json`** - All Node.js packages needed
 
 #### Auto-Created Files (Don't Worry About These):
@@ -780,7 +782,8 @@ The `app.log` file provides comprehensive system monitoring:
 
 ```
 Frontend (Vercel):
-├── Next.js 14 with TypeScript
+├── Next.js 14 with React 18
+├── JavaScript for component logic
 ├── TailwindCSS for responsive design  
 ├── Axios for API communication
 ├── JWT authentication system

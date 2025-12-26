@@ -139,6 +139,9 @@ site/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Notebooks folder (development only - not needed in production)
+notebooks/
+
 # Development and test files
 test_*.py
 test_*.sh
