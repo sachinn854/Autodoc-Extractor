@@ -30,6 +30,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Training runs and experiments
+runs/
+
 # IDE
 .vscode/
 .idea/
@@ -53,6 +56,8 @@ dataset/intermediate/
 debug_vis/
 runs/
 # Model files
+*.pt
+yolov8n.pt
 
 # Data folder (user data & history)
 backend/data/
