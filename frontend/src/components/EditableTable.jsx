@@ -1,18 +1,17 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { EditableTableProps, Item } from '../types/schema';
 
-const EditableTable: React.FC<EditableTableProps> = ({
+const EditableTable = ({
   data,
   onDataChange,
   onSave,
   isReadOnly = false,
   isLoading = false
 }) => {
-  const [rows, setRows] = useState<Item[]>([]);
-  const [editingRow, setEditingRow] = useState<number | null>(null);
+  const [rows, setRows] = useState([]);
+  const [editingRow, setEditingRow] = useState(null);
   const [isModified, setIsModified] = useState(false);
   const [showAddDialog, setShowAddDialog] = useState(false);
-  const [newItem, setNewItem] = useState<Partial<Item>>({
+  const [newItem, setNewItem] = useState({
     description: '',
     qty: 1,
     unit_price: 0,
@@ -23,11 +22,11 @@ const EditableTable: React.FC<EditableTableProps> = ({
     setRows([...data]);
   }, [data]);
 
-  const handleEdit = (index: number) => {
+  const handleEdit = (index) => {
     setEditingRow(index);
   };
 
-  const handleSave = (index: number) => {
+  const handleSave = (index) => {
     setEditingRow(null);
     setIsModified(true);
     onDataChange(rows);
@@ -38,14 +37,14 @@ const EditableTable: React.FC<EditableTableProps> = ({
     setRows([...data]); // Reset to original data
   };
 
-  const handleDelete = (index: number) => {
+  const handleDelete = (index) => {
     const updatedRows = rows.filter((_, i) => i !== index);
     setRows(updatedRows);
     setIsModified(true);
     onDataChange(updatedRows);
   };
 
-  const handleFieldChange = (index: number, field: keyof Item, value: any) => {
+  const handleFieldChange = (index, field, value) => {
     const updatedRows = [...rows];
     updatedRows[index] = { ...updatedRows[index], [field]: value };
     
@@ -60,7 +59,7 @@ const EditableTable: React.FC<EditableTableProps> = ({
   const handleAddItem = () => {
     if (!newItem.description?.trim()) return;
     
-    const item: Item = {
+    const item = {
       description: newItem.description,
       qty: newItem.qty || 1,
       unit_price: newItem.unit_price || 0,

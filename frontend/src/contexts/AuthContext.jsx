@@ -1,33 +1,15 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-interface User {
-  id: number;
-  email: string;
-  full_name?: string;
-  created_at: string;
-  is_active: boolean;
-}
-
-interface AuthContextType {
-  user: User | null;
-  token: string | null;
-  login: (email: string, password: string) => Promise<void>;
-  loginWithToken: (token: string, user: User) => void;
-  signup: (email: string, password: string, fullName?: string) => Promise<void>;
-  logout: () => void;
-  isLoading: boolean;
-}
-
-const AuthContext = createContext<AuthContextType | undefined>(undefined);
+const AuthContext = createContext();
 
 // API URL: Use environment variable or same-origin in production
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 
   (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8001');
 
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
-  const [token, setToken] = useState<string | null>(null);
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
 
@@ -42,7 +24,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, []);
 
-  const fetchUserInfo = async (authToken: string) => {
+  const fetchUserInfo = async (authToken) => {
     try {
       const response = await fetch(`${API_URL}/auth/me`, {
         headers: {
@@ -67,7 +49,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const login = async (email: string, password: string) => {
+  const login = async (email, password) => {
     try {
       const response = await fetch(`${API_URL}/auth/login`, {
         method: 'POST',
@@ -88,13 +70,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       
       // Only throw error if response is not ok
       throw new Error('Invalid email or password');
-    } catch (error: any) {
+    } catch (error) {
       // Re-throw the error for the component to handle
       throw error;
     }
   };
 
-  const signup = async (email: string, password: string, fullName?: string) => {
+  const signup = async (email, password, fullName) => {
     try {
       const response = await fetch(`${API_URL}/auth/signup`, {
         method: 'POST',
@@ -115,13 +97,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       
       // Only throw error if response is not ok
       throw new Error('Signup failed');
-    } catch (error: any) {
+    } catch (error) {
       // Re-throw the error for the component to handle
       throw error;
     }
   };
 
-  const loginWithToken = (authToken: string, userData: User) => {
+  const loginWithToken = (authToken, userData) => {
     localStorage.setItem('auth_token', authToken);
     setToken(authToken);
     setUser(userData);

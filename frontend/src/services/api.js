@@ -1,12 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
-import {
-  UploadResponse,
-  ProcessResponse,
-  ResultResponse,
-  JobStatus,
-  ExtractedResult,
-  ApiResponse
-} from '../types/schema';
+import axios from 'axios';
 
 // API Configuration
 // Production: Use backend API URL from environment
@@ -63,7 +55,7 @@ api.interceptors.response.use(
 // API Service Class
 class ApiService {
   // Health Check
-  async healthCheck(): Promise<{ status: string; service: string }> {
+  async healthCheck() {
     try {
       const response = await api.get('/health');
       return response.data;
@@ -73,7 +65,7 @@ class ApiService {
   }
 
   // File Upload
-  async uploadFile(file: File): Promise<UploadResponse> {
+  async uploadFile(file) {
     try {
       const formData = new FormData();
       formData.append('file', file);
@@ -86,7 +78,7 @@ class ApiService {
       });
 
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 413) {
         throw new Error('File too large. Please upload a smaller file.');
       }
@@ -98,11 +90,11 @@ class ApiService {
   }
 
   // Start Processing
-  async startProcessing(jobId: string): Promise<ProcessResponse> {
+  async startProcessing(jobId) {
     try {
       const response = await api.post(`/process/${jobId}`);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('Job not found. Please upload the file again.');
       }
@@ -111,11 +103,11 @@ class ApiService {
   }
 
   // Check Job Status
-  async getJobStatus(jobId: string): Promise<JobStatus> {
+  async getJobStatus(jobId) {
     try {
       const response = await api.get(`/status/${jobId}`);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('Job not found');
       }
@@ -124,11 +116,11 @@ class ApiService {
   }
 
   // Get Processing Results
-  async getResults(jobId: string): Promise<ResultResponse> {
+  async getResults(jobId) {
     try {
       const response = await api.get(`/result/${jobId}`);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('Results not found');
       }
@@ -140,23 +132,23 @@ class ApiService {
   }
 
   // Update Extracted Data (User Corrections)
-  async updateExtractedData(jobId: string, correctedData: ExtractedResult): Promise<ApiResponse> {
+  async updateExtractedData(jobId, correctedData) {
     try {
       const response = await api.put(`/result/${jobId}`, correctedData);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.response?.data?.message || 'Failed to update data');
     }
   }
 
   // Download CSV
-  async downloadCSV(jobId: string): Promise<Blob> {
+  async downloadCSV(jobId) {
     try {
       const response = await api.get(`/download/${jobId}.csv`, {
         responseType: 'blob',
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('CSV file not found');
       }
@@ -165,13 +157,13 @@ class ApiService {
   }
 
   // Download File (JSON, images, etc.)
-  async downloadFile(jobId: string, filename: string): Promise<Blob> {
+  async downloadFile(jobId, filename) {
     try {
       const response = await api.get(`/download/${jobId}/${filename}`, {
         responseType: 'blob',
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error(`File ${filename} not found`);
       }
@@ -180,21 +172,21 @@ class ApiService {
   }
 
   // Get All Jobs
-  async getAllJobs(): Promise<{ active_jobs: number; jobs: JobStatus[] }> {
+  async getAllJobs() {
     try {
       const response = await api.get('/jobs');
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.response?.data?.message || 'Failed to get jobs');
     }
   }
 
   // Cleanup Job
-  async cleanupJob(jobId: string): Promise<ApiResponse> {
+  async cleanupJob(jobId) {
     try {
       const response = await api.delete(`/cleanup/${jobId}`);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('Job not found');
       }
@@ -203,7 +195,7 @@ class ApiService {
   }
 
   // Authentication Methods
-  async signup(email: string, password: string, fullName?: string): Promise<{ access_token: string; user: any }> {
+  async signup(email, password, fullName) {
     try {
       const response = await api.post('/auth/signup', {
         email,
@@ -211,7 +203,7 @@ class ApiService {
         full_name: fullName
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 400) {
         throw new Error(error.response.data.detail || 'Email already registered');
       }
@@ -219,14 +211,14 @@ class ApiService {
     }
   }
 
-  async login(email: string, password: string): Promise<{ access_token: string; user: any }> {
+  async login(email, password) {
     try {
       const response = await api.post('/auth/login', {
         email,
         password
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 401) {
         throw new Error('Invalid email or password');
       }
@@ -237,11 +229,11 @@ class ApiService {
     }
   }
 
-  async getCurrentUser(): Promise<any> {
+  async getCurrentUser() {
     try {
       const response = await api.get('/auth/me');
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 401) {
         throw new Error('Authentication required');
       }
@@ -249,14 +241,14 @@ class ApiService {
     }
   }
 
-  async verifyOTP(email: string, otpCode: string): Promise<{ access_token: string; user: any }> {
+  async verifyOTP(email, otpCode) {
     try {
       const response = await api.post('/auth/verify-otp', {
         email,
         otp_code: otpCode
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 400) {
         throw new Error(error.response.data.detail || 'Invalid OTP code');
       }
@@ -267,13 +259,13 @@ class ApiService {
     }
   }
 
-  async resendOTP(email: string): Promise<{ message: string; otp_sent: boolean }> {
+  async resendOTP(email) {
     try {
       const response = await api.post('/auth/resend-otp', null, {
         params: { email }
       });
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 404) {
         throw new Error('User not found');
       }
@@ -284,11 +276,11 @@ class ApiService {
     }
   }
 
-  async getMyDocuments(skip: number = 0, limit: number = 50): Promise<{ documents: any[]; total: number }> {
+  async getMyDocuments(skip = 0, limit = 50) {
     try {
       const response = await api.get(`/my-documents?skip=${skip}&limit=${limit}`);
       return response.data;
-    } catch (error: any) {
+    } catch (error) {
       if (error.response?.status === 401) {
         throw new Error('Authentication required');
       }
@@ -301,11 +293,11 @@ class ApiService {
 export const apiUtils = {
   // Poll job status until completion
   async pollJobStatus(
-    jobId: string,
-    onProgress?: (status: JobStatus) => void,
-    maxAttempts: number = 60, // 5 minutes with 5-second intervals
-    interval: number = 5000
-  ): Promise<JobStatus> {
+    jobId,
+    onProgress,
+    maxAttempts = 60, // 5 minutes with 5-second intervals
+    interval = 5000
+  ) {
     const apiService = new ApiService();
 
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
@@ -339,10 +331,7 @@ export const apiUtils = {
   },
 
   // Complete upload and processing flow
-  async uploadAndProcess(
-    file: File,
-    onProgress?: (stage: string, status?: JobStatus) => void
-  ): Promise<ResultResponse> {
+  async uploadAndProcess(file, onProgress) {
     const apiService = new ApiService();
 
     try {
@@ -377,7 +366,7 @@ export const apiUtils = {
   },
 
   // Format file size for display
-  formatFileSize(bytes: number): string {
+  formatFileSize(bytes) {
     if (bytes === 0) return '0 Bytes';
 
     const k = 1024;
@@ -388,7 +377,7 @@ export const apiUtils = {
   },
 
   // Validate file type
-  isValidFileType(file: File): boolean {
+  isValidFileType(file) {
     const validTypes = [
       'image/jpeg',
       'image/png',
@@ -399,8 +388,8 @@ export const apiUtils = {
   },
 
   // Get file type display name
-  getFileTypeDisplay(file: File): string {
-    const typeMap: { [key: string]: string } = {
+  getFileTypeDisplay(file) {
+    const typeMap = {
       'image/jpeg': 'JPEG Image',
       'image/png': 'PNG Image',
       'image/tiff': 'TIFF Image',

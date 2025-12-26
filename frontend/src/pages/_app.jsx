@@ -1,9 +1,8 @@
 import React from 'react';
-import type { AppProps } from 'next/app';
 import { AuthProvider } from '../contexts/AuthContext';
 import '../styles/globals.css';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <AuthProvider>
       <Component {...pageProps} />

@@ -7,20 +7,8 @@ import { useAuth } from '../contexts/AuthContext';
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 
   (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8001');
 
-interface Document {
-  id: number;
-  job_id: string;
-  filename: string;
-  status: string;
-  created_at: string;
-  updated_at: string;
-  items_count?: number;
-  vendor?: string;
-  total_amount?: string;
-}
-
-const Dashboard: React.FC = () => {
-  const [documents, setDocuments] = useState<Document[]>([]);
+const Dashboard = () => {
+  const [documents, setDocuments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const { user, token, logout, isLoading } = useAuth();
@@ -51,14 +39,14 @@ const Dashboard: React.FC = () => {
 
       const data = await response.json();
       setDocuments(data.documents);
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message || 'Failed to load documents');
     } finally {
       setLoading(false);
     }
   };
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'completed':
         return 'bg-green-100 text-green-800';
@@ -71,7 +59,7 @@ const Dashboard: React.FC = () => {
     }
   };
 
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString) => {
     try {
       const date = new Date(dateString);
       // Check if date is valid

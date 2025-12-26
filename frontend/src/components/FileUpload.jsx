@@ -1,9 +1,8 @@
 import React, { useState, useCallback } from 'react';
-import { FileUploadProps } from '../types/schema';
 import apiService from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
 
-const FileUpload: React.FC<FileUploadProps> = ({
+const FileUpload = ({
   onUploadComplete,
   onUploadError,
   isLoading = false,
@@ -11,53 +10,64 @@ const FileUpload: React.FC<FileUploadProps> = ({
   maxSize = 10 // 10MB default
 }) => {
   const [isDragOver, setIsDragOver] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [uploadProgress, setUploadProgress] = useState<number>(0);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [uploadProgress, setUploadProgress] = useState(0);
   const { token } = useAuth();
 
   // Drag and drop handlers
-  const handleDragOver = useCallback((e: React.DragEvent) => {
+  const handleDragOver = useCallback((e) => {
     e.preventDefault();
     setIsDragOver(true);
   }, []);
 
-  const handleDragLeave = useCallback((e: React.DragEvent) => {
+  const handleDragLeave = useCallback((e) => {
     e.preventDefault();
     setIsDragOver(false);
   }, []);
 
-  const handleDrop = useCallback((e: React.DragEvent) => {
+  const handleDrop = useCallback((e) => {
     e.preventDefault();
     setIsDragOver(false);
     
-    const files = Array.from(e.dataTransfer.files);
+    const files = e.dataTransfer.files;
     if (files.length > 0) {
       handleFileSelection(files[0]);
     }
   }, []);
 
   // File selection validation
-  const handleFileSelection = (file: File) => {
+  const handleFileSelection = (file) => {
     // Validate file type
     if (!acceptedTypes.includes(file.type)) {
-      onUploadError(`Invalid file type. Please upload: ${acceptedTypes.join(', ')}`);
+      onUploadError(`Unsupported file type: ${file.type}. Please upload ${acceptedTypes.join(', ')}`);
       return;
     }
 
-    // Validate file size
-    const fileSizeMB = file.size / (1024 * 1024);
-    if (fileSizeMB > maxSize) {
-      onUploadError(`File too large. Maximum size is ${maxSize}MB`);
+    // Validate file size (convert MB to bytes)
+    const maxSizeBytes = maxSize * 1024 * 1024;
+    if (file.size > maxSizeBytes) {
+      onUploadError(`File too large: ${(file.size / (1024 * 1024)).toFixed(2)}MB. Maximum size: ${maxSize}MB`);
       return;
     }
 
     setSelectedFile(file);
+    setUploadProgress(0);
   };
 
-  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileInput = (e) => {
     const file = e.target.files?.[0];
     if (file) {
       handleFileSelection(file);
+    }
+  };
+
+  const handleRemoveFile = () => {
+    setSelectedFile(null);
+    setUploadProgress(0);
+    // Reset file input
+    const fileInput = document.getElementById('file-input');
+    if (fileInput) {
+      fileInput.value = '';
     }
   };
 
@@ -65,53 +75,35 @@ const FileUpload: React.FC<FileUploadProps> = ({
     if (!selectedFile) return;
 
     try {
-      setUploadProgress(0);
+      setUploadProgress(10);
       
-      // Simulate upload progress
-      const progressInterval = setInterval(() => {
-        setUploadProgress(prev => {
-          if (prev >= 90) {
-            clearInterval(progressInterval);
-            return 90;
-          }
-          return prev + 10;
-        });
-      }, 200);
-
-      // Call API service
+      // Upload file using API service
       const response = await apiService.uploadFile(selectedFile);
       
-      clearInterval(progressInterval);
       setUploadProgress(100);
       
+      // Notify parent component
       setTimeout(() => {
         onUploadComplete(response);
-        setSelectedFile(null);
-        setUploadProgress(0);
       }, 500);
 
-    } catch (error: any) {
+    } catch (error) {
       setUploadProgress(0);
       onUploadError(error.message || 'Upload failed');
     }
   };
 
-  const handleRemoveFile = () => {
-    setSelectedFile(null);
-    setUploadProgress(0);
-  };
-
-  const getFileIcon = (fileType: string) => {
+  const getFileIcon = (fileType) => {
     if (fileType.startsWith('image/')) {
       return '🖼️';
     }
     if (fileType === 'application/pdf') {
       return '📄';
     }
-    return '📁';
+    return '📎';
   };
 
-  const formatFileSize = (bytes: number) => {
+  const formatFileSize = (bytes) => {
     return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
   };
 
@@ -204,7 +196,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
                 <button
                   onClick={handleUpload}
                   disabled={isLoading}
-                  className="btn btn-primary px-8 py-3 text-lg"
+                  className="btn btn-primary px-8 py-3"
                 >
                   {isLoading ? (
                     <div className="flex items-center">
@@ -212,7 +204,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
                       Processing...
                     </div>
                   ) : (
-                    'Upload & Process Bill'
+                    'Upload & Process'
                   )}
                 </button>
               </div>
@@ -225,9 +217,9 @@ const FileUpload: React.FC<FileUploadProps> = ({
       <input
         id="file-input"
         type="file"
-        hidden
         accept={acceptedTypes.join(',')}
         onChange={handleFileInput}
+        className="hidden"
       />
 
       {/* Info Alert */}

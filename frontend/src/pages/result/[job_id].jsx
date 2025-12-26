@@ -3,21 +3,9 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import EditableTable from '../../components/EditableTable';
 import Loader from '../../components/Loader';
-import {
-  ResultResponse,
-  JobStatus,
-  ExtractedResult,
-  Item
-} from '../../types/schema';
 import apiService from '../../services/api';
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-function TabPanel({ children, value, index, ...other }: TabPanelProps) {
+function TabPanel({ children, value, index, ...other }) {
   return (
     <div
       role="tabpanel"
@@ -35,16 +23,16 @@ function TabPanel({ children, value, index, ...other }: TabPanelProps) {
   );
 }
 
-const ResultPage: React.FC = () => {
+const ResultPage = () => {
   const router = useRouter();
   const { job_id } = router.query;
 
-  const [results, setResults] = useState<ResultResponse | null>(null);
-  const [jobStatus, setJobStatus] = useState<JobStatus | null>(null);
+  const [results, setResults] = useState(null);
+  const [jobStatus, setJobStatus] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string>('');
+  const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState(0);
-  const [extractedData, setExtractedData] = useState<Item[]>([]);
+  const [extractedData, setExtractedData] = useState([]);
   const [dataModified, setDataModified] = useState(false);
   const [saving, setSaving] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -63,8 +51,8 @@ const ResultPage: React.FC = () => {
           // Normalize API: prefer extracted_data -> extracted for UI
           const normalized = {
             ...resultData,
-            extracted: (resultData as any).extracted_data || resultData.extracted
-          } as ResultResponse;
+            extracted: resultData.extracted_data || resultData.extracted
+          };
           setResults(normalized);
           setExtractedData(normalized.extracted?.items || []);
           setLoading(false);
@@ -76,7 +64,7 @@ const ResultPage: React.FC = () => {
           const delay = status.progress?.includes('Downloading OCR models') ? 10000 : 3000;
           setTimeout(pollStatus, delay);
         }
-      } catch (err: any) {
+      } catch (err) {
         // If it's a timeout during model download, retry after longer delay
         if (err.message.includes('timeout') || err.message.includes('Failed to get status')) {
           console.warn('Status check failed, retrying...', err.message);
@@ -91,16 +79,16 @@ const ResultPage: React.FC = () => {
     pollStatus();
   }, [job_id]);
 
-  const handleDataChange = (updatedData: Item[]) => {
+  const handleDataChange = (updatedData) => {
     setExtractedData(updatedData);
     setDataModified(true);
     
     // Update results state to reflect changes in summary
     if (results?.extracted) {
       setResults(prev => ({
-        ...prev!,
+        ...prev,
         extracted: {
-          ...prev!.extracted!,
+          ...prev.extracted,
           items: updatedData,
           total: updatedData.reduce((sum, item) => sum + item.line_total, 0)
         }
@@ -113,8 +101,8 @@ const ResultPage: React.FC = () => {
 
     setSaving(true);
     try {
-      const updatedExtracted: ExtractedResult = {
-        ...results.extracted!,
+      const updatedExtracted = {
+        ...results.extracted,
         items: extractedData,
         total: extractedData.reduce((sum, item) => sum + item.line_total, 0)
       };
@@ -123,15 +111,15 @@ const ResultPage: React.FC = () => {
       const refreshedResults = await apiService.getResults(job_id);
       const normalized = {
         ...refreshedResults,
-        extracted: (refreshedResults as any).extracted_data || refreshedResults.extracted
-      } as ResultResponse;
+        extracted: refreshedResults.extracted_data || refreshedResults.extracted
+      };
       setResults(normalized);
       setExtractedData(normalized.extracted?.items || []);
 
       setDataModified(false);
       setShowSuccess(true);
       setTimeout(() => setShowSuccess(false), 3000);
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message);
     } finally {
       setSaving(false);
@@ -151,7 +139,7 @@ const ResultPage: React.FC = () => {
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message);
     }
   };

@@ -1,7 +1,6 @@
 import React from 'react';
-import { LoaderProps } from '../types/schema';
 
-const Loader: React.FC<LoaderProps> = ({ 
+const Loader = ({ 
   message = 'Loading...', 
   progress, 
   size = 'medium' 

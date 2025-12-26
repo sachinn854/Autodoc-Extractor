@@ -48,7 +48,7 @@ export default function MyDocument() {
 }
 
 // Simple getInitialProps without Material-UI/Emotion
-MyDocument.getInitialProps = async (ctx: DocumentContext) => {
+MyDocument.getInitialProps = async (ctx) => {
   const initialProps = await Document.getInitialProps(ctx);
   return initialProps;
 };

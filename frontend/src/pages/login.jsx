@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
 import apiService from '../services/api';
 
-const LoginPage: React.FC = () => {
+const LoginPage = () => {
   const router = useRouter();
   const { login } = useAuth();
   
@@ -15,14 +15,14 @@ const LoginPage: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Prevent double submission
@@ -35,7 +35,7 @@ const LoginPage: React.FC = () => {
       // Use AuthContext login directly (no double call)
       await login(formData.email, formData.password);
       // login function already handles redirect to dashboard
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message);
     } finally {
       setLoading(false);

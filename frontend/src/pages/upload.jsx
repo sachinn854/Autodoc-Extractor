@@ -4,14 +4,14 @@ import Layout from '../components/Layout';
 import FileUpload from '../components/FileUpload';
 import { useAuth } from '../contexts/AuthContext';
 
-const UploadPage: React.FC = () => {
+const UploadPage = () => {
   const router = useRouter();
   const { user } = useAuth();
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleUploadComplete = (response: any) => {
+  const handleUploadComplete = (response) => {
     setSuccess('File uploaded successfully! Processing your bill...');
     setError('');
     
@@ -21,7 +21,7 @@ const UploadPage: React.FC = () => {
     }, 2000);
   };
 
-  const handleUploadError = (errorMessage: string) => {
+  const handleUploadError = (errorMessage) => {
     setError(errorMessage);
     setSuccess('');
     setIsLoading(false);

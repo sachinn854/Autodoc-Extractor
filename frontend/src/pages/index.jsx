@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   const router = useRouter();
   const { user } = useAuth();
 

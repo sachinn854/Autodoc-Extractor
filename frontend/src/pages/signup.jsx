@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { useAuth } from '../contexts/AuthContext';
 import apiService from '../services/api';
 
-const SignupPage: React.FC = () => {
+const SignupPage = () => {
   const router = useRouter();
   const { signup } = useAuth();
 
@@ -16,14 +16,14 @@ const SignupPage: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Prevent double submission
@@ -36,7 +36,7 @@ const SignupPage: React.FC = () => {
       // Use AuthContext signup directly (no double call)
       await signup(formData.email, formData.password, formData.fullName);
       // signup function already handles redirect to dashboard
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message);
     } finally {
       setLoading(false);

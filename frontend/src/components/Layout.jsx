@@ -2,13 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { useAuth } from '../contexts/AuthContext';
 
-interface LayoutProps {
-  children: React.ReactNode;
-  title?: string;
-  description?: string;
-}
-
-const Layout: React.FC<LayoutProps> = ({ 
+const Layout = ({ 
   children, 
   title = 'Restaurant Bill Analyzer',
   description = 'AI-powered restaurant bill processing and analysis'
