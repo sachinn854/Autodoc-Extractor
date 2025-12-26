@@ -616,82 +616,81 @@ npm run dev
 3. Upload a restaurant bill image
 4. See the magic happen!
 
-## �  Project Structure
+## 📁 Project Structure
 
 ```
 Autodoc-Extractor/
 ├── 📄 README.md                    # This documentation
-├── 📄 RENDER_DEPLOYMENT.md         # Deployment guide
-├── 📄 FULLSTACK_DEPLOYMENT.md      # Full-stack deployment
+├── 📄 .gitignore                   # Git ignore rules
 │
 ├── 📂 backend/                     # Python FastAPI Backend
 │   ├── 📂 app/                     # Main application code
 │   │   ├── 📄 main.py              # FastAPI app & API routes
 │   │   ├── 📄 auth.py              # Authentication & JWT
 │   │   ├── 📄 database.py          # Database models & setup
-│   │   ├── 📄 ocr_engine.py        # OCR processing engine
-│   │   ├── 📄 preprocessing.py     # Image preprocessing
-│   │   ├── 📄 table_detector.py    # Table detection logic
-│   │   └── 📄 parser.py            # Data extraction & parsing
+│   │   ├── 📄 ocr_engine.py        # PaddleOCR processing engine
+│   │   ├── 📄 preprocessing.py     # Image preprocessing with OpenCV
+│   │   ├── 📄 table_detector.py    # YOLOv8 table detection logic
+│   │   ├── 📄 parser.py            # Data extraction & parsing
+│   │   ├── 📄 ml_models.py         # ML categorization & anomaly detection
+│   │   ├── 📄 utils.py             # Utility functions
+│   │   ├── 📄 sclhemas.py          # Pydantic data models
+│   │   ├── 📄 insights.py         # Business intelligence generation
+│   │   └── 📄 evauluation.py       # Model performance evaluation
 │   │
-│   ├── 📂 models/                  # ML models (auto-created)
-│   ├── 📂 tmp/                     # Temporary files (auto-created)
+│   ├── � meodels/                  # AI models (auto-downloaded)
+│   ├── � tmp/                     # Temporary files (auto-created)
 │   │   ├── 📂 uploads/             # Uploaded images
 │   │   ├── 📂 preprocessed/        # Processed images
 │   │   └── 📂 results/             # Extraction results
 │   │
 │   ├── 📄 requirements.txt         # Python dependencies
-│   ├── 📄 Dockerfile              # Backend container config
-│   ├── 📄 .env.example            # Environment variables template
-│   ├── 📄 app.db                  # SQLite database (auto-created)
-│   │
-│   └── 📂 venv/                    # Virtual environment (after setup)
+│   ├── 📄 Dockerfile               # Backend container config
+│   ├── 📄 .env. example            # Environment variables template
+│   ├── 📄 app.pdb                  # SQLite database (auto-created)
+│   └── 📄 app.log                  # Application logs
 │
 ├── 📂 frontend/                    # Next.js React Frontend
 │   ├── 📂 src/                     # Source code
 │   │   ├── 📂 pages/               # Next.js pages
-│   │   │   ├── 📄 index.tsx        # Home page
-│   │   │   ├── 📄 login.tsx        # Login page
-│   │   │   ├── 📄 signup.tsx       # Signup page
-│   │   │   ├── 📄 dashboard.tsx    # Main dashboard
+│   │   │   ├── 📄 index.jsx        # Home page
+│   │   │   ├── 📄 lognin.jsx       # Login page
+│   │   │   ├── 📄 signup.jsx       # Signup page
+│   │   │   ├── 📄 dashboard.jsx    # Main dashboard
+│   │   │   ├── 📄 upload.jsx       # File upload page
+│   │   │   ├── 📄 _app.jsx         # Next.js app wrapper
+│   │   │   ├── 📄 _document.jsx    # HTML document structure
 │   │   │   └── 📂 result/          # Results pages
+│   │   │       └── 📄 [job_id].jsx # Dynamic result page
 │   │   │
 │   │   ├── 📂 components/          # React components
-│   │   │   ├── 📄 Layout.tsx       # Main layout
-│   │   │   ├── 📄 DocumentUpload.tsx # File upload
-│   │   │   ├── 📄 ProcessingStatus.tsx # Progress tracking
-│   │   │   ├── 📄 ResultsDisplay.tsx # Show extracted data
-│   │   │   └── 📄 OTPVerification.tsx # Email verification
+│   │   │   ├── 📄 Layout.jsx       # Main layout component
+│   │   │   ├── 📄 FileUpload.jsx   # Drag & drop file upload
+│   │   │   ├── 📄 EditableTable.jsx # Interactive data table
+│   │   │   └── 📄 Loader.jsx       # Loading spinner component
 │   │   │
 │   │   ├── 📂 services/            # API client
-│   │   │   └── 📄 api.ts           # Axios API calls
+│   │   │   └── 📄 api.js           # Axios API calls with JavaScript
 │   │   │
 │   │   ├── 📂 contexts/            # React contexts
-│   │   │   └── 📄 AuthContext.tsx  # Authentication state
-│   │   │
-│   │   ├── 📂 types/               # TypeScript types
-│   │   │   └── 📄 schema.ts        # API response types
+│   │   │   └── 📄 AuthContext.jsx  # Authentication state management
 │   │   │
 │   │   └── 📂 styles/              # CSS styles
-│   │       └── 📄 globals.css      # Global styles
+│   │       └── 📄 globals.css      # Global styles with TailwindCSS
 │   │
 │   ├── 📂 public/                  # Static assets
 │   │   └── 📄 favicon.ico          # Website icon
 │   │
-│   ├── 📂 node_modules/            # Node dependencies (after npm install)
-│   ├── 📂 .next/                   # Next.js build files (auto-created)
+│   ├── � noxde_modules/            # Node dependencies (after npm install)
+│   ├── � .next/    s               # Next.js build files (auto-created)
 │   │
 │   ├── 📄 package.json             # Node.js dependencies
 │   ├── 📄 package-lock.json        # Dependency lock file
 │   ├── 📄 next.config.js           # Next.js configuration
-│   ├── 📄 tsconfig.json            # TypeScript config
-│   ├── 📄 tailwind.config.js       # Tailwind CSS config
-│   ├── 📄 postcss.config.js        # PostCSS config
-│   ├── 📄 Dockerfile              # Frontend container config
+│   ├── 📄 tailwind.config.js       # TailwindCSS configuration
+│   ├── 📄 postcss.config.js        # PostCSS configuration
 │   ├── 📄 .env.example            # Environment template
 │   └── 📄 .env.local              # Local environment (after setup)
-│
-└── 📂 .git/                       # Git repository (after clone)
 ```
 
 ### 📋 Key Files Explained
