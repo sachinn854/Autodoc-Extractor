@@ -60,15 +60,18 @@ const ResultPage = () => {
           setError(status.error || 'Processing failed');
           setLoading(false);
         } else {
-          // Increase polling interval during model download
-          const delay = status.progress?.includes('Downloading OCR models') ? 10000 : 3000;
+          // Longer polling interval for heavy model operations
+          const delay = status.progress?.includes('Loading') || 
+                       status.progress?.includes('Initializing') || 
+                       status.progress?.includes('PaddleOCR') ||
+                       status.progress?.includes('YOLO') ? 15000 : 5000;
           setTimeout(pollStatus, delay);
         }
       } catch (err) {
-        // If it's a timeout during model download, retry after longer delay
+        // If it's a timeout during heavy model processing, retry after longer delay
         if (err.message.includes('timeout') || err.message.includes('Failed to get status')) {
           console.warn('Status check failed, retrying...', err.message);
-          setTimeout(pollStatus, 10000); // Retry after 10 seconds
+          setTimeout(pollStatus, 15000); // Retry after 15 seconds for heavy models
         } else {
           setError(err.message);
           setLoading(false);
@@ -178,13 +181,13 @@ const ResultPage = () => {
             />
             {jobStatus?.status === 'processing' && (
               <div className="alert alert-info mt-6 max-w-md mx-auto">
-                {jobStatus.progress?.includes('Downloading OCR models') ? (
+                {jobStatus.progress?.includes('Loading') || jobStatus.progress?.includes('Initializing') ? (
                   <>
-                    First time setup: Downloading AI models (2-3 minutes).
-                    <br />Subsequent uploads will be much faster.
+                    🤖 Loading heavy AI models (YOLOv8 + PaddleOCR): 1-2 minutes.
+                    <br />⚡ Subsequent uploads will be much faster once models are loaded.
                   </>
                 ) : (
-                  'This usually takes 30-60 seconds depending on document complexity.'
+                  '🔄 Processing your document with AI models. This usually takes 30-90 seconds.'
                 )}
               </div>
             )}

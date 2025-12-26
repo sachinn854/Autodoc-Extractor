@@ -6,7 +6,7 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 60000, // 1 minute for auth/simple requests
+  timeout: 120000, // 2 minutes for auth/simple requests
   headers: {
     'Content-Type': 'application/json',
   },
@@ -15,7 +15,7 @@ const api = axios.create({
 // Separate instance for heavy operations
 const heavyApi = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 300000, // 5 minutes for heavy AI processing
+  timeout: 600000, // 10 minutes for heavy AI processing
   headers: {
     'Content-Type': 'application/json',
   },
@@ -74,7 +74,7 @@ class ApiService {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
-        timeout: 60000, // 1 minute for file upload
+        timeout: 120000, // 2 minutes for file upload
       });
 
       return response.data;
@@ -105,7 +105,7 @@ class ApiService {
   // Check Job Status
   async getJobStatus(jobId) {
     try {
-      const response = await api.get(`/status/${jobId}`);
+      const response = await heavyApi.get(`/status/${jobId}`);
       return response.data;
     } catch (error) {
       if (error.response?.status === 404) {
@@ -118,7 +118,7 @@ class ApiService {
   // Get Processing Results
   async getResults(jobId) {
     try {
-      const response = await api.get(`/result/${jobId}`);
+      const response = await heavyApi.get(`/result/${jobId}`);
       return response.data;
     } catch (error) {
       if (error.response?.status === 404) {
@@ -295,7 +295,7 @@ export const apiUtils = {
   async pollJobStatus(
     jobId,
     onProgress,
-    maxAttempts = 60, // 5 minutes with 5-second intervals
+    maxAttempts = 120, // 10 minutes with 5-second intervals
     interval = 5000
   ) {
     const apiService = new ApiService();
@@ -312,8 +312,9 @@ export const apiUtils = {
           return status;
         }
 
-        // Wait before next check
-        await new Promise(resolve => setTimeout(resolve, interval));
+        // Longer wait for heavy model operations
+        const waitTime = status.progress?.includes('Loading') || status.progress?.includes('Initializing') ? 10000 : interval;
+        await new Promise(resolve => setTimeout(resolve, waitTime));
       } catch (error) {
         console.error(`Status check attempt ${attempt + 1} failed:`, error);
 
@@ -322,12 +323,12 @@ export const apiUtils = {
           throw error;
         }
 
-        // Wait before retry
-        await new Promise(resolve => setTimeout(resolve, interval));
+        // Wait longer before retry for heavy operations
+        await new Promise(resolve => setTimeout(resolve, 10000));
       }
     }
 
-    throw new Error('Polling timeout: Job did not complete within expected time');
+    throw new Error('Processing timeout: Heavy AI models took longer than expected. Please try again.');
   },
 
   // Complete upload and processing flow

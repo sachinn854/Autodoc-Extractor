@@ -75,10 +75,21 @@ const FileUpload = ({
     if (!selectedFile) return;
 
     try {
-      setUploadProgress(10);
+      // Start with upload progress
+      setUploadProgress(5);
       
       // Upload file using API service
       const response = await apiService.uploadFile(selectedFile);
+      
+      // Simulate smooth progress during upload
+      setUploadProgress(25);
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
+      setUploadProgress(50);
+      await new Promise(resolve => setTimeout(resolve, 300));
+      
+      setUploadProgress(75);
+      await new Promise(resolve => setTimeout(resolve, 200));
       
       setUploadProgress(100);
       
@@ -188,6 +199,17 @@ const FileUpload = ({
                 <p className="text-sm text-gray-600 mt-2 text-center">
                   Uploading... {uploadProgress}%
                 </p>
+                <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="flex items-center text-blue-800">
+                    <svg className="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <span className="text-sm font-medium">Processing with AI models...</span>
+                  </div>
+                  <p className="text-xs text-blue-600 mt-1">
+                    ⏱️ This may take 1-2 minutes due to heavy YOLOv8 and PaddleOCR models
+                  </p>
+                </div>
               </div>
             )}
 
@@ -229,6 +251,9 @@ const FileUpload = ({
         </svg>
         <div>
           <strong>Supported formats:</strong> JPEG, PNG, TIFF images and PDF documents. 
+          <br />
+          <strong>Processing time:</strong> 1-2 minutes using YOLOv8 + PaddleOCR for high accuracy.
+          <br />
           The AI will automatically detect tables, extract menu items, prices, and provide spending insights.
         </div>
       </div>
