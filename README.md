@@ -1,6 +1,6 @@
 # 🍽️ AutoDoc Extractor - AI-Powered Restaurant Bill Processing System
 
-[![Live Frontend](https://img.shields.io/badge/Frontend-Live%20Demo-blue)](https://autodoc-extractor-igrim6hhg-sachin-yadavs-projects-eb680301.vercel.app/)
+[![Live Frontend](https://img.shields.io/badge/Frontend-Live%20Demo-blue)](https://autodoc-extractor.vercel.app/)
 [![Backend API](https://img.shields.io/badge/Backend-Hugging%20Face-orange)](https://huggingface.co/spaces/sachin00110/AutoDock-Extractor)
 [![API Docs](https://img.shields.io/badge/API%20Docs-Swagger-green)](https://sachin00110-autodock-extractor.hf.space/docs)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
